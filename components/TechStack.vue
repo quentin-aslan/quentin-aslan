@@ -7,7 +7,7 @@
         <div v-for="stack of techStacks">
           <div v-if="stack.type === 'multiple'" class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
             <div v-for="tech of stack.techs" class="flex flex-col gap-2 items-center w-14">
-              <img :src="tech.icon" :alt="tech.label" class="w-full" :title="tech.label" />
+              <NuxtImg :src="tech.icon" :alt="tech.label" class="w-full" :title="tech.label" />
               <span class="text-sm whitespace-nowrap">{{ tech.label }}</span>
             </div>
           </div>

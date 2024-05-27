@@ -15,5 +15,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/seo"]
+  modules: ["@nuxtjs/seo", "@nuxt/image"],
 })

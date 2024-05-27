@@ -7,7 +7,7 @@
             class="relative inline-block rounded-full w-56 lg:w-96 duration-150 lg:duration-500 hover:shadow-custom-shadow-primary hover:w-2/3 p-1 cursor-pointer bg-gradient-to-r from-blue-400 via-indigo-800 to-blue-500"
         >
           <div class="rounded-full overflow-hidden w-full h-full bg-white p-1">
-            <img src="/img/me_aurora.png" alt="Quentin Aslan" class="w-full h-full object-cover rounded-full aspect-square">
+            <NuxtImg src="/img/me_aurora.png" alt="Quentin Aslan with Aurora in the background" class="w-full h-full object-cover rounded-full aspect-square" />
           </div>
         </div>
 

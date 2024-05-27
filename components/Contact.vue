@@ -2,7 +2,7 @@
   <section class="bg-white flex flex-col-reverse lg:flex-row items-center justify-center gap-10 p-10 lg:pl-20 text-lg">
 
     <div class="relative mb-8 lg:border-r-2 lg:w-2/4">
-      <img src="/img/me.png" class="w-80 rounded-lg shadow-lg transform hover:skew-y-12 duration-300" alt="Quentin Aslan with Aurora">
+      <NuxtImg src="/img/me.png" class="w-80 rounded-lg shadow-lg transform hover:skew-y-12 duration-300" alt="Quentin Aslan" />
     </div>
 
     <div class="flex flex-col items-center justify-center gap-20 lg:w-3/4">
