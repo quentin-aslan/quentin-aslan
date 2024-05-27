@@ -4,7 +4,7 @@
       <div class="text-2xl font-bold text-primary">Quentin.dev</div>
 
 
-      <div class="text-lg font-light text-primary">New projects coming soon.. 🤠</div>
+      <div class="text-sm md:text-lg font-light text-primary">New projects coming soon.. 🤠</div>
     </div>
   </header>
 </template>
