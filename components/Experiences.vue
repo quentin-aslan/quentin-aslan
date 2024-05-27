@@ -9,7 +9,7 @@
             :class="`flex w-full justify-center ${(i%2 === 0) ? 'flex-row' : 'lg:flex-row-reverse'} ${(i%2 === 0) ? 'lg:pr-[50%]' : 'lg:pl-[50%]'}`">
           <div
               class="w-11/12 lg:w-[90%] p-4 bg-white border-2 border-primary shadow-primary hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
-              :class="`${(i !== 0) ? 'lg:-mt-10  ' : ''} ${(i%2) === 0 ? 'skew-x-3 hover:skew-x-0 lg:skew-x-0 hover:lg:skew-x-3' : '-skew-x-3  hover:skew-x-0 lg:skew-x-0 hover:lg:-skew-x-3'} `"
+              :class="`${(i !== 0) ? 'lg:-mt-10  ' : ''} ${(i%2) === 0 ? '' : ''} `"
           >
             <time class="mb-1 text-sm font-normal leading-none text-gray-400">{{ experience.period }}</time>
             <h3 class="text-lg font-semibold text-gray-900">{{ experience.role }}</h3>

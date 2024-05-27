@@ -1,7 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: 'https://quentinaslan.fr',
+    name: 'Quentin Aslan | Software Engineer',
+    description: 'Full-Stack Developer in Montreal. Explore my projects and skills.',
+    defaultLocale: 'en'
+  },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -9,4 +15,5 @@ export default defineNuxtConfig({
     },
   },
 
+  modules: ["@nuxtjs/seo"]
 })
