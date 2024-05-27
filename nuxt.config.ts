@@ -15,5 +15,8 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/seo", "@nuxt/image"],
+  modules: ["@nuxtjs/seo", "@nuxt/image", 'nuxt-gtag'],
+  gtag: {
+    id: 'G-729997XZPJ'
+  },
 })
