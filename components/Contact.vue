@@ -1,0 +1,36 @@
+<template>
+  <div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 p-10 lg:ml-20 text-lg">
+
+    <div class="relative mb-8 lg:border-r-2 lg:w-2/4">
+      <img src="/img/me.png" class="w-80 rounded-lg shadow-lg transform hover:skew-y-12 duration-300" alt="Quentin Aslan with Aurora">
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-20 lg:w-3/4">
+      <div class="flex flex-col gap-2 items-center text-center lg:w-2/4">
+        <h2 class="text-xl text-blue-500 font-extrabold uppercase">Contact</h2>
+        <h3 class="text-3xl font-extrabold">Hit me up! 👇</h3>
+      </div>
+
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
+          <div class="bg-white p-2 rounded-full shadow-lg inline-block mb-4">
+            <MapIcon class="w-8 text-blue-500" />
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-500">Location</h2>
+          <a href="https://maps.app.goo.gl/GRFjFpBXtPHZDX798" target="_blank" class="text-gray-600 group-hover:text-blue-500">Montréal, Canada</a>
+        </div>
+
+        <div class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
+          <div class="bg-white p-2 rounded-full shadow-lg inline-block mb-4">
+            <EnvelopeIcon class="w-8 text-blue-500" />
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-500">Mail</h2>
+          <a href="mailto:quentin.aslan@outlook.com" class="text-gray-600 group-hover:text-blue-500">quentin.aslan@outlook.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script setup lang="ts">
+import { MapIcon, EnvelopeIcon } from '@heroicons/vue/24/solid'
+</script>
