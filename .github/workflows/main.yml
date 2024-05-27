@@ -31,3 +31,4 @@ jobs:
             echo NITRO_PORT=${{ secrets.NITRO_PORT }} >> .env
             npm install
             npm run build
+            sudo systemctl restart quentin-aslan
