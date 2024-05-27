@@ -1,10 +1,10 @@
 <template>
   <header class="fixed w-full max-w-full bg-white/80 shadow-md z-10">
     <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <div class="text-2xl font-bold">Quentin.dev</div>
+      <div class="text-2xl font-bold text-primary">Quentin.dev</div>
 
 
-      <div class="text-lg font-light">New projects coming soon.. 🤠</div>
+      <div class="text-lg font-light text-primary">New projects coming soon.. 🤠</div>
     </div>
   </header>
 </template>

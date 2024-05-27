@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white text-gray-700 p-20">
+    <section class="bg-white text-gray-700 p-20">
       <div class="flex flex-col lg:flex-row gap-4 items-center text-center">
         <div class="flex flex-col gap-4 items-center text-center lg:border-r-2 lg:w-2/4">
-          <h2 class="text-xl text-blue-500 font-extrabold uppercase">About me</h2>
+          <h2 class="text-xl text-primary dark:text-primary-dark font-extrabold uppercase">About me</h2>
           <h3 class="text-3xl font-extrabold w-3/4">Full-Stack Developer based in Montréal, Canada 📍</h3>
         </div>
         <div class="flex flex-col gap-5 text-lg text-gray-600 w-full lg:text-left lg:pl-10">
@@ -35,5 +35,5 @@
         </div>
       </div>
 
-  </div>
+  </section>
 </template>
