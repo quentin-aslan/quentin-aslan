@@ -13,7 +13,11 @@
           >
             <time class="mb-1 text-sm font-normal leading-none text-gray-400">{{ experience.period }}</time>
             <h3 class="text-lg font-semibold text-gray-900">{{ experience.role }}</h3>
-            <p class="text-base font-normal text-gray-500">{{ experience.company }} - {{ experience.location }}</p>
+            <img v-if="experience.company_img" class="w-10 my-1" :src="experience.company_img" :alt="experience.company" />
+            <span v-else class="text-base font-semibold text-gray-500" :class="{'text-green-800': experience.company === 'Occitaline'}">{{ experience.company }}</span>
+            <p class="text-base font-normal text-gray-500">
+              {{ experience.location }}
+            </p>
             <ul class="mt-2 text-sm text-gray-600 list-disc list-inside">
               <li v-for="detail in experience.details" :key="detail">{{ detail }}</li>
             </ul>
@@ -24,13 +28,20 @@
   </template>
 
   <script lang="ts" setup>
-  const experiences = [
+  const experiences: {
+    period: string;
+    role: string;
+    company: string;
+    company_img?: string;
+    location: string;
+    details: string[];
+  }[] = [
     {
       period: '2022 - 2024',
       role: 'Frontend Engineer',
       company: 'Bell',
+      company_img: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Bell_logo.svg',
       location: 'Montréal, Canada 🇨🇦',
-      description: 'Bell is Canada\'s largest telecommunications company, providing Mobile phone, TV, high speed and wireless Internet, and residential Home phone services.',
       details: [
         'Development of REST APIs with Node.js and integration with MongoDB.',
         'Design of responsive user interfaces using Vue.js, Bootstrap and jQuery.',
@@ -58,6 +69,7 @@
       period: '2015 - 2023',
       role: 'Freelance Software Engineer',
       company: 'Various Clients',
+      company_img: undefined,
       location: 'Remote',
       details: [
         'REST APIs, Linux system administration, Network Management.',
