@@ -4,15 +4,15 @@
       <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center">
         <div
             @click="() => console.log('Coming soooon')"
-            class="relative inline-block rounded-full w-56 lg:w-96 duration-150 lg:duration-500 hover:shadow-custom-shadow-primary hover:w-2/3 p-1 cursor-pointer bg-gradient-to-r from-blue-400 via-indigo-800 to-blue-500"
+            class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:shadow-custom-shadow-primary hover:w-2/5 p-1 cursor-pointer bg-gradient-to-r from-blue-400 via-indigo-800 to-blue-500"
         >
           <div class="rounded-full overflow-hidden w-full h-full bg-white p-1">
             <NuxtImg src="/img/me_aurora.jpg" alt="Quentin Aslan with Aurora in the background" class="w-full h-full object-cover rounded-full aspect-square" />
           </div>
         </div>
 
-        <div class="flex flex-col text-center lg:text-left gap-2 w-4/5">
-          <h1 class="text-6xl font-bold text-primary">Software Engineer <span class="wave">👋</span></h1>
+        <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
+          <h1 class="text-4xl lg:text-6xl font-bold text-primary ">Software Engineer <span class="wave">👋</span></h1>
           <p class="mt-2 text-xl text-gray-600 leading-8">Hi, I'm Quentin Aslan. A passionate Full-Stack Developer based in Montreal, Canada. 📍</p><p></p>
 
           <div class="flex flex-row items-center justify-center gap-5">

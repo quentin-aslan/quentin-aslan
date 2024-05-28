@@ -12,6 +12,23 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#00549A',
+        'secondary': '#007EBA',
+      },
+      animation: {
+        'fade-in-left': 'fadeInLeft 1s',
+        'fade-in-right': 'fadeInRight 1s',
+        'fade-in-left-slow': 'fadeInLeft 2s',
+        'fade-in-right-slow': 'fadeInRight 2s',
+      },
+      keyframes: {
+        fadeInLeft: {
+            '0%': { opacity: '0', transform: 'translateX(-100px)' },
+            '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        fadeInRight: {
+            '0%': { opacity: '0', transform: 'translateX(100px)' },
+            '100%': { opacity: '1', transform: 'translateX(0)' },
+        }
       }
     },
     boxShadow: {
