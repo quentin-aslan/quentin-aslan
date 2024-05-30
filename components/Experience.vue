@@ -1,11 +1,11 @@
 <template>
   <section
       ref="experienceDiv"
-      class="w-full"
+      class="w-full z-10"
       :class="{'animate-fade-in-left': isOnLeft && isExperienceVisible, 'animate-fade-in-right': !isOnLeft && isExperienceVisible, 'lg:-mt-40': props.index !== 0 }"
   >
     <div class="flex w-full justify-center" :class="{'flex-row lg:pr-[50%]': isOnLeft, 'flex-row-reverse lg:pl-[50%]': !isOnLeft}">
-      <div class="group w-11/12 lg:w-[90%] p-4 bg-white border-2 border-primary shadow-primary hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
+      <div class="group w-11/12 lg:w-[90%] p-4 bg-white border-2 border-primary shadow-primary hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5 rounded-md">
         <time class="mb-1 text-sm font-normal leading-none text-gray-400"> {{ experience.period }} </time>
         <h3 class="text-lg font-semibold text-gray-900">{{ experience.role }}</h3>
         <img v-if="experience.company_img" class="w-10 my-1" :src="experience.company_img" :alt="experience.company" />

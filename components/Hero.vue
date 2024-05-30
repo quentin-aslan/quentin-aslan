@@ -2,6 +2,7 @@
   <section class="container mx-auto max-w-full lg:w-3/5 lg:h-screen pt-40 mb-20 text-gray-700">
     <div class="flex flex-col gap-20 justify-between items-center">
       <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center">
+
         <div
             @click="() => console.log('Coming soooon')"
             class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:shadow-custom-shadow-primary hover:w-2/5 p-1 cursor-pointer bg-gradient-to-r from-blue-400 via-indigo-800 to-blue-500"
@@ -30,5 +31,3 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-</script>

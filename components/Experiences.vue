@@ -1,5 +1,6 @@
   <template>
-    <section class="my-20 mx-auto w-full">
+    <section ref="experiencesEl" class="my-20 mx-auto w-full">
+      <BackgroundSquares size="10" />
       <h2 class="text-xl font-extrabold text-primary uppercase text-center mb-8">Professional Experience</h2>
       <div class="flex flex-col w-full h-full gap-5 justify-center items-center">
         <div class="hidden lg:block absolute transform -translate-x-1/2 h-2/3 mx-auto border-2 border-primary"></div>
@@ -10,6 +11,8 @@
   </template>
 
   <script setup lang="ts">
+
+  import BackgroundSquares from "~/components/BackgroundSquares.vue";
 
   type Experience = {
     period: string;

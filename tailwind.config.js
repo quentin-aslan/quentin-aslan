@@ -15,12 +15,36 @@ module.exports = {
         'secondary': '#007EBA',
       },
       animation: {
+        'rotateRightAndScale': 'rotateRightAndScale 5s linear ',
+        'rotateLeftAndScale': 'rotateLeftAndScale 5s linear ',
         'fade-in-left': 'fadeInLeft 1s',
         'fade-in-right': 'fadeInRight 1s',
         'fade-in-left-slow': 'fadeInLeft 2s',
         'fade-in-right-slow': 'fadeInRight 2s',
       },
       keyframes: {
+        rotateRightAndScale: {
+          '0%': {
+            transform: 'rotate(0deg) scale(1)',
+            opacity: '0'
+          },
+          '50%' :{
+            opacity: '1'
+          },
+          '100%': {
+            transform: 'rotate(360deg) scale(2)',
+            opacity: '0'
+          },
+        },
+        rotateLeftAndScale: {
+          '0%': {
+            transform: 'rotate(0deg) scale(1)',
+          },
+          '100%': {
+            transform: 'rotate(-360deg) scale(2)',
+            opacity: '0'
+          },
+        },
         fadeInLeft: {
             '0%': { opacity: '0', transform: 'translateX(-100px)' },
             '100%': { opacity: '1', transform: 'translateX(0)' },
@@ -41,5 +65,13 @@ module.exports = {
 
     },
   },
-  plugins: []
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.animation-reverse': {
+          'animation-direction': 'reverse',
+        },
+      });
+    },
+  ],
 }

@@ -1,6 +1,5 @@
 <template>
   <section ref="contactSectionEl" class="bg-white flex flex-col-reverse lg:flex-row items-center justify-center gap-10 p-10 lg:pl-20 text-lg">
-
     <div class="relative mb-8 lg:border-r-2 lg:w-2/4" :class="{'animate-fade-in-left': isSectionVisible}">
       <NuxtImg src="/img/me.png" class="w-80 rounded-full shadow-lg transform duration-300" alt="Quentin Aslan" />
     </div>
