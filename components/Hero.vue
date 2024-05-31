@@ -5,15 +5,22 @@
 
         <div
             @click="() => console.log('Coming soooon')"
-            class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:shadow-custom-shadow-primary hover:w-2/5 p-1 cursor-pointer bg-gradient-to-r from-blue-400 via-indigo-800 to-blue-500"
+            class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
+            :class="{
+              'aspect-square bg-gradient-to-br from-[#B0D6A7] via-[#85B5B1] to-[#00549A]': !isImageLoaded,
+              'bg-gradient-to-r from-blue-400 via-[#85B5B1] to-blue-400':isImageLoaded,
+            }"
         >
-          <div class="rounded-full overflow-hidden w-full h-full bg-white p-1">
-            <NuxtImg src="/img/me_aurora.jpg" alt="Quentin Aslan with Aurora in the background" class="w-full h-full object-cover rounded-full aspect-square" />
+          <div class="rounded-full overflow-hidden w-full h-full">
+            <NuxtImg v-show="isImageLoaded" src="/img/me_aurora.jpg" alt="Quentin Aslan with Aurora in the background" class="border-4 border-white animate-fadeInHeroImage w-full h-full object-cover rounded-full aspect-square" :on-load="isImageLoaded = true" />
+            <div class="h-full flex justify-center items-center text animate-pulse">
+              <!-- Loading text can be write here -->
+            </div>
           </div>
         </div>
 
         <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
-          <h1 class="text-4xl lg:text-6xl font-bold text-primary ">Software Engineer <span class="wave">👋</span></h1>
+          <h1 class="text-4xl lg:text-6xl font-bold text-[#00549A] ">Software Engineer <span class="wave">👋</span></h1>
           <p class="mt-2 text-xl text-gray-600 leading-8">Hi, I'm Quentin Aslan. A passionate Full-Stack Developer based in Montreal, Canada. 📍</p><p></p>
 
           <div class="flex flex-row items-center justify-center gap-5">
@@ -32,4 +39,6 @@
   </section>
 </template>
 <script setup lang="ts">
+const isImageLoaded = ref(false)
+
 </script>

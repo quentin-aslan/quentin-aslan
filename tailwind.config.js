@@ -21,6 +21,7 @@ module.exports = {
         'fade-in-right': 'fadeInRight 1s',
         'fade-in-left-slow': 'fadeInLeft 2s',
         'fade-in-right-slow': 'fadeInRight 2s',
+        'fadeInHeroImage': 'fadeIn 0.2s ease-in-out',
       },
       keyframes: {
         rotateRightAndScale: {
@@ -44,6 +45,22 @@ module.exports = {
             transform: 'rotate(-360deg) scale(2)',
             opacity: '0'
           },
+        },
+        fadeIn: {
+          '0%': {
+            opacity: '0'
+          },
+            '100%': {
+                opacity: '1'
+            }
+        },
+        fadeOut: {
+          '0%': {
+            opacity: '1'
+          },
+          '100%': {
+            opacity: '0'
+          }
         },
         fadeInLeft: {
             '0%': { opacity: '0', transform: 'translateX(-100px)' },

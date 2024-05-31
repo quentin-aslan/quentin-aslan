@@ -42,7 +42,7 @@
   --rainbow: repeating-linear-gradient(
       100deg,
       #B0D6A7 10%,
-      #85B5B1 25%,
+      #436e91 25%,
       #00549A 40%,
       #B0D6A7 50%
   );
