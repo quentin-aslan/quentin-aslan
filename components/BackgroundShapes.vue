@@ -3,7 +3,7 @@
     <div class="relative z-0">
       <div
           v-for="(square, index) in squares"
-          :key="square.x"
+          :key="`bg-shape-${index}-${Date.now()}`"
           class="relative"
           :class="{
             'animate-rotateRightAndScale': index % 1 === 0,
@@ -21,8 +21,8 @@
 
 type Props = {
   size?: number;
-  maxWith?: number;
-  maxHeight?: number;
+  edgeWidth?: number;
+  edgeHeight?: number;
 }
 
 const props: Props = defineProps<Props>();
@@ -38,26 +38,27 @@ const squares = ref<Square[]>([
 
 const isFadeOut = ref(false);
 
-const createInfinitySquares = () => {
+const createShapes = () => {
   squares.value = []
-  const maxWith = props.maxWith ?? window.innerWidth
-  const maxHeight = props.maxHeight ?? window.innerHeight
+  const edgeWidth = props.edgeWidth ?? window.innerWidth
+  const edgeHeight = props.edgeHeight ?? window.innerHeight
+  const maxSquares = props.size ?? 10
 
-  for (let i = 0; i < props.size ?? 10; i++) {
+  for (let i = 0; i < maxSquares ?? 10; i++) {
     squares.value.push({
-      x: Math.floor(Math.random() * maxWith),
-      y: Math.floor(Math.random() * maxHeight),
+      x: Math.floor(Math.random() * edgeWidth),
+      y: Math.floor(Math.random() * edgeHeight),
       size: Math.floor(Math.random() * 50) + 10
     })
   }
 
   isFadeOut.value = !isFadeOut.value
   setTimeout(() => {
-    createInfinitySquares()
+    createShapes()
   }, 5000)
 }
 
 onMounted(() => {
-  createInfinitySquares()
+  createShapes()
 })
 </script>

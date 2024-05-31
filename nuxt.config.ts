@@ -1,4 +1,9 @@
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
+  },
   site: {
     url: 'https://quentinaslan.fr',
     name: 'Quentin Aslan | Software Engineer',
@@ -14,7 +19,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
   modules: ["@nuxtjs/seo", "@nuxt/image", 'nuxt-gtag'],
   gtag: {
     id: 'G-729997XZPJ'
