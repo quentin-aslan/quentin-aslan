@@ -9,8 +9,6 @@
   --maincolor: var(--bg);
 }
 
-/*custom*/
-
 @keyframes smoothBg {
   from {
     background-position: 50% 50%, 50% 50%;
@@ -19,7 +17,6 @@
     background-position: 350% 50%, 350% 50%;
   }
 }
-
 
 .background-aurora {
   opacity: 0.3;
@@ -47,30 +44,31 @@
       #B0D6A7 50%
   );
 
-
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
   background-position: 50% 50%, 50% 50%;
-
   filter: blur(10px) invert(100%);
+  will-change: background-position, transform;
 
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
-  &::after {
-    z-index: 0;
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 200%, 100%;
-    animation: smoothBg 40s linear infinite;
-    background-attachment: fixed;
-    mix-blend-mode: difference;
-  }
+}
+
+.background-aurora::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--stripes), var(--rainbow);
+  background-size: 200%, 100%;
+  animation: smoothBg 40s linear infinite;
+  background-attachment: fixed;
+  mix-blend-mode: difference;
 }
 
 :has(:checked) {
   --stripe-color: #000;
 }
+
 :has(:checked) .background-aurora,
 :has(:checked) .background-aurora::after {
   filter: blur(10px) opacity(50%) saturate(200%);
