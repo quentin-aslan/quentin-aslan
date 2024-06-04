@@ -4,7 +4,7 @@
       <h2 class="text-2xl border-b-2 border-primary pb-2">Tech Stack</h2>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
 
-        <div v-for="stack of techStacks">
+        <div v-for="stack of techStacksDisplayed">
           <div v-if="stack.type === 'multiple'" class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
             <div v-for="tech of stack.techs" class="flex flex-col gap-2 items-center w-14">
               <NuxtImg :src="tech.icon" :alt="tech.label" class="w-full" :title="tech.label" />
@@ -18,7 +18,9 @@
           </div>
         </div>
 
+
       </div>
+      <button v-if="isMobile && techStacksDisplayed.length !== techStacks.length" @click="() => techStacksDisplayed = techStacks" class="text-primary font-semibold duration-150 border-b-2 border-secondary hover:text-primary hover:border-primary hover:-translate-y-1.5">Show more</button>
     </div>
   </div>
 </template>
@@ -31,6 +33,8 @@ type TechStacksType = {
     icon: string
   }[]
 }
+
+const techStacksDisplayed = ref<TechStacksType[]>([])
 
 const techStacks: TechStacksType[] = [
   {
@@ -147,4 +151,23 @@ const techStacks: TechStacksType[] = [
     ]
   }
 ]
+
+const isMobile = ref(false)
+
+const handleResize = () => {
+  isMobile.value = window.innerWidth < 768
+  if(isMobile.value) {
+    techStacksDisplayed.value = techStacks.slice(0, 5)
+    return
+  }
+
+  techStacksDisplayed.value = techStacks
+}
+
+onMounted(() => {
+  handleResize()
+  window.addEventListener('resize', handleResize)
+})
+
+const isShowMore = ref(false)
 </script>

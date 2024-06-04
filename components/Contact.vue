@@ -10,14 +10,10 @@
         <h3 class="text-3xl font-extrabold">Hit me up! 👇</h3>
       </div>
 
-      <div class="flex flex-col lg:flex-row justify-between gap-20">
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-20">
 
-        <div class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
-          <div class="bg-white p-2 rounded-full shadow-lg inline-block mb-4">
-            <MapIcon class="w-8 text-primary" />
-          </div>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary">Location</h2>
-          <a href="https://maps.app.goo.gl/GRFjFpBXtPHZDX798" target="_blank" class="text-gray-600 group-hover:text-primary">Montréal, Canada</a>
+        <div class="sm:pl-14">
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="quentin-aslan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/quentin-aslan/en?trk=profile-badge"></a></div>
         </div>
 
         <div class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
@@ -32,7 +28,7 @@
   </section>
 </template>
 <script setup lang="ts">
-import { MapIcon, EnvelopeIcon } from '@heroicons/vue/24/solid'
+import { EnvelopeIcon } from '@heroicons/vue/24/solid'
 
 const isSectionVisible = ref(false);
 const contactSectionEl = ref(null);

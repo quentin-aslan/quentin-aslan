@@ -1,7 +1,17 @@
+
+// <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 export default defineNuxtConfig({
   app: {
     head: {
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script : [
+        {
+          src: "https://platform.linkedin.com/badges/js/profile.js",
+          async: true,
+          defer: true,
+          type: "text/javascript"
+        }
+      ]
     }
   },
   site: {
