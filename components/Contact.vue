@@ -12,20 +12,16 @@
 
       <div class="flex flex-col lg:flex-row justify-between items-center gap-20">
 
-        <div class="sm:pl-14">
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="quentin-aslan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/quentin-aslan/en?trk=profile-badge"></a></div>
-        </div>
-
-        <div class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
+        <a  href="mailto:quentin.aslan@outlook.com" class="flex flex-col gap-2 items-center justify-center text-center group duration-150 hover:-translate-y-1.5">
           <div class="bg-white p-2 rounded-full shadow-lg inline-block mb-4">
             <EnvelopeIcon class="w-8 text-primary" />
           </div>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary">Mail</h2>
-          <a href="mailto:quentin.aslan@outlook.com" class="text-gray-600 group-hover:text-primary">quentin.aslan@outlook.com</a>
-        </div>
+          <span class="text-gray-600 group-hover:text-primary">quentin.aslan@outlook.com</span>
+        </a>
       </div>
     </div>
   </section>
+
 </template>
 <script setup lang="ts">
 import { EnvelopeIcon } from '@heroicons/vue/24/solid'

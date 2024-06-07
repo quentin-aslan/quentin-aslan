@@ -1,11 +1,18 @@
 <template>
   <section
       ref="experienceDiv"
-      class="w-full z-10"
-      :class="{'animate-fade-in-left': isOnLeft && isExperienceVisible, 'animate-fade-in-right': !isOnLeft && isExperienceVisible, 'lg:-mt-40': props.index !== 0 }"
+      class="w-full h-full z-10 relative flex flex-col items-center justify-center"
+      :class="{
+        'animate-fade-in-left': isEven && isExperienceVisible,
+        'animate-fade-in-right': !isEven && isExperienceVisible,
+      }"
   >
-    <div class="flex w-full justify-center" :class="{'flex-row lg:pr-[50%]': isOnLeft, 'flex-row-reverse lg:pl-[50%]': !isOnLeft}">
-      <div class="group w-11/12 lg:w-[90%] p-4 bg-white border-2 border-primary shadow-primary hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5 rounded-md">
+    <div v-if="!isLastExperience" class="-bottom-5 absolute transform -translate-x-1/2 h-10 mx-auto border-2 border-primary -z-10"></div>
+    <div class="flex w-full justify-center">
+      <div
+          @click="(experience.moreDetails && experience.moreDetails.length > 0) ? isAllVisible = !isAllVisible : undefined "
+          class="group w-11/12 rounded-md lg:w-[90%] p-4 bg-white border-2 border-primary shadow-primary hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5 cursor-pointer"
+      >
         <time class="mb-1 text-sm font-normal leading-none text-gray-400"> {{ experience.period }} </time>
         <h3 class="text-lg font-semibold text-gray-900">{{ experience.role }}</h3>
         <img v-if="experience.company_img" class="w-10 my-1" :src="experience.company_img" :alt="experience.company" />
@@ -67,13 +74,14 @@ type Experience = {
 type Props = {
   index: number;
   experience: Experience;
+  isLastExperience: boolean;
 }
 
 const props: Props = defineProps<Props>();
 
 const isAllVisible = ref(false);
 
-const isOnLeft = computed(() => {
+const isEven = computed(() => {
   return props.index % 2 === 0
 });
 

@@ -1,10 +1,8 @@
   <template>
     <section ref="experiencesEl" class="my-20 mx-auto w-full">
-      <BackgroundShapes size="10" />
       <h2 class="text-xl font-extrabold text-primary uppercase text-center mb-8">Professional Experience</h2>
-      <div class="flex flex-col w-full h-full gap-5 justify-center items-center">
-        <div class="hidden lg:block absolute transform -translate-x-1/2 h-2/3 mx-auto border-2 border-primary"></div>
-        <Experience v-for="(experience, index) in experiences" :key="experience.company" :index="index" :experience="experience" />
+      <div class="flex flex-col w-full gap-5 justify-center items-center">
+        <Experience v-for="(experience, index) in experiences" :key="experience.company" :index="index" :experience="experience" :is-last-experience="index === experiences.length-1" />
       </div>
     </section>
 
@@ -68,7 +66,7 @@
       ]
     },
     {
-      period: '2015 - 2023',
+      period: '2015 - 2022',
       role: 'Freelance Software Engineer',
       company: 'Various Clients',
       company_img: undefined,

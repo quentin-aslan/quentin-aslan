@@ -34,8 +34,6 @@ type TechStacksType = {
   }[]
 }
 
-const techStacksDisplayed = ref<TechStacksType[]>([])
-
 const techStacks: TechStacksType[] = [
   {
     type: 'multiple',
@@ -151,6 +149,8 @@ const techStacks: TechStacksType[] = [
     ]
   }
 ]
+
+const techStacksDisplayed = ref<TechStacksType[]>(techStacks)
 
 const isMobile = ref(false)
 
