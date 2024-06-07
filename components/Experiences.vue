@@ -36,7 +36,7 @@
       ],
       moreDetails: [
         'Worked closely with UX teams to ensure seamless integration of design and functionality.',
-        'Implemented unit testing and CI/CD pipelines to ensure code quality and efficient deployment ????.',
+        'Implemented unit testing and CI/CD pipelines to ensure code quality and efficient deployment',
         'Collaborated with cross-functional teams to gather and implement feedback, improving the overall user experience.',
         'Utilized Agile methodology to manage project timelines and deliverables effectively.',
         'Conducted technical presentations to demonstrate new features and functionalities to stakeholders.',
@@ -62,7 +62,7 @@
           '<span class="text-primary font-semibold">Collaborated with cross-functional teams</span> to gather and implement feedback, improving the overall user experience.',
           '<span class="text-primary font-semibold">Utilized Agile methodology</span> to manage project timelines and deliverables effectively.',
           '<span class="text-primary font-semibold">Conducted technical presentations</span> to demonstrate new features and functionalities to stakeholders.',
-          '<span class="text-primary font-semibold">Technologies Used</span>: VueJS 3, Pinia, SASS, Figma, Matomo, Java Spring, Azure DevOps, GitLab.'
+          '<span class="text-primary font-semibold">Technologies Used</span>: Vue.js 3, jQuery, HTML/CSS, Node.js GitLab.'
       ]
     },
     {

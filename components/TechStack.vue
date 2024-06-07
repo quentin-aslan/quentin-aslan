@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col items-center gap-5">
     <div class="flex flex-col items-center gap-5">
-      <h2 class="text-2xl border-b-2 border-primary pb-2">Tech Stack</h2>
+      <h2 class="text-2xl border-b-2 border-primary pb-2 animate-fade-in-right">Tech Stack</h2>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
 
-        <div v-for="stack of techStacksDisplayed">
-          <div v-if="stack.type === 'multiple'" class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
+        <div v-for="stack of techStacksDisplayed" class="animate-fade-in-left">
+          <div v-if="stack.type === 'multiple'" class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
             <div v-for="tech of stack.techs" class="flex flex-col gap-2 items-center w-14">
               <NuxtImg :src="tech.icon" :alt="tech.label" class="w-full" :title="tech.label" />
               <span class="text-sm whitespace-nowrap">{{ tech.label }}</span>
