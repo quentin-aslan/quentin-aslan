@@ -1,5 +1,5 @@
 <template>
-  <section class="relative container mx-auto max-w-full lg:w-3/5 pt-40 mb-20 text-gray-700">
+  <section class="relative container mx-auto max-w-full lg:w-3/5 pt-20 mb-20 text-gray-700">
     <div class="flex flex-col gap-20 justify-between items-center">
       <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center">
 

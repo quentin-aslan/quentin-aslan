@@ -1,10 +1,11 @@
 <template>
-  <div class="flex flex-col items-center gap-5">
+  <section ref="techStackSectionEl" class="flex flex-col items-center gap-5">
     <div class="flex flex-col items-center gap-5">
-      <h2 class="text-2xl border-b-2 border-primary pb-2 animate-fade-in-right">Tech Stack</h2>
+      <h2 class="text-2xl border-b-2 border-primary pb-2" :class="{'animate-fade-in-right' : isSectionVisible}">Tech Stack</h2>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
 
-        <div v-for="stack of techStacksDisplayed" class="animate-fade-in-left">
+        <div v-for="(stack, index) of techStacksDisplayed"
+             :class="{'animate-fade-in-left' : isSectionVisible && index % 2 === 0, 'animate-fade-in-right' : isSectionVisible && index % 2 !== 0}">
           <div v-if="stack.type === 'multiple'" class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
             <div v-for="tech of stack.techs" class="flex flex-col gap-2 items-center w-14">
               <NuxtImg :src="tech.icon" :alt="tech.label" class="w-full" :title="tech.label" />
@@ -22,7 +23,7 @@
       </div>
       <button v-if="isMobile && techStacksDisplayed.length !== techStacks.length" @click="() => techStacksDisplayed = techStacks" class="text-primary font-semibold duration-150 border-b-2 border-secondary hover:text-primary hover:border-primary hover:-translate-y-1.5">Show more</button>
     </div>
-  </div>
+  </section>
 </template>
 <script setup lang="ts">
 
@@ -154,6 +155,8 @@ const techStacksDisplayed = ref<TechStacksType[]>(techStacks)
 
 const isMobile = ref(false)
 
+
+
 const handleResize = () => {
   isMobile.value = window.innerWidth < 768
   if(isMobile.value) {
@@ -164,10 +167,30 @@ const handleResize = () => {
   techStacksDisplayed.value = techStacks
 }
 
+
+const isSectionVisible = ref(false);
+const techStackSectionEl = ref(null);
+
 onMounted(() => {
   handleResize()
   window.addEventListener('resize', handleResize)
-})
 
-const isShowMore = ref(false)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        isSectionVisible.value = entry.isIntersecting;
+      }
+    })
+  })
+
+  if (techStackSectionEl.value) {
+    observer.observe(techStackSectionEl.value)
+  }
+
+  onUnmounted(() => {
+    if (techStackSectionEl.value) {
+      observer.unobserve(techStackSectionEl.value)
+    }
+  })
+})
 </script>
