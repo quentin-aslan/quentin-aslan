@@ -24,7 +24,7 @@
         </div>
 
         <!-- Experience skills -->
-        <div>
+        <div class="flex flex-col gap-5">
           <ul class="text-gray-700 list-disc list-inside flex flex-col gap-2">
             <li v-for="achievement in experience.keyAchievements" :key="achievement" v-html="achievement"></li>
           </ul>
