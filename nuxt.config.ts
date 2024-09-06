@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }],
       script : [
         {
           src: "https://platform.linkedin.com/badges/js/profile.js",
