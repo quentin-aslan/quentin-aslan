@@ -1,4 +1,3 @@
-
 // <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 export default defineNuxtConfig({
   app: {
@@ -29,7 +28,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxtjs/seo", "@nuxt/image", 'nuxt-gtag'],
+  modules: ["@nuxtjs/seo", "@nuxt/image", 'nuxt-gtag', '@vueuse/nuxt',],
   gtag: {
     id: 'G-729997XZPJ'
   },

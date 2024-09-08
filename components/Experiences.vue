@@ -1,6 +1,9 @@
   <template>
-    <section ref="experiencesEl" class="my-20 mx-auto w-full">
-      <h2 class="text-xl font-extrabold text-primary uppercase text-center mb-8">Professional Experience</h2>
+    <section ref="experiencesEl" class="flex flex-col bg-white mx-auto">
+      <header>
+        <h2 class="my-8 text-xl font-extrabold text-primary uppercase text-center">Professional Experience</h2>
+      </header>
+
       <div class="flex flex-col w-full gap-5 justify-center items-center">
         <Experience v-for="(experience, index) in experiences" :key="experience.company" :index="index" :experience="experience" :is-last-experience="index === experiences.length-1" />
       </div>

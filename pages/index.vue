@@ -2,6 +2,7 @@
   <main class="max-w-full">
     <Hero />
     <AboutMe />
+    <TheProjectsList />
     <Experiences />
     <Contact />
   </main>
