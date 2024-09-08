@@ -6,6 +6,13 @@ export type TechStacksType = {
     }[]
 }
 
+export enum TechStackList {
+    VueJS = 'VueJS',
+    NodeJS = 'NodeJS',
+    TypeScript = 'TypeScript',
+    TailwindCSS = 'TailwindCSS',
+    Linux = 'Linux'
+}
 
 export type ProjectImage = {
     src: string

@@ -5,7 +5,7 @@
     </header>
 
     <div class="w-11/12 flex flex-col gap-4">
-      <ProjectCard :class="getCardAlignment(1)" :images="easyRouterImages" title="Router Easy 🛜" role="Full-Stack Developer" date="2024" location="Boston, USA 🇺🇸">
+      <ProjectCard :class="getCardAlignment(1)" :tech-stack="[TechStackList.VueJS, TechStackList.TailwindCSS, TechStackList.NodeJS, TechStackList.TypeScript, TechStackList.Linux]" :images="easyRouterImages" title="Router Easy 🛜" role="Full-Stack Developer" date="2024" location="Boston, USA 🇺🇸">
         <template #main-description>
           <EasyRouterDescription />
         </template>
@@ -14,12 +14,12 @@
           <EasyRouterSubDescription />
         </template>
 
-        <template #desktop-project-images="{ isSubDescriptionVisible }">
+        <template #tablet-project-images="{ isSubDescriptionVisible }">
           <div v-if="easyRouterImages?.length > 0" class=" flex flex-col gap-4">
-              <img :src="easyRouterImages[0].src" :alt="easyRouterImages[0].alt" class="w-full h-full object-contain duration-300 hover:scale-150">
+              <NuxtImg :src="easyRouterImages[0].src" :alt="easyRouterImages[0].alt" class="w-full h-full object-contain duration-300 hover:scale-150" />
               <div class="lg:grid xl:grid-cols-2">
-                <img :src="easyRouterImages[1].src" :alt="easyRouterImages[1].alt" class="w-full h-full object-contain duration-300 hover:scale-125">
-                <img :src="easyRouterImages[2].src" :alt="easyRouterImages[2].alt" class="w-full h-full object-contain duration-300 hover:scale-125">
+                <NuxtImg :src="easyRouterImages[1].src" :alt="easyRouterImages[1].alt" class="w-full h-full object-contain duration-300 hover:scale-125" />
+                <NuxtImg :src="easyRouterImages[2].src" :alt="easyRouterImages[2].alt" class="w-full h-full object-contain duration-300 hover:scale-125" />
               </div>
           </div>
         </template>
@@ -31,7 +31,7 @@
 
 import EasyRouterSubDescription from "~/components/projects-descriptions/EasyRouterSubDescription.vue";
 import EasyRouterDescription from "~/components/projects-descriptions/EasyRouterDescription.vue";
-import type {ProjectImage} from "~/types";
+import {type ProjectImage, TechStackList} from "~/types";
 
 const easyRouterImages: ProjectImage[] = [
   {
@@ -51,7 +51,6 @@ const easyRouterImages: ProjectImage[] = [
     alt: 'Easy Router Project Image 1'
   },
 ];
-
 const getCardAlignment = (index: number) => {
   return index % 2 === 0 ? 'self-start' : 'self-end';
 };

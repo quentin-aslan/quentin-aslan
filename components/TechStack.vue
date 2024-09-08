@@ -13,8 +13,8 @@
             </div>
           </div>
 
-          <div v-if="stack.type === 'single'" class="flex flex-col gap-2 items-center p-4 hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
-            <img :src="stack.techs?.[0]?.icon" :alt="stack.techs?.[0]?.label" class="w-16" />
+          <div v-if="stack.type === 'single'" class="flex flex-col gap-2 items-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5">
+            <NuxtImg :src="stack.techs?.[0]?.icon" :alt="stack.techs?.[0]?.label" class="w-16" />
             <span>{{ stack.techs?.[0]?.label }}</span>
           </div>
         </div>

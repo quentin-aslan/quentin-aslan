@@ -18,7 +18,7 @@
         <div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400"> {{ experience.period }} </time>
           <h3 class="text-lg font-semibold text-gray-900">{{ experience.role }}</h3>
-          <img v-if="experience.company_img" class="w-10 my-1" :src="experience.company_img" :alt="experience.company" />
+          <NuxtImg v-if="experience.company_img" class="w-10 my-1" :src="experience.company_img" :alt="experience.company" />
           <span v-else class="text-base font-semibold" :class="{'text-green-800': (experience.company === 'Occitaline')}">{{ experience.company }}</span>
           <p class="text-base font-normal text-gray-500">{{ experience.location }}</p>
         </div>
