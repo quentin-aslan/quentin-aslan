@@ -1,20 +1,21 @@
 export type TechStacksType = {
-    type: 'single' | 'multiple'
-    techs: {
-        label: string
-        icon: string
-    }[]
+  type: 'single' | 'multiple'
+  techs: {
+    label: string
+    icon: string
+  }[]
 }
 
 export enum TechStackList {
-    VueJS = 'VueJS',
-    NodeJS = 'NodeJS',
-    TypeScript = 'TypeScript',
-    TailwindCSS = 'TailwindCSS',
-    Linux = 'Linux'
+  VueJS = 'VueJS',
+  ReactJS = 'ReactJS',
+  NodeJS = 'NodeJS',
+  TypeScript = 'TypeScript',
+  TailwindCSS = 'TailwindCSS',
+  Linux = 'Linux',
 }
 
 export type ProjectImage = {
-    src: string
-    alt: string
+  src: string
+  alt: string
 }

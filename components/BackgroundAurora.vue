@@ -1,5 +1,5 @@
 <template>
-  <div class="background-aurora"></div>
+  <div class="background-aurora" />
 </template>
 
 <style>

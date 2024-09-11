@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-2">
-
     <p>It allows users to:</p>
 
     <ul class="list-disc pl-5">

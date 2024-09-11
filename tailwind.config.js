@@ -1,18 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue",
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue',
+    './error.vue',
   ],
   theme: {
     extend: {
       colors: {
-        'primary': '#00549A',
-        'secondary': '#007EBA',
+        primary: '#00549A',
+        secondary: '#007EBA',
       },
       animation: {
         'rotateRightAndScale': 'rotateRightAndScale 5s linear ',
@@ -22,7 +22,7 @@ module.exports = {
         'fade-in-left-slow': 'fadeInLeft 2s',
         'fade-in-right-slow': 'fadeInRight 2s',
         'fadeInHeroImage': 'fadeIn 0.2s ease-in-out',
-        wave: 'wave 1.5s ease-in-out',
+        'wave': 'wave 1.5s ease-in-out',
       },
       keyframes: {
         wave: {
@@ -37,14 +37,14 @@ module.exports = {
         rotateRightAndScale: {
           '0%': {
             transform: 'rotate(0deg) scale(1)',
-            opacity: '0'
+            opacity: '0',
           },
-          '50%' :{
-            opacity: '1'
+          '50%': {
+            opacity: '1',
           },
           '100%': {
             transform: 'rotate(360deg) scale(2)',
-            opacity: '0'
+            opacity: '0',
           },
         },
         rotateLeftAndScale: {
@@ -53,40 +53,40 @@ module.exports = {
           },
           '100%': {
             transform: 'rotate(-360deg) scale(2)',
-            opacity: '0'
+            opacity: '0',
           },
         },
         fadeIn: {
           '0%': {
-            opacity: '0'
+            opacity: '0',
           },
-            '100%': {
-                opacity: '1'
-            }
+          '100%': {
+            opacity: '1',
+          },
         },
         fadeOut: {
           '0%': {
-            opacity: '1'
+            opacity: '1',
           },
           '100%': {
-            opacity: '0'
-          }
+            opacity: '0',
+          },
         },
         fadeInLeft: {
-            '0%': { opacity: '0', transform: 'translateX(-300px)' },
-            '100%': { opacity: '1', transform: 'translateX(0)' },
+          '0%': { opacity: '0', transform: 'translateX(-300px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         fadeInRight: {
-            '0%': { opacity: '0', transform: 'translateX(300px)' },
-            '100%': { opacity: '1', transform: 'translateX(0)' },
-        }
-      }
+          '0%': { opacity: '0', transform: 'translateX(300px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
     },
     boxShadow: {
       // Default Tailwind shadows are kept here for reference
-      sm: '0 1px 2px rgba(0, 0, 0, 0.05)',
-      md: '0 4px 6px rgba(0, 0, 0, 0.1)',
-      lg: '0 10px 15px rgba(0, 0, 0, 0.15)',
+      'sm': '0 1px 2px rgba(0, 0, 0, 0.05)',
+      'md': '0 4px 6px rgba(0, 0, 0, 0.1)',
+      'lg': '0 10px 15px rgba(0, 0, 0, 0.15)',
       'custom-shadow': '.25rem .25rem 0rem #e4e6eb',
       'custom-shadow-primary': '.25rem .25rem 0rem #00549A',
 
@@ -98,7 +98,7 @@ module.exports = {
         '.animation-reverse': {
           'animation-direction': 'reverse',
         },
-      });
+      })
     },
   ],
 }
