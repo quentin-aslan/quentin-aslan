@@ -9,7 +9,7 @@
         class="flex flex-col gap-4 items-center lg:text-center lg:border-r-2 lg:w-2/4"
         :class="{ 'animate-fade-in-left': isSectionVisible }"
       >
-        <h2 class="text-xl text-primary dark:text-primary-dark font-extrabold uppercase">
+        <h2 class="text-3xl text-primary font-extrabold uppercase">
           About me
         </h2>
         <h3 class="text-2xl lg:text-3xl font-extrabold lg:w-3/4">
@@ -25,9 +25,9 @@
           My name is Quentin Aslan, and I'm a <strong>25-year-old Full-Stack software engineer</strong>. My passion for technology started in my adolescence, and I've been developing professional websites since 2015.
         </p>
 
-        <h2 class="text-xl font-semibold">
+        <h3 class="text-xl font-semibold">
           International Experience
-        </h2>
+        </h3>
         <p>
           Originally from France <span aria-label="France flag">🇫🇷</span>, I spent the last two years living in Canada <span aria-label="Canada flag">🇨🇦</span>
           (2022–September 2024) to gain international experience.
@@ -42,9 +42,9 @@
           <span aria-label="Colombia flag">🇨🇴</span> and Guatemala <span aria-label="Guatemala flag">🇬🇹</span>.
         </p>
 
-        <h2 class="text-xl font-semibold">
+        <h3 class="text-xl font-semibold">
           Expertise in Development
-        </h2>
+        </h3>
         <p>
           As a full-stack software engineer, I specialize in developing <span class="font-semibold">websites and mobile applications 📱</span>.
         </p>
@@ -53,9 +53,9 @@
           My expertise extends to <span class="font-semibold">network management</span> and <span class="font-semibold">Linux system administration</span>.
         </p>
 
-        <h2 class="text-xl font-semibold">
+        <h3 class="text-xl font-semibold">
           Passion for Collaboration and Learning
-        </h2>
+        </h3>
         <p>
           I thrive in collaborative environments, working closely with cross-functional teams to deliver robust, user-friendly solutions.
         </p>

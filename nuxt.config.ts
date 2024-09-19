@@ -30,7 +30,14 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/seo', '@nuxt/image', 'nuxt-gtag', '@vueuse/nuxt', '@nuxt/eslint', '@primevue/nuxt-module'],
+  modules: [
+    '@nuxtjs/seo',
+    '@nuxt/image',
+    'nuxt-gtag',
+    '@vueuse/nuxt',
+    '@nuxt/eslint',
+    '@primevue/nuxt-module',
+  ],
   eslint: {
     config: {
       stylistic: true,

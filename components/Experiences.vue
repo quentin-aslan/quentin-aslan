@@ -2,15 +2,15 @@
   <section
     id="experiences"
     ref="experiencesEl"
-    class="flex flex-col bg-white mx-auto scroll-mt-16"
+    class="flex flex-col gap-8 py-8 bg-white scroll-mt-16"
   >
     <header>
-      <h2 class="my-8 text-xl font-extrabold text-primary uppercase text-center">
+      <h2 class="text-3xl font-extrabold text-primary uppercase text-center">
         Professional Experience
       </h2>
     </header>
 
-    <div class="flex flex-col w-full gap-5 justify-center items-center">
+    <div class="flex flex-col w-full gap-5">
       <Experience
         v-for="(experience, index) in experiences"
         :key="experience.company"

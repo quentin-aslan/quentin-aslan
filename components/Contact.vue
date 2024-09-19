@@ -20,7 +20,7 @@
       :class="{ 'animate-fade-in-right': isSectionVisible }"
     >
       <div class="flex flex-col gap-2 items-center text-center lg:w-2/4">
-        <h2 class="text-xl text-primary font-extrabold uppercase">
+        <h2 class="text-3xl text-primary font-extrabold uppercase">
           Contact
         </h2>
       </div>

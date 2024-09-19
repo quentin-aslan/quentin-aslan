@@ -2,15 +2,15 @@
   <section
     id="projects"
     ref="projectsListSection"
-    class="flex flex-col gap-8 my-8 justify-center items-center text-gray-700 scroll-mt-16"
+    class="flex flex-col gap-8 my-8 mx-auto text-gray-700 scroll-mt-16"
   >
-    <header class="text-left">
-      <h2 class=" text-3xl lg:text-3xl font-extrabold text-primary">
+    <header class="text-center">
+      <h2 class="text-3xl font-extrabold text-primary">
         Some of my projects 🤠
       </h2>
     </header>
 
-    <div class="flex flex-col gap-4 items-center">
+    <div class="flex flex-col gap-4 justify-center items-center">
       <ProjectCard
         :class="getCardAlignment(1)"
         :tech-stack="easyRouterTechStack"
@@ -153,6 +153,7 @@ const archerAffiliateTechStack: TechStackList[] = [
   TechStackList.TailwindCSS,
   TechStackList.ReactJS,
   TechStackList.TypeScript,
+  TechStackList.Upwork,
 ]
 
 const getCardAlignment = (index: number) => {

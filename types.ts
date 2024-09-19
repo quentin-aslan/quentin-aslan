@@ -13,6 +13,7 @@ export enum TechStackList {
   TypeScript = 'TypeScript',
   TailwindCSS = 'TailwindCSS',
   Linux = 'Linux',
+  Upwork = 'Upwork',
 }
 
 export type ProjectImage = {

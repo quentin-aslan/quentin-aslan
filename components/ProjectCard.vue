@@ -1,6 +1,6 @@
 <template>
   <article
-    class="group flex flex-col lg:flex-row gap-5 w-full p-10 lg:w-[90%]
+    class="group flex flex-col lg:flex-row gap-5 p-10 w-[90%]
    rounded-lg bg-white border-2 border-primary shadow-primary shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
   >
     <div
@@ -25,23 +25,27 @@
           <slot name="sub-description" />
         </div>
 
-        <div :class="['flex flex-col', { 'lg:w-3/5': images?.length === 0 }]">
+        <Card :class="['flex flex-col w-full']">
           <div>
-            <h4 class="text-xl text-primary font-semibold border-b-2 border-primary border-opacity-50 pb-2 group-hover:font-bold">
+            <h4 class="text-xl text-primary font-semibold group-hover:font-bold">
               Tech Stack:
             </h4>
           </div>
-          <div class="flex flex-wrap justify-between gap-x-8 gap-y-2 mt-2">
-            <Tech
-              v-for="tech in techStack"
-              :key="tech"
-              :icon="tech"
-              :label="tech"
-              is-label-displayed
-              class="w-8 lg:w-14"
-            />
-          </div>
-        </div>
+          <template #content>
+            <div
+              class="flex flex-wrap justify-between gap-x-8 gap-y-2 mt-2 p-2"
+            >
+              <Tech
+                v-for="tech in techStack"
+                :key="tech"
+                :icon="tech"
+                :label="tech"
+                is-label-displayed
+                class="w-8 lg:w-14"
+              />
+            </div>
+          </template>
+        </Card>
       </div>
     </div>
 
