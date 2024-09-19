@@ -10,7 +10,7 @@
       </h2>
     </header>
 
-    <div class="w-11/12 flex flex-col gap-4">
+    <div class="flex flex-col gap-4 items-center">
       <ProjectCard
         :class="getCardAlignment(1)"
         :tech-stack="easyRouterTechStack"
@@ -33,21 +33,27 @@
             v-if="easyRouterImages?.length > 0"
             class="h-full flex flex-col gap-4"
           >
-            <NuxtImg
+            <Image
               :src="easyRouterImages[0].src"
               :alt="easyRouterImages[0].alt"
-              class="w-full h-full object-contain duration-300 hover:scale-150"
+              class="w-full h-full"
+              image-class="object-contain"
+              preview
             />
-            <div class="lg:grid xl:grid-cols-2">
-              <NuxtImg
+            <div class="lg:grid lg:grid-cols-2">
+              <Image
                 :src="easyRouterImages[1].src"
                 :alt="easyRouterImages[1].alt"
-                class="w-full h-full object-contain duration-300 hover:scale-125"
+                class="w-full h-full object-contain"
+                image-class="object-contain"
+                preview
               />
-              <NuxtImg
+              <Image
                 :src="easyRouterImages[2].src"
                 :alt="easyRouterImages[2].alt"
-                class="w-full h-full object-contain duration-300 hover:scale-125"
+                class="w-full h-full object-contain"
+                image-class="object-contain"
+                preview
               />
             </div>
           </div>
@@ -59,7 +65,7 @@
       <ProjectCard
         :class="getCardAlignment(2)"
         :tech-stack="archerAffiliateTechStack"
-        :images="[]"
+        :images="archerAffiliateImages"
         title="Archer Affiliate"
         role="Frontend Developer"
         date="2024"
@@ -71,6 +77,25 @@
 
         <template #sub-description>
           <ArcherAffiliateSubDescription />
+        </template>
+
+        <template #tablet-project-images>
+          <div class="lg:grid lg:grid-cols-2">
+            <Image
+              :src="archerAffiliateImages[1].src"
+              :alt="archerAffiliateImages[1].alt"
+              class="w-full h-full object-contain"
+              image-class="object-contain"
+              preview
+            />
+            <Image
+              :src="archerAffiliateImages[0].src"
+              :alt="archerAffiliateImages[0].alt"
+              class="w-full h-full object-contain"
+              image-class="object-contain"
+              preview
+            />
+          </div>
         </template>
       </ProjectCard>
     </div>
@@ -101,6 +126,21 @@ const easyRouterImages: ProjectImage[] = [
   },
 ]
 
+const archerAffiliateImages: ProjectImage[] = [
+  {
+    src: '/projects/archer-affiliate/popup_create_link.png',
+    alt: 'Archer Affiliate Project Popup Create Link Image',
+  },
+  {
+    src: '/projects/archer-affiliate/popup_generate_link.png',
+    alt: 'Archer Affiliate Project Popup Generate Link Image',
+  },
+  {
+    src: '/projects/archer-affiliate/popup_login.png',
+    alt: 'Archer Affiliate Popup Login Image',
+  },
+]
+
 const easyRouterTechStack: TechStackList[] = [
   TechStackList.VueJS,
   TechStackList.TailwindCSS,
@@ -116,6 +156,6 @@ const archerAffiliateTechStack: TechStackList[] = [
 ]
 
 const getCardAlignment = (index: number) => {
-  return index % 2 === 0 ? 'self-start' : 'self-end'
+  // return index % 2 === 0 ? 'self-start' : 'self-end'
 }
 </script>

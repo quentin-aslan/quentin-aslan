@@ -47,21 +47,24 @@
 
     <div
       v-if="images?.length > 0"
-      class=" w-full lg:w-2/5"
+      class="w-full lg:w-2/5"
     >
       <div v-if="isLgAndSmaller">
-        <NuxtImg
+        <Image
           :src="images[0].src"
           :alt="images[0].alt"
-          class="w-full h-full object-contain duration-300 hover:scale-150"
+          class="w-full max-h-40"
+          image-class="object-contain"
+          preview
         />
         <div v-show="isSubDescriptionVisible">
-          <NuxtImg
+          <Image
             v-for="image in images"
             :key="image.src"
             :src="image.src"
             :alt="image.alt"
-            class="w-full h-full object-contain duration-300 hover:scale-125"
+            class="w-full h-full object-contain"
+            preview
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <section
     ref="experienceDiv"
-    class="w-full h-full z-10 relative flex flex-col items-center justify-center scroll-mt-16"
+    class="w-full h-full z-10 relative flex flex-col items-center justify-center"
     :class="{
       'animate-fade-in-left': isEven && isExperienceVisible,
       'animate-fade-in-right': !isEven && isExperienceVisible,

@@ -1,4 +1,7 @@
 // <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+import Aura from '@primevue/themes/aura'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -27,7 +30,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/seo', '@nuxt/image', 'nuxt-gtag', '@vueuse/nuxt', '@nuxt/eslint'],
+  modules: ['@nuxtjs/seo', '@nuxt/image', 'nuxt-gtag', '@vueuse/nuxt', '@nuxt/eslint', '@primevue/nuxt-module'],
   eslint: {
     config: {
       stylistic: true,
@@ -35,5 +38,12 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: 'G-729997XZPJ',
+  },
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
   },
 })
