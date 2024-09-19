@@ -1,7 +1,8 @@
 <template>
   <section
+    id="projects"
     ref="projectsListSection"
-    class="flex flex-col gap-8 my-8 justify-center items-center text-gray-700"
+    class="flex flex-col gap-8 my-8 justify-center items-center text-gray-700 scroll-mt-16"
   >
     <header class="text-left">
       <h2 class=" text-3xl lg:text-3xl font-extrabold text-primary">

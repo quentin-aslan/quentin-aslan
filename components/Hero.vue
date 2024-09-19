@@ -1,5 +1,8 @@
 <template>
-  <section class="relative container mx-auto max-w-full lg:w-3/5 pt-20 mb-20 text-gray-700">
+  <section
+    id="hero"
+    class="relative container mx-auto max-w-full lg:w-3/5 pt-20 mb-20 text-gray-700"
+  >
     <div class="flex flex-col gap-20 justify-between items-center">
       <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center">
         <div
@@ -30,13 +33,13 @@
 
         <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
           <h1 class="text-4xl lg:text-6xl font-bold text-[#00549A] ">
-            Software Engineer <span
+            Software <br> Engineer <span
               ref="waveEl"
               class="inline-block transform origin-bottom hover:animate-wave cursor-pointer"
             >👋</span>
           </h1>
           <p class="mt-2 text-xl text-gray-600 leading-8">
-            Hi, I'm Quentin Aslan. A passionate Full-Stack Developer based in Montreal, Canada. 📍
+            Hi, I'm <strong>Quentin Aslan</strong>, <br> A passionate <strong>Full-Stack Developer.</strong>
           </p><p />
 
           <div class="flex flex-row items-center justify-center lg:justify-normal gap-5">

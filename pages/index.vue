@@ -1,5 +1,6 @@
 <template>
   <main class="max-w-full">
+    <Navbar />
     <Hero />
     <AboutMe />
     <TheProjectsList />

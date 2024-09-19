@@ -1,7 +1,8 @@
 <template>
   <section
+    id="experiences"
     ref="experiencesEl"
-    class="flex flex-col bg-white mx-auto"
+    class="flex flex-col bg-white mx-auto scroll-mt-16"
   >
     <header>
       <h2 class="my-8 text-xl font-extrabold text-primary uppercase text-center">
