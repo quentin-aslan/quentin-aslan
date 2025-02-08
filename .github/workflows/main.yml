@@ -25,10 +25,10 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/app/quentin-aslan
+            cd ~/dev/quentin-aslan
             git pull origin main
             touch .env
             echo NITRO_PORT=${{ secrets.NITRO_PORT }} >> .env
             sudo npm install
             sudo npm run build
-            sudo systemctl restart quentinaslan
+            sudo systemctl restart quentin-aslan
