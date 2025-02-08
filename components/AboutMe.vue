@@ -13,7 +13,7 @@
           About me
         </h2>
         <h3 class="text-2xl lg:text-3xl font-extrabold lg:w-3/4">
-          Full-Stack Developer based in Montréal, Canada 📍
+          Full-Stack Developer based in Toulouse, France 🇫🇷📍
         </h3>
       </div>
 

@@ -61,7 +61,7 @@
             <li
               v-for="detail in experience.moreDetails"
               :key="detail"
-              class="opacity-0 transition-all duration-700"
+              class="text-gray-700 opacity-0 transition-all duration-700"
               :class="{ 'opacity-100': isAllVisible }"
               :style="isAllVisible ? `transition-delay: ${100 * (experience.moreDetails.indexOf(detail) + 1)}ms` : ''"
               v-html="detail"
