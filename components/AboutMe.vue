@@ -10,10 +10,10 @@
         :class="{ 'animate-fade-in-left': isSectionVisible }"
       >
         <h2 class="text-3xl text-primary font-extrabold uppercase">
-          About me
+          {{ $t('aboutMe.title') }}
         </h2>
         <h3 class="text-2xl lg:text-3xl font-extrabold lg:w-3/4">
-          Full-Stack Developer based in Toulouse, France 🇫🇷📍
+          {{ $t('aboutMe.subtitle') }}
         </h3>
       </div>
 
@@ -22,46 +22,44 @@
         :class="{ 'animate-fade-in-right': isSectionVisible }"
       >
         <p>
-          My name is Quentin Aslan, and I'm a <strong>25-year-old Full-Stack software engineer</strong>. My passion for technology started in my adolescence, and I've been developing professional websites since 2015.
+          {{ $t('aboutMe.description') }}
         </p>
 
         <h3 class="text-xl font-semibold">
-          International Experience
+          {{ $t('aboutMe.internationalExperience') }}
         </h3>
         <p>
-          Originally from France <span aria-label="France flag">🇫🇷</span>, I spent the last two years living in Canada <span aria-label="Canada flag">🇨🇦</span>
-          (2022–September 2024) to gain international experience.
+          {{ $t('aboutMe.internationalExperienceDescription') }}
         </p>
 
         <p>
-          This journey also took me to Boston, USA <span aria-label="USA flag">🇺🇸</span> to solidify my fluency in English.
+          {{ $t('aboutMe.usaExperience') }}
         </p>
 
         <p>
-          Additionally, I’ve had the opportunity to enhance and practice my Spanish during stays in Colombia
-          <span aria-label="Colombia flag">🇨🇴</span> and Guatemala <span aria-label="Guatemala flag">🇬🇹</span>.
+          {{ $t('aboutMe.spanishExperience') }}
         </p>
 
         <h3 class="text-xl font-semibold">
-          Expertise in Development
+          {{ $t('aboutMe.expertise') }}
         </h3>
         <p>
-          As a full-stack software engineer, I specialize in developing <span class="font-semibold">websites and mobile applications 📱</span>.
+          {{ $t('aboutMe.expertiseDescription') }}
         </p>
 
         <p>
-          My expertise extends to <span class="font-semibold">network management</span> and <span class="font-semibold">Linux system administration</span>.
+          {{ $t('aboutMe.networkManagement') }}
         </p>
 
         <h3 class="text-xl font-semibold">
-          Passion for Collaboration and Learning
+          {{ $t('aboutMe.collaboration') }}
         </h3>
         <p>
-          I thrive in collaborative environments, working closely with cross-functional teams to deliver robust, user-friendly solutions.
+          {{ $t('aboutMe.collaborationDescription') }}
         </p>
 
         <p>
-          Passionate about continuous learning and new technologies, I aim to create impactful and innovative software.
+          {{ $t('aboutMe.learning') }}
         </p>
       </div>
     </div>

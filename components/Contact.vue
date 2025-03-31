@@ -21,18 +21,18 @@
     >
       <div class="flex flex-col gap-2 items-center text-center lg:w-2/4">
         <h2 class="text-3xl text-primary font-extrabold uppercase">
-          Contact
+          {{ $t('contact.title') }}
         </h2>
       </div>
 
       <a
         href="mailto:quentin.aslan@outlook.com"
         class="text-2xl lg:text-3xl font-bold text-gray-700 duration-150 hover:underline hover:text-primary hover:-translate-y-1.5"
-      >quentin.aslan@outlook.com</a>
+      >{{ $t('contact.email') }}</a>
       <a
         href="tel:+33652689583"
         class="text-2xl lg:text-3xl font-bold text-gray-700 duration-150 hover:underline hover:text-primary hover:-translate-y-1.5"
-      >+33 6 52 68 95 83</a>
+      >{{ $t('contact.phone') }}</a>
 
       <div class="flex flex-row items-center justify-center gap-10">
         <a

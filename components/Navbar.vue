@@ -14,12 +14,23 @@
           </li>
         </ul>
       </nav>
+      <div class="flex space-x-4">
+        <button
+          v-for="locale in locales"
+          :key="locale.code"
+          @click="switchLocale(locale.code)"
+          :class="['text-primary transition-colors duration-300 hover:text-secondary', { 'font-bold': locale.code === currentLocale }]"
+        >
+          {{ locale.code.toUpperCase() }}
+        </button>
+      </div>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const isScrolled = ref(false)
 
@@ -42,6 +53,14 @@ const navLinks = [
   { text: 'Contact', href: '#contact' },
   // { text: 'Articles', href: '/articles' },
 ]
+
+const { locale, locales } = useI18n()
+
+const currentLocale = locale.value
+
+const switchLocale = (code: string) => {
+  locale.value = code
+}
 </script>
 
 <style scoped>

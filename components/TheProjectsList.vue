@@ -6,7 +6,7 @@
   >
     <header class="text-center">
       <h2 class="text-3xl font-extrabold text-primary">
-        Some of my projects 🤠
+        {{ $t('projectsList.title') }}
       </h2>
     </header>
 
@@ -15,17 +15,17 @@
         :class="getCardAlignment(1)"
         :tech-stack="easyRouterTechStack"
         :images="easyRouterImages"
-        title="Router Easy 🛜"
-        role="Full-Stack Developer"
-        date="2024"
-        location="I was at Boston, USA 🇺🇸"
+        :title="$t('projectsList.easyRouter.title')"
+        :role="$t('projectsList.easyRouter.role')"
+        :date="$t('projectsList.easyRouter.date')"
+        :location="$t('projectsList.easyRouter.location')"
       >
         <template #main-description>
-          The Easy Router Project is a <strong>web application designed to simplify the configuration of a travel router setup on a Raspberry Pi</strong>.
+          {{ $t('projectsList.easyRouter.mainDescription') }}
         </template>
 
         <template #sub-description>
-          <EasyRouterSubDescription />
+          {{ $t('projectsList.easyRouter.subDescription') }}
         </template>
 
         <template #tablet-project-images="{ isSubDescriptionVisible }">
@@ -66,17 +66,17 @@
         :class="getCardAlignment(2)"
         :tech-stack="archerAffiliateTechStack"
         :images="archerAffiliateImages"
-        title="Archer Affiliate"
-        role="Frontend Developer"
-        date="2024"
-        location="I was at Boston, USA 🇺🇸"
+        :title="$t('projectsList.archerAffiliate.title')"
+        :role="$t('projectsList.archerAffiliate.role')"
+        :date="$t('projectsList.archerAffiliate.date')"
+        :location="$t('projectsList.archerAffiliate.location')"
       >
         <template #main-description>
-          A <strong>Chrome extension</strong> that adds <strong>React components</strong> to <strong>Amazon product pages</strong>, making it easy for users to create affiliate links for Archer Affiliate.
+          {{ $t('projectsList.archerAffiliate.mainDescription') }}
         </template>
 
         <template #sub-description>
-          <ArcherAffiliateSubDescription />
+          {{ $t('projectsList.archerAffiliate.subDescription') }}
         </template>
 
         <template #tablet-project-images>

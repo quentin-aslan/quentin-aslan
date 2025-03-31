@@ -28,7 +28,7 @@
         <Card :class="['flex flex-col w-full']">
           <div>
             <h4 class="text-xl text-primary font-semibold group-hover:font-bold">
-              Tech Stack:
+              {{ $t('projectCard.techStack') }}
             </h4>
           </div>
           <template #content>

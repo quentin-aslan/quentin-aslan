@@ -33,13 +33,13 @@
 
         <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
           <h1 class="text-4xl lg:text-6xl font-bold text-[#00549A] ">
-            Software <br> Engineer <span
+            {{ $t('hero.title') }} <span
               ref="waveEl"
               class="inline-block transform origin-bottom hover:animate-wave cursor-pointer"
             >👋</span>
           </h1>
           <p class="mt-2 text-xl text-gray-600 leading-8">
-            Hi, I'm <strong>Quentin Aslan</strong>, <br> A passionate <strong>Full-Stack Developer.</strong>
+            {{ $t('hero.subtitle') }}
           </p><p />
 
           <div class="flex flex-row items-center justify-center lg:justify-normal gap-5">

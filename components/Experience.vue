@@ -76,7 +76,7 @@
         class="text-right"
       >
         <button class="text-secondary font-semibold duration-150 group-hover:border-b-2 group-hover:border-secondary hover:text-primary hover:border-primary hover:-translate-y-1.5">
-          {{ isAllVisible ? 'Show less' : 'Show more' }}
+          {{ isAllVisible ? $t('experience.showLess') : $t('experience.showMore') }}
         </button>
       </div>
     </div>

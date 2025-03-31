@@ -6,7 +6,7 @@
   >
     <header>
       <h2 class="text-3xl font-extrabold text-primary uppercase text-center">
-        Professional Experience
+        {{ $t('experiences.title') }}
       </h2>
     </header>
 

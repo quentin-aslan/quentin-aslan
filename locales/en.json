@@ -1,0 +1,128 @@
+{
+  "navbar": {
+    "projects": "Projects",
+    "experiences": "Experiences",
+    "contact": "Contact"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "subtitle": "Full-Stack Developer based in Toulouse, France 🇫🇷📍",
+    "description": "My name is Quentin Aslan, and I'm a <strong>25-year-old Full-Stack software engineer</strong>. My passion for technology started in my adolescence, and I've been developing professional websites since 2015.",
+    "internationalExperience": "International Experience",
+    "internationalExperienceDescription": "Originally from France <span aria-label=\"France flag\">🇫🇷</span>, I spent the last two years living in Canada <span aria-label=\"Canada flag\">🇨🇦</span> (2022–September 2024) to gain international experience.",
+    "usaExperience": "This journey also took me to Boston, USA <span aria-label=\"USA flag\">🇺🇸</span> to solidify my fluency in English.",
+    "spanishExperience": "Additionally, I’ve had the opportunity to enhance and practice my Spanish during stays in Colombia <span aria-label=\"Colombia flag\">🇨🇴</span> and Guatemala <span aria-label=\"Guatemala flag\">🇬🇹</span>.",
+    "expertise": "Expertise in Development",
+    "expertiseDescription": "As a full-stack software engineer, I specialize in developing <span class=\"font-semibold\">websites and mobile applications 📱</span>.",
+    "networkManagement": "My expertise extends to <span class=\"font-semibold\">network management</span> and <span class=\"font-semibold\">Linux system administration</span>.",
+    "collaboration": "Passion for Collaboration and Learning",
+    "collaborationDescription": "I thrive in collaborative environments, working closely with cross-functional teams to deliver robust, user-friendly solutions.",
+    "learning": "Passionate about continuous learning and new technologies, I aim to create impactful and innovative software."
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "quentin.aslan@outlook.com",
+    "phone": "+33 6 52 68 95 83"
+  },
+  "experience": {
+    "period": "Period",
+    "role": "Role",
+    "company": "Company",
+    "location": "Location",
+    "keyAchievements": "Key Achievements",
+    "moreDetails": "More Details",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "experiences": {
+    "title": "Professional Experience",
+    "bell": {
+      "period": "2022 - 2024",
+      "role": "Frontend Engineer",
+      "company": "Bell",
+      "location": "Montréal, Canada 🇨🇦",
+      "keyAchievements": [
+        "<span class=\"text-primary font-semibold\">Led the complete redesign of a critical B2B application</span> for Bell, improving functionality and user experience.",
+        "<span class=\"text-primary font-semibold\">Developed a scalable and reusable frontend architecture</span> with VueJS 3 and Pinia.",
+        "<span class=\"text-primary font-semibold\">Enhanced proficiency in Figma</span> by working closely with UX design teams.",
+        "Successfully managed and collaborated in a large, cross-functional team using Agile methodologies.",
+        "Integrated advanced user tracking with Matomo, providing valuable insights into application usage."
+      ],
+      "moreDetails": [
+        "Worked closely with UX teams to ensure seamless integration of design and functionality.",
+        "Implemented unit testing and CI/CD pipelines to ensure code quality and efficient deployment",
+        "Collaborated with cross-functional teams to gather and implement feedback, improving the overall user experience.",
+        "Utilized Agile methodology to manage project timelines and deliverables effectively.",
+        "Conducted technical presentations to demonstrate new features and functionalities to stakeholders.",
+        "Technologies Used: VueJS 3, Pinia, SASS, Figma, Matomo, Java Spring, Azure DevOps, GitLab."
+      ]
+    },
+    "occitaline": {
+      "period": "2019 - 2022",
+      "role": "Software Engineer",
+      "company": "Occitaline",
+      "location": "Toulouse, France 🇫🇷",
+      "keyAchievements": [
+        "<span class=\"text-primary font-semibold\">Created an application for configuring Linux routers </span>, used by multiple companies including the <span class=\"text-primary font-semibold\">National Center for Space Research (CNES) in France</span> or <span class=\"text-primary font-semibold\">The France's stadium</span>.",
+        "<span class=\"text-primary font-semibold\">Designed and implemented REST APIs</span> with Node.js and integrated them with MongoDB.",
+        "Built responsive user interfaces using Vue.js, Bootstrap, and jQuery.",
+        "Implemented unit testing and CI/CD pipelines, ensuring robust and efficient development processes.",
+        "Managed the complete product development cycle, from requirements gathering to production deployment.",
+        "Developed a JavaScript-based 3D model viewer using the BIM (Building Information Modeling) approach."
+      ],
+      "moreDetails": [
+        "<span class=\"text-primary font-semibold\">Worked closely with UX teams</span> to ensure seamless integration of design and functionality.",
+        "<span class=\"text-primary font-semibold\">Implemented unit testing and CI/CD pipelines</span> to ensure code quality and efficient deployment 🚀.",
+        "<span class=\"text-primary font-semibold\">Collaborated with cross-functional teams</span> to gather and implement feedback, improving the overall user experience.",
+        "<span class=\"text-primary font-semibold\">Utilized Agile methodology</span> to manage project timelines and deliverables effectively.",
+        "<span class=\"text-primary font-semibold\">Conducted technical presentations</span> to demonstrate new features and functionalities to stakeholders.",
+        "<span class=\"text-primary font-semibold\">Technologies Used</span>: Vue.js 3, jQuery, HTML/CSS, Node.js GitLab."
+      ]
+    },
+    "freelance": {
+      "period": "2015 - 2022",
+      "role": "Freelance Software Engineer",
+      "company": "Various Clients",
+      "location": "Remote",
+      "keyAchievements": [
+        "REST APIs, Linux system administration, Network Management.",
+        "Intrusion testing, security auditing.",
+        "Mobile apps, E-commerce and showcase websites.",
+        "Web & Mobile application development for individuals and businesses."
+      ],
+      "moreDetails": []
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © {{ year }}. All rights are reserved.",
+    "developedBy": "Developed by <a href=\"https://quentinaslan.fr\" class=\"font-bold cursor-pointer hover:underline\">Quentin Aslan</a> 😃"
+  },
+  "hero": {
+    "title": "Software Engineer",
+    "subtitle": "Hi, I'm <strong>Quentin Aslan</strong>, <br> A passionate <strong>Full-Stack Developer.</strong>",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "projectCard": {
+    "techStack": "Tech Stack:"
+  },
+  "projectsList": {
+    "title": "Some of my projects 🤠",
+    "easyRouter": {
+      "title": "Router Easy 🛜",
+      "role": "Full-Stack Developer",
+      "date": "2024",
+      "location": "I was at Boston, USA 🇺🇸",
+      "mainDescription": "The Easy Router Project is a <strong>web application designed to simplify the configuration of a travel router setup on a Raspberry Pi</strong>.",
+      "subDescription": "The extension allows users to interact with a form on Amazon product pages, helping them create affiliate links directly from the product page. I also developed the extension’s popup, where users can log in and access the same React features found on the product page."
+    },
+    "archerAffiliate": {
+      "title": "Archer Affiliate",
+      "role": "Frontend Developer",
+      "date": "2024",
+      "location": "I was at Boston, USA 🇺🇸",
+      "mainDescription": "A <strong>Chrome extension</strong> that adds <strong>React components</strong> to <strong>Amazon product pages</strong>, making it easy for users to create affiliate links for Archer Affiliate.",
+      "subDescription": "For this project, I used <a href=\"https://docs.plasmo.com/\" target=\"_blank\" class=\"font-bold hover:underline\">Plasmo</a>, a great framework that makes building Chrome extensions easier, similar to <a href=\"https://nextjs.org/docs\" target=\"_blank\" class=\"font-bold hover:underline\">Next.js</a>, but designed for browser extensions."
+    }
+  }
+}

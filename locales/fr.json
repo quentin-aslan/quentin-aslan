@@ -1,0 +1,128 @@
+{
+  "navbar": {
+    "projects": "Projets",
+    "experiences": "Expériences",
+    "contact": "Contact"
+  },
+  "aboutMe": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur Full-Stack basé à Toulouse, France 🇫🇷📍",
+    "description": "Je m'appelle Quentin Aslan, et je suis un <strong>ingénieur logiciel Full-Stack de 25 ans</strong>. Ma passion pour la technologie a commencé à l'adolescence, et je développe des sites web professionnels depuis 2015.",
+    "internationalExperience": "Expérience Internationale",
+    "internationalExperienceDescription": "Originaire de France <span aria-label=\"Drapeau de la France\">🇫🇷</span>, j'ai passé les deux dernières années au Canada <span aria-label=\"Drapeau du Canada\">🇨🇦</span> (2022–septembre 2024) pour acquérir une expérience internationale.",
+    "usaExperience": "Ce voyage m'a également conduit à Boston, USA <span aria-label=\"Drapeau des États-Unis\">🇺🇸</span> pour renforcer ma maîtrise de l'anglais.",
+    "spanishExperience": "De plus, j'ai eu l'opportunité d'améliorer et de pratiquer mon espagnol lors de séjours en Colombie <span aria-label=\"Drapeau de la Colombie\">🇨🇴</span> et au Guatemala <span aria-label=\"Drapeau du Guatemala\">🇬🇹</span>.",
+    "expertise": "Expertise en Développement",
+    "expertiseDescription": "En tant qu'ingénieur logiciel Full-Stack, je me spécialise dans le développement de <span class=\"font-semibold\">sites web et d'applications mobiles 📱</span>.",
+    "networkManagement": "Mon expertise s'étend à la <span class=\"font-semibold\">gestion de réseau</span> et à l'<span class=\"font-semibold\">administration des systèmes Linux</span>.",
+    "collaboration": "Passion pour la Collaboration et l'Apprentissage",
+    "collaborationDescription": "Je m'épanouis dans des environnements collaboratifs, travaillant en étroite collaboration avec des équipes interfonctionnelles pour fournir des solutions robustes et conviviales.",
+    "learning": "Passionné par l'apprentissage continu et les nouvelles technologies, je vise à créer des logiciels innovants et impactants."
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "quentin.aslan@outlook.com",
+    "phone": "+33 6 52 68 95 83"
+  },
+  "experience": {
+    "period": "Période",
+    "role": "Rôle",
+    "company": "Entreprise",
+    "location": "Lieu",
+    "keyAchievements": "Principales Réalisations",
+    "moreDetails": "Plus de Détails",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
+  },
+  "experiences": {
+    "title": "Expérience Professionnelle",
+    "bell": {
+      "period": "2022 - 2024",
+      "role": "Ingénieur Frontend",
+      "company": "Bell",
+      "location": "Montréal, Canada 🇨🇦",
+      "keyAchievements": [
+        "<span class=\"text-primary font-semibold\">Dirigé la refonte complète d'une application B2B critique</span> pour Bell, améliorant la fonctionnalité et l'expérience utilisateur.",
+        "<span class=\"text-primary font-semibold\">Développé une architecture frontend évolutive et réutilisable</span> avec VueJS 3 et Pinia.",
+        "<span class=\"text-primary font-semibold\">Amélioré la maîtrise de Figma</span> en travaillant en étroite collaboration avec les équipes UX.",
+        "Géré et collaboré avec succès dans une grande équipe interfonctionnelle utilisant des méthodologies Agile.",
+        "Intégré un suivi utilisateur avancé avec Matomo, fournissant des informations précieuses sur l'utilisation de l'application."
+      ],
+      "moreDetails": [
+        "Travaillé en étroite collaboration avec les équipes UX pour assurer une intégration transparente du design et de la fonctionnalité.",
+        "Implémenté des tests unitaires et des pipelines CI/CD pour garantir la qualité du code et un déploiement efficace",
+        "Collaboré avec des équipes interfonctionnelles pour recueillir et mettre en œuvre des retours, améliorant l'expérience utilisateur globale.",
+        "Utilisé la méthodologie Agile pour gérer les délais et les livrables du projet de manière efficace.",
+        "Réalisé des présentations techniques pour démontrer les nouvelles fonctionnalités aux parties prenantes.",
+        "Technologies Utilisées : VueJS 3, Pinia, SASS, Figma, Matomo, Java Spring, Azure DevOps, GitLab."
+      ]
+    },
+    "occitaline": {
+      "period": "2019 - 2022",
+      "role": "Ingénieur Logiciel",
+      "company": "Occitaline",
+      "location": "Toulouse, France 🇫🇷",
+      "keyAchievements": [
+        "<span class=\"text-primary font-semibold\">Créé une application pour configurer des routeurs Linux</span>, utilisée par plusieurs entreprises, y compris le <span class=\"text-primary font-semibold\">Centre National d'Études Spatiales (CNES) en France</span> ou <span class=\"text-primary font-semibold\">Le Stade de France</span>.",
+        "<span class=\"text-primary font-semibold\">Conçu et implémenté des API REST</span> avec Node.js et les a intégrées avec MongoDB.",
+        "Construit des interfaces utilisateur réactives en utilisant Vue.js, Bootstrap et jQuery.",
+        "Implémenté des tests unitaires et des pipelines CI/CD, garantissant des processus de développement robustes et efficaces.",
+        "Géré le cycle complet de développement du produit, de la collecte des exigences au déploiement en production.",
+        "Développé un visualiseur de modèle 3D basé sur JavaScript en utilisant l'approche BIM (Building Information Modeling)."
+      ],
+      "moreDetails": [
+        "<span class=\"text-primary font-semibold\">Travaillé en étroite collaboration avec les équipes UX</span> pour assurer une intégration transparente du design et de la fonctionnalité.",
+        "<span class=\"text-primary font-semibold\">Implémenté des tests unitaires et des pipelines CI/CD</span> pour garantir la qualité du code et un déploiement efficace 🚀.",
+        "<span class=\"text-primary font-semibold\">Collaboré avec des équipes interfonctionnelles</span> pour recueillir et mettre en œuvre des retours, améliorant l'expérience utilisateur globale.",
+        "<span class=\"text-primary font-semibold\">Utilisé la méthodologie Agile</span> pour gérer les délais et les livrables du projet de manière efficace.",
+        "<span class=\"text-primary font-semibold\">Réalisé des présentations techniques</span> pour démontrer les nouvelles fonctionnalités aux parties prenantes.",
+        "<span class=\"text-primary font-semibold\">Technologies Utilisées</span> : Vue.js 3, jQuery, HTML/CSS, Node.js GitLab."
+      ]
+    },
+    "freelance": {
+      "period": "2015 - 2022",
+      "role": "Ingénieur Logiciel Freelance",
+      "company": "Divers Clients",
+      "location": "À distance",
+      "keyAchievements": [
+        "API REST, administration des systèmes Linux, gestion de réseau.",
+        "Tests d'intrusion, audit de sécurité.",
+        "Applications mobiles, sites web de commerce électronique et vitrines.",
+        "Développement d'applications Web et mobiles pour particuliers et entreprises."
+      ],
+      "moreDetails": []
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © {{ year }}. Tous droits réservés.",
+    "developedBy": "Développé par <a href=\"https://quentinaslan.fr\" class=\"font-bold cursor-pointer hover:underline\">Quentin Aslan</a> 😃"
+  },
+  "hero": {
+    "title": "Ingénieur Logiciel",
+    "subtitle": "Bonjour, je suis <strong>Quentin Aslan</strong>, <br> Un <strong>Développeur Full-Stack</strong> passionné.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "projectCard": {
+    "techStack": "Tech Stack :"
+  },
+  "projectsList": {
+    "title": "Quelques-uns de mes projets 🤠",
+    "easyRouter": {
+      "title": "Router Easy 🛜",
+      "role": "Développeur Full-Stack",
+      "date": "2024",
+      "location": "J'étais à Boston, USA 🇺🇸",
+      "mainDescription": "Le projet Easy Router est une <strong>application web conçue pour simplifier la configuration d'un routeur de voyage sur un Raspberry Pi</strong>.",
+      "subDescription": "L'extension permet aux utilisateurs d'interagir avec un formulaire sur les pages de produits Amazon, les aidant à créer des liens d'affiliation directement depuis la page produit. J'ai également développé le popup de l'extension, où les utilisateurs peuvent se connecter et accéder aux mêmes fonctionnalités React trouvées sur la page produit."
+    },
+    "archerAffiliate": {
+      "title": "Archer Affiliate",
+      "role": "Développeur Frontend",
+      "date": "2024",
+      "location": "J'étais à Boston, USA 🇺🇸",
+      "mainDescription": "Une <strong>extension Chrome</strong> qui ajoute des <strong>composants React</strong> aux <strong>pages de produits Amazon</strong>, facilitant la création de liens d'affiliation pour Archer Affiliate.",
+      "subDescription": "Pour ce projet, j'ai utilisé <a href=\"https://docs.plasmo.com/\" target=\"_blank\" class=\"font-bold hover:underline\">Plasmo</a>, un excellent framework qui facilite la création d'extensions Chrome, similaire à <a href=\"https://nextjs.org/docs\" target=\"_blank\" class=\"font-bold hover:underline\">Next.js</a>, mais conçu pour les extensions de navigateur."
+    }
+  }
+}

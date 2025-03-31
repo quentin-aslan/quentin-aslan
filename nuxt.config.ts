@@ -1,5 +1,3 @@
-// <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
 import Aura from '@primevue/themes/aura'
 
 export default defineNuxtConfig({
@@ -37,6 +35,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
     '@primevue/nuxt-module',
+    '@nuxtjs/i18n', // P0f91
   ],
   eslint: {
     config: {
@@ -51,6 +50,18 @@ export default defineNuxtConfig({
       theme: {
         preset: Aura,
       },
+    },
+  },
+  i18n: { // Pf7d2
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.json' }
+    ],
+    defaultLocale: 'en', // P0c43
+    lazy: true,
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'en',
     },
   },
 })
