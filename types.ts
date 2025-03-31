@@ -14,6 +14,9 @@ export enum TechStackList {
   TailwindCSS = 'TailwindCSS',
   Linux = 'Linux',
   Upwork = 'Upwork',
+  GO = 'GO',
+  Terraform = 'Terraform',
+  AWS = 'AWS',
 }
 
 export type ProjectImage = {

@@ -98,6 +98,47 @@
           </div>
         </template>
       </ProjectCard>
+
+      <!-- GLS Experience -->
+      <ProjectCard
+        :class="getCardAlignment(3)"
+        :tech-stack="glsTechStack"
+        :images="glsImages"
+        title="GLS Experience"
+        role="Full-Stack Developer"
+        date="Novembre 2024 - Mars 2025"
+        location="Toulouse, France 🇫🇷"
+      >
+        <template #main-description>
+          Développement et maintenance d'une application web permettant aux clients de GLS de suivre et de modifier leurs livraisons.
+        </template>
+
+        <template #sub-description>
+          <p>Encadrement d'un stagiaire sur le développement frontend, en particulier sur Vue.js et les bonnes pratiques de développement.</p>
+          <p>Gestion des déploiements et de l'intégration continue (CI/CD) avec GitLab et Terraform, applications déployées sur AWS.</p>
+          <p>Création d'un microservice en GO, de la conception à la mise en production. Ajout de fonctionnalités à un backend existant avec Java Spring Boot.</p>
+          <p>Mise en place de dashboards Grafana pour le suivi et le monitoring des applications en production.</p>
+        </template>
+
+        <template #tablet-project-images>
+          <div class="lg:grid lg:grid-cols-2">
+            <Image
+              :src="glsImages[0].src"
+              :alt="glsImages[0].alt"
+              class="w-full h-full object-contain"
+              image-class="object-contain"
+              preview
+            />
+            <Image
+              :src="glsImages[1].src"
+              :alt="glsImages[1].alt"
+              class="w-full h-full object-contain"
+              image-class="object-contain"
+              preview
+            />
+          </div>
+        </template>
+      </ProjectCard>
     </div>
   </section>
 </template>
@@ -141,6 +182,17 @@ const archerAffiliateImages: ProjectImage[] = [
   },
 ]
 
+const glsImages: ProjectImage[] = [
+  {
+    src: '/projects/gls/gls_dashboard.png',
+    alt: 'GLS Dashboard Image',
+  },
+  {
+    src: '/projects/gls/gls_microservice.png',
+    alt: 'GLS Microservice Image',
+  },
+]
+
 const easyRouterTechStack: TechStackList[] = [
   TechStackList.VueJS,
   TechStackList.TailwindCSS,
@@ -154,6 +206,20 @@ const archerAffiliateTechStack: TechStackList[] = [
   TechStackList.ReactJS,
   TechStackList.TypeScript,
   TechStackList.Upwork,
+]
+
+const glsTechStack: TechStackList[] = [
+  TechStackList.VueJS,
+  TechStackList.TailwindCSS,
+  TechStackList.NodeJS,
+  TechStackList.TypeScript,
+  TechStackList.Linux,
+  TechStackList.Java,
+  TechStackList.GO,
+  TechStackList.GitLab,
+  TechStackList.Terraform,
+  TechStackList.AWS,
+  TechStackList.Grafana,
 ]
 
 const getCardAlignment = (index: number) => {
