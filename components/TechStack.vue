@@ -16,36 +16,18 @@
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
         <div
           v-for="(stack, index) of techStacksDisplayed"
+          :key="stack.label"
           :class="{ 'animate-fade-in-left': isSectionVisible && index % 2 === 0, 'animate-fade-in-right': isSectionVisible && index % 2 !== 0 }"
         >
           <div
-            v-if="stack.type === 'multiple'"
-            class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
-          >
-            <div
-              v-for="tech of stack.techs"
-              class="flex flex-col gap-2 items-center w-14"
-            >
-              <NuxtImg
-                :src="tech.icon"
-                :alt="tech.label"
-                class="w-full"
-                :title="tech.label"
-              />
-              <span class="text-sm whitespace-nowrap">{{ tech.label }}</span>
-            </div>
-          </div>
-
-          <div
-            v-if="stack.type === 'single'"
             class="flex flex-col gap-2 items-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
           >
             <NuxtImg
-              :src="stack.techs?.[0]?.icon"
-              :alt="stack.techs?.[0]?.label"
+              :src="stack.imgSrc"
+              :alt="stack.label"
               class="w-16"
             />
-            <span>{{ stack.techs?.[0]?.label }}</span>
+            <span>{{ stack.label }}</span>
           </div>
         </div>
       </div>
@@ -62,23 +44,134 @@
 
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
-import type { TechStacksType } from '~/types'
+import { GetStacksUseCase } from '~/domains/stacks/get-stacks.use-case'
+import { StacksRepositoryMock } from '~/domains/stacks/adapters/stacks.repository.mock'
+import { StacksPresenterImpl } from '~/domains/stacks/adapters/stacks.presenter.impl'
+import type { Stack } from '~/domains/stacks/entities/Stack'
 
-const techStacks = ref<TechStacksType[]>([])
+const techStacks = ref<Stack[]>([])
 
-try {
-  const techStacksResponse = await useFetch('/api/tech-stacks')
-  if (techStacksResponse.status.value !== 'success') {
-    throw new Error('Error while fetching tech stacks')
-  }
+const getStacksUseCase = new GetStacksUseCase(new StacksRepositoryMock([
+  {
+    label: 'JavaScript',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'TypeScript',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'VueJS',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'NuxtJS',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'Java',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+    category: 'backend',
+  },
+  {
+    label: 'Spring',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+    category: 'backend',
+  },
+  {
+    label: 'Node JS',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+    category: 'backend',
+  },
+  {
+    label: 'Go',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
+    category: 'backend',
+  },
+  {
+    label: 'HTML5',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'CSS3',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'React',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'NextJS',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'Tailwind CSS',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'Sass',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'MongoDB',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
+    category: 'database',
+  },
+  {
+    label: 'PostgreSQL',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    category: 'database',
+  },
+  {
+    label: 'Supabase',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
+    category: 'database',
+  },
+  {
+    label: 'Amazon Web Services',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+    category: 'devops',
+  },
+  {
+    label: 'Grafana',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg',
+    category: 'devops',
+  },
+  {
+    label: 'Docker',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+    category: 'devops',
+  },
+  {
+    label: 'Vitest',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'Jest',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+    category: 'frontend',
+  },
+  {
+    label: 'Cypress',
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg',
+    category: 'frontend',
+  },
+]))
+const stacksPresenter = new StacksPresenterImpl(vm => techStacks.value = vm)
+await getStacksUseCase.execute(stacksPresenter)
 
-  techStacks.value = techStacksResponse.data.value
-}
-catch (e) {
-  console.error(e)
-}
-
-const techStacksDisplayed = ref<TechStacksType[]>(techStacks)
+const techStacksDisplayed = ref<Stack[]>(techStacks.value)
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 const smAndSmaller = breakpoints.smallerOrEqual('sm') // between sm and lg
@@ -88,7 +181,7 @@ watch(smAndSmaller, (value) => {
     techStacksDisplayed.value = techStacks.value.slice(0, 5)
     return
   }
-  techStacksDisplayed.value = techStacks
+  techStacksDisplayed.value = techStacks.value
 })
 
 const isSectionVisible = ref(false)
