@@ -29,6 +29,6 @@ jobs:
             git pull origin main
             touch .env
             echo NITRO_PORT=${{ secrets.NITRO_PORT }} >> .env
-            sudo npm install
+            sudo npm ci
             sudo npm run build
             sudo systemctl restart quentin-aslan
