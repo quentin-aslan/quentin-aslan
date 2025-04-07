@@ -1,9 +1,12 @@
 export type TechStacksType = {
   type: 'single' | 'multiple'
-  techs: {
-    label: string
-    icon: string
-  }[]
+  techs: Tech[]
+}
+
+export type Tech = {
+  label: string
+  icon: string
+  category: 'frontend' | 'backend' | 'devops' | 'database' | 'other'
 }
 
 export enum TechStackList {

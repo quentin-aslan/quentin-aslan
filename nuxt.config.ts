@@ -16,20 +16,24 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   site: {
     url: 'https://quentinaslan.fr',
     name: 'Quentin Aslan | Software Engineer',
     description: 'Full-Stack Developer in Montreal. Explore my projects and skills.',
     defaultLocale: 'en',
   },
+
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   modules: [
     '@nuxtjs/seo',
     '@nuxt/image',
@@ -38,14 +42,17 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@primevue/nuxt-module',
   ],
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
+
   gtag: {
     id: 'G-729997XZPJ',
   },
+
   primevue: {
     options: {
       theme: {
@@ -53,4 +60,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: '2025-04-07',
 })
