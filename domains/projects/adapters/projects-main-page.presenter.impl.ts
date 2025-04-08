@@ -6,22 +6,30 @@ export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
     private readonly projectsViewModel: (viewModel: ProjectViewModel[]) => void,
   ) {}
 
-  present(projects: Project[]): void {
+  public present(projects: Project[]): void {
     const projectFormatted: ProjectViewModel[] = projects.map((project) => {
       return {
         title: project.title,
+        startDate: project.startDate.getFullYear().toString(),
         description: project.description,
         content: project.content,
         coverImages: project.coverImages,
-        endDate: project.endDate,
+        endDate: this.formatEndDate(project.startDate, project.endDate),
         location: project.location,
         position: project.position,
         slug: project.slug,
-        startDate: project.startDate,
-        stack: project.stack,
+        technologies: project.technologies,
       }
     })
 
     this.projectsViewModel(projectFormatted)
+  }
+
+  private formatEndDate(startDate: Date, endDate: Date | null): string | null {
+    if (!endDate || startDate.getFullYear() === endDate.getFullYear()) {
+      return null
+    }
+
+    return `${new Date(endDate).getFullYear()}`
   }
 }

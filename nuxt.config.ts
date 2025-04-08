@@ -17,6 +17,15 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    STRAPI_READ_ONLY: process.env.NUXT_STRAPI_READ_ONLY,
+    STRAPI_BASE_URL: process.env.NUXT_STRAPI_BASE_URL || 'http://localhost:1337/api',
+    public: {
+      STRAPI_READ_ONLY: process.env.NUXT_STRAPI_READ_ONLY,
+      STRAPI_BASE_URL: process.env.NUXT_STRAPI_BASE_URL || 'http://localhost:1337/api',
+    },
+  },
+
   site: {
     url: 'https://quentinaslan.fr',
     name: 'Quentin Aslan | Software Engineer',

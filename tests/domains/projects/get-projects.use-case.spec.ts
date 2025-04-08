@@ -14,7 +14,7 @@ const projectsMock: Project[] = [
     description: 'The Easy Router Project is a web application designed to simplify the configuration of a travel router setup on a Raspberry Pi.',
     content: 'Bla bla content',
     slug: 'router-easy',
-    stack: [],
+    technologies: [],
     coverImages: [],
   },
 ]
