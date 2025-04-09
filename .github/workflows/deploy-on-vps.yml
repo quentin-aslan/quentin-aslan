@@ -16,8 +16,9 @@ jobs:
           script: |
             cd ~/dev/quentin-aslan
             git pull origin main
+            rm .env
             touch .env
-            echo NITRO_PORT=${{ secrets.NUXT_STRAPI_READ_ONLY }} >> .env
+            echo NITRO_PORT=${{ secrets.NITRO_PORT }} >> .env
             echo NUXT_STRAPI_READ_ONLY=${{ secrets.NUXT_STRAPI_READ_ONLY }} >> .env
             echo NUXT_STRAPI_BASE_URL=${{ secrets.NUXT_STRAPI_BASE_URL }} >> .env
             npm ci

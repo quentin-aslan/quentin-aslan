@@ -1,6 +1,7 @@
 import { marked } from 'marked'
 import type { ProjectsPresenter } from '~/domains/projects/ports/projects.presenter'
 import type { Project, ProjectViewModel } from '~/domains/projects/entities/Project'
+import { applyTailwindClasses } from '~/domains/apply-tailwind-classes'
 
 export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
   constructor(
@@ -13,11 +14,14 @@ export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
   }
 
   private toViewModel = async (project: Project): Promise<ProjectViewModel> => {
+    const description = await marked.parse(project.description)
+    const content = await marked.parse(project.content)
+
     return {
       title: project.title,
       startDate: project.startDate.getFullYear().toString(),
-      description: await marked.parse(project.description),
-      content: project.content,
+      description: applyTailwindClasses(description),
+      content: applyTailwindClasses(content),
       coverImage: project.coverImage,
       endDate: this.formatEndDate(project.startDate, project.endDate),
       location: project.location,
