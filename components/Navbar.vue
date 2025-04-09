@@ -7,10 +7,10 @@
             v-for="(link, index) in navLinks"
             :key="index"
           >
-            <a
-              :href="link.href"
+            <NuxtLink
+              :to="link.href"
               :class="['text-primary transition-colors duration-300 hover:text-secondary']"
-            >{{ link.text }}</a>
+            >{{ link.text }}</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -36,14 +36,10 @@ onUnmounted(() => {
 })
 
 // Define the navigation links as an object
-const navLinks = [
-  { text: 'Projets', href: '#projects' },
-  { text: 'Experiences', href: '#experiences' },
-  { text: 'Contact', href: '#contact' },
+const navLinks: { text: string, href: string }[] = [
+  { text: 'Projets', href: '/#projects' },
+  { text: 'Experiences', href: '/#experiences' },
+  { text: 'Contact', href: '/#contact' },
   // { text: 'Articles', href: '/articles' },
 ]
 </script>
-
-<style scoped>
-/* Vous pouvez supprimer les styles CSS ici, car tout est géré par les classes Tailwind */
-</style>

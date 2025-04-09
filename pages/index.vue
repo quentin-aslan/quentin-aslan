@@ -1,9 +1,9 @@
 <template>
   <main class="max-w-full">
-    <Navbar />
+    <BackgroundAurora />
     <Hero />
     <AboutMe />
-    <TheProjectsList />
+    <TheMainPageProjectList />
     <Experiences />
     <Contact />
   </main>

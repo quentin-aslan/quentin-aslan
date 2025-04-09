@@ -1,0 +1,15 @@
+meta {
+  name: Get Technologies
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/technologies
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{BEARER_TOKEN}}
+}

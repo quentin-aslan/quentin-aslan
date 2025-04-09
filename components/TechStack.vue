@@ -4,7 +4,7 @@
     class="flex flex-col items-center gap-5"
   >
     <div
-      v-show="isSectionVisible && techStacks.length > 0"
+      v-show="isSectionVisible && technologies.length > 0"
       class="flex flex-col items-center gap-5"
     >
       <h2
@@ -15,44 +15,26 @@
       </h2>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
         <div
-          v-for="(stack, index) of techStacksDisplayed"
+          v-for="(techno, index) of techStacksDisplayed"
+          :key="techno.label"
           :class="{ 'animate-fade-in-left': isSectionVisible && index % 2 === 0, 'animate-fade-in-right': isSectionVisible && index % 2 !== 0 }"
         >
           <div
-            v-if="stack.type === 'multiple'"
-            class="flex flex-row gap-10 md:gap-5 items-center justify-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
-          >
-            <div
-              v-for="tech of stack.techs"
-              class="flex flex-col gap-2 items-center w-14"
-            >
-              <NuxtImg
-                :src="tech.icon"
-                :alt="tech.label"
-                class="w-full"
-                :title="tech.label"
-              />
-              <span class="text-sm whitespace-nowrap">{{ tech.label }}</span>
-            </div>
-          </div>
-
-          <div
-            v-if="stack.type === 'single'"
             class="flex flex-col gap-2 items-center p-4 rounded hover:shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
           >
             <NuxtImg
-              :src="stack.techs?.[0]?.icon"
-              :alt="stack.techs?.[0]?.label"
-              class="w-16"
+              :src="techno.imgSrc"
+              :alt="techno.label"
+              class="w-8"
             />
-            <span>{{ stack.techs?.[0]?.label }}</span>
+            <span>{{ techno.label }}</span>
           </div>
         </div>
       </div>
       <button
-        v-if="smAndSmaller && techStacksDisplayed.length !== techStacks.length"
+        v-if="smAndSmaller && techStacksDisplayed.length !== technologies.length"
         class="text-primary font-semibold duration-150 border-b-2 border-secondary hover:text-primary hover:border-primary hover:-translate-y-1.5"
-        @click="() => techStacksDisplayed = techStacks"
+        @click="() => techStacksDisplayed = technologies"
       >
         Show more
       </button>
@@ -62,37 +44,37 @@
 
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
-import type { TechStacksType } from '~/types'
+import type { Technology } from '~/domains/technologies/entities/Technology'
+import { GetTechnologiesUseCase } from '~/domains/technologies/get-technologies.use-case'
+import { TechnologiesPresenterImpl } from '~/domains/technologies/adapters/technologies.presenter.impl'
+import { TechnologiesRepositoryStrapi } from '~/domains/technologies/adapters/technologies.repository.strapi'
 
-const techStacks = ref<TechStacksType[]>([])
+const config = useRuntimeConfig()
 
-try {
-  const techStacksResponse = await useFetch('/api/tech-stacks')
-  if (techStacksResponse.status.value !== 'success') {
-    throw new Error('Error while fetching tech stacks')
-  }
+const technologies = ref<Technology[]>([])
 
-  techStacks.value = techStacksResponse.data.value
-}
-catch (e) {
-  console.error(e)
-}
+// Utilisation de `useAsyncData` pour récupérer les données de manière asynchrone et activé le SSR
+await useAsyncData('technologies', async () => {
+  const technologiesRepositoryStrapi = new TechnologiesRepositoryStrapi(config.public.STRAPI_BASE_URL, config.public.STRAPI_READ_ONLY)
+  const technologiesPresenter = new TechnologiesPresenterImpl(vm => technologies.value = vm)
+  const getTechnologiesUseCase = new GetTechnologiesUseCase(technologiesRepositoryStrapi)
+  await getTechnologiesUseCase.execute(technologiesPresenter)
+})
 
-const techStacksDisplayed = ref<TechStacksType[]>(techStacks)
+const techStacksDisplayed = ref<Technology[]>([])
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 const smAndSmaller = breakpoints.smallerOrEqual('sm') // between sm and lg
-
-watch(smAndSmaller, (value) => {
-  if (value) {
-    techStacksDisplayed.value = techStacks.value.slice(0, 5)
-    return
-  }
-  techStacksDisplayed.value = techStacks
-})
-
 const isSectionVisible = ref(false)
 const techStackSectionEl = ref(null)
+
+watch(
+  technologies,
+  (newVal) => {
+    techStacksDisplayed.value = smAndSmaller.value ? newVal.slice(0, 5) : newVal
+  },
+  { immediate: true },
+)
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
