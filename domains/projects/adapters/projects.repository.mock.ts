@@ -7,4 +7,8 @@ export class ProjectsRepositoryMock implements ProjectsRepository {
   public async fetchProjects(): Promise<Project[]> {
     return this.projectsToReturn
   }
+
+  public async fetchProjectBySlug(slug: string): Promise<Project | undefined> {
+    return this.projectsToReturn.find(project => project.slug === slug)
+  }
 }

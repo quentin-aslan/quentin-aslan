@@ -7,10 +7,14 @@ export interface Project {
   startDate: Date
   endDate: Date | null
   description: string
-  slug: string
   technologies: Technology[]
-  coverImages: string[]
   content: string
+  coverImage: {
+    url: string
+    alternativeText: string
+    caption: string
+  }
+  slug: string
 }
 
 export interface ProjectViewModel {
@@ -21,7 +25,12 @@ export interface ProjectViewModel {
   endDate: string | null
   description: string
   slug: string
+  projectLink: string
   technologies: Technology[]
-  coverImages: string[]
+  coverImage: {
+    url: string
+    alternativeText: string
+    caption: string
+  }
   content: string
 }

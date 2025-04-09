@@ -1,15 +1,15 @@
 import { marked } from 'marked'
-import type { ProjectsPresenter } from '~/domains/projects/ports/projects.presenter'
 import type { Project, ProjectViewModel } from '~/domains/projects/entities/Project'
+import type { ProjectPresenter } from '~/domains/projects/ports/project.presenter'
 
-export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
+export class ProjectPresenterImpl implements ProjectPresenter {
   constructor(
-    private readonly projectsViewModel: (viewModel: ProjectViewModel[]) => void,
+    private readonly projectViewModel: (viewModel: ProjectViewModel) => void,
   ) {}
 
-  public async present(projects: Project[]) {
-    const formattedProjects = await Promise.all(projects.map(this.toViewModel))
-    this.projectsViewModel(formattedProjects)
+  public async present(project: Project) {
+    const formattedProject = await this.toViewModel(project)
+    this.projectViewModel(formattedProject)
   }
 
   private toViewModel = async (project: Project): Promise<ProjectViewModel> => {
@@ -17,7 +17,7 @@ export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
       title: project.title,
       startDate: project.startDate.getFullYear().toString(),
       description: await marked.parse(project.description),
-      content: project.content,
+      content: await marked.parse(project.content),
       coverImage: project.coverImage,
       endDate: this.formatEndDate(project.startDate, project.endDate),
       location: project.location,

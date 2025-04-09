@@ -25,7 +25,7 @@
             <NuxtImg
               :src="techno.imgSrc"
               :alt="techno.label"
-              class="w-16"
+              class="w-8"
             />
             <span>{{ techno.label }}</span>
           </div>
@@ -46,7 +46,6 @@
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { Technology } from '~/domains/technologies/entities/Technology'
 import { GetTechnologiesUseCase } from '~/domains/technologies/get-technologies.use-case'
-import { TechnologiesRepositoryMock } from '~/domains/technologies/adapters/technologies.repository.mock'
 import { TechnologiesPresenterImpl } from '~/domains/technologies/adapters/technologies.presenter.impl'
 import { TechnologiesRepositoryStrapi } from '~/domains/technologies/adapters/technologies.repository.strapi'
 
@@ -55,139 +54,27 @@ const config = useRuntimeConfig()
 const technologies = ref<Technology[]>([])
 
 // Utilisation de `useAsyncData` pour récupérer les données de manière asynchrone et activé le SSR
-const { pending, error } = await useAsyncData('technologies', async () => {
-  const technologiesRepositoryMock = new TechnologiesRepositoryMock([
-    {
-      label: 'JavaScript',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'TypeScript',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'VueJS',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'NuxtJS',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'Java',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
-      category: 'backend',
-    },
-    {
-      label: 'Spring',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
-      category: 'backend',
-    },
-    {
-      label: 'Node JS',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
-      category: 'backend',
-    },
-    {
-      label: 'Go',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
-      category: 'backend',
-    },
-    {
-      label: 'HTML5',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'CSS3',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'React',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'NextJS',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'Tailwind CSS',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'Sass',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'MongoDB',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
-      category: 'database',
-    },
-    {
-      label: 'PostgreSQL',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-      category: 'database',
-    },
-    {
-      label: 'Supabase',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
-      category: 'database',
-    },
-    {
-      label: 'Amazon Web Services',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
-      category: 'devops',
-    },
-    {
-      label: 'Grafana',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg',
-      category: 'devops',
-    },
-    {
-      label: 'Docker',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
-      category: 'devops',
-    },
-    {
-      label: 'Vitest',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'Jest',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
-      category: 'frontend',
-    },
-    {
-      label: 'Cypress',
-      imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg',
-      category: 'frontend',
-    },
-  ])
+await useAsyncData('technologies', async () => {
   const technologiesRepositoryStrapi = new TechnologiesRepositoryStrapi(config.public.STRAPI_BASE_URL, config.public.STRAPI_READ_ONLY)
   const technologiesPresenter = new TechnologiesPresenterImpl(vm => technologies.value = vm)
-  const getTechnologiesUseCase = new GetTechnologiesUseCase(technologiesRepositoryMock)
+  const getTechnologiesUseCase = new GetTechnologiesUseCase(technologiesRepositoryStrapi)
   await getTechnologiesUseCase.execute(technologiesPresenter)
 })
 
-const techStacksDisplayed = computed(() => {
-  return smAndSmaller.value ? technologies.value.slice(0, 5) : technologies.value
-})
-
+const techStacksDisplayed = ref<Technology[]>([])
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 const smAndSmaller = breakpoints.smallerOrEqual('sm') // between sm and lg
 const isSectionVisible = ref(false)
 const techStackSectionEl = ref(null)
+
+watch(
+  technologies,
+  (newVal) => {
+    techStacksDisplayed.value = smAndSmaller.value ? newVal.slice(0, 5) : newVal
+  },
+  { immediate: true },
+)
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {

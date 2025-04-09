@@ -6,6 +6,6 @@ export class GetProjectsUseCase {
 
   async execute(presenter: ProjectsPresenter) {
     const projects = await this.projectsRepository.fetchProjects()
-    presenter.present(projects)
+    await presenter.present(projects)
   }
 }

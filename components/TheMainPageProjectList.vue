@@ -11,44 +11,29 @@
     </header>
 
     <div class="flex flex-col gap-4 justify-center items-center">
-      <div
+      <ProjectCard
         v-for="project of projects"
         :key="project.title"
-        class="border border-blue-900"
-      >
-        <h3>{{ project.title }}</h3>
-      </div>
+        :project="project"
+      />
     </div>
-
-    {{ projects }}
   </section>
 </template>
 
 <script setup lang="ts">
-import { GetProjectsUseCase } from '~/domains/projects/get-projects.use-case'
-import { ProjectsRepositoryMock } from '~/domains/projects/adapters/projects.repository.mock'
-import type { Project, ProjectViewModel } from '~/domains/projects/entities/Project'
+import type { ProjectViewModel } from '~/domains/projects/entities/Project'
+import { ProjectsRepositoryStrapi } from '~/domains/projects/adapters/projects.repository.strapi'
 import { ProjectsMainPagePresenterImpl } from '~/domains/projects/adapters/projects-main-page.presenter.impl'
-
-const projectsMock: Project[] = [
-  {
-    title: 'Router Easy',
-    position: 'Fullstack Developer',
-    startDate: new Date('2024-02-01'),
-    endDate: new Date('2024-03-01'),
-    location: 'I was at Boston, USA',
-    description: 'The Easy Router Project is a web application designed to simplify the configuration of a travel router setup on a Raspberry Pi.',
-    content: 'Bla bla content',
-    slug: 'router-easy',
-    technologies: [],
-    coverImages: [],
-  },
-]
+import { GetProjectsUseCase } from '~/domains/projects/get-projects.use-case'
 
 const projects = ref<ProjectViewModel[]>([])
 
-const projectsRepositoryMock = new ProjectsRepositoryMock(projectsMock)
-const getProjectsUseCase = new GetProjectsUseCase(projectsRepositoryMock)
-const projectsPresenter = new ProjectsMainPagePresenterImpl(vm => projects.value = vm)
-await getProjectsUseCase.execute(projectsPresenter)
+const config = useRuntimeConfig()
+
+await useAsyncData('projects', async () => {
+  const projectsRepositoryStrapi = new ProjectsRepositoryStrapi(config.public.STRAPI_BASE_URL, config.public.STRAPI_READ_ONLY)
+  const projectsPresenter = new ProjectsMainPagePresenterImpl(vm => projects.value = vm)
+  const getProjectsUseCase = new GetProjectsUseCase(projectsRepositoryStrapi)
+  await getProjectsUseCase.execute(projectsPresenter)
+})
 </script>

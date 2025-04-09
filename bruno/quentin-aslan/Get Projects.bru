@@ -1,0 +1,19 @@
+meta {
+  name: Get Projects
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/projects?populate=*
+  body: none
+  auth: inherit
+}
+
+params:query {
+  populate: *
+}
+
+headers {
+  Authorization: Bearer {{BEARER_TOKEN}}
+}
