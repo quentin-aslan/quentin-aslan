@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50 overflow-hidden">
-    <Navbar />
+    <TheNavbar />
     <NuxtPage />
     <Footer />
   </div>

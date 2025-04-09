@@ -1,5 +1,5 @@
 <template>
-  <header :class="['fixed top-0 left-0 right-0 transition-all duration-300 z-20', { 'bg-white bg-opacity-80 shadow-md': isScrolled }]">
+  <header :class="['fixed top-0 left-0 right-0 transition-all duration-300 z-20', { 'bg-white bg-opacity-95 shadow-md border-blue-950 border-b': isScrolled }]">
     <div class="container mx-auto flex justify-between items-center p-4">
       <nav>
         <ul class="flex space-x-4">
@@ -9,7 +9,7 @@
           >
             <NuxtLink
               :to="link.href"
-              :class="['text-primary transition-colors duration-300 hover:text-secondary']"
+              :class="['text-lg text-primary transition-colors duration-300 hover:text-secondary']"
             >{{ link.text }}</NuxtLink>
           </li>
         </ul>
@@ -37,9 +37,8 @@ onUnmounted(() => {
 
 // Define the navigation links as an object
 const navLinks: { text: string, href: string }[] = [
-  { text: 'Projets', href: '/#projects' },
-  { text: 'Experiences', href: '/#experiences' },
-  { text: 'Contact', href: '/#contact' },
-  // { text: 'Articles', href: '/articles' },
+  { text: 'My Projects 🤠', href: '/#projects' },
+  { text: 'My Tech Stack 🛠', href: '/#techstacks' },
+  { text: 'Contact 📱', href: '/#contact' },
 ]
 </script>

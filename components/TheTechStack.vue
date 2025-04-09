@@ -1,5 +1,6 @@
 <template>
   <section
+    id="techstacks"
     ref="techStackSectionEl"
   >
     <div
@@ -10,7 +11,7 @@
         <h2
           class="text-3xl font-extrabold text-primary text-center border-b-2 border-primary pb-2"
         >
-          My Tech Stack 🛠️
+          My Tech Stack 🛠
         </h2>
       </header>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
@@ -51,6 +52,7 @@ await useAsyncData('technologies', async () => {
   const technologiesPresenter = new TechnologiesPresenterImpl(vm => technologies.value = vm)
   const getTechnologiesUseCase = new GetTechnologiesUseCase(technologiesRepositoryStrapi)
   await getTechnologiesUseCase.execute(technologiesPresenter)
+  return
 })
 
 const isSectionVisible = ref(false)

@@ -1,20 +1,22 @@
 <template>
   <section
     id="hero"
-    class="relative container mx-auto max-w-full lg:w-3/5 pt-20 mb-20 text-gray-700"
+    class="flex items-center justify-center container mx-auto max-w-full h-screen lg:w-3/5 text-gray-700"
   >
-    <div class="flex flex-col gap-20 justify-between items-center">
+    <div
+      class="flex flex-col gap-20 justify-between items-center"
+    >
       <div
         class="group cursor-crosshair flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center"
-        @mouseover="onMouseEnterMe"
-        @mouseleave="onMouseLeaveMe"
       >
         <div
-          class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
+          class="animate-fade-in-right-slow relative inline-block rounded-full w-80 lg:w-[28rem] duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
           :class="{
             'aspect-square bg-gradient-to-br from-[#B0D6A7] via-[#85B5B1] to-[#00549A]': !isImageLoaded,
             'bg-gradient-to-r from-blue-400 via-[#85B5B1] to-blue-400': isImageLoaded,
           }"
+          @mouseover="onMouseEnterMe"
+          @mouseleave="onMouseLeaveMe"
           @click="() => console.log('Coming soooon')"
         >
           <div
