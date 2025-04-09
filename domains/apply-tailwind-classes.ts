@@ -8,5 +8,6 @@ export function applyTailwindClasses(html: string): string {
     .replace(/<ul>/g, '<ul class="list-disc pl-5 mb-4">')
     .replace(/<ol>/g, '<ol class="list-decimal pl-5">')
     .replace(/<li>/g, '<li class="mb-4">')
+    .replace(/<hr>/g, '<hr class="mb-4" />')
     .replace(/<a>/g, '<a class="text-blue-500 hover:text-blue-700">')
 }

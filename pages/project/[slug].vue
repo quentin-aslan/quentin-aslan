@@ -71,7 +71,7 @@
       <!-- Main Content -->
       <section
         v-if="project.content"
-        class="prose prose-base mt-8"
+        class="prose prose-base"
       >
         <div v-html="project.content" />
       </section>

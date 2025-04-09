@@ -4,7 +4,11 @@
     class="relative container mx-auto max-w-full lg:w-3/5 pt-20 mb-20 text-gray-700"
   >
     <div class="flex flex-col gap-20 justify-between items-center">
-      <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center">
+      <div
+        class="group cursor-crosshair flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center"
+        @mouseover="onMouseEnterMe"
+        @mouseleave="onMouseLeaveMe"
+      >
         <div
           class="animate-fade-in-right-slow relative inline-block rounded-full w-56 lg:w-96 duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
           :class="{
@@ -15,31 +19,29 @@
         >
           <div
             class="rounded-full overflow-hidden w-full h-full"
-            @mouseover="startWave"
-            @mouseleave="stopWave"
           >
             <NuxtImg
               v-show="isImageLoaded"
-              src="/img/me_aurora.jpg"
+              :src="imgSrc"
               alt="Quentin Aslan with Aurora in the background"
               class="border-4 border-white animate-fadeInHeroImage w-full h-full object-cover rounded-full aspect-square"
               :on-load="isImageLoaded = true"
             />
             <div class="h-full flex justify-center items-center text animate-pulse">
-              <!-- Loading text can be write here -->
+              <!-- Loading text -->
             </div>
           </div>
         </div>
 
         <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
-          <h1 class="text-4xl lg:text-6xl font-bold text-[#00549A] ">
-            Software <br> Engineer <span
+          <h1 class="text-5xl lg:text-7xl font-bold text-[#00549A]">
+            Quentin <br> Aslan
+          </h1>
+          <p class="mt-2 text-xl text-gray-600 leading-8">
+            A passionate <strong>Full-Stack Developer.</strong> <span
               ref="waveEl"
               class="inline-block transform origin-bottom hover:animate-wave cursor-pointer"
             >👋</span>
-          </h1>
-          <p class="mt-2 text-xl text-gray-600 leading-8">
-            Hi, I'm <strong>Quentin Aslan</strong>, <br> A passionate <strong>Full-Stack Developer.</strong>
           </p><p />
 
           <div class="flex flex-row items-center justify-center lg:justify-normal gap-5">
@@ -85,13 +87,19 @@
 <script setup lang="ts">
 const isImageLoaded = ref(false)
 
-const waveEl = ref<HTMLElement | null>(null)
+const IMG_ME_AURORA = '/img/me_aurora.jpg'
+const IMG_ME_DESERT = '/img/me_desert.jpg'
 
-const startWave = () => {
+const waveEl = ref<HTMLElement | null>(null)
+const imgSrc = ref(IMG_ME_AURORA)
+
+const onMouseEnterMe = () => {
+  imgSrc.value = IMG_ME_DESERT
   waveEl.value?.classList.add('animate-wave')
 }
 
-const stopWave = () => {
+const onMouseLeaveMe = () => {
+  imgSrc.value = IMG_ME_AURORA
   waveEl.value?.classList.remove('animate-wave')
 }
 </script>

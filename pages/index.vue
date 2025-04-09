@@ -4,7 +4,6 @@
     <Hero />
     <AboutMe />
     <TheMainPageProjectList />
-    <Experiences />
     <Contact />
   </main>
 </template>

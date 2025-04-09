@@ -1,7 +1,8 @@
 <template>
   <article
-    class="group flex flex-col lg:flex-row gap-5 p-10 w-[90%]
+    class="group cursor-pointer flex flex-col lg:flex-row gap-5 p-10 w-[90%]
     rounded-lg bg-white border-2 border-primary shadow-primary shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
+    @click="() => router.push(project.projectLink)"
   >
     <!-- Cover image -->
     <div class="w-full lg:w-1/3 overflow-hidden rounded-md">
@@ -19,28 +20,26 @@
     <div class="flex flex-col gap-4 w-full">
       <header class="flex flex-col gap-1">
         <h3 class="text-2xl font-bold">
-          <NuxtLink :to="project.projectLink">
-            {{ project.title }}
-          </NuxtLink>
+          {{ project.title }}
         </h3>
         <div class="flex flex-col">
           <span class="text-lg text-gray-900">{{ project.position }}</span>
-          <span class="text-base text-gray-500">{{ project.startDate }} | {{ project.location }}</span>
+          <span class="text-base text-gray-700">{{ project.startDate }} <span v-if="project.endDate"> - {{ project.endDate }}</span> | {{ project.location }}</span>
         </div>
       </header>
 
       <div class="flex flex-col gap-2">
-        <blockquote class="lg:p-4 lg:bg-gray-50">
+        <blockquote class="p-4 bg-gray-50">
           <span v-html="project.description" />
         </blockquote>
 
-        <section>
+        <section class="flex flex-col gap-2">
           <h4 class="text-xl text-primary">
             Tech Stack:
           </h4>
 
           <div
-            class="flex flex-wrap gap-1 mt-2 p-2"
+            class="flex flex-wrap gap-1"
           >
             <TechBadge
               v-for="tech in project.technologies"
@@ -63,4 +62,6 @@ type Props = {
 }
 
 const props = defineProps<Props>()
+
+const router = useRouter()
 </script>

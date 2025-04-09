@@ -9,8 +9,15 @@ export class ProjectsMainPagePresenterImpl implements ProjectsPresenter {
   ) {}
 
   public async present(projects: Project[]) {
-    const formattedProjects = await Promise.all(projects.map(this.toViewModel))
+    const formattedProjects = (await Promise.all(projects.sort(this.sortByDateDescending).map(this.toViewModel)))
     this.projectsViewModel(formattedProjects)
+  }
+
+  private sortByDateDescending = (a: Project, b: Project): number => {
+    const dateA = new Date(a.startDate)
+    const dateB = new Date(b.startDate)
+
+    return dateB.getTime() - dateA.getTime()
   }
 
   private toViewModel = async (project: Project): Promise<ProjectViewModel> => {
