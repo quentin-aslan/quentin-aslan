@@ -1,10 +1,11 @@
 <template>
-  <main class="max-w-full">
+  <main class="max-w-full mx-auto flex flex-col">
     <BackgroundAurora />
-    <Hero />
-    <AboutMe />
+    <TheHero />
+    <TheAboutMe />
     <TheMainPageProjectList />
-    <Contact />
+    <TheTechStack />
+    <TheContact />
   </main>
 </template>
 

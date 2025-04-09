@@ -2,7 +2,7 @@
   <section
     id="projects"
     ref="projectsListSection"
-    class="flex flex-col gap-8 my-8 mx-auto text-gray-700 scroll-mt-16"
+    class="flex flex-col gap-8 py-10 mx-auto text-gray-700 scroll-mt-16"
   >
     <header class="text-center">
       <h2 class="text-3xl font-extrabold text-primary">
@@ -10,7 +10,7 @@
       </h2>
     </header>
 
-    <div class="flex flex-col gap-4 justify-center items-center">
+    <div class="flex flex-col gap-8 justify-center items-center">
       <ProjectCard
         v-for="project of projects"
         :key="project.title"

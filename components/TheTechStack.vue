@@ -1,21 +1,21 @@
 <template>
   <section
     ref="techStackSectionEl"
-    class="flex flex-col items-center gap-5"
   >
     <div
       v-show="isSectionVisible && technologies.length > 0"
-      class="flex flex-col items-center gap-5"
+      class="flex flex-col items-center gap-5 text-gray-700 py-10 bg-white"
     >
-      <h2
-        class="text-2xl border-b-2 border-primary pb-2"
-        :class="{ 'animate-fade-in-right': isSectionVisible }"
-      >
-        Tech Stack
-      </h2>
+      <header>
+        <h2
+          class="text-3xl font-extrabold text-primary text-center border-b-2 border-primary pb-2"
+        >
+          My Tech Stack 🛠️
+        </h2>
+      </header>
       <div class="flex flex-wrap px-20 lg:p-0 md:flex-row gap-5 md:gap-10 mt-4 items-center justify-center">
         <div
-          v-for="(techno, index) of techStacksDisplayed"
+          v-for="(techno, index) of technologies"
           :key="techno.label"
           :class="{ 'animate-fade-in-left': isSectionVisible && index % 2 === 0, 'animate-fade-in-right': isSectionVisible && index % 2 !== 0 }"
         >
@@ -25,25 +25,17 @@
             <NuxtImg
               :src="techno.imgSrc"
               :alt="techno.label"
-              class="w-8"
+              class="w-10"
             />
-            <span>{{ techno.label }}</span>
+            <span class="text-lg">{{ techno.label }}</span>
           </div>
         </div>
       </div>
-      <button
-        v-if="smAndSmaller && techStacksDisplayed.length !== technologies.length"
-        class="text-primary font-semibold duration-150 border-b-2 border-secondary hover:text-primary hover:border-primary hover:-translate-y-1.5"
-        @click="() => techStacksDisplayed = technologies"
-      >
-        Show more
-      </button>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { Technology } from '~/domains/technologies/entities/Technology'
 import { GetTechnologiesUseCase } from '~/domains/technologies/get-technologies.use-case'
 import { TechnologiesPresenterImpl } from '~/domains/technologies/adapters/technologies.presenter.impl'
@@ -61,20 +53,8 @@ await useAsyncData('technologies', async () => {
   await getTechnologiesUseCase.execute(technologiesPresenter)
 })
 
-const techStacksDisplayed = ref<Technology[]>([])
-const breakpoints = useBreakpoints(breakpointsTailwind)
-
-const smAndSmaller = breakpoints.smallerOrEqual('sm') // between sm and lg
 const isSectionVisible = ref(false)
 const techStackSectionEl = ref(null)
-
-watch(
-  technologies,
-  (newVal) => {
-    techStacksDisplayed.value = smAndSmaller.value ? newVal.slice(0, 5) : newVal
-  },
-  { immediate: true },
-)
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {

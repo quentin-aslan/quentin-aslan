@@ -2,7 +2,7 @@
   <section
     id="contact"
     ref="contactSectionEl"
-    class="bg-white flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-4 p-10 lg:pl-20 text-lg scroll-mt-16"
+    class="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-4 p-10 lg:pl-20 text-lg scroll-mt-16"
   >
     <div
       class="relative lg:border-r-2 lg:w-2/4 flex flex-row items-center justify-center duration-150 hover:-translate-y-1.5"

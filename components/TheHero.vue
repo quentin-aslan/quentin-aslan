@@ -22,8 +22,8 @@
           >
             <NuxtImg
               v-show="isImageLoaded"
-              :src="imgSrc"
-              alt="Quentin Aslan with Aurora in the background"
+              :src="imgData.src"
+              :alt="imgData.alt"
               class="border-4 border-white animate-fadeInHeroImage w-full h-full object-cover rounded-full aspect-square"
               :on-load="isImageLoaded = true"
             />
@@ -45,8 +45,8 @@
           </p><p />
 
           <div class="flex flex-row items-center justify-center lg:justify-normal gap-5">
-            <a
-              href="https://www.linkedin.com/in/quentin-aslan/?locale=en_US"
+            <NuxtLink
+              to="https://www.linkedin.com/in/quentin-aslan/?locale=en_US"
               target="_blank"
               class="duration-300 hover:-translate-y-1.5 flex flex-col gap-2 items-center"
             >
@@ -61,9 +61,9 @@
               </span>
 
               <span>LinkedIn</span>
-            </a>
-            <a
-              href="https://github.com/quentin-aslan"
+            </NuxtLink>
+            <NuxtLink
+              to="https://github.com/quentin-aslan"
               target="_blank"
               class="duration-300 hover:-translate-y-1.5 flex flex-col gap-2 items-center"
             >
@@ -75,11 +75,10 @@
               </span>
 
               <span>GitHub</span>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
-      <TechStack />
     </div>
   </section>
 </template>
@@ -87,19 +86,31 @@
 <script setup lang="ts">
 const isImageLoaded = ref(false)
 
-const IMG_ME_AURORA = '/img/me_aurora.jpg'
-const IMG_ME_DESERT = '/img/me_desert.jpg'
+const IMG_ME_AURORA = {
+  src: '/img/me_aurora.jpg',
+  alt: 'Quentin Aslan with Aurora in the background',
+}
+const IMG_ME_DESERT = {
+  src: '/img/me_desert.jpg',
+  alt: 'Quentin Aslan with a desert in the background',
+}
 
 const waveEl = ref<HTMLElement | null>(null)
-const imgSrc = ref(IMG_ME_AURORA)
+
+type Img = {
+  src: string
+  alt: string
+}
+
+const imgData = ref<Img>(IMG_ME_AURORA)
 
 const onMouseEnterMe = () => {
-  imgSrc.value = IMG_ME_DESERT
+  imgData.value = IMG_ME_DESERT
   waveEl.value?.classList.add('animate-wave')
 }
 
 const onMouseLeaveMe = () => {
-  imgSrc.value = IMG_ME_AURORA
+  imgData.value = IMG_ME_AURORA
   waveEl.value?.classList.remove('animate-wave')
 }
 </script>
