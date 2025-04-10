@@ -2,6 +2,7 @@
   <motion.div :style="scrollStyle">
     <div
       ref="animatedBoxRef"
+      class="h-full w-full"
     >
       <slot />
     </div>
