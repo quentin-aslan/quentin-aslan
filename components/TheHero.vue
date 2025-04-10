@@ -10,14 +10,14 @@
         class="group cursor-crosshair flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center"
       >
         <div
-          class="animate-fade-in-right-slow relative inline-block rounded-full w-80 lg:w-[28rem] duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
+          class="animate-fade-in-right-slow relative inline-block rounded-full w-60 lg:w-[28rem] duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
           :class="{
             'aspect-square bg-gradient-to-br from-[#B0D6A7] via-[#85B5B1] to-[#00549A]': !isImageLoaded,
             'bg-gradient-to-r from-blue-400 via-[#85B5B1] to-blue-400': isImageLoaded,
           }"
           @mouseover="onMouseEnterMe"
           @mouseleave="onMouseLeaveMe"
-          @click="() => console.log('Coming soooon')"
+          @click="() => imgData = IMG_ME_PM"
         >
           <div
             class="rounded-full overflow-hidden w-full h-full"
@@ -27,7 +27,7 @@
               :src="imgData.src"
               :alt="imgData.alt"
               class="border-4 border-white animate-fadeInHeroImage w-full h-full object-cover rounded-full aspect-square"
-              :on-load="isImageLoaded = true"
+              @load="isImageLoaded = true"
             />
             <div class="h-full flex justify-center items-center text animate-pulse">
               <!-- Loading text -->
@@ -95,6 +95,11 @@ const IMG_ME_AURORA = {
 const IMG_ME_DESERT = {
   src: '/img/me_desert.jpg',
   alt: 'Quentin Aslan with a desert in the background',
+}
+
+const IMG_ME_PM = {
+  src: '/img/me_pm.jpg',
+  alt: '"Quentin Aslan in a suit, delivering a speech at a conference.',
 }
 
 const waveEl = ref<HTMLElement | null>(null)

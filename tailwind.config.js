@@ -12,7 +12,9 @@ module.exports = {
     extend: {
       colors: {
         primary: '#00549A',
-        secondary: '#007EBA',
+        secondary: '#7e91bc',
+        tertiary: '#e2f0ff',
+        quaternary: '#f1f1e6',
       },
       animation: {
         'rotateRightAndScale': 'rotateRightAndScale 5s linear ',

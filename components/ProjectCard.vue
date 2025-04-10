@@ -1,6 +1,6 @@
 <template>
   <article
-    class="group cursor-pointer flex flex-col lg:flex-row gap-5 p-10 w-[90%]
+    class="group cursor-pointer flex flex-col lg:flex-row gap-5 p-10 w-[90%] mx-[5%]
     rounded-lg bg-white border-2 border-primary shadow-primary shadow-custom-shadow-primary duration-150 hover:-translate-y-1.5"
     @click="() => router.push(project.projectLink)"
   >
@@ -29,9 +29,9 @@
       </header>
 
       <div class="flex flex-col gap-2">
-        <blockquote class="p-4 bg-gray-50">
+        <QuoteCustom>
           <span v-html="project.description" />
-        </blockquote>
+        </QuoteCustom>
 
         <section class="flex flex-col gap-2">
           <h4 class="text-xl text-primary">
@@ -56,6 +56,7 @@
 
 <script setup lang="ts">
 import type { ProjectViewModel } from '~/domains/projects/entities/Project'
+import QuoteCustom from '~/components/QuoteCustom.vue'
 
 type Props = {
   project: ProjectViewModel

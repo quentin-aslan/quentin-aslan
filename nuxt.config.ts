@@ -50,6 +50,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
     '@primevue/nuxt-module',
+    'motion-v/nuxt',
   ],
 
   eslint: {

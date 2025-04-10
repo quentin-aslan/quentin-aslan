@@ -2,6 +2,7 @@
   <section
     id="techstacks"
     ref="techStackSectionEl"
+    class="scroll-mt-16"
   >
     <div
       v-show="isSectionVisible && technologies.length > 0"

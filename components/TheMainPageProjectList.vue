@@ -11,11 +11,21 @@
     </header>
 
     <div class="flex flex-col gap-8 justify-center items-center">
-      <ProjectCard
-        v-for="project of projects"
-        :key="project.title"
-        :project="project"
-      />
+      <AnimatedBox
+        v-for="(project, index) of projects"
+        :key="project.slug"
+        rotation-val="45"
+        :translate-x-data="{
+          translateXMinVal: (index % 2 === 0) ? -100 : 100,
+          translateXInitVal: (index % 2 === 0) ? 100 : -100,
+          translateXMaxVal: 0,
+        }"
+        class=""
+      >
+        <ProjectCard
+          :project="project"
+        />
+      </AnimatedBox>
     </div>
   </section>
 </template>
