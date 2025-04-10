@@ -28,8 +28,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://quentinaslan.fr',
-    name: 'Quentin Aslan | Software Engineer',
-    description: 'Full-Stack Developer in Montreal. Explore my projects and skills.',
+    name: 'Quentin Aslan, Software Engineer',
+    description: 'A passionate Full-Stack Developer. For the past 10 years, I’ve been building web and mobile apps across France 🇫🇷, Canada 🇨🇦, and the U.S 🇺🇸.  I enjoy working on meaningful projects — both professionally and in my free time.',
     defaultLocale: 'en',
   },
 

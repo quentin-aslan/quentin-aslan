@@ -52,7 +52,7 @@
           <span class="inline-block">
             <NuxtLink
               to="/about-me"
-              class="group inline-flex items-center gap-2 text-base text-primary/80 hover:text-primary hover:underline underline-offset-2 transition-colors duration-300"
+              class="group inline-flex items-center gap-2 text-lg text-primary/80 hover:text-primary hover:underline underline-offset-2 transition-colors duration-300"
             >
               Learn more about me
               <span class="transition-transform duration-300 group-hover:translate-x-1">➜</span>
