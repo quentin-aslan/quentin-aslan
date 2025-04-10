@@ -1,13 +1,13 @@
 <template>
   <section
     id="hero"
-    class="flex items-center justify-center container mx-auto max-w-full h-screen lg:w-3/5 text-gray-700"
+    class="z-10 flex items-center justify-center container mx-auto max-w-full min-h-screen pt-14 pb-10 lg:p-0 lg:w-3/5 text-gray-700"
   >
     <div
       class="flex flex-col gap-20 justify-between items-center"
     >
       <div
-        class="group cursor-crosshair flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center"
+        class="group flex flex-col lg:flex-row-reverse gap-8 lg:gap-20 items-center"
       >
         <div
           class="animate-fade-in-right-slow relative inline-block rounded-full w-60 lg:w-[28rem] duration-300 hover:scale-105 p-1 hover:p-2 cursor-pointer"
@@ -19,9 +19,7 @@
           @mouseleave="onMouseLeaveMe"
           @click="() => imgData = IMG_ME_PM"
         >
-          <div
-            class="rounded-full overflow-hidden w-full h-full"
-          >
+          <div class="rounded-full overflow-hidden w-full h-full">
             <NuxtImg
               v-show="isImageLoaded"
               :src="imgData.src"
@@ -35,7 +33,7 @@
           </div>
         </div>
 
-        <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-2 w-4/5">
+        <div class="animate-fade-in-left-slow flex flex-col text-center lg:text-left gap-5 w-4/5">
           <h1 class="text-5xl lg:text-7xl font-bold text-[#00549A]">
             Quentin <br> Aslan
           </h1>
@@ -44,7 +42,22 @@
               ref="waveEl"
               class="inline-block transform origin-bottom hover:animate-wave cursor-pointer"
             >👋</span>
-          </p><p />
+          </p>
+
+          <span
+            class="flex flex-col gap-2"
+            v-html="aboutMe?.heroContent"
+          />
+
+          <span class="inline-block">
+            <NuxtLink
+              to="/about-me"
+              class="group inline-flex items-center gap-2 text-base text-primary/80 hover:text-primary hover:underline underline-offset-2 transition-colors duration-300"
+            >
+              Learn more about me
+              <span class="transition-transform duration-300 group-hover:translate-x-1">➜</span>
+            </NuxtLink>
+          </span>
 
           <div class="flex flex-row items-center justify-center lg:justify-normal gap-5">
             <NuxtLink
@@ -86,6 +99,11 @@
 </template>
 
 <script setup lang="ts">
+import type { AboutMe } from '~/domains/about-me/entities/AboutMe'
+import { AboutMeRepositoryStrapi } from '~/domains/about-me/adapters/about-me.repository.strapi'
+import { AboutMePresenterImpl } from '~/domains/about-me/adapters/about-me.presenter.impl'
+import { GetAboutMeUseCase } from '~/domains/about-me/get-about-me.use-case'
+
 const isImageLoaded = ref(false)
 
 const IMG_ME_AURORA = {
@@ -120,4 +138,16 @@ const onMouseLeaveMe = () => {
   imgData.value = IMG_ME_AURORA
   waveEl.value?.classList.remove('animate-wave')
 }
+
+const config = useRuntimeConfig()
+
+const aboutMe = ref<AboutMe | null>(null)
+
+await useAsyncData('about-me', async () => {
+  const aboutMeRepositoryStrapi = new AboutMeRepositoryStrapi(config.public.STRAPI_BASE_URL, config.public.STRAPI_READ_ONLY)
+  const aboutMePresenter = new AboutMePresenterImpl(vm => aboutMe.value = vm)
+  const getAboutMeUseCase = new GetAboutMeUseCase(aboutMeRepositoryStrapi)
+  await getAboutMeUseCase.execute(aboutMePresenter)
+  return
+})
 </script>

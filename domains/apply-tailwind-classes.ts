@@ -10,4 +10,5 @@ export function applyTailwindClasses(html: string): string {
     .replace(/<li>/g, '<li class="mb-4">')
     .replace(/<hr>/g, '<hr class="mb-4" />')
     .replace(/<a>/g, '<a class="text-blue-500 hover:text-blue-700">')
+    .replace(/<strong>/g, '<strong class="font-bold">')
 }

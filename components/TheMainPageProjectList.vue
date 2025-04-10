@@ -2,7 +2,7 @@
   <section
     id="projects"
     ref="projectsListSection"
-    class="flex flex-col gap-8 py-10 mx-auto text-gray-700 scroll-mt-16"
+    class="bg-white flex flex-col gap-8 py-10 mx-auto text-gray-700 scroll-mt-16"
   >
     <header class="text-center">
       <h2 class="text-3xl font-extrabold text-primary">
@@ -14,7 +14,7 @@
       <AnimatedBox
         v-for="(project, index) of projects"
         :key="project.slug"
-        rotation-val="45"
+        :rotation-val="45"
         :translate-x-data="{
           translateXMinVal: (index % 2 === 0) ? -100 : 100,
           translateXInitVal: (index % 2 === 0) ? 100 : -100,

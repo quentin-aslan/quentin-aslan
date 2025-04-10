@@ -19,7 +19,6 @@ type TranslateXData = {
 }
 
 type Props = {
-  targetElement: HTMLElement
   translateXData?: TranslateXData
   rotationVal?: number
 }

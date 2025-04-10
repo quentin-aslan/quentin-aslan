@@ -36,10 +36,22 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
+const route = useRoute()
+
+type NavLink = { text: string, href: string }
+
 // Define the navigation links as an object
-const navLinks: { text: string, href: string }[] = [
-  { text: 'My Projects', href: '/#projects' },
-  { text: 'My Tech Stack', href: '/#techstacks' },
-  { text: 'Contact', href: '/#contact' },
-]
+const navLinks = computed<NavLink[]>(() => {
+  const links: NavLink[] = []
+  if ('/about-me' === route.fullPath) {
+    links.push({ text: 'Home', href: '/' })
+  }
+  else {
+    links.push({ text: 'About me', href: '/about-me' })
+  }
+
+  links.push({ text: 'My Projects', href: '/#projects' })
+  links.push({ text: 'My Tech Stack', href: '/#techstacks' })
+  return links
+})
 </script>

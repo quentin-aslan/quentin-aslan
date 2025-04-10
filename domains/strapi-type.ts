@@ -19,3 +19,8 @@ export type StrapiApiResponse<T> = {
   data: (StrapiGenericData & T)[]
   meta: StrapiGenericMeta
 }
+
+export type StrapiApiResponseSingle<T> = {
+  data: (StrapiGenericData & T)
+  meta: object
+}

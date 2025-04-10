@@ -6,7 +6,7 @@
   >
     <div
       v-show="isSectionVisible && technologies.length > 0"
-      class="flex flex-col items-center gap-5 text-gray-700 py-10 bg-white"
+      class="flex flex-col items-center gap-5 text-gray-700 py-10"
     >
       <header>
         <h2
