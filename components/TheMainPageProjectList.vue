@@ -15,7 +15,7 @@
       <AnimatedBox
         v-for="(project, index) of projects"
         :key="project.slug"
-        :rotation-val="45"
+        :rotation-val="(index % 2 === 0) ? 45 : -45"
         :translate-x-data="{
           translateXMinVal: (index % 2 === 0) ? -100 : 100,
           translateXInitVal: (index % 2 === 0) ? 100 : -100,
