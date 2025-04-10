@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { motion, useScroll } from 'motion-v'
+import { motion, type ScrollOffset, useScroll } from 'motion-v'
 import { onMounted, ref, nextTick } from 'vue'
 
 type TranslateXData = {
@@ -21,6 +21,7 @@ type TranslateXData = {
 type Props = {
   translateXData?: TranslateXData
   rotationVal?: number
+  offset?: ScrollOffset
 }
 
 const props = defineProps<Props>()
@@ -35,7 +36,7 @@ onMounted(() => {
   nextTick(() => {
     const { scrollYProgress: progress } = useScroll({
       target: animatedBoxRef,
-      offset: ['start end', 'start 0.3'], // https://motion.dev/docs/vue-use-scroll#offset
+      offset: props.offset ?? ['start end', 'start 0.3'], // https://motion.dev/docs/vue-use-scroll#offset
     })
 
     useMotionValueEvent(progress, 'change', (latest) => {

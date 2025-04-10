@@ -1,5 +1,6 @@
 <template>
   <section
+    v-show="projects.length > 0"
     id="projects"
     ref="projectsListSection"
     class="bg-white flex flex-col gap-8 py-10 mx-auto text-gray-700 scroll-mt-16"
@@ -20,7 +21,6 @@
           translateXInitVal: (index % 2 === 0) ? 100 : -100,
           translateXMaxVal: 0,
         }"
-        class=""
       >
         <ProjectCard
           :project="project"

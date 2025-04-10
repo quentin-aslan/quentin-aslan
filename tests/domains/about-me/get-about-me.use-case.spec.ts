@@ -1,8 +1,4 @@
 import { describe, it, expect } from 'vitest'
-import type { Technology } from '~/domains/technologies/entities/Technology'
-import { GetTechnologiesUseCase } from '~/domains/technologies/get-technologies.use-case'
-import { TechnologiesRepositoryMock } from '~/domains/technologies/adapters/technologies.repository.mock'
-import { TechnologiesPresenterImpl } from '~/domains/technologies/adapters/technologies.presenter.impl'
 import type { AboutMe } from '~/domains/about-me/entities/AboutMe'
 import { GetAboutMeUseCase } from '~/domains/about-me/get-about-me.use-case'
 import { AboutMeRepositoryMock } from '~/domains/about-me/adapters/about-me.repository.mock'
