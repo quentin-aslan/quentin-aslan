@@ -84,6 +84,8 @@ import { GetProjectUseCase } from '~/domains/projects/get-project.use-case'
 import { ProjectsRepositoryStrapi } from '~/domains/projects/adapters/projects.repository.strapi'
 import type { ProjectViewModel } from '~/domains/projects/entities/Project'
 import { ProjectPresenterImpl } from '~/domains/projects/adapters/project.presenter.impl'
+import { MetricsRepositoryNuxt } from '~/domains/metrics/adapters/metrics.repository.nuxt'
+import { InsertMetricsPageViewCounterUseCase } from '~/domains/metrics/insert-metrics-page-view-counter.use-case'
 
 const route = useRoute()
 const config = useRuntimeConfig()
@@ -94,5 +96,10 @@ await useAsyncData('project', async () => {
   const projectsRepositoryStrapi = new ProjectsRepositoryStrapi(config.public.STRAPI_BASE_URL, config.public.STRAPI_READ_ONLY)
   const getProjectUseCase = new GetProjectUseCase(projectsRepositoryStrapi)
   await getProjectUseCase.execute(new ProjectPresenterImpl(vm => project.value = vm), route.params.slug)
+})
+
+useAsyncData('metric', async () => {
+  const insertMetricsHttpCounterUseCase = new InsertMetricsPageViewCounterUseCase(new MetricsRepositoryNuxt())
+  await insertMetricsHttpCounterUseCase.execute({ path: route.fullPath })
 })
 </script>
