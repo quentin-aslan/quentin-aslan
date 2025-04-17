@@ -17,6 +17,9 @@ export class TechnologiesRepositoryStrapi implements TechnologiesRepository {
       headers: {
         Authorization: 'Bearer ' + this.strapiBearer,
       },
+      params: {
+        'pagination[pageSize]': 50,
+      },
     })
 
     return data.map(technology => ({

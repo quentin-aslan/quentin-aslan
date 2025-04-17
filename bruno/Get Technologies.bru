@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/technologies
+  url: {{BASE_URL}}/technologies?pagination[pageSize]=50
   body: none
   auth: inherit
+}
+
+params:query {
+  pagination[pageSize]: 50
 }
 
 headers {
