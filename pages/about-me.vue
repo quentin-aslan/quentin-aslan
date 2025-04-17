@@ -1,7 +1,5 @@
 <template>
-  <main class="pt-14">
-    <TheAboutMe />
-  </main>
+  <TheAboutMe />
 </template>
 
 <script lang="ts" setup>

@@ -2,7 +2,7 @@
   <section
     id="about-me"
     ref="aboutMeSection"
-    class="bg-white text-gray-700 p-10"
+    class="text-gray-700 w-full h-full"
   >
     <div class="flex flex-col lg:flex-row gap-4 items-center">
       <div
