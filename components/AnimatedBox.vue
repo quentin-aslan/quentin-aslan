@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import { motion, type ScrollOffset, useScroll } from 'motion-v'
-import { onMounted, ref, nextTick } from 'vue'
+import { motion, type ScrollOffset, useScroll, useMotionValueEvent } from 'motion-v'
+import { onMounted, ref, nextTick, computed } from 'vue'
 
 type TranslateXData = {
   translateXInitVal: number // +100 (outside left) -100(outside right)
@@ -23,11 +23,32 @@ type Props = {
   translateXData?: TranslateXData
   rotationVal?: number
   offset?: ScrollOffset
+  mobileOffset?: ScrollOffset
 }
 
 const props = defineProps<Props>()
 
 const animatedBoxRef = ref<HTMLElement | null>(null)
+
+const isMobile = ref(false)
+
+// Check if a device is mobile on the client-side
+onMounted(() => {
+  isMobile.value = window.innerWidth < 768 // Common breakpoint for mobile devices
+
+  // Update on resize
+  window.addEventListener('resize', () => {
+    isMobile.value = window.innerWidth < 768
+  })
+})
+
+// Determine which offset to use based on a device type
+const currentOffset = computed<ScrollOffset>(() => {
+  if (isMobile.value && props.mobileOffset) {
+    return props.mobileOffset
+  }
+  return props.offset ?? ['start end', 'start 0.3']
+})
 
 const scrollStyle = ref({
   transform: `translateX(${props.translateXData?.translateXInitVal ?? 0}%)`,
@@ -37,7 +58,7 @@ onMounted(() => {
   nextTick(() => {
     const { scrollYProgress: progress } = useScroll({
       target: animatedBoxRef,
-      offset: props.offset ?? ['start end', 'start 0.3'], // https://motion.dev/docs/vue-use-scroll#offset
+      offset: currentOffset.value, // Use computed offset based on the device type
     })
 
     useMotionValueEvent(progress, 'change', (latest) => {
