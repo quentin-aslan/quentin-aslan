@@ -2,6 +2,9 @@ import { collectDefaultMetrics, Registry, Counter } from 'prom-client'
 
 interface PageViewCounterLabels {
   path: string
+  referer?: string
+  agent?: string
+  country?: string
 }
 
 class MetricsService {
@@ -20,13 +23,21 @@ class MetricsService {
       help: 'Compte le nombre de fois qu\'une page est affiché',
       labelNames: [
         'path',
+        'referer',
+        'agent',
+        'country',
       ],
       registers: [this.registry],
     })
   }
 
   setPageViewCounter(labels: PageViewCounterLabels) {
-    this.pageViewCounter.inc({ ...labels }, 1)
+    this.pageViewCounter.inc({
+      path: labels.path,
+      referer: labels.referer ?? 'unknown',
+      agent: labels.agent ?? 'unknown',
+      country: labels.country ?? 'unknown',
+    }, 1)
   }
 
   async getMetrics() {
