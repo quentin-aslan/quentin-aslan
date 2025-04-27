@@ -103,4 +103,7 @@ module.exports = {
       })
     },
   ],
+  safelist: [
+    'bg-gray-900', 'text-gray-100', 'mb-6',
+  ],
 }
