@@ -1,5 +1,5 @@
 <template>
-  <main class="p-20 lg:p-0">
+  <main class="pt-14 p-10 lg:p-0">
     <TheAboutMe />
   </main>
 </template>

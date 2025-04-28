@@ -24,7 +24,7 @@
         <img
           :src="article.cover.url"
           :alt="article.cover.alternativeText || 'Cover image'"
-          class="w-full h-full object-cover rounded-xl transform duration-300 hover:scale-105"
+          class="w-full h-full object-contain rounded-xl transform duration-300 hover:scale-105"
         >
         <p
           v-if="article.cover.caption"

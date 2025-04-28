@@ -19,7 +19,7 @@
           <h2 class="text-2xl font-semibold mb-4">
             Identité de l'entreprise
           </h2>
-          <p>Quentin Aslan, Entrepreneur Individuel (EI)</p>
+          <p>Quentin Aslan</p>
           <p>SIREN : 833035348</p>
         </section>
 
@@ -39,7 +39,7 @@
           <h2 class="text-2xl font-semibold mb-4">
             Hébergement du site
           </h2>
-          <p>Ce site est hébergé par OVH.</p>
+          <p>Ce site est hébergé sur un VPS chez OVH.</p>
           <p>Adresse : 2 rue Kellermann - 59100 Roubaix - France</p>
         </section>
       </div>
