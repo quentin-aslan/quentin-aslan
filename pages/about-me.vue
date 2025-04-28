@@ -1,5 +1,7 @@
 <template>
-  <TheAboutMe />
+  <main class="p-20 lg:p-0">
+    <TheAboutMe />
+  </main>
 </template>
 
 <script lang="ts" setup>

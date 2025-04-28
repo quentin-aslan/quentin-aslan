@@ -1,7 +1,7 @@
-import { marked } from 'marked'
 import { applyTailwindClasses } from '~/domains/apply-tailwind-classes'
 import type { ArticlePresenter } from '~/domains/articles/ports/article.presenter'
 import type { Article, ArticleViewModel } from '~/domains/articles/entities/Article'
+import markedMdConfig from '~/domains/utils/marked-md-config'
 
 export class ArticlePresenterImpl implements ArticlePresenter {
   constructor(
@@ -14,7 +14,7 @@ export class ArticlePresenterImpl implements ArticlePresenter {
   }
 
   private toViewModel = async (article: Article): Promise<ArticleViewModel> => {
-    const content = await marked.parse(article.content)
+    const content = await markedMdConfig.parse(article.content)
 
     return {
       title: article.title,

@@ -1,10 +1,10 @@
 <template>
-  <main class="pt-20 pb-20 px-4 md:px-12 max-w-6xl mx-auto text-black">
+  <main class="pt-20 pb-20 px-4 md:px-12 mx-auto text-black max-w-[90%] lg:max-w-[60%]">
     <article
       v-if="!article"
       class="text-center"
     >
-      <h1 class="text-4xl md:text-5xl font-bold">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
         No article found
       </h1>
       <p class="text-gray-500 mt-4">
@@ -12,40 +12,44 @@
       </p>
     </article>
 
-    <!-- Project -->
     <article
       v-else
-      class="flex flex-col gap-10 bg-white p-6 md:p-10 rounded-xl shadow-custom-shadow-primary border-2 border-primary"
+      class="flex flex-col gap-12  md:p-10 "
     >
       <!-- Cover Image -->
       <div
         v-if="article.cover"
-        class="overflow-hidden rounded-lg"
+        class="overflow-hidden rounded-xl shadow-md sm:max-h-full"
       >
         <img
           :src="article.cover.url"
-          :alt="article.cover.alternativeText"
-          class="w-full h-64 md:h-[400px] object-cover rounded-lg transform duration-300 hover:scale-105"
+          :alt="article.cover.alternativeText || 'Cover image'"
+          class="w-full h-full object-cover rounded-xl transform duration-300 hover:scale-105"
         >
-        <p class="text-sm text-gray-400 mt-2 italic text-center">
+        <p
+          v-if="article.cover.caption"
+          class="text-sm text-gray-400 mt-2 italic text-center"
+        >
           {{ article.cover.caption }}
         </p>
       </div>
 
-      <!-- Main Information -->
+      <!-- Title -->
       <header class="flex flex-col gap-2">
-        <h1 class="text-3xl md:text-5xl font-bold">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
           {{ article.title }}
         </h1>
       </header>
 
-      <!-- Description -->
-      <section class="prose prose-lg max-w-none text-justify">
+      <!-- Excerpt -->
+      <QuoteCustom>
         <span v-html="article.excerpt" />
-      </section>
+      </QuoteCustom>
 
-      <!-- Tech Stack -->
-      <section>
+      <!-- Stack Tech -->
+      <section
+        v-if="article.technologies?.length"
+      >
         <h2 class="text-2xl font-semibold text-primary mb-4">
           Tech Stack
         </h2>
@@ -53,7 +57,7 @@
           <div
             v-for="tech in article.technologies"
             :key="tech.label"
-            class="flex items-center gap-2 border border-primary rounded-full px-3 py-1 text-sm bg-gray-50 hover:bg-primary hover:text-white transition"
+            class="flex items-center gap-2 border border-primary rounded-full px-3 py-1 text-sm bg-gray-50 hover:bg-primary hover:text-white transition duration-300"
           >
             <img
               :src="tech.imgSrc"
@@ -65,10 +69,9 @@
         </div>
       </section>
 
-      <!-- Main Content -->
       <section
         v-if="article.content"
-        class="prose prose-base"
+        class="prose prose-base text-gray-800"
       >
         <div v-html="article.content" />
       </section>
@@ -81,6 +84,7 @@ import type { ArticleViewModel } from '~/domains/articles/entities/Article'
 import { ArticlesRepositoryStrapi } from '~/domains/articles/adapters/articles.repository.strapi'
 import { GetArticleUseCase } from '~/domains/articles/get-article.use-case'
 import { ArticlePresenterImpl } from '~/domains/articles/adapters/article.presenter.impl'
+import 'highlight.js/styles/github-dark.css'
 
 const route = useRoute()
 const config = useRuntimeConfig()

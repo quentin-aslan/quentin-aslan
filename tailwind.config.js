@@ -104,6 +104,18 @@ module.exports = {
     },
   ],
   safelist: [
-    'bg-gray-900', 'text-gray-100', 'mb-6',
+    'text-4xl', 'font-bold', 'mb-6', 'text-gray-900',
+    'text-3xl', 'font-semibold', 'mb-5', 'text-gray-800',
+    'text-2xl', 'font-semibold', 'mb-4', 'text-gray-700',
+    'text-base', 'text-gray-700', 'leading-relaxed', 'mb-6',
+    'list-disc', 'pl-5', 'mb-6',
+    'list-decimal', 'pl-5', 'mb-6',
+    'mb-3',
+    'my-8', 'border-gray-200',
+    'text-blue-600', 'hover:underline',
+    'font-bold', 'text-gray-800',
+    'bg-gray-900', 'text-gray-100', 'p-4', 'rounded-lg', 'overflow-x-auto', 'mb-6', 'text-sm',
+    'font-mono', 'text-sm', 'p-1', 'rounded-lg', 'bg-gray-900', 'text-gray-200',
   ],
+
 }
