@@ -43,15 +43,16 @@ type NavLink = { text: string, href: string }
 // Define the navigation links as an object
 const navLinks = computed<NavLink[]>(() => {
   const links: NavLink[] = []
-  if ('/about-me' === route.fullPath) {
+  if ('/about-me' === route.fullPath || route.fullPath.includes('/blog')) {
     links.push({ text: 'Home', href: '/' })
   }
   else {
     links.push({ text: 'About me', href: '/about-me' })
   }
 
-  links.push({ text: 'My Projects', href: '/#projects' })
+  // links.push({ text: 'My Projects', href: '/#projects' })
   links.push({ text: 'My Tech Stack', href: '/#techstacks' })
+  links.push({ text: 'Blog', href: '/blog' })
   return links
 })
 </script>
