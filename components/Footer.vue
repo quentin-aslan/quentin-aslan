@@ -10,7 +10,7 @@
       </NuxtLink>
     </div>
     <span class="mt-2 md:mt-0 text-xs lg:text-lg">Developed by <NuxtLink
-      to="https://quentinaslan.fr"
+      to="https://quentinaslan.com"
       class="font-bold cursor-pointer hover:underline"
     >Quentin Aslan</NuxtLink> 😃</span>
   </footer>

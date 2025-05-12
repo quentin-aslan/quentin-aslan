@@ -27,9 +27,9 @@
 
       <div class="flex flex-col gap-10 items-center duration-150 text-gray-700 ">
         <a
-          href="mailto:quentin.aslan@outlook.com"
+          href="mailto:contact@quentinaslan.com"
           class="text-2xl lg:text-3xl font-bold duration-150 hover:underline hover:text-primary  hover:-translate-y-1.5"
-        >quentin.aslan@outlook.com</a>
+        >contact@quentinaslan.com</a>
         <a
           href="tel:+33652689583"
           class="text-2xl lg:text-3xl font-bold duration-150 hover:underline hover:text-primary  hover:-translate-y-1.5"

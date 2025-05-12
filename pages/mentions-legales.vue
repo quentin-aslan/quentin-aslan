@@ -29,9 +29,9 @@
           </h2>
           <p>
             Email : <a
-              href="mailto:quentin.aslan@outlook.com"
+              href="mailto:contact@quentinaslan.com"
               class="text-blue-600 hover:underline"
-            >quentin.aslan@outlook.com</a> | Téléphone : +33 6 52 68 95 83
+            >contact@quentinaslan.com</a> | Téléphone : +33 6 52 68 95 83
           </p>
         </section>
 
