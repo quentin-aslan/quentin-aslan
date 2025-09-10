@@ -51,7 +51,19 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@primevue/nuxt-module',
     'motion-v/nuxt',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: [
+      { code: 'en', file: 'en.json', name: 'English' },
+      { code: 'fr', file: 'fr.json', name: 'Français' },
+    ],
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    langDir: 'locales',
+    lazy: true,
+  },
 
   eslint: {
     config: {

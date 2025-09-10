@@ -15,12 +15,20 @@
           </li>
         </ul>
       </nav>
+      <button
+        class="text-lg text-primary transition-colors duration-300 hover:text-secondary"
+        @click="toggleLanguage"
+      >
+        {{ currentLocale.toUpperCase() === 'EN' ? 'FR' : 'EN' }}
+      </button>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+
+const { t, locale } = useI18n()
 
 const isScrolled = ref(false)
 
@@ -44,15 +52,21 @@ type NavLink = { text: string, href: string }
 const navLinks = computed<NavLink[]>(() => {
   const links: NavLink[] = []
   if ('/about-me' === route.fullPath || route.fullPath.includes('/blog')) {
-    links.push({ text: 'Home', href: '/' })
+    links.push({ text: t('nav.home'), href: '/' })
   }
   else {
-    links.push({ text: 'About me', href: '/about-me' })
+    links.push({ text: t('nav.about'), href: '/about-me' })
   }
 
-  // links.push({ text: 'My Projects', href: '/#projects' })
-  links.push({ text: 'My Tech Stack', href: '/#techstacks' })
-  links.push({ text: 'Blog', href: '/blog' })
+  // links.push({ text: t('nav.projects'), href: '/#projects' })
+  links.push({ text: t('nav.techStack'), href: '/#techstacks' })
+  links.push({ text: t('nav.blog'), href: '/blog' })
   return links
 })
+
+const toggleLanguage = () => {
+  locale.value = locale.value === 'en' ? 'fr' : 'en'
+}
+
+const currentLocale = computed(() => locale.value)
 </script>
