@@ -44,7 +44,7 @@ const createShapes = () => {
   const edgeHeight = props.edgeHeight ?? window.innerHeight
   const maxSquares = props.size ?? 10
 
-  for (let i = 0; i < maxSquares ?? 10; i++) {
+  for (let i = 0; i < maxSquares; i++) {
     squares.value.push({
       x: Math.floor(Math.random() * edgeWidth),
       y: Math.floor(Math.random() * edgeHeight),

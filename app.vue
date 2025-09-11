@@ -4,7 +4,7 @@
     <main class="flex-grow w-full h-full flex items-center justify-center">
       <NuxtPage />
     </main>
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
