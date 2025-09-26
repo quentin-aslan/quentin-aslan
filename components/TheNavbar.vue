@@ -21,6 +21,7 @@
         @click="toggleMenu"
       >
         <svg
+          v-if="!isMenuOpen"
           xmlns="http://www.w3.org/2000/svg"
           class="w-6 h-6"
           fill="none"
@@ -34,13 +35,36 @@
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
+        <svg
+          v-else
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
       </button>
     </div>
-    <nav
-      v-if="isMenuOpen"
-      class="md:hidden bg-primary"
+    <Transition
+      enter-active-class="transition ease-out duration-200"
+      enter-from-class="transform opacity-0 scale-95"
+      enter-to-class="transform opacity-100 scale-100"
+      leave-active-class="transition ease-in duration-150"
+      leave-from-class="transform opacity-100 scale-100"
+      leave-to-class="transform opacity-0 scale-95"
     >
-      <ul class="flex flex-col space-y-2 p-4">
+      <nav
+        v-if="isMenuOpen"
+        class="md:hidden bg-primary"
+      >
+        <ul class="flex flex-col space-y-2 p-4">
         <li
           v-for="(link, index) in navLinks"
           :key="`mobile-${index}`"
@@ -52,7 +76,8 @@
           >{{ link.text }}</NuxtLink>
         </li>
       </ul>
-    </nav>
+      </nav>
+    </Transition>
   </header>
 </template>
 
@@ -71,7 +96,7 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
