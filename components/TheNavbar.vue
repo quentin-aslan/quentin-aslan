@@ -24,6 +24,7 @@
           @click="toggleMenu"
           class="md:hidden p-2 rounded-md text-primary hover:text-primary/80 hover:bg-gray-100 transition-colors duration-200"
           aria-label="Toggle menu"
+          :aria-expanded="isMenuOpen.toString()"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -53,7 +54,7 @@
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-1"
     >
-      <div v-show="isMenuOpen" class="md:hidden bg-white border-t border-gray-100">
+      <div v-show="isMenuOpen" ref="mobileMenuRef" class="md:hidden bg-white border-t border-gray-100">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <NuxtLink
             v-for="link in navLinks"
@@ -71,13 +72,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
+const mobileMenuRef = ref<HTMLElement | null>(null)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+  if (isMenuOpen.value) {
+    nextTick(() => {
+      trapFocus()
+    })
+  }
 }
 
 const closeMenu = () => {
@@ -88,12 +97,58 @@ const handleScroll = () => {
   isScrolled.value = window.scrollY > 10
 }
 
+const handleKeydown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape' && isMenuOpen.value) {
+    isMenuOpen.value = false
+  }
+
+  // Focus trap logic
+  if (isMenuOpen.value && e.key === 'Tab') {
+    const focusableElements = mobileMenuRef.value?.querySelectorAll(
+      'a, button, [tabindex]:not([tabindex="-1"])'
+    )
+
+    if (focusableElements && focusableElements.length > 0) {
+      const firstElement = focusableElements[0] as HTMLElement
+      const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault()
+          lastElement.focus()
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault()
+          firstElement.focus()
+        }
+      }
+    }
+  }
+}
+
+// Auto-close menu on route change
+watch(() => route.path, () => {
+  isMenuOpen.value = false
+})
+
+const trapFocus = () => {
+  const focusableElements = mobileMenuRef.value?.querySelectorAll(
+    'a, button, [tabindex]:not([tabindex="-1"])'
+  )
+  if (focusableElements && focusableElements.length > 0) {
+    (focusableElements[0] as HTMLElement).focus()
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('keydown', handleKeydown)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('keydown', handleKeydown)
 })
 
 type NavLink = { text: string, href: string }
