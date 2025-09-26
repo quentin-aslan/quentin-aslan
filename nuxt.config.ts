@@ -51,7 +51,31 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@primevue/nuxt-module',
     'motion-v/nuxt',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: [
+      { code: 'en', file: 'en.json', name: 'English', iso: 'en-US' },
+      { code: 'fr', file: 'fr.json', name: 'Français', iso: 'fr-FR' },
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default', // Better for SEO - adds /fr/ prefix for French
+    langDir: 'locales',
+    lazy: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // Only redirect on root page
+      alwaysRedirect: false,
+      fallbackLocale: 'en',
+    },
+    vueI18n: {
+      legacy: false,
+      locale: 'en',
+      fallbackLocale: 'en',
+    },
+  },
 
   eslint: {
     config: {
