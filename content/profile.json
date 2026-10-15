@@ -1,0 +1,1581 @@
+{
+  "updated": "2026-10-15",
+  "person": {
+    "name": "Quentin Aslan",
+    "email": "contact@quentinaslan.com",
+    "phone": "+33 6 52 68 95 83",
+    "phoneHref": "+33652689583",
+    "linkedin": "https://www.linkedin.com/in/quentin-aslan",
+    "github": "https://github.com/quentin-aslan",
+    "url": "https://quentinaslan.com",
+    "photo": "/img/quentin-portrait.webp",
+    "alumniOf": "Epitech",
+    "knowsAbout": [
+      "TypeScript",
+      "Vue.js",
+      "Nuxt",
+      "React",
+      "Next.js",
+      "Node.js",
+      "NestJS",
+      "Java",
+      "Spring Boot",
+      "Go",
+      "Swift",
+      "SwiftUI",
+      "GraphQL",
+      "AWS",
+      "Terraform",
+      "Docker",
+      "Cloudflare Workers",
+      "PostgreSQL",
+      "Web accessibility",
+      "WCAG",
+      "RGAA",
+      "European Accessibility Act",
+      "Large language models",
+      "Retrieval-augmented generation",
+      "AI agents",
+      "Claude Code",
+      "GitHub Copilot",
+      "Linux networking"
+    ],
+    "city": "Barcelona",
+    "legal": {
+      "name": "Quentin Aslan",
+      "form": "Entrepreneur individuel",
+      "siren": "833 035 348",
+      "siret": "833 035 348 00048",
+      "naf": "62.01Z, programmation informatique",
+      "address": "13 rue Calvet, 31500 Toulouse, France"
+    }
+  },
+  "cv": {
+    "en": "/cv/Quentin-Aslan-CV-EN.pdf",
+    "fr": "/cv/Quentin-Aslan-CV-FR.pdf",
+    "es": "/cv/Quentin-Aslan-CV-EN.pdf"
+  },
+  "home": {
+    "en": {
+      "metaTitle": "Quentin Aslan · Freelance Senior Full-Stack Engineer",
+      "metaDescription": "Quentin Aslan, senior full-stack engineer and builder: Vue, React, Node.js, Java and Go on AWS, ESP32 and IoT projects, iOS apps. Freelance, remote.",
+      "title": "Senior Full-Stack Engineer",
+      "lead": "I own features end to end, from Vue and React front ends to Java, Go and Node.js services on AWS, for B2B SaaS, consumer web apps and iOS. Building for the web since 2015, with 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
+      "availability": "Freelance, available for new contracts · Based in Barcelona, working remotely across Europe and North America."
+    },
+    "fr": {
+      "metaTitle": "Quentin Aslan · Développeur Full-Stack Senior freelance",
+      "metaDescription": "Quentin Aslan, développeur full-stack senior et builder : Vue, React, Node.js, Java et Go sur AWS, projets ESP32 et IoT, apps iOS. Freelance, à distance.",
+      "title": "Développeur full-stack senior",
+      "lead": "Je porte les fonctionnalités de bout en bout, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
+      "availability": "Freelance, disponible pour de nouvelles missions · Basé à Barcelone, en télétravail en Europe et en Amérique du Nord."
+    },
+    "es": {
+      "metaTitle": "Quentin Aslan · Desarrollador Full-Stack Sénior freelance",
+      "metaDescription": "Quentin Aslan, desarrollador full-stack sénior y builder: Vue, React, Node.js, Java y Go en AWS, proyectos ESP32 e IoT, apps iOS. Freelance, en remoto.",
+      "title": "Desarrollador full-stack sénior",
+      "lead": "Me encargo de las funcionalidades de principio a fin, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
+      "availability": "Freelance, disponible para nuevos proyectos · Con base en Barcelona, en remoto en Europa y Norteamérica."
+    }
+  },
+  "ui": {
+    "en": {
+      "skip": "Skip to content",
+      "nav": {
+        "work": "Projects",
+        "experience": "Experience",
+        "accessibility": "Accessibility",
+        "skills": "Skills",
+        "about": "About",
+        "contact": "Contact",
+        "builder": "Builder"
+      },
+      "langLabel": "Language",
+      "emailMe": "Email me",
+      "downloadCv": "Download CV (PDF)",
+      "companies": "Companies I've worked with",
+      "workTitle": "Experience",
+      "workIntro": "Every role, most recent first.",
+      "caseStudy": "Read the case study",
+      "sideProjects": "Things I build",
+      "a11yTitle": "Accessibility, in practice",
+      "skillsTitle": "Skills",
+      "testimonialsTitle": "What people say",
+      "aboutTitle": "About",
+      "languagesTitle": "Languages",
+      "educationTitle": "Education",
+      "contactTitle": "A project or a role in mind? Let's talk.",
+      "contactLead": "I answer every message within 24 hours.",
+      "updated": "Updated",
+      "legal": "Legal notice",
+      "backHome": "Back to home",
+      "role": "Role",
+      "period": "Period",
+      "place": "Place",
+      "stack": "Stack",
+      "present": "present",
+      "notFound": "This page does not exist.",
+      "mainNav": "Sections",
+      "source": "Source code",
+      "writingTitle": "Writing",
+      "breadcrumb": "Breadcrumb",
+      "inEnglish": "in English",
+      "readLetter": "Read the full letter",
+      "translatedFromFr": "Translated from French",
+      "backToWork": "Back to projects",
+      "featuredTitle": "Selected projects",
+      "a11yStatement": "Built to WCAG AA at Bell, GLS and Vasco.",
+      "via": "via",
+      "nextCase": "Next case study",
+      "viewCode": "View the code on GitHub",
+      "codeShort": "Code on GitHub",
+      "caseStudyNoun": "Case study",
+      "builderLead": "Outside client work, I build my own projects, from ESP32 firmware and Raspberry Pi networking to iOS apps. Most start from a real problem at home or on the road.",
+      "cvEn": "CV (English)",
+      "cvFr": "CV (French)"
+    },
+    "fr": {
+      "skip": "Aller au contenu",
+      "nav": {
+        "work": "Projets",
+        "experience": "Parcours",
+        "accessibility": "Accessibilité",
+        "skills": "Compétences",
+        "about": "À propos",
+        "contact": "Contact",
+        "builder": "Builder"
+      },
+      "langLabel": "Langue",
+      "emailMe": "M'écrire",
+      "downloadCv": "Télécharger le CV (PDF)",
+      "companies": "Entreprises avec lesquelles j'ai travaillé",
+      "workTitle": "Parcours",
+      "workIntro": "Toutes mes expériences, de la plus récente à la plus ancienne.",
+      "caseStudy": "Lire l'étude de cas",
+      "sideProjects": "Ce que je construis",
+      "a11yTitle": "L'accessibilité, en pratique",
+      "skillsTitle": "Compétences",
+      "testimonialsTitle": "Ils ont travaillé avec moi",
+      "aboutTitle": "À propos",
+      "languagesTitle": "Langues",
+      "educationTitle": "Formation",
+      "contactTitle": "Un projet ou un poste en tête ? Parlons-en.",
+      "contactLead": "Je réponds à chaque message sous 24 heures.",
+      "updated": "Mis à jour le",
+      "legal": "Mentions légales",
+      "backHome": "Retour à l'accueil",
+      "role": "Rôle",
+      "period": "Période",
+      "place": "Lieu",
+      "stack": "Stack",
+      "present": "aujourd'hui",
+      "notFound": "Cette page n'existe pas.",
+      "mainNav": "Sections",
+      "source": "Code source",
+      "writingTitle": "Articles",
+      "breadcrumb": "Fil d'Ariane",
+      "inEnglish": "en anglais",
+      "readLetter": "Lire la lettre complète",
+      "translatedFromFr": "Traduit du français",
+      "backToWork": "Retour aux projets",
+      "featuredTitle": "Projets sélectionnés",
+      "a11yStatement": "Conforme WCAG AA chez Bell, GLS et Vasco.",
+      "via": "via",
+      "nextCase": "Étude de cas suivante",
+      "viewCode": "Voir le code sur GitHub",
+      "codeShort": "Code sur GitHub",
+      "caseStudyNoun": "Étude de cas",
+      "builderLead": "En dehors des missions, je construis mes propres projets, du firmware ESP32 et du réseau sur Raspberry Pi jusqu'aux apps iOS. La plupart partent d'un vrai problème, chez moi ou en voyage.",
+      "cvEn": "CV (anglais)",
+      "cvFr": "CV (français)"
+    },
+    "es": {
+      "skip": "Ir al contenido",
+      "nav": {
+        "work": "Proyectos",
+        "experience": "Experiencia",
+        "accessibility": "Accesibilidad",
+        "skills": "Competencias",
+        "about": "Sobre mí",
+        "contact": "Contacto",
+        "builder": "Builder"
+      },
+      "langLabel": "Idioma",
+      "emailMe": "Escríbeme",
+      "downloadCv": "Descargar el CV en inglés (PDF)",
+      "companies": "Empresas con las que he trabajado",
+      "workTitle": "Experiencia",
+      "workIntro": "Toda mi experiencia, de la más reciente a la más antigua.",
+      "caseStudy": "Leer el caso de estudio",
+      "sideProjects": "Lo que construyo",
+      "a11yTitle": "La accesibilidad, en la práctica",
+      "skillsTitle": "Competencias",
+      "testimonialsTitle": "Lo que dicen de mí",
+      "aboutTitle": "Sobre mí",
+      "languagesTitle": "Idiomas",
+      "educationTitle": "Formación",
+      "contactTitle": "¿Un proyecto o un puesto en mente? Hablemos.",
+      "contactLead": "Respondo a cada mensaje en menos de 24 horas.",
+      "updated": "Actualizado el",
+      "legal": "Aviso legal",
+      "backHome": "Volver al inicio",
+      "role": "Rol",
+      "period": "Periodo",
+      "place": "Lugar",
+      "stack": "Stack",
+      "present": "actualidad",
+      "notFound": "Esta página no existe.",
+      "mainNav": "Secciones",
+      "source": "Código fuente",
+      "writingTitle": "Artículos",
+      "breadcrumb": "Ruta de navegación",
+      "inEnglish": "en inglés",
+      "readLetter": "Leer la carta completa",
+      "translatedFromFr": "Traducido del francés",
+      "backToWork": "Volver a los proyectos",
+      "featuredTitle": "Proyectos destacados",
+      "a11yStatement": "Conforme a WCAG AA en Bell, GLS y Vasco.",
+      "via": "vía",
+      "nextCase": "Siguiente caso de estudio",
+      "viewCode": "Ver el código en GitHub",
+      "codeShort": "Código en GitHub",
+      "caseStudyNoun": "Caso de estudio",
+      "builderLead": "Fuera de los proyectos para clientes, construyo mis propios proyectos, desde firmware ESP32 y redes en Raspberry Pi hasta apps iOS. La mayoría parte de un problema real, en casa o de viaje.",
+      "cvEn": "CV (inglés)",
+      "cvFr": "CV (francés)"
+    }
+  },
+  "companies": [
+    {
+      "name": "GLS",
+      "logo": "/logos/gls.webp"
+    },
+    {
+      "name": "Bell Canada",
+      "logo": "/logos/bell.webp"
+    },
+    {
+      "name": "Vasco",
+      "logo": "/logos/vasco.webp"
+    },
+    {
+      "name": "Pomerleau",
+      "logo": "/logos/pomerleau.webp"
+    },
+    {
+      "name": "InnoSelect",
+      "logo": null
+    },
+    {
+      "name": "Occitaline",
+      "logo": null
+    }
+  ],
+  "work": [
+    {
+      "id": "railora",
+      "org": "Railora",
+      "logo": "/logos/railora.webp",
+      "start": "2026-05",
+      "end": null,
+      "role": {
+        "en": "Creator and developer",
+        "fr": "Créateur et développeur",
+        "es": "Creador y desarrollador"
+      },
+      "place": {
+        "en": "Remote",
+        "fr": "Télétravail",
+        "es": "Remoto"
+      },
+      "kind": {
+        "en": "Own product, alongside client work",
+        "fr": "Produit personnel, en parallèle des missions",
+        "es": "Producto propio, en paralelo a los proyectos"
+      },
+      "summary": {
+        "en": "Consumer iOS app for live train tracking, \"Flighty for trains\". Born from a trip through Southeast Asia and an overland train journey home.",
+        "fr": "App iOS grand public de suivi de trains en temps réel, dans l'esprit de Flighty pour l'avion. Née d'un voyage en Asie du Sud-Est et d'un retour en train par voie terrestre.",
+        "es": "App iOS de consumo para seguir trenes en tiempo real, «el Flighty de los trenes». Nació de un viaje por el Sudeste Asiático y de una vuelta a casa en tren por tierra."
+      },
+      "bullets": {
+        "en": [
+          "Designed and shipped solo a consumer iOS app on the App Store with several thousand users, from market study to production",
+          "SwiftUI and Live Activities; serverless Cloudflare backend; timetables for 11 countries, real-time data on 8 networks",
+          "Built the train delay-status logic with LangGraph"
+        ],
+        "fr": [
+          "App iOS grand public conçue et livrée seul sur l'App Store, de l'étude de marché à la production, avec plusieurs milliers d'utilisateurs",
+          "SwiftUI, Live Activities ; backend serverless Cloudflare ; horaires de 11 pays, temps réel sur 8 réseaux",
+          "Logique de statut de retard des trains développée avec LangGraph"
+        ],
+        "es": [
+          "App iOS de consumo diseñada y publicada en solitario en la App Store, del estudio de mercado a producción, con varios miles de usuarios",
+          "SwiftUI y Live Activities; backend serverless en Cloudflare; horarios de 11 países, tiempo real en 8 redes",
+          "Lógica de estado de retrasos de los trenes desarrollada con LangGraph"
+        ]
+      },
+      "stack": [
+        "Swift",
+        "SwiftUI",
+        "Live Activities",
+        "Cloudflare Workers",
+        "Durable Objects",
+        "Turso",
+        "GTFS-RT",
+        "LangGraph"
+      ],
+      "caseStudy": "railora"
+    },
+    {
+      "id": "gls-2026",
+      "org": "GLS France",
+      "logo": "/logos/gls.webp",
+      "start": "2026-08",
+      "end": "2026-10",
+      "role": {
+        "en": "Backend Engineer (Java, Go) and AI adoption",
+        "fr": "Développeur Backend Java / Go et adoption de l'IA",
+        "es": "Ingeniero backend (Java, Go) y adopción de la IA"
+      },
+      "place": {
+        "en": "France, full remote",
+        "fr": "France, télétravail",
+        "es": "Francia, en remoto"
+      },
+      "kind": {
+        "en": "Freelance",
+        "fr": "Freelance",
+        "es": "Freelance"
+      },
+      "summary": {
+        "en": "Long-haul parcel logistics: event-driven Java and Go microservices on AWS, and AI adoption by the development teams.",
+        "fr": "Logistique colis longue distance : microservices Java et Go événementiels sur AWS, et adoption de l'IA par les équipes de développement.",
+        "es": "Paquetería de larga distancia: microservicios Java y Go orientados a eventos en AWS, y adopción de la IA por los equipos de desarrollo."
+      },
+      "bullets": {
+        "en": [
+          "Built Java and Go microservices for an event-driven AI-camera pipeline that measures truck fill rate, and the operational dashboards on that data",
+          "Built a shared plugin for Claude Code and Copilot (skills, commands, guardrail hooks) used by ~30 developers; trained the teams and contributed to the architecture of the internal RAG system",
+          "Cut release preparation from ~90 to 30-45 minutes with dedicated commands (code review, merge requests, AWS deployments)"
+        ],
+        "fr": [
+          "Microservices Java et Go d'un pipeline événementiel de caméras IA mesurant le taux de remplissage des camions, et dashboards opérationnels sur ces données",
+          "Plugin partagé Claude Code + Copilot (skills, commandes, hooks de garde-fous) utilisé par ~30 développeurs ; formation des équipes et participation à l'architecture du RAG interne",
+          "Temps de préparation des releases réduit de ~1 h 30 à 30-45 min grâce à des commandes dédiées (code review, MR, déploiements AWS)"
+        ],
+        "es": [
+          "Desarrollé microservicios Java y Go para un pipeline orientado a eventos que procesa las mediciones de llenado de los camiones tomadas por cámaras con IA, y los dashboards operativos sobre esos datos",
+          "Desarrollé un plugin compartido para Claude Code y Copilot (skills, comandos, hooks de control) que usan ~30 desarrolladores; formé a los equipos y participé en la arquitectura del sistema RAG interno",
+          "Reduje la preparación de releases de ~90 a 30-45 minutos con comandos dedicados (code review, merge requests, despliegues en AWS)"
+        ]
+      },
+      "stack": [
+        "Java",
+        "Go",
+        "AWS SNS/SQS",
+        "PostgreSQL",
+        "Terraform",
+        "Claude Code",
+        "Copilot",
+        "RAG"
+      ],
+      "caseStudy": "gls",
+      "country": "fr"
+    },
+    {
+      "id": "vasco",
+      "org": "Vasco",
+      "logo": "/logos/vasco.webp",
+      "start": "2025-06",
+      "end": "2026-07",
+      "role": {
+        "en": "Frontend Developer (Vue 3, GraphQL)",
+        "fr": "Développeur front-end Vue.js (GraphQL)",
+        "es": "Desarrollador front-end (Vue 3, GraphQL)"
+      },
+      "place": {
+        "en": "Paris, remote",
+        "fr": "Paris, télétravail",
+        "es": "París, en remoto"
+      },
+      "kind": {
+        "en": "Freelance",
+        "fr": "Freelance",
+        "es": "Freelance"
+      },
+      "summary": {
+        "en": "B2B fintech SaaS for private asset managers (Vue 3, GraphQL, Symfony).",
+        "fr": "SaaS fintech B2B pour les sociétés de gestion d'actifs privés (Vue 3, GraphQL, Symfony).",
+        "es": "SaaS fintech B2B para gestoras de activos privados (Vue 3, GraphQL, Symfony)."
+      },
+      "bullets": {
+        "en": [
+          "Built the real-time data grid with AG Grid and GraphQL/Apollo: server-side filtering, live cache synchronization",
+          "Contributed to the KYC module (AML/CFT form builder, Symfony backend) and built the front end of an LLM-powered KYC automation",
+          "Rebuilt the full application layout and design-system components (tooltip, dropdown) to WCAG AA / EAA"
+        ],
+        "fr": [
+          "Grille de données temps réel (AG Grid, GraphQL/Apollo) : filtrage côté serveur, cache synchronisé en direct",
+          "Contribution au module KYC (form builder AML/LCB-FT), dont backend Symfony/PHP, et front d'une automatisation KYC par LLM",
+          "Refonte complète du layout de l'application et composants du design system (tooltip, dropdown), conformes WCAG AA / EAA"
+        ],
+        "es": [
+          "Tabla de datos en tiempo real con AG Grid y GraphQL/Apollo: filtrado en servidor, caché sincronizada en directo",
+          "Contribución al módulo KYC (form builder AML/PBC, backend Symfony) y desarrollo del front de una automatización KYC con LLM",
+          "Rediseño completo del layout de la aplicación y componentes del design system (tooltip, dropdown), conformes a WCAG AA / EAA"
+        ]
+      },
+      "stack": [
+        "Vue 3",
+        "TypeScript",
+        "GraphQL",
+        "Apollo",
+        "AG Grid",
+        "Symfony",
+        "Vitest"
+      ],
+      "country": "fr"
+    },
+    {
+      "id": "innoselect",
+      "org": "InnoSelect",
+      "logo": null,
+      "start": "2024-09",
+      "end": "2025-11",
+      "role": {
+        "en": "Full-Stack Developer",
+        "fr": "Développeur full-stack",
+        "es": "Desarrollador full-stack"
+      },
+      "place": {
+        "en": "Netherlands, remote",
+        "fr": "Pays-Bas, télétravail",
+        "es": "Países Bajos, en remoto"
+      },
+      "kind": {
+        "en": "Freelance, part time",
+        "fr": "Freelance, temps partiel",
+        "es": "Freelance, tiempo parcial"
+      },
+      "summary": {
+        "en": "HR assessment SaaS that matches candidates to roles through competency and personality tests; took over an existing codebase as the sole developer.",
+        "fr": "SaaS RH d'évaluation qui rapproche candidats et postes par des tests de compétences et de personnalité : reprise d'une base de code existante, seul développeur.",
+        "es": "SaaS de evaluación de RR. HH. que relaciona candidatos y puestos mediante tests de competencias y personalidad."
+      },
+      "bullets": {
+        "en": [
+          "Took over and extended the product as the sole developer: React/Next.js front end, NestJS/MongoDB API",
+          "Implemented the scoring engine (68 competencies) with tests, and the PDF reports",
+          "English and Dutch interface; new front-end features built to WCAG"
+        ],
+        "fr": [
+          "Reprise et évolution du produit en tant que seul développeur : front React/Next.js, API NestJS/MongoDB",
+          "Implémentation du moteur de scoring (68 compétences) avec tests, et des rapports PDF",
+          "Interface anglais et néerlandais ; nouvelles fonctionnalités front conformes WCAG"
+        ],
+        "es": [
+          "Me hice cargo del producto como único desarrollador y lo amplié: front React/Next.js, API NestJS/MongoDB",
+          "Implementé el motor de puntuación (68 competencias) con tests, y los informes PDF",
+          "Interfaz en inglés y neerlandés; nuevas funcionalidades front conformes a WCAG"
+        ]
+      },
+      "stack": [
+        "React",
+        "Next.js",
+        "NestJS",
+        "MongoDB",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "country": "nl"
+    },
+    {
+      "id": "gls-2024",
+      "org": "GLS France",
+      "logo": "/logos/gls.webp",
+      "start": "2024-11",
+      "end": "2025-03",
+      "role": {
+        "en": "Lead Full-Stack Developer (Vue.js, Go, Java)",
+        "fr": "Lead Full-Stack (Vue.js, Go, Java)",
+        "es": "Lead full-stack (Vue.js, Go, Java)"
+      },
+      "place": {
+        "en": "Toulouse",
+        "fr": "Toulouse",
+        "es": "Toulouse"
+      },
+      "kind": {
+        "en": "Freelance",
+        "fr": "Freelance",
+        "es": "Freelance"
+      },
+      "summary": {
+        "en": "Parcel-tracking web app that lets GLS recipients track and change their deliveries; high traffic, 2.2M visits a month (client figure).",
+        "fr": "Application web de suivi de colis qui permet aux destinataires GLS de suivre et modifier leurs livraisons ; fort trafic, 2,2 M de visites par mois (chiffre client).",
+        "es": "App web de seguimiento de paquetes que permite a los destinatarios de GLS seguir y modificar sus entregas; alto tráfico, 2,2 M de visitas al mes (cifra del cliente)."
+      },
+      "bullets": {
+        "en": [
+          "Led the Vue 3 / TypeScript front end and mentored a trainee",
+          "Ran the EAA / WCAG audit; made the NPS and tracking pages WCAG compliant with the design-system team",
+          "Designed and shipped a Go PIN-code service to production; built the Java service that sends PINs by email and SMS through SQS"
+        ],
+        "fr": [
+          "Lead du front Vue 3 / TypeScript, encadrement d'un stagiaire",
+          "Audit EAA ; mise en conformité WCAG des pages NPS et de suivi, avec l'équipe design system",
+          "Code PIN de bout en bout : service Go conçu et mis en production, envoi par e-mail et SMS via un service Java et SQS"
+        ],
+        "es": [
+          "Lideré el front Vue 3 / TypeScript y fui mentor de un becario",
+          "Realicé la auditoría EAA / WCAG; adapté a WCAG las páginas NPS y de seguimiento con el equipo de design system",
+          "Diseñé y llevé a producción un servicio Go de códigos PIN; desarrollé el servicio Java que envía los PIN por correo y SMS vía SQS"
+        ]
+      },
+      "stack": [
+        "Vue 3",
+        "TypeScript",
+        "Go",
+        "Java",
+        "Spring Boot",
+        "AWS SQS",
+        "Terraform",
+        "GitLab CI",
+        "Grafana"
+      ],
+      "caseStudy": "gls",
+      "country": "fr"
+    },
+    {
+      "id": "pomerleau",
+      "org": "Pomerleau",
+      "logo": "/logos/pomerleau.webp",
+      "start": "2024-06",
+      "end": "2024-06",
+      "role": {
+        "en": "Frontend Developer",
+        "fr": "Développeur front-end",
+        "es": "Desarrollador front-end"
+      },
+      "place": {
+        "en": "Montreal",
+        "fr": "Montréal",
+        "es": "Montreal"
+      },
+      "kind": {
+        "en": "V.I.E. (French government international placement)",
+        "fr": "V.I.E. (volontariat international en entreprise)",
+        "es": "V.I.E. (programa internacional del Estado francés)"
+      },
+      "summary": {
+        "en": "Québec construction company; custom GIS widget on ArcGIS for its teams.",
+        "fr": "Entreprise de construction québécoise ; widget SIG sur mesure, sur ArcGIS, pour ses équipes.",
+        "es": "Constructora con sede en Quebec; widget SIG a medida sobre ArcGIS para sus equipos."
+      },
+      "bullets": {
+        "en": [
+          "Delivered solo, in 3 weeks, a GIS widget for ArcGIS Experience Builder in React/TypeScript",
+          "Area selection, multi-layer imagery, elevation comparison between two layers",
+          "Wrote French and English guides and delivered a 4-hour training in English"
+        ],
+        "fr": [
+          "Widget SIG pour ArcGIS Experience Builder en React/TypeScript, livré seul en 3 semaines",
+          "Sélection de zone, imagerie multi-couches, comparaison d'élévation entre deux couches",
+          "Rédaction de guides FR/EN et formation de 4 h en anglais chez le client"
+        ],
+        "es": [
+          "Widget SIG para ArcGIS Experience Builder en React/TypeScript, desarrollado en solitario en 3 semanas",
+          "Selección de zonas, imágenes multicapa, comparación de elevación entre dos capas",
+          "Redacté guías en francés e inglés e impartí una formación de 4 horas en inglés"
+        ]
+      },
+      "stack": [
+        "React",
+        "TypeScript",
+        "ArcGIS"
+      ],
+      "country": "ca"
+    },
+    {
+      "id": "bell",
+      "org": "Bell Canada",
+      "logo": "/logos/bell.webp",
+      "start": "2022-09",
+      "end": "2024-05",
+      "role": {
+        "en": "Full-Stack Developer (Vue.js & Java Spring Boot)",
+        "fr": "Développeur full-stack (Vue.js & Java Spring Boot)",
+        "es": "Desarrollador full-stack (Vue.js y Java Spring Boot)"
+      },
+      "place": {
+        "en": "Montreal",
+        "fr": "Montréal",
+        "es": "Montreal"
+      },
+      "kind": {
+        "en": "V.I.E. (French government international placement)",
+        "fr": "V.I.E. (volontariat international en entreprise)",
+        "es": "V.I.E. (programa internacional del Estado francés)"
+      },
+      "summary": {
+        "en": "Self-Service Center, a microservices platform for B2B and B2C customers at Canada's largest telecom operator, in English; my main product was a B2B SaaS for business clients.",
+        "fr": "Centre Libre-Service, plateforme microservices pour les clients B2B et B2C du premier opérateur télécom du Canada, en anglais ; mon produit principal : un SaaS B2B pour les clients entreprises.",
+        "es": "Self-Service Center, plataforma de microservicios para clientes B2B y B2C del mayor operador de telecomunicaciones de Canadá, en inglés; mi producto principal fue un SaaS B2B para clientes empresariales."
+      },
+      "bullets": {
+        "en": [
+          "Took part in launching a customer-facing web app: gathered the needs, chose the technologies and laid the front-end foundations",
+          "Contributed to the Java Spring Boot microservices behind the B2B SaaS and the field-service tool",
+          "Built every new feature to WCAG AA (AAA when possible) and tested it with VoiceOver and NVDA alongside QA",
+          "Built the banner as a Web Component and made it WCAG compliant: semantic structure, FR/EN labels, focus trap, contrast checks"
+        ],
+        "fr": [
+          "Participation au lancement d'une application web destinée aux clients de Bell : recueil des besoins, choix techniques et fondations du front",
+          "Contribution aux microservices Java Spring Boot derrière le SaaS B2B et l'outil des techniciens",
+          "Développement de chaque nouvelle fonctionnalité au niveau WCAG AA (AAA quand possible), avec des tests VoiceOver et NVDA aux côtés de la QA",
+          "Bannière développée en Web Component et rendue conforme WCAG : structure sémantique, libellés FR/EN, focus trap, contrastes"
+        ],
+        "es": [
+          "Participé en el lanzamiento de una app web para los clientes de Bell: recogida de necesidades, decisiones técnicas y bases del front",
+          "Contribuí a los microservicios Java Spring Boot del SaaS B2B y de la herramienta para técnicos",
+          "Desarrollé cada nueva funcionalidad con nivel WCAG AA (AAA cuando era posible) y la probé con VoiceOver y NVDA junto al equipo de QA",
+          "Banner desarrollado como Web Component y adaptado a WCAG: estructura semántica, textos FR/EN, focus trap, contrastes"
+        ]
+      },
+      "stack": [
+        "Vue 3",
+        "TypeScript",
+        "Java",
+        "Spring Boot",
+        "Pinia",
+        "Web Components",
+        "Cypress",
+        "Jest",
+        "OpenShift"
+      ],
+      "caseStudy": "bell",
+      "country": "ca"
+    },
+    {
+      "id": "occitaline",
+      "org": "Occitaline",
+      "logo": null,
+      "start": "2019-10",
+      "end": "2022-08",
+      "role": {
+        "en": "Full-Stack Developer (apprenticeship)",
+        "fr": "Développeur full-stack (alternance)",
+        "es": "Desarrollador full-stack (formación dual)"
+      },
+      "place": {
+        "en": "Toulouse",
+        "fr": "Toulouse",
+        "es": "Toulouse"
+      },
+      "kind": {
+        "en": "Apprenticeship",
+        "fr": "Alternance",
+        "es": "Formación dual"
+      },
+      "summary": {
+        "en": "Cybersecurity-oriented industrial Linux switch-router for building management (GTB), which I worked on from A to Z, from specifications to client demos. Deployed at CNES, including the Ariane launch pads, and at the Stade de France.",
+        "fr": "Switch-routeur Linux industriel orienté cybersécurité pour la gestion technique de bâtiment (GTB), sur lequel j'ai travaillé de A à Z, du cahier des charges aux démos clients. Déployé au CNES, jusqu'aux pas de tir Ariane, et au Stade de France.",
+        "es": "Switch-router Linux industrial orientado a la ciberseguridad para la gestión técnica de edificios, en el que trabajé de principio a fin, de las especificaciones a las demos con clientes. Desplegado en el CNES, incluidas las plataformas de lanzamiento de Ariane, y en el Stade de France."
+      },
+      "bullets": {
+        "en": [
+          "Built the web app and REST API (Node.js, MongoDB, Vue) that configure the router end to end, from the UI to Linux scripts: firewall, routing, VPN",
+          "Linux administration: scripting, IP routing, netfilter/iptables firewall; C driver development",
+          "Multi-site sensor supervision (REST, MQTT), 3D BIM viewer in JavaScript, 2D graphic editor; technical demos to clients"
+        ],
+        "fr": [
+          "Application web et API REST (Node.js, MongoDB, Vue) qui configurent le routeur de bout en bout, de l'interface aux scripts Linux : pare-feu, routage, VPN",
+          "Administration Linux : scripting, routage IP, pare-feu netfilter/iptables ; développement d'un driver en C",
+          "Supervision multisite de capteurs (REST, MQTT), viewer 3D BIM en JavaScript, éditeur graphique 2D ; démos techniques aux clients"
+        ],
+        "es": [
+          "App web y API REST (Node.js, MongoDB, Vue) que configuran el router de principio a fin, de la interfaz a los scripts Linux de firewall, enrutamiento y VPN",
+          "Administración Linux: scripting, enrutamiento IP y netfilter/iptables; desarrollo de un driver en C",
+          "Supervisión multisede de sensores (REST, MQTT), visor 3D BIM en JavaScript, editor gráfico 2D; demos técnicas a clientes"
+        ]
+      },
+      "stack": [
+        "Node.js",
+        "MongoDB",
+        "Vue",
+        "Linux",
+        "iptables",
+        "VPN",
+        "MQTT",
+        "C"
+      ],
+      "country": "fr",
+      "caseStudy": "occitaline"
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": {
+        "en": "Remote door and gate opener",
+        "fr": "Ouvre-porte et portail à distance",
+        "es": "Abrepuertas y portón a distancia"
+      },
+      "year": 2025,
+      "text": {
+        "en": "I wired the building intercom to relays driven by an ESP32 running a small HTTP server in C, behind a Go service and a WireGuard tunnel, so the door and garage open from my phone.",
+        "fr": "J'ai relié l'interphone de l'immeuble à des relais pilotés par un ESP32 qui expose un petit serveur HTTP en C, derrière un service Go et un tunnel WireGuard : la porte et le garage s'ouvrent depuis mon téléphone.",
+        "es": "Conecté el interfono del edificio a relés controlados por un ESP32 con un pequeño servidor HTTP en C, detrás de un servicio Go y un túnel WireGuard, para abrir la puerta y el garaje desde el móvil."
+      },
+      "tags": [
+        "ESP32 (C)",
+        "Relays",
+        "Go",
+        "WireGuard"
+      ],
+      "caseStudy": "door-opener",
+      "repo": "https://github.com/quentin-aslan/sensor-go",
+      "image": null
+    },
+    {
+      "name": "Easy Router",
+      "year": 2024,
+      "text": {
+        "en": "A Raspberry Pi 4 travel router that joins public Wi-Fi on one adapter, serves a hotspot on a second one and routes everything through a VPN, configured from a Vue 3 web UI.",
+        "fr": "Un routeur de voyage sur Raspberry Pi 4 qui se connecte au Wi-Fi public sur une carte, diffuse un hotspot sur une seconde et fait passer tout le trafic par un VPN, configuré depuis une interface Vue 3.",
+        "es": "Un router de viaje con Raspberry Pi 4 que se conecta al Wi-Fi público con un adaptador, emite un hotspot con otro y enruta todo por una VPN, configurado desde una interfaz Vue 3."
+      },
+      "tags": [
+        "Raspberry Pi 4",
+        "nmcli",
+        "Python Flask",
+        "Vue 3"
+      ],
+      "caseStudy": "easy-router",
+      "repo": "https://github.com/quentin-aslan/easy-router",
+      "image": "/img/easy-router-rpi.webp"
+    },
+    {
+      "name": "Sensor Sensei",
+      "year": 2022,
+      "text": {
+        "en": "An air-quality sensor on an M5Stack (ESP32) reading PM2.5, temperature and humidity, with GPS position, sending its data over LoRa to a gateway (Epitech IoT project).",
+        "fr": "Un capteur de qualité de l'air sur M5Stack (ESP32) qui mesure les PM2.5, la température et l'humidité, avec position GPS, et envoie ses données en LoRa vers une passerelle (projet IoT Epitech).",
+        "es": "Un sensor de calidad del aire sobre M5Stack (ESP32) que mide PM2.5, temperatura y humedad, con posición GPS, y envía sus datos por LoRa a una pasarela (proyecto IoT de Epitech)."
+      },
+      "tags": [
+        "ESP32 / M5Stack",
+        "LoRa",
+        "GPS",
+        "C++ / PlatformIO"
+      ],
+      "caseStudy": null,
+      "repo": "https://github.com/quentin-aslan/T-IOT-902",
+      "image": null
+    },
+    {
+      "name": {
+        "en": "Connected home",
+        "fr": "Maison connectée",
+        "es": "Casa conectada"
+      },
+      "year": 2022,
+      "text": {
+        "en": "ESP32 sensors around the flat post temperature readings to an API on a Raspberry Pi, which drives the heating, presence lighting and intercom notifications.",
+        "fr": "Des capteurs ESP32 dans l'appartement envoient la température à une API sur Raspberry Pi, qui pilote le chauffage, l'éclairage de présence et les notifications d'interphone.",
+        "es": "Sensores ESP32 en el piso envían la temperatura a una API en una Raspberry Pi, que controla la calefacción, la iluminación por presencia y los avisos del interfono."
+      },
+      "tags": [
+        "ESP32",
+        "Raspberry Pi 4",
+        "Node.js",
+        "MQTT"
+      ],
+      "caseStudy": null,
+      "repo": null,
+      "image": null
+    },
+    {
+      "name": "Mémoire",
+      "year": 2026,
+      "text": {
+        "en": "An iOS spaced-repetition app designed for adults with ADHD, with FSRS v5 scheduling and a home-screen widget.",
+        "fr": "Une app iOS de répétition espacée pensée pour les adultes TDAH, avec planification FSRS v5 et un widget d'écran d'accueil.",
+        "es": "Una app iOS de repetición espaciada pensada para adultos con TDAH, con planificación FSRS v5 y un widget de pantalla de inicio."
+      },
+      "tags": [
+        "SwiftUI",
+        "SwiftData",
+        "WidgetKit",
+        "FSRS"
+      ],
+      "caseStudy": null,
+      "repo": "https://github.com/quentin-aslan/Memoire",
+      "image": null
+    },
+    {
+      "name": "Max-Explorer",
+      "year": 2024,
+      "text": {
+        "en": "A web app for SNCF Max Jeune subscribers that finds the free TGV and Intercités routes sncf-connect hides, including short connections, shown as a list and on a map, from SNCF open data imported every morning.",
+        "fr": "Une app web pour les abonnés Max Jeune de la SNCF qui trouve les trajets TGV et Intercités gratuits que sncf-connect met de côté, y compris avec correspondance courte, en liste et sur carte, depuis l'open data SNCF importé chaque matin.",
+        "es": "Una app web para los abonados Max Jeune de SNCF que encuentra los trayectos TGV e Intercités gratuitos que sncf-connect no destaca, incluidos los de conexión corta, en lista y en mapa, a partir de los datos abiertos de SNCF importados cada mañana."
+      },
+      "tags": [
+        "Nuxt",
+        "PostgreSQL",
+        "Docker",
+        "Vitest"
+      ],
+      "caseStudy": null,
+      "repo": "https://github.com/quentin-aslan/max-explorer",
+      "image": null
+    }
+  ],
+  "accessibility": {
+    "en": {
+      "lead": "This site is built to WCAG 2.2 AA and tested with the keyboard and VoiceOver, like these products.",
+      "points": [
+        "<strong>GLS</strong>: accessibility audit with RGAA and WAVE of 4 scopes (form, e-mail templates, NPS page, recipient tracking app), with a 3-week remediation plan",
+        "<strong>Vasco</strong>: design-system components (tooltip, dropdown) built to WCAG AA and the European Accessibility Act",
+        "<strong>Bell</strong>: a Web Component banner with semantic structure, bilingual labels, focus management and contrast checks"
+      ],
+      "tools": [
+        "WCAG 2.2 AA",
+        "EAA",
+        "RGAA",
+        "ARIA",
+        "VoiceOver",
+        "NVDA",
+        "Keyboard-only",
+        "WAVE"
+      ]
+    },
+    "fr": {
+      "lead": "Ce site est conçu selon les WCAG 2.2 AA et testé au clavier et avec VoiceOver, comme ces produits.",
+      "points": [
+        "<strong>GLS</strong> : audit d'accessibilité RGAA et WAVE de 4 périmètres (formulaire, modèles d'e-mails, page NPS, application de suivi pour les destinataires), avec un plan de remédiation chiffré à 3 semaines",
+        "<strong>Vasco</strong> : composants du design system (tooltip, dropdown) conformes WCAG AA et à l'European Accessibility Act",
+        "<strong>Bell</strong> : bannière en Web Component avec structure sémantique, libellés bilingues, gestion du focus et contrôle des contrastes"
+      ],
+      "tools": [
+        "WCAG 2.2 AA",
+        "EAA",
+        "RGAA",
+        "ARIA",
+        "VoiceOver",
+        "NVDA",
+        "Navigation au clavier",
+        "WAVE"
+      ]
+    },
+    "es": {
+      "lead": "Este sitio cumple WCAG 2.2 AA y está probado con teclado y VoiceOver, como estos productos.",
+      "points": [
+        "<strong>GLS</strong>: auditoría de accesibilidad con RGAA y WAVE de 4 ámbitos (formulario, plantillas de correo, página NPS, app de seguimiento para destinatarios), con un plan de corrección estimado en 3 semanas",
+        "<strong>Vasco</strong>: componentes del design system (tooltip, dropdown) conformes a WCAG AA y al European Accessibility Act",
+        "<strong>Bell</strong>: banner como Web Component con estructura semántica, textos bilingües, gestión del foco y control de contrastes"
+      ],
+      "tools": [
+        "WCAG 2.2 AA",
+        "EAA",
+        "RGAA",
+        "ARIA",
+        "VoiceOver",
+        "NVDA",
+        "Navegación con teclado",
+        "WAVE"
+      ]
+    }
+  },
+  "skills": [
+    {
+      "id": "frontend",
+      "label": {
+        "en": "Front end",
+        "fr": "Front-end",
+        "es": "Front-end"
+      },
+      "items": [
+        "Vue 3",
+        "Nuxt",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Web Components",
+        "Pinia",
+        "Tailwind",
+        "i18n"
+      ]
+    },
+    {
+      "id": "backend",
+      "label": {
+        "en": "Back end",
+        "fr": "Back-end",
+        "es": "Back-end"
+      },
+      "items": [
+        "Node.js",
+        "NestJS",
+        "Java",
+        "Spring Boot",
+        "Go",
+        "Symfony",
+        "REST",
+        "GraphQL",
+        "Apollo",
+        {
+          "en": "Microservices",
+          "fr": "Microservices",
+          "es": "Microservicios"
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "label": {
+        "en": "Cloud and DevOps",
+        "fr": "Cloud et DevOps",
+        "es": "Cloud y DevOps"
+      },
+      "items": [
+        "AWS (SQS, SNS, RDS)",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "GitLab CI/CD",
+        "GitHub Actions",
+        "Cloudflare Workers",
+        "Grafana",
+        "Linux"
+      ]
+    },
+    {
+      "id": "ai",
+      "label": {
+        "en": "Applied AI",
+        "fr": "IA appliquée",
+        "es": "IA aplicada"
+      },
+      "items": [
+        "LLM",
+        "RAG",
+        {
+          "en": "AI agents",
+          "fr": "Agents IA",
+          "es": "Agentes de IA"
+        },
+        "Guardrails",
+        "LangGraph",
+        "Claude Code",
+        "Copilot"
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": {
+        "en": "Mobile",
+        "fr": "Mobile",
+        "es": "Móvil"
+      },
+      "items": [
+        "Swift",
+        "SwiftUI",
+        "Live Activities"
+      ]
+    },
+    {
+      "id": "data",
+      "label": {
+        "en": "Data",
+        "fr": "Données",
+        "es": "Datos"
+      },
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Supabase",
+        "Turso",
+        "MySQL",
+        "InfluxDB"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": {
+        "en": "Testing",
+        "fr": "Tests",
+        "es": "Tests"
+      },
+      "items": [
+        "Vitest",
+        "Jest",
+        "Cypress",
+        "Playwright",
+        "JUnit 5",
+        "Mockito",
+        "go test",
+        "Testcontainers"
+      ]
+    },
+    {
+      "id": "network",
+      "label": {
+        "en": "Network and embedded",
+        "fr": "Réseau et embarqué",
+        "es": "Redes y embebido"
+      },
+      "items": [
+        "VLAN",
+        "iptables",
+        {
+          "en": "IP routing",
+          "fr": "Routage IP",
+          "es": "Enrutamiento IP"
+        },
+        "WireGuard",
+        "MQTT",
+        "ESP32 (C)",
+        "Raspberry Pi"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Laurent Gonin",
+      "role": {
+        "en": "Manager, Software Development",
+        "fr": "Gestionnaire, Développement logiciel",
+        "es": "Responsable de Desarrollo de Software"
+      },
+      "lang": "fr",
+      "photo": null,
+      "text": "Quentin a démontré bien plus que des compétences techniques. Sa conduite professionnelle, son implication et sa collaboration ont été des atouts majeurs pour mon équipe.",
+      "link": "/work/bell#letter",
+      "source": "Bell Canada",
+      "translation": {
+        "en": "Quentin demonstrated much more than technical skills. His professional conduct, involvement and collaboration were major assets for my team.",
+        "es": "Quentin demostró mucho más que competencias técnicas. Su conducta profesional, su implicación y su colaboración fueron grandes activos para mi equipo."
+      }
+    },
+    {
+      "name": "Kashan Ahmad",
+      "role": {
+        "en": "Client, Chrome extension (2024)",
+        "fr": "Client, extension Chrome (2024)",
+        "es": "Cliente, extensión de Chrome (2024)"
+      },
+      "lang": "en",
+      "photo": null,
+      "text": "He understands what he's capable of and shows it upfront, highly recommended!",
+      "source": "Upwork"
+    },
+    {
+      "name": "Will",
+      "role": {
+        "en": "Co-founder (2024-2025)",
+        "fr": "Cofondateur (2024-2025)",
+        "es": "Cofundador (2024-2025)"
+      },
+      "lang": "en",
+      "photo": null,
+      "text": "Quentin was a joy to work with, highly skilled, precise and very good analytical skills! And above all a very nice person.",
+      "source": "InnoSelect"
+    },
+    {
+      "name": "Ludovic Robbe",
+      "role": {
+        "en": "Client, Vue.js project (2025)",
+        "fr": "Client, mission Vue.js (2025)",
+        "es": "Cliente, proyecto Vue.js (2025)"
+      },
+      "lang": "fr",
+      "photo": null,
+      "text": "Quentin fait preuve d'une grande rapidité et efficacité. Il a rapidement saisi la nature de mon problème et l'a résolu en un temps record. Je n'hésiterai pas à collaborer de nouveau avec Quentin.",
+      "source": "Malt",
+      "translation": {
+        "en": "Quentin is very fast and efficient. He quickly grasped the nature of my problem and solved it in record time. I won't hesitate to work with Quentin again.",
+        "es": "Quentin es muy rápido y eficaz. Entendió enseguida la naturaleza de mi problema y lo resolvió en un tiempo récord. No dudaré en volver a trabajar con Quentin."
+      }
+    },
+    {
+      "name": "Kévin Simoes",
+      "role": {
+        "en": "CEO (2020)",
+        "fr": "CEO (2020)",
+        "es": "CEO (2020)"
+      },
+      "lang": "fr",
+      "photo": null,
+      "text": "Rapide, efficace, et très aimable. Je recommande.",
+      "source": "monpartenairebancaire.fr",
+      "translation": {
+        "en": "Fast, efficient and very friendly. I recommend him.",
+        "es": "Rápido, eficaz y muy amable. Lo recomiendo."
+      }
+    },
+    {
+      "name": "Numa Balard",
+      "role": {
+        "en": "System administrator",
+        "fr": "Administrateur système",
+        "es": "Administrador de sistemas"
+      },
+      "lang": "fr",
+      "photo": "/img/numa-balard.webp",
+      "text": "J'ai eu la chance de travailler avec Quentin sur un projet web. Quentin est un vrai atout dans une équipe et s'adaptera parfaitement à différents projets.",
+      "source": "LinkedIn",
+      "translation": {
+        "en": "I was lucky to work with Quentin on a web project. Quentin is a real asset to a team and will adapt perfectly to different projects.",
+        "es": "Tuve la suerte de trabajar con Quentin en un proyecto web. Quentin es un verdadero activo para un equipo y se adaptará perfectamente a distintos proyectos."
+      }
+    }
+  ],
+  "about": {
+    "en": {
+      "paragraphs": [
+        "I'm a French developer and I have been building for the web since 2015: first websites as a freelancer, then three years of work-study on industrial Linux routers for building management, then product teams in France and Canada.",
+        "<strong>English is my everyday work language.</strong> I spent two years in English-speaking teams in Montreal, at Bell Canada and Pomerleau, and I have also worked as a freelancer from Boston.",
+        "<strong>In 2026 I spent four months in Southeast Asia</strong>, in Thailand, Laos and Vietnam, and then came home overland: from Hanoi to Paris by train, through China, Central Asia, Georgia and Turkey. Railora was born on those trains: I wanted to know where my train was, and no app did it well.",
+        "Before tech, and still today: volunteer first-aider with the French Protection Civile, home automation tinkerer, and always on the next train."
+      ],
+      "photos": [
+        {
+          "src": "/img/quentin-train.webp",
+          "alt": "Quentin leaning out of a train door, smiling",
+          "w": 600,
+          "h": 600
+        },
+        {
+          "src": "/img/quentin-desert.webp",
+          "alt": "Quentin smiling in the desert at sunset",
+          "w": 480,
+          "h": 640
+        },
+        {
+          "src": "/img/quentin-aurora.webp",
+          "alt": "Quentin seen from behind under the northern lights",
+          "w": 700,
+          "h": 934
+        }
+      ]
+    },
+    "fr": {
+      "paragraphs": [
+        "Développeur français, je construis pour le web depuis 2015 : d'abord des sites en freelance, puis trois ans d'alternance sur des routeurs Linux industriels pour la gestion technique de bâtiment, puis des équipes produit en France et au Canada.",
+        "<strong>L'anglais est ma langue de travail au quotidien.</strong> J'ai passé deux ans dans des équipes anglophones à Montréal, chez Bell Canada et Pomerleau, et j'ai aussi travaillé en freelance depuis Boston.",
+        "<strong>En 2026, j'ai passé quatre mois en Asie du Sud-Est</strong>, en Thaïlande, au Laos et au Vietnam, puis je suis rentré par voie terrestre : de Hanoï à Paris en train, par la Chine, l'Asie centrale, la Géorgie et la Turquie. Railora est née dans ces trains : je voulais savoir où était mon train, et aucune app ne le faisait bien.",
+        "En dehors du code : secouriste bénévole à la Protection Civile, bricoleur en domotique, et toujours partant pour le prochain train."
+      ],
+      "photos": [
+        {
+          "src": "/img/quentin-train.webp",
+          "alt": "Quentin penché à la porte d'un train, souriant",
+          "w": 600,
+          "h": 600
+        },
+        {
+          "src": "/img/quentin-desert.webp",
+          "alt": "Quentin souriant dans le désert au coucher du soleil",
+          "w": 480,
+          "h": 640
+        },
+        {
+          "src": "/img/quentin-aurora.webp",
+          "alt": "Quentin de dos sous une aurore boréale",
+          "w": 700,
+          "h": 934
+        }
+      ]
+    },
+    "es": {
+      "paragraphs": [
+        "Soy francés y desarrollo para la web desde 2015: primero sitios web como freelance, luego tres años de formación dual en routers Linux industriales para la gestión técnica de edificios y después equipos de producto en Francia y Canadá.",
+        "<strong>El inglés es mi idioma de trabajo diario.</strong> Pasé dos años en equipos anglófonos en Montreal, en Bell Canada y Pomerleau, y también he trabajado como freelance desde Boston.",
+        "<strong>En 2026 pasé cuatro meses en el Sudeste Asiático</strong>, en Tailandia, Laos y Vietnam, y volví a casa por tierra: de Hanói a París en tren, pasando por China, Asia Central, Georgia y Turquía. Railora nació en esos trenes: quería saber dónde estaba mi tren y ninguna app lo hacía bien.",
+        "Fuera del código: socorrista voluntario en la Protección Civil francesa, aficionado a la domótica y siempre listo para el próximo tren."
+      ],
+      "photos": [
+        {
+          "src": "/img/quentin-train.webp",
+          "alt": "Quentin asomado a la puerta de un tren, sonriendo",
+          "w": 600,
+          "h": 600
+        },
+        {
+          "src": "/img/quentin-desert.webp",
+          "alt": "Quentin sonriendo en el desierto al atardecer",
+          "w": 480,
+          "h": 640
+        },
+        {
+          "src": "/img/quentin-aurora.webp",
+          "alt": "Quentin de espaldas bajo una aurora boreal",
+          "w": 700,
+          "h": 934
+        }
+      ]
+    }
+  },
+  "languages": [
+    {
+      "code": "fr",
+      "name": {
+        "en": "French",
+        "fr": "Français",
+        "es": "Francés"
+      },
+      "level": {
+        "en": "Native",
+        "fr": "Langue maternelle",
+        "es": "Nativo"
+      }
+    },
+    {
+      "code": "en",
+      "name": {
+        "en": "English",
+        "fr": "Anglais",
+        "es": "Inglés"
+      },
+      "level": {
+        "en": "Fluent, 2 years in English-speaking teams in Canada",
+        "fr": "Courant, 2 ans en équipe anglophone au Canada",
+        "es": "Fluido, 2 años en equipos anglófonos en Canadá"
+      }
+    },
+    {
+      "code": "es",
+      "name": {
+        "en": "Spanish",
+        "fr": "Espagnol",
+        "es": "Español"
+      },
+      "level": {
+        "en": "Advanced, practiced in Central and South America and Spain",
+        "fr": "Avancé, pratiqué en Amérique centrale et du Sud et en Espagne",
+        "es": "Avanzado, practicado en Centroamérica, Sudamérica y España"
+      }
+    }
+  ],
+  "education": {
+    "en": [
+      "Epitech · Master's degree, Software Architecture, graduated 2022",
+      "CodinGame · JavaScript 770/790 (2022)"
+    ],
+    "fr": [
+      "Epitech · Master, Architecte logiciel, diplômé 2022",
+      "CodinGame : JavaScript (770/790, 2022)",
+      "PSC1, secours civiques (2019)"
+    ],
+    "es": [
+      "Epitech · Máster en Arquitectura de Software, graduado en 2022",
+      "CodinGame · JavaScript 770/790 (2022)"
+    ]
+  },
+  "caseStudies": [
+    {
+      "slug": "railora",
+      "title": {
+        "en": "Railora: a live train tracker for iOS",
+        "fr": "Railora : suivi de trains en temps réel sur iOS",
+        "es": "Railora: seguimiento de trenes en tiempo real en iOS"
+      },
+      "description": {
+        "en": "An iOS train tracker I built alone, on the App Store with several thousand users: SwiftUI, Live Activities, Cloudflare, 11 countries.",
+        "fr": "Une app iOS de suivi de trains construite seul, sur l'App Store avec plusieurs milliers d'utilisateurs : SwiftUI, Live Activities, 11 pays.",
+        "es": "Una app iOS de seguimiento de trenes que construí solo, en el App Store con varios miles de usuarios: SwiftUI, Live Activities, 11 países."
+      },
+      "image": "/img/railora-detail.webp",
+      "imageAlt": {
+        "en": "Railora iOS app showing the detail of a train journey",
+        "fr": "Application iOS Railora affichant le détail d'un trajet en train",
+        "es": "App iOS Railora mostrando el detalle de un trayecto en tren"
+      },
+      "date": "2026-05",
+      "screens": [
+        {
+          "src": "/img/railora-mytrips.webp",
+          "alt": {
+            "en": "Railora My Trips screen: upcoming trains on a map of Europe with live status",
+            "fr": "Écran Mes trajets de Railora : trains à venir sur une carte d'Europe avec leur statut en direct",
+            "es": "Pantalla Mis viajes de Railora: próximos trenes en un mapa de Europa con su estado en directo"
+          }
+        },
+        {
+          "src": "/img/railora-detail.webp",
+          "alt": {
+            "en": "Railora journey detail: Marseille to Bordeaux, platform, stops and live delay",
+            "fr": "Détail d'un trajet dans Railora : Marseille-Bordeaux, voie, arrêts et retard en direct",
+            "es": "Detalle de un trayecto en Railora: Marsella-Burdeos, vía, paradas y retraso en directo"
+          }
+        },
+        {
+          "src": "/img/railora-passport.webp",
+          "alt": {
+            "en": "Railora Passport screen: 45 trips and 17,205 km travelled",
+            "fr": "Écran Passeport de Railora : 45 trajets et 17 205 km parcourus",
+            "es": "Pantalla Pasaporte de Railora: 45 viajes y 17 205 km recorridos"
+          }
+        }
+      ],
+      "imageW": 500,
+      "imageH": 1087,
+      "panel": {
+        "eyebrow": {
+          "en": "Own product · iOS app and serverless backend · since 2026",
+          "fr": "Produit personnel · app iOS et backend serverless · depuis 2026",
+          "es": "Producto propio · app iOS y backend serverless · desde 2026"
+        },
+        "title": {
+          "en": "Railora: live train tracking for iPhone",
+          "fr": "Railora : le suivi de trains en direct sur iPhone",
+          "es": "Railora: seguimiento de trenes en directo en iPhone"
+        },
+        "text": {
+          "en": "A consumer iOS app I designed and shipped alone, from market study to the App Store, with a serverless TypeScript backend on Cloudflare Workers that ingests timetables for 11 countries and real-time data from 8 networks. Several thousand people use it to follow their trains.",
+          "fr": "Une app iOS grand public conçue et livrée seul, de l'étude de marché à l'App Store, avec un backend serverless TypeScript sur Cloudflare Workers qui ingère les horaires de 11 pays et le temps réel de 8 réseaux. Plusieurs milliers de personnes l'utilisent pour suivre leurs trains.",
+          "es": "Una app iOS de consumo que diseñé y publiqué solo, del estudio de mercado a la App Store, con un backend serverless en TypeScript sobre Cloudflare Workers que integra los horarios de 11 países y el tiempo real de 8 redes. Varios miles de personas la usan para seguir sus trenes."
+        },
+        "stack": "SwiftUI · TypeScript · Cloudflare Workers · Durable Objects · GTFS-RT"
+      },
+      "ogImage": "/og/work-railora.jpg"
+    },
+    {
+      "slug": "gls",
+      "title": {
+        "en": "GLS France: parcel tracking, Go services and AI tooling",
+        "fr": "GLS France : suivi de colis, services Go et outillage IA",
+        "es": "GLS France: seguimiento de paquetes, servicios Go y herramientas de IA"
+      },
+      "description": {
+        "en": "Two GLS contracts: lead full-stack on a parcel-tracking app, accessibility audit, Go PIN service, then Java and Go backend and an AI plugin for ~30 devs.",
+        "fr": "Deux missions GLS : lead full-stack sur le suivi de colis, audit d'accessibilité, service PIN en Go, puis backend Java et Go et plugin IA pour ~30 devs.",
+        "es": "Dos proyectos en GLS: lead full-stack en seguimiento de paquetes, auditoría de accesibilidad, servicio PIN en Go, backend Java y Go y plugin de IA."
+      },
+      "image": "/img/gls-site.webp",
+      "imageAlt": {
+        "en": "GLS parcel delivery site",
+        "fr": "Site de livraison de colis GLS",
+        "es": "Sitio de entrega de paquetes de GLS"
+      },
+      "date": "2024-11",
+      "imageW": 1200,
+      "imageH": 723,
+      "ogImage": "/og/work-gls.jpg",
+      "panel": {
+        "eyebrow": {
+          "en": "GLS France · 2024 – 2025 and 2026",
+          "fr": "GLS France · 2024 – 2025 et 2026",
+          "es": "GLS France · 2024 – 2025 y 2026"
+        },
+        "title": {
+          "en": "GLS France: parcel tracking at 2.2M visits a month",
+          "fr": "GLS France : le suivi de colis à 2,2 M de visites par mois",
+          "es": "GLS France: seguimiento de paquetes con 2,2 M de visitas al mes"
+        },
+        "text": {
+          "en": "On a first contract I led the Vue 3 front end of the parcel-tracking web app GLS recipients use, 2.2 million visits a month according to GLS, and built the Go and Java PIN-code services. On a second one I built event-driven Java and Go microservices on AWS and the AI plugin for Claude Code and Copilot now used by about 30 GLS developers.",
+          "fr": "Sur une première mission, j'ai mené le front Vue 3 de l'app web de suivi de colis des destinataires GLS, 2,2 millions de visites par mois selon GLS, et construit les services de code PIN en Go et Java. Sur une seconde, j'ai développé des microservices Java et Go événementiels sur AWS et le plugin IA pour Claude Code et Copilot qu'utilisent aujourd'hui une trentaine de développeurs GLS.",
+          "es": "En un primer proyecto lideré el front Vue 3 de la app web de seguimiento de paquetes de los destinatarios de GLS, 2,2 millones de visitas al mes según GLS, y desarrollé los servicios de códigos PIN en Go y Java. En un segundo desarrollé microservicios Java y Go orientados a eventos en AWS y el plugin de IA para Claude Code y Copilot que hoy usan unos 30 desarrolladores de GLS."
+        },
+        "stack": "Vue 3 · TypeScript · Go · Java · AWS SNS/SQS · Claude Code"
+      }
+    },
+    {
+      "slug": "bell",
+      "title": {
+        "en": "Bell Canada: a self-service SaaS for business clients",
+        "fr": "Bell Canada : un SaaS self-service pour les entreprises",
+        "es": "Bell Canada: un SaaS de autoservicio para empresas"
+      },
+      "description": {
+        "en": "Full-stack at Bell in Montreal: Vue 3 and TypeScript front end, Java Spring Boot microservices, a B2B SaaS redesign, WCAG AA in every feature.",
+        "fr": "Full-stack chez Bell à Montréal : front Vue 3 et TypeScript, microservices Java Spring Boot, refonte d'un SaaS B2B, WCAG AA dans chaque fonctionnalité.",
+        "es": "Full-stack en Bell, Montreal: front Vue 3 y TypeScript, microservicios Java Spring Boot, rediseño de un SaaS B2B, WCAG AA en cada funcionalidad."
+      },
+      "image": "/img/bell-campus.webp",
+      "imageAlt": {
+        "en": "Bell Canada campus building",
+        "fr": "Bâtiment du campus de Bell Canada",
+        "es": "Edificio del campus de Bell Canada"
+      },
+      "date": "2022-09",
+      "letter": {
+        "title": {
+          "en": "Recommendation letter",
+          "fr": "Lettre de recommandation",
+          "es": "Carta de recomendación"
+        },
+        "note": {
+          "en": "Courtesy translation of the original letter, written in French (PDF below). The author's contact details and signature are removed from the public copy.",
+          "fr": "Lettre originale. Les coordonnées et la signature de l'auteur sont retirées de la copie publique.",
+          "es": "Traducción de cortesía de la carta original en francés (PDF abajo). Los datos de contacto y la firma del autor se han retirado de la copia pública."
+        },
+        "source": {
+          "en": "bell.en",
+          "fr": "bell.fr",
+          "es": "bell.es"
+        },
+        "pdf": [
+          {
+            "lang": "fr",
+            "href": "/letters/bell-recommendation-fr.pdf",
+            "label": {
+              "en": "Original letter (French, PDF)",
+              "fr": "Lettre originale (PDF)",
+              "es": "Carta original (francés, PDF)"
+            }
+          }
+        ]
+      },
+      "imageW": 1200,
+      "imageH": 800,
+      "ogImage": "/og/work-bell.jpg",
+      "panel": {
+        "eyebrow": {
+          "en": "Bell Canada · Montreal · 2022 – 2024",
+          "fr": "Bell Canada · Montréal · 2022 – 2024",
+          "es": "Bell Canada · Montreal · 2022 – 2024"
+        },
+        "title": {
+          "en": "Bell Canada: a self-service SaaS for business clients",
+          "fr": "Bell Canada : un SaaS self-service pour les entreprises",
+          "es": "Bell Canada: un SaaS de autoservicio para empresas"
+        },
+        "text": {
+          "en": "Two years as a full-stack developer in Bell's Self-Service Center team, in Montreal and in English. I built the Vue 3 and TypeScript front end of the B2B SaaS that business clients use to manage employee plans, phones and expenses, and contributed to the Java Spring Boot microservices behind it. Accessibility was part of every feature.",
+          "fr": "Deux ans comme développeur full-stack dans l'équipe Centre Libre-Service de Bell, à Montréal et en anglais. J'ai construit le front Vue 3 et TypeScript du SaaS B2B avec lequel les entreprises clientes gèrent les forfaits, les téléphones et les dépenses de leurs employés, et contribué aux microservices Java Spring Boot derrière. L'accessibilité faisait partie de chaque fonctionnalité.",
+          "es": "Dos años como desarrollador full-stack en el equipo Self-Service Center de Bell, en Montreal y en inglés. Desarrollé el front Vue 3 y TypeScript del SaaS B2B con el que las empresas clientes gestionan las tarifas, los teléfonos y los gastos de sus empleados, y contribuí a los microservicios Java Spring Boot que lo sostienen. La accesibilidad formaba parte de cada funcionalidad."
+        },
+        "stack": "Vue 3 · TypeScript · Java · Spring Boot · Web Components"
+      }
+    },
+    {
+      "slug": "occitaline",
+      "title": {
+        "en": "Occitaline: a cybersecurity-oriented router for building management",
+        "fr": "Occitaline : un routeur orienté cybersécurité pour la GTB",
+        "es": "Occitaline: un router orientado a la ciberseguridad para edificios"
+      },
+      "description": {
+        "en": "Work-study at Occitaline: web app and Node.js API that configure an industrial Linux switch-router for GTB, deployed at CNES and the Stade de France.",
+        "fr": "Alternance chez Occitaline : app web et API Node.js qui configurent un switch-routeur Linux industriel pour la GTB, déployé au CNES et au Stade de France.",
+        "es": "Formación dual en Occitaline: app web y API Node.js de un switch-router Linux industrial para edificios, desplegado en el CNES y el Stade de France."
+      },
+      "image": "/img/occitaline-oxbras.webp",
+      "imageW": 1000,
+      "imageH": 717,
+      "imageAlt": {
+        "en": "Ox-Bras brochure: an industrial DIN-rail switch-router with RJ45 ports and a screen, next to its specification tables",
+        "fr": "Plaquette de l'Ox-Bras : un switch-routeur industriel sur rail DIN avec ports RJ45 et écran, à côté de ses tableaux de caractéristiques",
+        "es": "Folleto del Ox-Bras: un switch-router industrial para carril DIN con puertos RJ45 y pantalla, junto a sus tablas de especificaciones"
+      },
+      "date": "2019-10",
+      "panel": {
+        "eyebrow": {
+          "en": "Occitaline · Toulouse · 2019 – 2022",
+          "fr": "Occitaline · Toulouse · 2019 – 2022",
+          "es": "Occitaline · Toulouse · 2019 – 2022"
+        },
+        "title": {
+          "en": "Occitaline: a cybersecurity-oriented router for building management",
+          "fr": "Occitaline : un routeur orienté cybersécurité pour la GTB",
+          "es": "Occitaline: un router orientado a la ciberseguridad para edificios"
+        },
+        "text": {
+          "en": "Three years as a full-stack developer in a work-study, on an industrial switch-router built for building management networks, from specifications to client demos. I built the web application and REST API that configure it from A to Z, down to the Linux firewall, routing, VPN, DHCP and DNS. The routers were deployed at CNES, including the Ariane launch pads, and at the Stade de France.",
+          "fr": "Trois ans comme développeur full-stack en alternance, sur un switch-routeur industriel conçu pour les réseaux de GTB, du cahier des charges aux démos clients. J'ai construit l'application web et l'API REST qui le configurent de A à Z, jusqu'au pare-feu Linux, au routage, au VPN, au DHCP et au DNS. Les routeurs ont été déployés au CNES, jusqu'aux pas de tir Ariane, et au Stade de France.",
+          "es": "Tres años como desarrollador full-stack en formación dual, en un switch-router industrial diseñado para las redes de gestión técnica de edificios, de las especificaciones a las demos con clientes. Construí la aplicación web y la API REST que lo configuran de principio a fin, hasta el firewall Linux, el enrutamiento, la VPN, el DHCP y el DNS. Los routers se desplegaron en el CNES, incluidas las plataformas de lanzamiento de Ariane, y en el Stade de France."
+        },
+        "stack": "Node.js · MongoDB · Vue 3 · Embedded Linux · netfilter/iptables · VPN"
+      },
+      "ogImage": "/og/work-occitaline.jpg",
+      "product": {
+        "url": "https://www.occitaline.com/ox-bras/",
+        "label": {
+          "en": "See the Ox-Bras on occitaline.com",
+          "fr": "Voir l'Ox-Bras sur occitaline.com",
+          "es": "Ver el Ox-Bras en occitaline.com"
+        }
+      }
+    },
+    {
+      "slug": "easy-router",
+      "title": {
+        "en": "Easy Router: a Raspberry Pi travel router with an embedded web UI",
+        "fr": "Easy Router : routeur de voyage Raspberry Pi avec interface web embarquée",
+        "es": "Easy Router: router de viaje Raspberry Pi con interfaz web embebida"
+      },
+      "description": {
+        "en": "A Raspberry Pi travel router with NordVPN and a Vue 3 / TypeScript web UI, built to work abroad without exposing my data or my clients'.",
+        "fr": "Un routeur de voyage Raspberry Pi avec NordVPN et une interface Vue 3 / TypeScript, pour travailler à l'étranger sans exposer mes données.",
+        "es": "Un router de viaje con Raspberry Pi, NordVPN y una interfaz Vue 3 / TypeScript, para trabajar en el extranjero sin exponer mis datos."
+      },
+      "image": "/img/easy-router-rpi.webp",
+      "imageW": 480,
+      "imageH": 640,
+      "imageAlt": {
+        "en": "Raspberry Pi 4 in its case, resting on a laptop keyboard",
+        "fr": "Raspberry Pi 4 dans son boîtier, posé sur le clavier d'un ordinateur portable",
+        "es": "Raspberry Pi 4 en su carcasa, sobre el teclado de un portátil"
+      },
+      "date": "2024-02",
+      "repo": "https://github.com/quentin-aslan/easy-router",
+      "ogImage": "/og/work-easy-router.jpg"
+    },
+    {
+      "slug": "door-opener",
+      "title": {
+        "en": "Remote door and gate opener: ESP32 firmware and a Go service",
+        "fr": "Ouvre-porte à distance : firmware ESP32 et service Go",
+        "es": "Apertura remota de puerta y verja: firmware ESP32 y servicio Go"
+      },
+      "description": {
+        "en": "Opens a building door and a garage gate from the phone: ESP32 firmware in C, Go microservice, Raspberry Pi behind a WireGuard VPN.",
+        "fr": "Ouvre la porte d'immeuble et le garage depuis le téléphone : firmware ESP32 en C, microservice Go, Raspberry Pi derrière un VPN WireGuard.",
+        "es": "Abre la puerta del edificio y el garaje desde el móvil: firmware ESP32 en C, microservicio Go y Raspberry Pi tras una VPN WireGuard."
+      },
+      "image": null,
+      "imageW": null,
+      "imageH": null,
+      "imageAlt": {
+        "en": "",
+        "fr": "",
+        "es": ""
+      },
+      "date": "2025-02",
+      "repo": "https://github.com/quentin-aslan/sensor-go",
+      "ogImage": "/og/work-door-opener.jpg"
+    }
+  ],
+  "blog": [
+    {
+      "slug": "handling-dates-in-java-script-the-clean-way-with-luxon",
+      "lang": "en",
+      "title": "Handling Dates in JavaScript the Clean Way with Luxon",
+      "description": "Handling dates in JavaScript can quickly become a nightmare, especially with timezones. How switching to Luxon helped me build reliable date logic.",
+      "date": "2025-04-27",
+      "image": "/img/luxon-cover.webp",
+      "ogImage": "/og/blog-luxon.jpg"
+    }
+  ],
+  "countries": {
+    "fr": {
+      "en": "France",
+      "fr": "France",
+      "es": "Francia"
+    },
+    "ca": {
+      "en": "Canada",
+      "fr": "Canada",
+      "es": "Canadá"
+    },
+    "nl": {
+      "en": "Netherlands",
+      "fr": "Pays-Bas",
+      "es": "Países Bajos"
+    }
+  }
+}

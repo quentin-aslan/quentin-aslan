@@ -1,0 +1,248 @@
+<script setup lang="ts">
+definePageMeta({ validate: route => !route.params.lang || LANGS.includes(route.params.lang as Lang) && route.params.lang !== 'en' })
+// Accessibility points hold inline <strong> from first-party content, so v-html is safe.
+
+const { lang, profile, t, to } = useSite()
+const home = profile.home[lang]
+const { person } = profile
+type Quote = typeof profile.testimonials[number]
+// Client work and Railora get a large panel; side projects only link to their case study.
+const panels = profile.caseStudies.flatMap(c => c.panel ? [{ ...c, panel: c.panel }] : [])
+// Smaller copies exported next to the originals (`gls-site-760.webp`).
+const variant = (src: string, w: number) => src.replace(/\.webp$/, `-${w}.webp`)
+const featuredQuote = profile.testimonials[0]!
+const quotes = profile.testimonials.slice(1)
+// Quotes show in the page language when a translation exists, otherwise in their original language.
+const translated = (q: Quote) => q.lang !== lang && !!q.translation
+const quoteText = (q: Quote) => translated(q) ? q.translation![lang as 'en' | 'es'] : q.text
+const quoteLang = (q: Quote) => translated(q) ? lang : q.lang
+
+useSeo({
+  title: home.metaTitle,
+  description: home.metaDescription,
+  path: '/',
+  jsonLd: [{
+    '@type': 'ProfilePage',
+    'url': person.url + to('/'),
+    'inLanguage': lang,
+    'dateModified': profile.updated,
+    'mainEntity': personLd(lang),
+  }, {
+    '@type': 'WebSite',
+    '@id': `${person.url}/#website`,
+    'name': person.name,
+    'url': `${person.url}/`,
+    'inLanguage': ['en', 'fr', 'es'],
+  }],
+})
+</script>
+
+<template>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">{{ person.name }}<span class="title">{{ home.title }}</span></h1>
+          <p class="lead">{{ home.lead }}</p>
+          <p class="availability">{{ home.availability }}</p>
+          <div class="actions">
+            <a class="btn btn-accent" :href="`mailto:${person.email}`">{{ t.emailMe }} <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" :href="profile.cv[lang]" download>{{ t.downloadCv }}</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img :src="person.photo" :alt="person.name" width="800" height="800" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-labelledby="companies-title">
+      <div class="wrap">
+        <h2 id="companies-title" class="label">{{ t.companies }}</h2>
+        <ul class="logos">
+          <li v-for="c in profile.companies" :key="c.name">
+            <img v-if="c.logo" :src="c.logo" alt="" width="28" height="28" loading="lazy">{{ c.name }}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="featured-title">
+      <div class="wrap">
+        <h2 id="featured-title" class="section-title">{{ t.featuredTitle }}</h2>
+        <article v-for="c in panels" :key="c.slug" class="feature">
+          <a class="feature-visual" :href="to(`/work/${c.slug}`)" tabindex="-1" aria-hidden="true">
+            <span v-if="c.screens" class="phones">
+              <img v-for="s in c.screens" :key="s.src" :src="variant(s.src, 320)" :srcset="`${variant(s.src, 320)} 320w, ${s.src} 500w`" sizes="(max-width: 760px) 28vw, 160px" alt="" width="500" height="1087" loading="lazy">
+            </span>
+            <img v-else-if="c.image" :src="variant(c.image, 760)" :srcset="`${variant(c.image, 760)} 760w, ${c.image} 1200w`" sizes="(max-width: 760px) 90vw, 560px" alt="" :width="c.imageW ?? undefined" :height="c.imageH ?? undefined" loading="lazy">
+          </a>
+          <div class="feature-copy">
+            <p class="eyebrow">{{ c.panel.eyebrow[lang] }}</p>
+            <h3><a :href="to(`/work/${c.slug}`)">{{ c.panel.title[lang] }}</a></h3>
+            <p>{{ c.panel.text[lang] }}</p>
+            <p class="stack-line">{{ c.panel.stack }}</p>
+            <a class="link-arrow" :href="to(`/work/${c.slug}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ c.panel.title[lang] }}</span> <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="builder" class="section" aria-labelledby="builder-title">
+      <div class="wrap">
+        <h2 id="builder-title" class="section-title reveal">{{ t.sideProjects }}</h2>
+        <p class="section-lead">{{ t.builderLead }}</p>
+        <ul class="builds">
+          <li v-for="p in profile.sideProjects" :key="p.year + p.text.en">
+            <p class="eyebrow">{{ p.year }}</p>
+            <h3>{{ typeof p.name === 'string' ? p.name : p.name[lang] }}</h3>
+            <p>{{ p.text[lang] }}</p>
+            <p class="stack-line">{{ p.tags.join(' · ') }}</p>
+            <p class="project-links">
+              <a v-if="p.caseStudy" class="link-arrow" :href="to(`/work/${p.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ typeof p.name === 'string' ? p.name : p.name[lang] }}</span> <span aria-hidden="true">→</span></a>
+              <GithubLink v-if="p.repo" class="link-arrow" :href="p.repo" :label="t.codeShort" />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="accessibility" class="band" aria-labelledby="a11y-title">
+      <div class="wrap">
+        <h2 id="a11y-title" class="label">{{ t.a11yTitle }}</h2>
+        <p class="statement reveal">{{ t.a11yStatement }}</p>
+        <div class="band-grid">
+          <p class="reveal">{{ profile.accessibility[lang].lead }}</p>
+          <ul class="reveal">
+            <li v-for="p in profile.accessibility[lang].points" :key="p" v-html="p" />
+          </ul>
+        </div>
+        <p class="stack-line">{{ profile.accessibility[lang].tools.join(' · ') }}</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 id="work-title" class="section-title reveal">{{ t.workTitle }}</h2>
+        <p class="section-lead">{{ t.workIntro }}</p>
+        <ol class="timeline">
+          <li v-for="job in profile.work" :key="job.id">
+            <div>
+              <h3>
+                <img v-if="job.logo" :src="job.logo" alt="" width="22" height="22" loading="lazy">
+                {{ job.org }}
+              </h3>
+              <p class="role">
+                {{ job.role[lang] }}
+                <span class="muted">· {{ job.kind[lang] }} ·
+                  <img v-if="job.country" class="flag" :src="`/flags/${job.country}.svg`" :alt="profile.countries[job.country as 'fr' | 'ca' | 'nl'][lang]" width="20" height="15">
+                  {{ job.place[lang] }}</span>
+              </p>
+              <p>{{ job.summary[lang] }}</p>
+              <!-- Roles with a case study stay short here: the details live on their page. -->
+              <a v-if="job.caseStudy" class="link-arrow" :href="to(`/work/${job.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ job.org }}</span> <span aria-hidden="true">→</span></a>
+              <template v-else>
+                <ul>
+                  <li v-for="b in job.bullets[lang]" :key="b">{{ b }}</li>
+                </ul>
+                <p class="stack-line">{{ job.stack.join(' · ') }}</p>
+              </template>
+            </div>
+            <p class="when">
+              <time :datetime="job.start">{{ formatPeriod(job.start, job.end, lang) }}</time>
+            </p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 id="skills-title" class="section-title reveal">{{ t.skillsTitle }}</h2>
+        <dl class="skills">
+          <div v-for="g in profile.skills" :key="g.id" class="reveal">
+            <dt>{{ g.label[lang] }}</dt>
+            <dd>{{ g.items.map(s => typeof s === 'string' ? s : s[lang]).join(' · ') }}</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section quotes-band" aria-labelledby="quotes-title">
+      <div class="wrap">
+        <h2 id="quotes-title" class="section-title reveal">{{ t.testimonialsTitle }}</h2>
+        <figure class="quote-featured">
+          <blockquote :lang="quoteLang(featuredQuote)">
+            <p>{{ quoteText(featuredQuote) }}</p>
+          </blockquote>
+          <figcaption>
+            <span class="quote-by">
+              <strong>{{ featuredQuote.name }}</strong>
+              <span>{{ featuredQuote.role[lang] }}, {{ featuredQuote.source }}</span>
+              <span v-if="translated(featuredQuote)" class="quote-note">{{ t.translatedFromFr }}</span>
+            </span>
+            <a v-if="featuredQuote.link" class="link-arrow" :href="to(featuredQuote.link)">{{ t.readLetter }} <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+        <ul class="quotes">
+          <li v-for="q in quotes" :key="q.name" class="reveal">
+            <figure>
+              <blockquote :lang="quoteLang(q)">
+                <p>“{{ quoteText(q) }}”</p>
+              </blockquote>
+              <figcaption class="quote-by">
+                <strong>{{ q.name }}</strong>
+                <span>{{ q.role[lang] }}</span>
+                <span class="quote-note">{{ t.via }} {{ q.source }}<template v-if="translated(q)"> · {{ t.translatedFromFr }}</template></span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div>
+          <h2 id="about-title" class="section-title reveal">{{ t.aboutTitle }}</h2>
+          <p v-for="p in profile.about[lang].paragraphs" :key="p" class="reveal" v-html="p" />
+          <dl class="facts">
+            <div>
+              <dt>{{ t.languagesTitle }}</dt>
+              <dd v-for="l in profile.languages" :key="l.code"><strong>{{ l.name[lang] }}</strong> · {{ l.level[lang] }}</dd>
+            </div>
+            <div>
+              <dt>{{ t.educationTitle }}</dt>
+              <dd v-for="e in profile.education[lang]" :key="e">{{ e }}</dd>
+            </div>
+            <div>
+              <dt>{{ t.writingTitle }}</dt>
+              <dd v-for="b in profile.blog" :key="b.slug">
+                <a :href="`/blog/${b.slug}`" :hreflang="b.lang" :lang="b.lang">{{ b.title }}</a> · {{ b.date.slice(0, 4) }}<template v-if="b.lang !== lang">, {{ t.inEnglish }}</template>
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <div class="collage">
+          <img v-for="ph in profile.about[lang].photos" :key="ph.src" class="reveal" :src="ph.src" :alt="ph.alt" :width="ph.w" :height="ph.h" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="reveal">{{ t.contactTitle }}</h2>
+        <p>{{ t.contactLead }}</p>
+        <a class="contact-email" :href="`mailto:${person.email}`">{{ person.email }}</a>
+        <p><a class="contact-phone" :href="`tel:${person.phoneHref}`">{{ person.phone }}</a></p>
+        <ul class="contact-links">
+          <li><a :href="person.linkedin">LinkedIn</a></li>
+          <li><a :href="person.github">GitHub</a></li>
+          <li><a :href="profile.cv.en" hreflang="en" download>{{ t.cvEn }}</a></li>
+          <li><a :href="profile.cv.fr" hreflang="fr" download>{{ t.cvFr }}</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</template>

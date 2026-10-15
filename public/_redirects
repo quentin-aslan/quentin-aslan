@@ -1,0 +1,11 @@
+# Old URLs of the Strapi-based site (before 2026-10).
+/about-me /#about 301
+/project/gls /work/gls 301
+/project/bell-w2u /work/bell 301
+/project/occitaline /work/occitaline 301
+/project/max-explorer /#builder 301
+/project/easy-router /work/easy-router 301
+/blog /blog/handling-dates-in-java-script-the-clean-way-with-luxon 301
+/resume/CV_ASLAN_QUENTIN_EN.pdf /cv/Quentin-Aslan-CV-EN.pdf 301
+/resume/CV_ASLAN_QUENTIN_FR.pdf /cv/Quentin-Aslan-CV-FR.pdf 301
+/favicon/favicon.ico /favicon.ico 301

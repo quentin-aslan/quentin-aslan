@@ -1,0 +1,25 @@
+{
+  "name": "quentinaslan-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "npm run generate && wrangler dev",
+    "deploy": "npm run generate && wrangler deploy",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "marked": "^16.4.2",
+    "nuxt": "^4.6.1"
+  },
+  "engines": {
+    "node": "^22.21.0 || >=24.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.3.13",
+    "wrangler": "^4.151.0"
+  }
+}
