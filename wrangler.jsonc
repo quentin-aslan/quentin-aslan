@@ -1,6 +1,6 @@
 // Static site served by Cloudflare Workers (assets only, no Worker code).
 {
-  "name": "quentinaslan-com",
+  "name": "quentin-aslan",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": ".output/public",
