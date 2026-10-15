@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
+    // Static files only: stops Nitro from switching to its Cloudflare server preset on Cloudflare's build machines.
+    preset: 'static',
     prerender: {
       // `/fr` is written as `fr.html`, so canonical URLs never redirect to a trailing slash.
       autoSubfolderIndex: false,
