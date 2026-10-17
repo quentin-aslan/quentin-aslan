@@ -4,7 +4,7 @@ Read [README.md](README.md) first.
 
 ## Rules
 
-- **No client JavaScript.** `features.noScripts` is on; the only executable script is the one-line language redirect on translated English pages. Anything interactive is done with HTML and CSS, or not at all.
+- **No client JavaScript.** `features.noScripts` is on. Two exceptions: the one-line language redirect on translated English pages, and `public/railora-live.js`, which upgrades the static Railora band on the home page with live numbers from the public Railora API (check: `node test/railora-live.check.mjs`). The page must stay complete without it. Anything else interactive is done with HTML and CSS, or not at all.
 - **Content only in `content/`.** Never hard-code visible text in a component; add it to `profile.json` for all three languages (the French-only legal page and the 404 page are the exceptions).
 - **Facts are curated upstream.** `profile.json` is a filtered copy of a private career profile. Do not add or reword a claim (role, date, figure, client) without the owner's approval. Figures that belong to a client are labelled as the client's.
 - **Three languages, always.** A page that exists in one language exists in all three, or is marked `definePageMeta({ translated: false })`.

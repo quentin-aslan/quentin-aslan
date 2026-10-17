@@ -6,8 +6,23 @@ const { lang, profile, t, to } = useSite()
 const home = profile.home[lang]
 const { person } = profile
 type Quote = typeof profile.testimonials[number]
-// Client work and Railora get a large panel; side projects only link to their case study.
-const panels = profile.caseStudies.flatMap(c => c.panel ? [{ ...c, panel: c.panel }] : [])
+// Railora, GLS and Bell get a large panel; Occitaline keeps its case study link in Experience.
+const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' ? [{ ...c, panel: c.panel }] : [])
+const heroPhoto = profile.about.en.photos[0]!
+const heroAlt = profile.about[lang].photos[0]!.alt
+const aboutPhotos = profile.about[lang].photos.slice(1)
+// Consecutive roles of the same kind are grouped, so freelance missions and employed roles never read as one list.
+type Job = typeof profile.work[number]
+type Kind = 'own' | 'freelance' | 'employed'
+const kindOf = (job: Job): Kind => job.kind.en.startsWith('Freelance') ? 'freelance' : job.kind.en.startsWith('Own') ? 'own' : 'employed'
+const groupTitle: Record<Kind, string | null> = { own: null, freelance: t.freelanceGroup, employed: t.employedGroup }
+const groups = profile.work.reduce<{ kind: Kind, jobs: Job[] }[]>((acc, job) => {
+  const kind = kindOf(job)
+  const last = acc.at(-1)
+  if (last && last.kind === kind) last.jobs.push(job)
+  else acc.push({ kind, jobs: [job] })
+  return acc
+}, [])
 // Smaller copies exported next to the originals (`gls-site-760.webp`).
 const variant = (src: string, w: number) => src.replace(/\.webp$/, `-${w}.webp`)
 const featuredQuote = profile.testimonials[0]!
@@ -42,8 +57,11 @@ useSeo({
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1 id="hero-title">{{ person.name }}<span class="title">{{ home.title }}</span></h1>
-          <p class="lead">{{ home.lead }}</p>
+          <h1 id="hero-title">
+            <span class="who">{{ person.name }} · {{ home.title }}</span>
+            {{ home.claim }} <em>{{ home.claimEm }}</em>
+          </h1>
+          <p class="lead">{{ home.intro }}</p>
           <p class="availability">{{ home.availability }}</p>
           <div class="actions">
             <a class="btn btn-accent" :href="`mailto:${person.email}`">{{ t.emailMe }} <span aria-hidden="true">→</span></a>
@@ -51,17 +69,20 @@ useSeo({
           </div>
         </div>
         <div class="hero-photo">
-          <img :src="person.photo" :alt="person.name" width="800" height="800" fetchpriority="high">
+          <img :src="heroPhoto.src" :alt="heroAlt" :width="heroPhoto.w" :height="heroPhoto.h" fetchpriority="high">
         </div>
       </div>
     </section>
+
+    <RailoraLive />
 
     <section class="trust" aria-labelledby="companies-title">
       <div class="wrap">
         <h2 id="companies-title" class="label">{{ t.companies }}</h2>
         <ul class="logos">
           <li v-for="c in profile.companies" :key="c.name">
-            <img v-if="c.logo" :src="c.logo" alt="" width="28" height="28" loading="lazy">{{ c.name }}
+            <img v-if="c.logo" :src="c.logo" :alt="c.name" :style="{ '--h': `${c.h}px` }" height="32" loading="lazy">
+            <span v-else class="wordmark">{{ c.name }}</span>
           </li>
         </ul>
       </div>
@@ -85,87 +106,7 @@ useSeo({
             <a class="link-arrow" :href="to(`/work/${c.slug}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ c.panel.title[lang] }}</span> <span aria-hidden="true">→</span></a>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section id="builder" class="section" aria-labelledby="builder-title">
-      <div class="wrap">
-        <h2 id="builder-title" class="section-title reveal">{{ t.sideProjects }}</h2>
-        <p class="section-lead">{{ t.builderLead }}</p>
-        <ul class="builds">
-          <li v-for="p in profile.sideProjects" :key="p.year + p.text.en">
-            <p class="eyebrow">{{ p.year }}</p>
-            <h3>{{ typeof p.name === 'string' ? p.name : p.name[lang] }}</h3>
-            <p>{{ p.text[lang] }}</p>
-            <p class="stack-line">{{ p.tags.join(' · ') }}</p>
-            <p class="project-links">
-              <a v-if="p.caseStudy" class="link-arrow" :href="to(`/work/${p.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ typeof p.name === 'string' ? p.name : p.name[lang] }}</span> <span aria-hidden="true">→</span></a>
-              <GithubLink v-if="p.repo" class="link-arrow" :href="p.repo" :label="t.codeShort" />
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="accessibility" class="band" aria-labelledby="a11y-title">
-      <div class="wrap">
-        <h2 id="a11y-title" class="label">{{ t.a11yTitle }}</h2>
-        <p class="statement reveal">{{ t.a11yStatement }}</p>
-        <div class="band-grid">
-          <p class="reveal">{{ profile.accessibility[lang].lead }}</p>
-          <ul class="reveal">
-            <li v-for="p in profile.accessibility[lang].points" :key="p" v-html="p" />
-          </ul>
-        </div>
-        <p class="stack-line">{{ profile.accessibility[lang].tools.join(' · ') }}</p>
-      </div>
-    </section>
-
-    <section id="experience" class="section" aria-labelledby="work-title">
-      <div class="wrap">
-        <h2 id="work-title" class="section-title reveal">{{ t.workTitle }}</h2>
-        <p class="section-lead">{{ t.workIntro }}</p>
-        <ol class="timeline">
-          <li v-for="job in profile.work" :key="job.id">
-            <div>
-              <h3>
-                <img v-if="job.logo" :src="job.logo" alt="" width="22" height="22" loading="lazy">
-                {{ job.org }}
-              </h3>
-              <p class="role">
-                {{ job.role[lang] }}
-                <span class="muted">· {{ job.kind[lang] }} ·
-                  <img v-if="job.country" class="flag" :src="`/flags/${job.country}.svg`" :alt="profile.countries[job.country as 'fr' | 'ca' | 'nl'][lang]" width="20" height="15">
-                  {{ job.place[lang] }}</span>
-              </p>
-              <p>{{ job.summary[lang] }}</p>
-              <!-- Roles with a case study stay short here: the details live on their page. -->
-              <a v-if="job.caseStudy" class="link-arrow" :href="to(`/work/${job.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ job.org }}</span> <span aria-hidden="true">→</span></a>
-              <template v-else>
-                <ul>
-                  <li v-for="b in job.bullets[lang]" :key="b">{{ b }}</li>
-                </ul>
-                <p class="stack-line">{{ job.stack.join(' · ') }}</p>
-              </template>
-            </div>
-            <p class="when">
-              <time :datetime="job.start">{{ formatPeriod(job.start, job.end, lang) }}</time>
-            </p>
-          </li>
-        </ol>
-
-      </div>
-    </section>
-
-    <section id="skills" class="section" aria-labelledby="skills-title">
-      <div class="wrap">
-        <h2 id="skills-title" class="section-title reveal">{{ t.skillsTitle }}</h2>
-        <dl class="skills">
-          <div v-for="g in profile.skills" :key="g.id" class="reveal">
-            <dt>{{ g.label[lang] }}</dt>
-            <dd>{{ g.items.map(s => typeof s === 'string' ? s : s[lang]).join(' · ') }}</dd>
-          </div>
-        </dl>
+        <p class="proof-line">{{ t.a11yStatement }}</p>
       </div>
     </section>
 
@@ -202,11 +143,71 @@ useSeo({
       </div>
     </section>
 
+    <section id="experience" class="section" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 id="work-title" class="section-title reveal">{{ t.workTitle }}</h2>
+        <div v-for="g in groups" :key="g.jobs[0]!.id" class="exp-group">
+          <h3 v-if="groupTitle[g.kind]" class="label">{{ groupTitle[g.kind] }}</h3>
+          <ol class="exp">
+            <li v-for="job in g.jobs" :key="job.id">
+              <details>
+                <summary>
+                  <time class="when" :datetime="job.start">{{ formatPeriod(job.start, job.end, lang) }}</time>
+                  <span class="org">
+                    <img v-if="job.logo" :src="job.logo" alt="" width="24" height="24" loading="lazy">
+                    <span v-else class="logo-slot" aria-hidden="true" />
+                    {{ job.org }}
+                  </span>
+                  <span class="role">{{ job.role[lang] }}</span>
+                  <span class="where">
+                    {{ job.kind[lang] }} ·
+                    <img v-if="job.country" class="flag" :src="`/flags/${job.country}.svg`" :alt="profile.countries[job.country as 'fr' | 'ca' | 'nl'][lang]" width="20" height="15">
+                    {{ job.place[lang] }}
+                  </span>
+                </summary>
+                <div class="exp-body">
+                  <p>{{ job.summary[lang] }}</p>
+                  <ul>
+                    <li v-for="b in job.bullets[lang]" :key="b">{{ b }}</li>
+                  </ul>
+                  <p class="stack-line">{{ job.stack.join(' · ') }}</p>
+                  <a v-if="job.caseStudy" class="link-arrow" :href="to(`/work/${job.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ job.org }}</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </details>
+            </li>
+          </ol>
+        </div>
+        <p class="exp-more">
+          {{ t.fullHistory }}
+          <a :href="profile.cv[lang]" download>{{ t.cvPdf }}</a> ·
+          <a :href="person.linkedin">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="builder" class="section" aria-labelledby="builder-title">
+      <div class="wrap">
+        <h2 id="builder-title" class="section-title reveal">{{ t.sideProjects }}</h2>
+        <p class="section-lead">{{ t.builderLead }}</p>
+        <ul class="builds">
+          <li v-for="p in profile.sideProjects" :key="p.year + p.text.en">
+            <p class="eyebrow">{{ p.year }}</p>
+            <h3>{{ typeof p.name === 'string' ? p.name : p.name[lang] }}</h3>
+            <p>{{ p.text[lang] }}</p>
+            <p class="project-links">
+              <a v-if="p.caseStudy" class="link-arrow" :href="to(`/work/${p.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ typeof p.name === 'string' ? p.name : p.name[lang] }}</span> <span aria-hidden="true">→</span></a>
+              <GithubLink v-if="p.repo" class="link-arrow" :href="p.repo" :label="t.codeShort" />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="wrap about">
         <div>
           <h2 id="about-title" class="section-title reveal">{{ t.aboutTitle }}</h2>
-          <p v-for="p in profile.about[lang].paragraphs" :key="p" class="reveal" v-html="p" />
+          <p v-for="p in profile.about[lang].paragraphs.slice(1, 3)" :key="p" v-html="p" />
           <dl class="facts">
             <div>
               <dt>{{ t.languagesTitle }}</dt>
@@ -225,7 +226,7 @@ useSeo({
           </dl>
         </div>
         <div class="collage">
-          <img v-for="ph in profile.about[lang].photos" :key="ph.src" class="reveal" :src="ph.src" :alt="ph.alt" :width="ph.w" :height="ph.h" loading="lazy">
+          <img v-for="ph in aboutPhotos" :key="ph.src" :src="ph.src" :alt="ph.alt" :width="ph.w" :height="ph.h" loading="lazy">
         </div>
       </div>
     </section>

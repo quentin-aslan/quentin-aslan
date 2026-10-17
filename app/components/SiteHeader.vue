@@ -2,7 +2,7 @@
 const route = useRoute()
 const { lang, t, to, profile } = useSite()
 const home = to('/')
-const anchors = ['work', 'builder', 'experience', 'accessibility', 'skills', 'about', 'contact'] as const
+const anchors = ['work', 'experience', 'about', 'contact'] as const
 const names = { en: 'English', fr: 'Français', es: 'Español' }
 // The same page in another language, or that language's home when the page is not translated.
 const translated = route.meta.translated !== false

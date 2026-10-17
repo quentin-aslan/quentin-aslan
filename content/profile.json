@@ -61,21 +61,30 @@
       "metaDescription": "Quentin Aslan, senior full-stack engineer and builder: Vue, React, Node.js, Java and Go on AWS, ESP32 and IoT projects, iOS apps. Freelance, remote.",
       "title": "Senior Full-Stack Engineer",
       "lead": "I own features end to end, from Vue and React front ends to Java, Go and Node.js services on AWS, for B2B SaaS, consumer web apps and iOS. Building for the web since 2015, with 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
-      "availability": "Freelance, available for new contracts · Based in Barcelona, working remotely across Europe and North America."
+      "availability": "Freelance, available for new contracts · Based in Barcelona, working remotely across Europe and North America.",
+      "claim": "I ship whole products,",
+      "claimEm": "from the interface to the real-time backend.",
+      "intro": "Vue and React front ends, Java, Go and Node.js services on AWS, iOS apps. Building for the web since 2015, with 7 years in product teams in France and Canada."
     },
     "fr": {
       "metaTitle": "Quentin Aslan · Développeur Full-Stack Senior freelance",
       "metaDescription": "Quentin Aslan, développeur full-stack senior et builder : Vue, React, Node.js, Java et Go sur AWS, projets ESP32 et IoT, apps iOS. Freelance, à distance.",
       "title": "Développeur full-stack senior",
       "lead": "Je porte les fonctionnalités de bout en bout, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
-      "availability": "Freelance, disponible pour de nouvelles missions · Basé à Barcelone, en télétravail en Europe et en Amérique du Nord."
+      "availability": "Freelance, disponible pour de nouvelles missions · Basé à Barcelone, en télétravail en Europe et en Amérique du Nord.",
+      "claim": "Je livre des produits entiers,",
+      "claimEm": "de l'interface au backend temps réel.",
+      "intro": "Fronts Vue et React, services Java, Go et Node.js sur AWS, apps iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada."
     },
     "es": {
       "metaTitle": "Quentin Aslan · Desarrollador Full-Stack Sénior freelance",
       "metaDescription": "Quentin Aslan, desarrollador full-stack sénior y builder: Vue, React, Node.js, Java y Go en AWS, proyectos ESP32 e IoT, apps iOS. Freelance, en remoto.",
       "title": "Desarrollador full-stack sénior",
       "lead": "Me encargo de las funcionalidades de principio a fin, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
-      "availability": "Freelance, disponible para nuevos proyectos · Con base en Barcelona, en remoto en Europa y Norteamérica."
+      "availability": "Freelance, disponible para nuevos proyectos · Con base en Barcelona, en remoto en Europa y Norteamérica.",
+      "claim": "Construyo productos completos,",
+      "claimEm": "de la interfaz al backend en tiempo real.",
+      "intro": "Fronts en Vue y React, servicios Java, Go y Node.js en AWS, apps iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá."
     }
   },
   "ui": {
@@ -88,7 +97,7 @@
         "skills": "Skills",
         "about": "About",
         "contact": "Contact",
-        "builder": "Builder"
+        "builder": "Side projects"
       },
       "langLabel": "Language",
       "emailMe": "Email me",
@@ -97,7 +106,7 @@
       "workTitle": "Experience",
       "workIntro": "Every role, most recent first.",
       "caseStudy": "Read the case study",
-      "sideProjects": "Things I build",
+      "sideProjects": "Side projects",
       "a11yTitle": "Accessibility, in practice",
       "skillsTitle": "Skills",
       "testimonialsTitle": "What people say",
@@ -132,7 +141,28 @@
       "caseStudyNoun": "Case study",
       "builderLead": "Outside client work, I build my own projects, from ESP32 firmware and Raspberry Pi networking to iOS apps. Most start from a real problem at home or on the road.",
       "cvEn": "CV (English)",
-      "cvFr": "CV (French)"
+      "cvFr": "CV (French)",
+      "live": {
+        "byline": "My own app, born on the trains home from Asia and built alone.",
+        "tagline": "Where your train really is, in real time.",
+        "label": "Live",
+        "updated": "updated {t}",
+        "running": "trains tracked now",
+        "countries": "countries",
+        "delayed": "running late",
+        "built": "SwiftUI app and Cloudflare Workers backend that ingests live railway feeds.",
+        "tryBeta": "Try the beta",
+        "caption": "A train running now, as Railora shows it.",
+        "scheduled": "Scheduled",
+        "arrivesIn": "Arrives in {d}",
+        "open": "Open live in Railora",
+        "operators": "{n} operators, including",
+        "operatorsStatic": "Operators include"
+      },
+      "freelanceGroup": "Freelance missions, 2024 – present",
+      "fullHistory": "Full history:",
+      "cvPdf": "CV (PDF)",
+      "employedGroup": "Employed, 2019 – 2024"
     },
     "fr": {
       "skip": "Aller au contenu",
@@ -143,7 +173,7 @@
         "skills": "Compétences",
         "about": "À propos",
         "contact": "Contact",
-        "builder": "Builder"
+        "builder": "Projets perso"
       },
       "langLabel": "Langue",
       "emailMe": "M'écrire",
@@ -152,7 +182,7 @@
       "workTitle": "Parcours",
       "workIntro": "Toutes mes expériences, de la plus récente à la plus ancienne.",
       "caseStudy": "Lire l'étude de cas",
-      "sideProjects": "Ce que je construis",
+      "sideProjects": "Projets perso",
       "a11yTitle": "L'accessibilité, en pratique",
       "skillsTitle": "Compétences",
       "testimonialsTitle": "Ils ont travaillé avec moi",
@@ -187,7 +217,28 @@
       "caseStudyNoun": "Étude de cas",
       "builderLead": "En dehors des missions, je construis mes propres projets, du firmware ESP32 et du réseau sur Raspberry Pi jusqu'aux apps iOS. La plupart partent d'un vrai problème, chez moi ou en voyage.",
       "cvEn": "CV (anglais)",
-      "cvFr": "CV (français)"
+      "cvFr": "CV (français)",
+      "live": {
+        "byline": "Mon app, née dans les trains au retour d'Asie et construite seul.",
+        "tagline": "Où est vraiment votre train, en temps réel.",
+        "label": "En direct",
+        "updated": "mis à jour {t}",
+        "running": "trains suivis en ce moment",
+        "countries": "pays",
+        "delayed": "en retard",
+        "built": "App SwiftUI et backend Cloudflare Workers qui ingère les flux ferroviaires en direct.",
+        "tryBeta": "Essayer la bêta",
+        "caption": "Un train en circulation, tel que Railora l'affiche.",
+        "scheduled": "Selon l'horaire",
+        "arrivesIn": "Arrivée dans {d}",
+        "open": "Ouvrir en direct dans Railora",
+        "operators": "{n} opérateurs, dont",
+        "operatorsStatic": "Parmi les opérateurs"
+      },
+      "freelanceGroup": "Missions freelance, 2024 – aujourd'hui",
+      "fullHistory": "Historique complet :",
+      "cvPdf": "CV (PDF)",
+      "employedGroup": "Salarié, 2019 – 2024"
     },
     "es": {
       "skip": "Ir al contenido",
@@ -198,7 +249,7 @@
         "skills": "Competencias",
         "about": "Sobre mí",
         "contact": "Contacto",
-        "builder": "Builder"
+        "builder": "Proyectos personales"
       },
       "langLabel": "Idioma",
       "emailMe": "Escríbeme",
@@ -207,7 +258,7 @@
       "workTitle": "Experiencia",
       "workIntro": "Toda mi experiencia, de la más reciente a la más antigua.",
       "caseStudy": "Leer el caso de estudio",
-      "sideProjects": "Lo que construyo",
+      "sideProjects": "Proyectos personales",
       "a11yTitle": "La accesibilidad, en la práctica",
       "skillsTitle": "Competencias",
       "testimonialsTitle": "Lo que dicen de mí",
@@ -242,33 +293,60 @@
       "caseStudyNoun": "Caso de estudio",
       "builderLead": "Fuera de los proyectos para clientes, construyo mis propios proyectos, desde firmware ESP32 y redes en Raspberry Pi hasta apps iOS. La mayoría parte de un problema real, en casa o de viaje.",
       "cvEn": "CV (inglés)",
-      "cvFr": "CV (francés)"
+      "cvFr": "CV (francés)",
+      "live": {
+        "byline": "Mi propia app, nacida en los trenes de vuelta de Asia y construida solo.",
+        "tagline": "Dónde está realmente tu tren, en tiempo real.",
+        "label": "En directo",
+        "updated": "actualizado {t}",
+        "running": "trenes seguidos ahora",
+        "countries": "países",
+        "delayed": "con retraso",
+        "built": "App en SwiftUI y backend en Cloudflare Workers que procesa los datos ferroviarios en directo.",
+        "tryBeta": "Probar la beta",
+        "caption": "Un tren en circulación, tal como lo muestra Railora.",
+        "scheduled": "Según horario",
+        "arrivesIn": "Llega en {d}",
+        "open": "Abrir en directo en Railora",
+        "operators": "{n} operadores, entre ellos",
+        "operatorsStatic": "Entre los operadores"
+      },
+      "freelanceGroup": "Proyectos freelance, 2024 – hoy",
+      "fullHistory": "Historial completo:",
+      "cvPdf": "CV (PDF)",
+      "employedGroup": "Asalariado, 2019 – 2024"
     }
   },
   "companies": [
     {
       "name": "GLS",
-      "logo": "/logos/gls.webp"
+      "logo": "/logos/gls.svg",
+      "h": 30
     },
     {
       "name": "Bell Canada",
-      "logo": "/logos/bell.webp"
+      "logo": "/logos/bell.svg",
+      "h": 34
     },
     {
       "name": "Vasco",
-      "logo": "/logos/vasco.webp"
+      "logo": "/logos/vasco.svg",
+      "h": 24
     },
     {
       "name": "Pomerleau",
-      "logo": "/logos/pomerleau.webp"
+      "logo": "/logos/pomerleau.svg",
+      "h": 22
     },
     {
       "name": "InnoSelect",
-      "logo": null
+      "logo": null,
+      "h": null
     },
     {
       "name": "Occitaline",
-      "logo": null
+      "logo": "/logos/occitaline.webp",
+      "h": 42
     }
   ],
   "work": [
@@ -289,9 +367,9 @@
         "es": "Remoto"
       },
       "kind": {
-        "en": "Own product, alongside client work",
-        "fr": "Produit personnel, en parallèle des missions",
-        "es": "Producto propio, en paralelo a los proyectos"
+        "en": "Own product",
+        "fr": "Produit personnel",
+        "es": "Producto propio"
       },
       "summary": {
         "en": "Consumer iOS app for live train tracking, \"Flighty for trains\". Born from a trip through Southeast Asia and an overland train journey home.",

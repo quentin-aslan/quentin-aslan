@@ -7,8 +7,9 @@ Source of [quentinaslan.com](https://quentinaslan.com), the portfolio of Quentin
 - **HTML first.** Every page is prerendered at build time and ships **no JavaScript bundle**. Search engines, AI assistants and screen readers get the full content in the first response.
 - **One content file.** Everything shown on the site lives in [`content/profile.json`](content/profile.json), in three languages. Long texts (case studies, the blog post) are Markdown files next to it.
 - **Accessible by construction.** WCAG 2.2 AA: landmarks, one `h1` per page, skip link, visible focus, 24 px targets, AA contrast, `lang` on every page and quote, no content hidden behind animation.
-- **Right language.** One inline line on translated English pages sends visitors arriving from outside to `/fr` or `/es` according to their browser languages. Links inside the site never redirect, so a manual choice sticks without a cookie. Crawlers stay on English, the `x-default`. It is the only executable script on the site.
-- **As few moving parts as possible.** Two runtime dependencies (`nuxt`, `marked`) and Wrangler for deploys, plain CSS with custom properties, three self-hosted fonts (Instrument Serif, Schibsted Grotesk, JetBrains Mono).
+- **Right language.** One inline line on translated English pages sends visitors arriving from outside to `/fr` or `/es` according to their browser languages. Links inside the site never redirect, so a manual choice sticks without a cookie. Crawlers stay on English, the `x-default`.
+- **One live block.** The home page's Railora band ships as static HTML. `public/railora-live.js` (no dependency) then fetches `api.railora.app` every minute while the tab is visible, and shows live numbers and a running train only when the feed is less than 10 minutes old. The train is drawn like the app's iOS Live Activity and links to its live page on railora.app; operator logos in `public/operators/` are copied from the Railora web app.
+- **As few moving parts as possible.** Two runtime dependencies (`nuxt`, `marked`) and Wrangler for deploys, plain CSS with custom properties, three self-hosted fonts (Newsreader, Schibsted Grotesk, JetBrains Mono).
 
 ## Stack
 
@@ -36,7 +37,7 @@ app/
   pages/mentions-legales.vue        legal notice (French law)
   error.vue               404 page
   composables/useSite.ts  current language, UI strings, SEO and JSON-LD helpers
-  components/             SiteHeader, SiteFooter
+  components/             SiteHeader, SiteFooter, RailoraLive (live band)
   assets/main.css
 shared/utils/locale.ts    languages and localized paths (app and server)
 server/routes/            sitemap.xml and llms.txt, prerendered
