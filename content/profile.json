@@ -151,7 +151,7 @@
         "countries": "countries",
         "delayed": "running late",
         "built": "SwiftUI app and Cloudflare Workers backend that ingests live railway feeds.",
-        "tryBeta": "Try the beta",
+        "tryBeta": "Discover Railora",
         "caption": "A train running now, as Railora shows it.",
         "scheduled": "Scheduled",
         "arrivesIn": "Arrives in {d}",
@@ -227,7 +227,7 @@
         "countries": "pays",
         "delayed": "en retard",
         "built": "App SwiftUI et backend Cloudflare Workers qui ingère les flux ferroviaires en direct.",
-        "tryBeta": "Essayer la bêta",
+        "tryBeta": "Découvrir Railora",
         "caption": "Un train en circulation, tel que Railora l'affiche.",
         "scheduled": "Selon l'horaire",
         "arrivesIn": "Arrivée dans {d}",
@@ -303,7 +303,7 @@
         "countries": "países",
         "delayed": "con retraso",
         "built": "App en SwiftUI y backend en Cloudflare Workers que procesa los datos ferroviarios en directo.",
-        "tryBeta": "Probar la beta",
+        "tryBeta": "Descubrir Railora",
         "caption": "Un tren en circulación, tal como lo muestra Railora.",
         "scheduled": "Según horario",
         "arrivesIn": "Llega en {d}",
@@ -1444,9 +1444,9 @@
       "ogImage": "/og/work-gls.jpg",
       "panel": {
         "eyebrow": {
-          "en": "GLS France · 2024 – 2025 and 2026",
-          "fr": "GLS France · 2024 – 2025 et 2026",
-          "es": "GLS France · 2024 – 2025 y 2026"
+          "en": "GLS France · 2024 – 2026 · two contracts",
+          "fr": "GLS France · 2024 – 2026 · deux missions",
+          "es": "GLS France · 2024 – 2026 · dos proyectos"
         },
         "title": {
           "en": "GLS France: parcel tracking at 2.2M visits a month",
