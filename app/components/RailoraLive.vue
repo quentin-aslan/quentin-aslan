@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { profile, t, to } = useSite()
+const { profile, t } = useSite()
 const live = t.live
 const screens = profile.caseStudies.find(c => c.slug === 'railora')?.screens?.slice(0, 2) ?? []
 // The largest operators Railora follows; logos are the app's own assets.
@@ -46,7 +46,6 @@ useHead({ script: [{ src: '/railora-live.js', defer: true }] })
         <p class="live-built">{{ live.built }}</p>
         <p class="live-links">
           <a class="btn btn-light" href="https://railora.app">{{ live.tryBeta }} <span aria-hidden="true">↗</span></a>
-          <a class="link-arrow" :href="to('/work/railora')">{{ t.caseStudy }}<span class="visually-hidden">: Railora</span> <span aria-hidden="true">→</span></a>
         </p>
       </div>
       <div class="live-visual">

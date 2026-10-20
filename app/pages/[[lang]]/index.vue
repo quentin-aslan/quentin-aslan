@@ -74,8 +74,6 @@ useSeo({
       </div>
     </section>
 
-    <RailoraLive />
-
     <section class="trust" aria-labelledby="companies-title">
       <div class="wrap">
         <h2 id="companies-title" class="label">{{ t.companies }}</h2>
@@ -87,6 +85,8 @@ useSeo({
         </ul>
       </div>
     </section>
+
+    <RailoraLive />
 
     <section id="work" class="section" aria-labelledby="featured-title">
       <div class="wrap">
@@ -102,44 +102,11 @@ useSeo({
             <p class="eyebrow">{{ c.panel.eyebrow[lang] }}</p>
             <h3><a :href="to(`/work/${c.slug}`)">{{ c.panel.title[lang] }}</a></h3>
             <p>{{ c.panel.text[lang] }}</p>
-            <p class="stack-line">{{ c.panel.stack }}</p>
+            <p class="stack-line"><span v-for="s in c.panel.stack.split(' · ')" :key="s">{{ s }}</span></p>
             <a class="link-arrow" :href="to(`/work/${c.slug}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ c.panel.title[lang] }}</span> <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <p class="proof-line">{{ t.a11yStatement }}</p>
-      </div>
-    </section>
-
-    <section class="section quotes-band" aria-labelledby="quotes-title">
-      <div class="wrap">
-        <h2 id="quotes-title" class="section-title reveal">{{ t.testimonialsTitle }}</h2>
-        <figure class="quote-featured">
-          <blockquote :lang="quoteLang(featuredQuote)">
-            <p>{{ quoteText(featuredQuote) }}</p>
-          </blockquote>
-          <figcaption>
-            <span class="quote-by">
-              <strong>{{ featuredQuote.name }}</strong>
-              <span>{{ featuredQuote.role[lang] }}, {{ featuredQuote.source }}</span>
-              <span v-if="translated(featuredQuote)" class="quote-note">{{ t.translatedFromFr }}</span>
-            </span>
-            <a v-if="featuredQuote.link" class="link-arrow" :href="to(featuredQuote.link)">{{ t.readLetter }} <span aria-hidden="true">→</span></a>
-          </figcaption>
-        </figure>
-        <ul class="quotes">
-          <li v-for="q in quotes" :key="q.name" class="reveal">
-            <figure>
-              <blockquote :lang="quoteLang(q)">
-                <p>“{{ quoteText(q) }}”</p>
-              </blockquote>
-              <figcaption class="quote-by">
-                <strong>{{ q.name }}</strong>
-                <span>{{ q.role[lang] }}</span>
-                <span class="quote-note">{{ t.via }} {{ q.source }}<template v-if="translated(q)"> · {{ t.translatedFromFr }}</template></span>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -170,7 +137,7 @@ useSeo({
                   <ul>
                     <li v-for="b in job.bullets[lang]" :key="b">{{ b }}</li>
                   </ul>
-                  <p class="stack-line">{{ job.stack.join(' · ') }}</p>
+                  <p class="stack-line"><span v-for="s in job.stack" :key="s">{{ s }}</span></p>
                   <a v-if="job.caseStudy" class="link-arrow" :href="to(`/work/${job.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ job.org }}</span> <span aria-hidden="true">→</span></a>
                 </div>
               </details>
@@ -182,6 +149,39 @@ useSeo({
           <a :href="profile.cv[lang]" download>{{ t.cvPdf }}</a> ·
           <a :href="person.linkedin">LinkedIn</a>
         </p>
+      </div>
+    </section>
+
+    <section class="section quotes-band" aria-labelledby="quotes-title">
+      <div class="wrap">
+        <h2 id="quotes-title" class="section-title reveal">{{ t.testimonialsTitle }}</h2>
+        <figure class="quote-featured">
+          <blockquote :lang="quoteLang(featuredQuote)">
+            <p>{{ quoteText(featuredQuote) }}</p>
+          </blockquote>
+          <figcaption>
+            <span class="quote-by">
+              <strong>{{ featuredQuote.name }}</strong>
+              <span>{{ featuredQuote.role[lang] }}, {{ featuredQuote.source }}</span>
+              <span v-if="translated(featuredQuote)" class="quote-note">{{ t.translatedFromFr }}</span>
+            </span>
+            <a v-if="featuredQuote.link" class="link-arrow" :href="to(featuredQuote.link)">{{ t.readLetter }} <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+        <ul class="quotes">
+          <li v-for="q in quotes" :key="q.name">
+            <figure>
+              <blockquote :lang="quoteLang(q)">
+                <p>“{{ quoteText(q) }}”</p>
+              </blockquote>
+              <figcaption class="quote-by">
+                <strong>{{ q.name }}</strong>
+                <span>{{ q.role[lang] }}</span>
+                <span class="quote-note">{{ t.via }} {{ q.source }}<template v-if="translated(q)"> · {{ t.translatedFromFr }}</template></span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </div>
     </section>
 
