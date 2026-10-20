@@ -9,7 +9,8 @@ const updated = new Date(profile.updated).toLocaleDateString(lang, { dateStyle: 
       <span>© {{ profile.updated.slice(0, 4) }} {{ profile.person.name }} · {{ t.updated }} <time :datetime="profile.updated">{{ updated }}</time></span>
       <span>
         <a href="/mentions-legales" hreflang="fr">{{ t.legal }}</a> ·
-        <a href="https://github.com/quentin-aslan/quentin-aslan">{{ t.source }}</a>
+        <a href="https://github.com/quentin-aslan/quentin-aslan">{{ t.source }}</a> ·
+        <a href="#main">{{ t.backToTop }} <span aria-hidden="true">↑</span></a>
       </span>
     </div>
   </footer>

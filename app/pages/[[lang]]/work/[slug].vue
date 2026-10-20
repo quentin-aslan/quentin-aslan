@@ -17,7 +17,9 @@ const path = `/work/${slug}`
 const screens = page.screens ?? []
 const homeWork = `${to('/')}#work`
 const index = profile.caseStudies.indexOf(page)
-const next = profile.caseStudies[(index + 1) % profile.caseStudies.length]!
+const count = profile.caseStudies.length
+const prev = profile.caseStudies[(index - 1 + count) % count]!
+const next = profile.caseStudies[(index + 1) % count]!
 
 useSeo({
   // The h1 keeps the full title; search results get the short part before the colon.
@@ -70,9 +72,6 @@ useSeo({
     </div>
     <img v-else-if="page.image" class="cover" fetchpriority="high" :src="page.image" :alt="page.imageAlt[lang]" :width="page.imageW ?? undefined" :height="page.imageH ?? undefined">
     <div class="prose" v-html="html" />
-    <p v-if="page.repo" class="actions">
-      <GithubLink class="btn btn-accent" :href="page.repo" :label="t.viewCode" />
-    </p>
     <section v-if="letter" id="letter" class="letter" aria-labelledby="letter-title">
       <h2 id="letter-title">{{ letter.title[lang] }}</h2>
       <p class="note">{{ letter.note[lang] }}</p>
@@ -86,6 +85,9 @@ useSeo({
       <a class="btn btn-accent" :href="`mailto:${profile.person.email}`">{{ t.emailMe }}</a>
       <a class="btn btn-ghost" :href="homeWork">{{ t.backToWork }}</a>
     </p>
-    <p class="next"><a class="link-arrow" :href="to(`/work/${next.slug}`)">{{ t.nextCase }}: {{ next.title[lang] }} <span aria-hidden="true">→</span></a></p>
+    <nav class="pager" :aria-label="t.caseStudyNoun">
+      <a :href="to(`/work/${prev.slug}`)"><span class="label">{{ t.prevCase }}</span><span><span aria-hidden="true">←</span> {{ prev.title[lang] }}</span></a>
+      <a :href="to(`/work/${next.slug}`)"><span class="label">{{ t.nextCase }}</span><span>{{ next.title[lang] }} <span aria-hidden="true">→</span></span></a>
+    </nav>
   </main>
 </template>
