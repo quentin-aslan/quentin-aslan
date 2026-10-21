@@ -86,7 +86,8 @@ main:focus { outline: none; }
 /* Hero */
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(32px, 5vw, 80px); align-items: center; padding: clamp(24px, 4vw, 56px) 24px clamp(48px, 6vw, 88px); }
 .hero h1 { font: 700 clamp(40px, 5vw, 76px)/1.02 var(--sans); letter-spacing: -0.035em; max-width: 14ch; margin-bottom: 28px; overflow-wrap: normal; text-wrap: balance; }
-.hero .who { display: block; margin-bottom: 22px; font: 500 15px/1.4 var(--sans); letter-spacing: 0.01em; color: var(--muted); }
+.hero .who { display: block; margin-bottom: 24px; font: 500 clamp(18px, 1.6vw, 22px)/1.35 var(--sans); letter-spacing: -0.005em; color: var(--ink); }
+.hero .who strong { font-weight: 700; }
 .lead { font-size: clamp(18px, 1.4vw, 20px); line-height: 1.55; color: var(--muted); max-width: 48ch; }
 .availability { display: flex; align-items: baseline; gap: 10px; font-size: 15px; margin-bottom: 28px; }
 .availability::before { content: ''; flex: none; width: 8px; height: 8px; border-radius: 50%; background: #2f7d4f; transform: translateY(-2px); }
@@ -245,10 +246,13 @@ main:focus { outline: none; }
   .exp-body { padding-left: 0; }
 }
 
-.capabilities { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 36px 32px; list-style: none; margin: 0; padding: 0; }
-.capabilities li { padding-top: 22px; border-top: 2px solid var(--ink); }
+.capabilities { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 48px 40px; list-style: none; margin: 0; padding: 0; }
+.capabilities > li { display: flex; flex-direction: column; padding-top: 22px; border-top: 2px solid var(--ink); }
+.capabilities .eyebrow { margin-bottom: 8px; }
 .capabilities h3 { font: 500 24px/1.2 var(--serif); margin-bottom: 10px; }
-.capabilities p:not(.stack-line) { font-size: 16px; color: var(--muted); }
+.capabilities h3 + p { font-size: 16px; color: var(--muted); margin: 0 0 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: auto 0 0; padding: 0; }
+.chips li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font: 500 14px/1.4 var(--sans); white-space: nowrap; }
 .builds { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 36px 32px; list-style: none; margin: 0; padding: 0; }
 .builds li { display: flex; flex-direction: column; padding-top: 22px; border-top: 1px solid var(--line); }
 .builds h3 { font: 500 24px/1.2 var(--serif); margin-bottom: 8px; }

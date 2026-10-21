@@ -61,7 +61,7 @@ useSeo({
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title">
-            <span class="who">{{ person.name }} · {{ home.title }}</span>
+            <span class="who"><strong>{{ person.name }}</strong> · {{ home.title }}</span>
             {{ home.claim }}
           </h1>
           <p class="lead">{{ home.intro }}</p>
@@ -96,10 +96,13 @@ useSeo({
         <h2 id="services-title" class="section-title">{{ home.capabilities.title }}</h2>
         <p class="section-lead">{{ home.capabilities.lead }}</p>
         <ul class="capabilities">
-          <li v-for="c in home.capabilities.items" :key="c.title">
+          <li v-for="c in home.capabilities.items" :key="c.domain">
+            <p class="eyebrow">{{ c.domain }}</p>
             <h3>{{ c.title }}</h3>
             <p>{{ c.text }}</p>
-            <p class="stack-line"><span v-for="s in c.stack" :key="s">{{ s }}</span></p>
+            <ul class="chips">
+              <li v-for="s in c.stack" :key="s">{{ s }}</li>
+            </ul>
           </li>
         </ul>
       </div>

@@ -72,18 +72,19 @@
         "lead": "One engineer across the whole stack, so your product ships without handoffs between specialists.",
         "items": [
           {
+            "domain": "Frontend",
             "title": "Fast, accessible interfaces",
-            "text": "Vue and React apps built to WCAG AA, from real-time data grids to design systems.",
+            "text": "Vue and React front ends built to WCAG, from real-time data grids to design systems.",
             "stack": [
               "Vue 3",
               "Nuxt",
               "React",
               "Next.js",
-              "TypeScript",
-              "Web Components"
+              "TypeScript"
             ]
           },
           {
+            "domain": "Backend",
             "title": "Reliable services and APIs",
             "text": "Java, Go and Node.js services, event-driven on SQS/SNS, running in production at GLS France.",
             "stack": [
@@ -96,27 +97,51 @@
             ]
           },
           {
+            "domain": "Cloud & DevOps",
             "title": "Infrastructure that ships",
-            "text": "Terraform, CI/CD and serverless setups that make releases quick and repeatable.",
+            "text": "Terraform and CI/CD pipelines that make releases quick and repeatable.",
             "stack": [
               "AWS",
               "Terraform",
               "Docker",
               "Kubernetes",
               "GitHub Actions",
-              "Cloudflare Workers"
+              "GitLab CI"
             ]
           },
           {
-            "title": "Native apps, applied AI",
-            "text": "SwiftUI apps with Live Activities, plus LLM and agent features built for real use.",
+            "domain": "iOS",
+            "title": "Native apps on the App Store",
+            "text": "SwiftUI apps designed and shipped solo, with Live Activities and home-screen widgets.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities",
+              "Live Activities"
+            ]
+          },
+          {
+            "domain": "AI",
+            "title": "AI that teams actually use",
+            "text": "Claude Code and Copilot tooling adopted by ~30 developers at GLS, RAG systems and LangGraph agents.",
+            "stack": [
               "LLM",
               "RAG",
-              "LangGraph"
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
+          {
+            "domain": "Embedded, IoT & networks",
+            "title": "From firmware to the router",
+            "text": "ESP32 firmware in C, Linux routers with firewall, VPN and routing, MQTT sensor supervision.",
+            "stack": [
+              "ESP32 (C)",
+              "Raspberry Pi",
+              "MQTT",
+              "Linux",
+              "iptables",
+              "WireGuard"
             ]
           }
         ]
@@ -138,18 +163,19 @@
         "lead": "Un seul ingénieur sur toute la stack : votre produit avance sans relais entre spécialistes.",
         "items": [
           {
+            "domain": "Frontend",
             "title": "Interfaces rapides et accessibles",
-            "text": "Applications Vue et React conformes WCAG AA, des grilles temps réel aux design systems.",
+            "text": "Fronts Vue et React conformes WCAG, des grilles temps réel aux design systems.",
             "stack": [
               "Vue 3",
               "Nuxt",
               "React",
               "Next.js",
-              "TypeScript",
-              "Web Components"
+              "TypeScript"
             ]
           },
           {
+            "domain": "Backend",
             "title": "Services et APIs fiables",
             "text": "Services Java, Go et Node.js, orientés événements sur SQS/SNS, en production chez GLS France.",
             "stack": [
@@ -162,27 +188,51 @@
             ]
           },
           {
+            "domain": "Cloud & DevOps",
             "title": "Une infra qui livre",
-            "text": "Terraform, CI/CD et serverless pour des mises en production rapides et reproductibles.",
+            "text": "Terraform et pipelines CI/CD pour des mises en production rapides et reproductibles.",
             "stack": [
               "AWS",
               "Terraform",
               "Docker",
               "Kubernetes",
               "GitHub Actions",
-              "Cloudflare Workers"
+              "GitLab CI"
             ]
           },
           {
-            "title": "Apps natives, IA appliquée",
-            "text": "Apps SwiftUI avec Live Activities, et fonctionnalités LLM et agents pensées pour l'usage réel.",
+            "domain": "iOS",
+            "title": "Des apps natives sur l'App Store",
+            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets d'écran d'accueil.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities",
+              "Live Activities"
+            ]
+          },
+          {
+            "domain": "IA",
+            "title": "Une IA que les équipes utilisent",
+            "text": "Outillage Claude Code et Copilot adopté par ~30 développeurs chez GLS, systèmes RAG et agents LangGraph.",
+            "stack": [
               "LLM",
               "RAG",
-              "LangGraph"
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
+          {
+            "domain": "Embarqué, IoT & réseau",
+            "title": "Du firmware au routeur",
+            "text": "Firmware ESP32 en C, routeurs Linux avec firewall, VPN et routage, supervision de capteurs en MQTT.",
+            "stack": [
+              "ESP32 (C)",
+              "Raspberry Pi",
+              "MQTT",
+              "Linux",
+              "iptables",
+              "WireGuard"
             ]
           }
         ]
@@ -204,18 +254,19 @@
         "lead": "Un solo ingeniero para todo el stack: tu producto avanza sin traspasos entre especialistas.",
         "items": [
           {
+            "domain": "Frontend",
             "title": "Interfaces rápidas y accesibles",
-            "text": "Apps Vue y React conformes a WCAG AA, de tablas en tiempo real a sistemas de diseño.",
+            "text": "Fronts Vue y React conformes a WCAG, de tablas en tiempo real a sistemas de diseño.",
             "stack": [
               "Vue 3",
               "Nuxt",
               "React",
               "Next.js",
-              "TypeScript",
-              "Web Components"
+              "TypeScript"
             ]
           },
           {
+            "domain": "Backend",
             "title": "Servicios y APIs fiables",
             "text": "Servicios Java, Go y Node.js, orientados a eventos con SQS/SNS, en producción en GLS France.",
             "stack": [
@@ -228,27 +279,51 @@
             ]
           },
           {
+            "domain": "Cloud & DevOps",
             "title": "Infraestructura que entrega",
-            "text": "Terraform, CI/CD y serverless para despliegues rápidos y repetibles.",
+            "text": "Terraform y pipelines CI/CD para despliegues rápidos y repetibles.",
             "stack": [
               "AWS",
               "Terraform",
               "Docker",
               "Kubernetes",
               "GitHub Actions",
-              "Cloudflare Workers"
+              "GitLab CI"
             ]
           },
           {
-            "title": "Apps nativas, IA aplicada",
-            "text": "Apps SwiftUI con Live Activities y funciones con LLM y agentes pensadas para uso real.",
+            "domain": "iOS",
+            "title": "Apps nativas en la App Store",
+            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets de pantalla de inicio.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities",
+              "Live Activities"
+            ]
+          },
+          {
+            "domain": "IA",
+            "title": "IA que los equipos usan de verdad",
+            "text": "Herramientas de Claude Code y Copilot adoptadas por ~30 desarrolladores en GLS, sistemas RAG y agentes LangGraph.",
+            "stack": [
               "LLM",
               "RAG",
-              "LangGraph"
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
+          {
+            "domain": "Embebido, IoT y redes",
+            "title": "Del firmware al router",
+            "text": "Firmware ESP32 en C, routers Linux con firewall, VPN y enrutamiento, supervisión de sensores por MQTT.",
+            "stack": [
+              "ESP32 (C)",
+              "Raspberry Pi",
+              "MQTT",
+              "Linux",
+              "iptables",
+              "WireGuard"
             ]
           }
         ]
@@ -1009,7 +1084,11 @@
       "image": "/img/easy-router-rpi.webp"
     },
     {
-      "name": "Sensor Sensei",
+      "name": {
+        "en": "LoRa air-quality sensor",
+        "fr": "Capteur de qualité de l'air LoRa",
+        "es": "Sensor de calidad del aire LoRa"
+      },
       "year": 2022,
       "text": {
         "en": "An air-quality sensor on an M5Stack (ESP32) reading PM2.5, temperature and humidity, with GPS position, sending its data over LoRa to a gateway (Epitech IoT project).",
