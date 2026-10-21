@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
         { rel: 'preload', href: '/fonts/newsreader-normal.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
-        { rel: 'preload', href: '/fonts/newsreader-italic.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
         { rel: 'preload', href: '/fonts/schibsted-grotesk.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
       ],
       meta: [{ name: 'theme-color', content: '#faf8f5' }],
