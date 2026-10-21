@@ -112,11 +112,12 @@
           {
             "domain": "Mobile",
             "title": "Native and cross-platform apps",
-            "text": "SwiftUI apps designed and shipped solo, with Live Activities and widgets, and Flutter for cross-platform.",
+            "text": "SwiftUI apps designed and shipped solo, with Live Activities and widgets, plus Flutter and React Native for cross-platform.",
             "stack": [
               "Swift",
               "SwiftUI",
               "Live Activities",
+              "React Native",
               "Flutter",
               "Dart"
             ]
@@ -205,11 +206,12 @@
           {
             "domain": "Mobile",
             "title": "Apps natives et cross-platform",
-            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets, et Flutter pour le cross-platform.",
+            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets, plus Flutter et React Native pour le cross-platform.",
             "stack": [
               "Swift",
               "SwiftUI",
               "Live Activities",
+              "React Native",
               "Flutter",
               "Dart"
             ]
@@ -298,11 +300,12 @@
           {
             "domain": "Mobile",
             "title": "Apps nativas y multiplataforma",
-            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets, y Flutter para multiplataforma.",
+            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets, además de Flutter y React Native para multiplataforma.",
             "stack": [
               "Swift",
               "SwiftUI",
               "Live Activities",
+              "React Native",
               "Flutter",
               "Dart"
             ]
