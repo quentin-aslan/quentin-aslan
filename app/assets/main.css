@@ -104,7 +104,7 @@ main:focus { outline: none; }
 .trust .label { text-align: center; margin-bottom: 28px; }
 .logos { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px 56px; max-width: 1040px; margin: 0 auto; padding: 0; list-style: none; }
 .logos li { display: flex; align-items: center; }
-.logos img { height: var(--h, 28px); width: auto; }
+.logos img { height: var(--h, 28px); width: auto; object-fit: contain; }
 .wordmark { font: 600 21px/1 var(--sans); letter-spacing: -0.01em; color: var(--ink); }
 @media (max-width: 640px) {
   .logos { display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 32px; justify-items: center; }

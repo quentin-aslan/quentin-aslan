@@ -4,9 +4,9 @@ const live = t.live
 const screens = profile.caseStudies.find(c => c.slug === 'railora')?.screens?.slice(0, 2) ?? []
 // The largest operators Railora follows; logos are the app's own assets.
 const operators = [
-  { id: 'sncf', name: 'SNCF' }, { id: 'renfe', name: 'Renfe' }, { id: 'trenitalia', name: 'Trenitalia' },
-  { id: 'sbb', name: 'SBB CFF FFS' }, { id: 'sncb', name: 'SNCB' }, { id: 'eurostar', name: 'Eurostar' },
-  { id: 'cp', name: 'CP' }, { id: 'via-rail', name: 'VIA Rail' },
+  { id: 'sncf', name: 'SNCF', w: 31 }, { id: 'renfe', name: 'Renfe', w: 42 }, { id: 'trenitalia', name: 'Trenitalia', w: 65 },
+  { id: 'sbb', name: 'SBB CFF FFS', w: 142 }, { id: 'sncb', name: 'SNCB', w: 25 }, { id: 'eurostar', name: 'Eurostar', w: 70 },
+  { id: 'cp', name: 'CP', w: 30 }, { id: 'via-rail', name: 'VIA Rail', w: 36 },
 ]
 // Progressive enhancement: the static band is complete; the script adds live numbers and a running train.
 useHead({ script: [{ src: '/railora-live.js', defer: true }] })
@@ -40,7 +40,7 @@ useHead({ script: [{ src: '/railora-live.js', defer: true }] })
         <div class="live-ops">
           <p data-live="operators">{{ live.operatorsStatic }}</p>
           <ul>
-            <li v-for="o in operators" :key="o.id"><img :src="`/operators/${o.id}.svg`" :alt="o.name" height="16" loading="lazy"></li>
+            <li v-for="o in operators" :key="o.id"><img :src="`/operators/${o.id}.svg`" :alt="o.name" :width="o.w" height="16" loading="lazy"></li>
           </ul>
         </div>
         <p class="live-built">{{ live.built }}</p>
