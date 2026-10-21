@@ -71,12 +71,12 @@
       "whatsappText": "Hi Quentin, I saw your site. I have a project and I'd like to discuss it with you.",
       "capabilities": {
         "title": "What I do",
-        "lead": "One engineer across the whole stack, so your product ships without handoffs between specialists.",
+        "lead": "One engineer across the whole stack, so your product moves forward without handoffs between specialists.",
         "items": [
           {
             "domain": "Frontend",
-            "title": "Fast, accessible interfaces",
-            "text": "Vue and React front ends built to WCAG, from real-time data grids to design systems.",
+            "title": "Accessible, real-time interfaces",
+            "text": "Vue 3 B2B SaaS to WCAG AA at Bell; real-time AG Grid and GraphQL screens at Vasco.",
             "stack": [
               "Vue 3",
               "Nuxt",
@@ -87,8 +87,8 @@
           },
           {
             "domain": "Backend",
-            "title": "Reliable services and APIs",
-            "text": "Java, Go and Node.js services, event-driven on SQS/SNS, running in production at GLS France.",
+            "title": "Services that hold in production",
+            "text": "Event-driven Java and Go microservices on AWS SQS/SNS, running in production at GLS France.",
             "stack": [
               "Java",
               "Spring Boot",
@@ -100,8 +100,8 @@
           },
           {
             "domain": "Cloud & DevOps",
-            "title": "Infrastructure that ships",
-            "text": "Terraform and CI/CD pipelines that make releases quick and repeatable.",
+            "title": "Reproducible infrastructure",
+            "text": "Terraform on AWS, GitLab CI/CD and Grafana at GLS; serverless Cloudflare backend for Railora.",
             "stack": [
               "AWS",
               "Terraform",
@@ -113,8 +113,8 @@
           },
           {
             "domain": "Mobile",
-            "title": "Native and cross-platform apps",
-            "text": "SwiftUI apps designed and shipped solo, with Live Activities and widgets, plus Flutter and React Native for cross-platform.",
+            "title": "Apps shipped to the App Store",
+            "text": "Railora: a SwiftUI app with Live Activities, designed and published solo. Flutter and React Native on personal projects.",
             "stack": [
               "Swift",
               "SwiftUI",
@@ -126,8 +126,8 @@
           },
           {
             "domain": "AI",
-            "title": "AI that teams actually use",
-            "text": "Claude Code and Copilot tooling adopted by ~30 developers at GLS, RAG systems and LangGraph agents.",
+            "title": "AI tools developers adopt",
+            "text": "A Claude Code and Copilot plugin used by ~30 developers at GLS: release prep cut from 90 to 30-45 min.",
             "stack": [
               "LLM",
               "RAG",
@@ -138,8 +138,8 @@
           },
           {
             "domain": "Embedded, IoT & networks",
-            "title": "From firmware to the router",
-            "text": "ESP32 firmware in C, Linux routers with firewall, VPN and routing, MQTT sensor supervision.",
+            "title": "Firmware, sensors, networks",
+            "text": "Linux routers (firewall, VPN, routing) and MQTT sensors at Occitaline; ESP32 firmware in C on personal projects.",
             "stack": [
               "ESP32 (C)",
               "Raspberry Pi",
@@ -170,8 +170,8 @@
         "items": [
           {
             "domain": "Frontend",
-            "title": "Interfaces rapides et accessibles",
-            "text": "Fronts Vue et React conformes WCAG, des grilles temps réel aux design systems.",
+            "title": "Interfaces accessibles, temps réel",
+            "text": "SaaS B2B Vue 3 conforme WCAG AA chez Bell ; écrans temps réel AG Grid et GraphQL chez Vasco.",
             "stack": [
               "Vue 3",
               "Nuxt",
@@ -182,8 +182,8 @@
           },
           {
             "domain": "Backend",
-            "title": "Services et APIs fiables",
-            "text": "Services Java, Go et Node.js, orientés événements sur SQS/SNS, en production chez GLS France.",
+            "title": "Des services solides en production",
+            "text": "Microservices Java et Go orientés événements sur AWS SQS/SNS, en production chez GLS France.",
             "stack": [
               "Java",
               "Spring Boot",
@@ -195,8 +195,8 @@
           },
           {
             "domain": "Cloud & DevOps",
-            "title": "Une infra qui livre",
-            "text": "Terraform et pipelines CI/CD pour des mises en production rapides et reproductibles.",
+            "title": "Une infrastructure reproductible",
+            "text": "Terraform sur AWS, CI/CD GitLab et Grafana chez GLS ; backend serverless Cloudflare pour Railora.",
             "stack": [
               "AWS",
               "Terraform",
@@ -208,8 +208,8 @@
           },
           {
             "domain": "Mobile",
-            "title": "Apps natives et cross-platform",
-            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets, plus Flutter et React Native pour le cross-platform.",
+            "title": "Des apps publiées sur l'App Store",
+            "text": "Railora : app SwiftUI avec Live Activities, conçue et publiée seul. Flutter et React Native sur projets perso.",
             "stack": [
               "Swift",
               "SwiftUI",
@@ -221,8 +221,8 @@
           },
           {
             "domain": "IA",
-            "title": "Une IA que les équipes utilisent",
-            "text": "Outillage Claude Code et Copilot adopté par ~30 développeurs chez GLS, systèmes RAG et agents LangGraph.",
+            "title": "Une IA adoptée par les développeurs",
+            "text": "Un plugin Claude Code et Copilot utilisé par ~30 développeurs chez GLS : releases préparées en 30-45 min au lieu de 90.",
             "stack": [
               "LLM",
               "RAG",
@@ -233,8 +233,8 @@
           },
           {
             "domain": "Embarqué, IoT & réseau",
-            "title": "Du firmware au routeur",
-            "text": "Firmware ESP32 en C, routeurs Linux avec firewall, VPN et routage, supervision de capteurs en MQTT.",
+            "title": "Du firmware au réseau",
+            "text": "Routeurs Linux (firewall, VPN, routage) et capteurs MQTT chez Occitaline ; firmware ESP32 en C sur projets perso.",
             "stack": [
               "ESP32 (C)",
               "Raspberry Pi",
@@ -265,8 +265,8 @@
         "items": [
           {
             "domain": "Frontend",
-            "title": "Interfaces rápidas y accesibles",
-            "text": "Fronts Vue y React conformes a WCAG, de tablas en tiempo real a sistemas de diseño.",
+            "title": "Interfaces accesibles en tiempo real",
+            "text": "SaaS B2B en Vue 3 con WCAG AA en Bell; pantallas en tiempo real con AG Grid y GraphQL en Vasco.",
             "stack": [
               "Vue 3",
               "Nuxt",
@@ -277,8 +277,8 @@
           },
           {
             "domain": "Backend",
-            "title": "Servicios y APIs fiables",
-            "text": "Servicios Java, Go y Node.js, orientados a eventos con SQS/SNS, en producción en GLS France.",
+            "title": "Servicios sólidos en producción",
+            "text": "Microservicios Java y Go orientados a eventos sobre AWS SQS/SNS, en producción en GLS France.",
             "stack": [
               "Java",
               "Spring Boot",
@@ -290,8 +290,8 @@
           },
           {
             "domain": "Cloud & DevOps",
-            "title": "Infraestructura que entrega",
-            "text": "Terraform y pipelines CI/CD para despliegues rápidos y repetibles.",
+            "title": "Infraestructura reproducible",
+            "text": "Terraform en AWS, CI/CD con GitLab y Grafana en GLS; backend serverless en Cloudflare para Railora.",
             "stack": [
               "AWS",
               "Terraform",
@@ -303,8 +303,8 @@
           },
           {
             "domain": "Mobile",
-            "title": "Apps nativas y multiplataforma",
-            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets, además de Flutter y React Native para multiplataforma.",
+            "title": "Apps publicadas en la App Store",
+            "text": "Railora: app SwiftUI con Live Activities, diseñada y publicada en solitario. Flutter y React Native en proyectos personales.",
             "stack": [
               "Swift",
               "SwiftUI",
@@ -316,8 +316,8 @@
           },
           {
             "domain": "IA",
-            "title": "IA que los equipos usan de verdad",
-            "text": "Herramientas de Claude Code y Copilot adoptadas por ~30 desarrolladores en GLS, sistemas RAG y agentes LangGraph.",
+            "title": "IA que los desarrolladores adoptan",
+            "text": "Un plugin de Claude Code y Copilot que usan unos 30 desarrolladores en GLS: releases preparadas en 30-45 min en vez de 90.",
             "stack": [
               "LLM",
               "RAG",
@@ -328,8 +328,8 @@
           },
           {
             "domain": "Embebido, IoT y redes",
-            "title": "Del firmware al router",
-            "text": "Firmware ESP32 en C, routers Linux con firewall, VPN y enrutamiento, supervisión de sensores por MQTT.",
+            "title": "Del firmware a la red",
+            "text": "Routers Linux (firewall, VPN, enrutamiento) y sensores MQTT en Occitaline; firmware ESP32 en C en proyectos personales.",
             "stack": [
               "ESP32 (C)",
               "Raspberry Pi",
