@@ -177,7 +177,7 @@ useSeo({
       </div>
     </section>
 
-    <section class="section quotes-band" aria-labelledby="quotes-title">
+    <section id="reviews" class="section quotes-band" aria-labelledby="quotes-title">
       <div class="wrap">
         <h2 id="quotes-title" class="section-title reveal">{{ t.testimonialsTitle }}</h2>
         <figure class="quote-featured">
