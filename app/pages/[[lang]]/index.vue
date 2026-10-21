@@ -67,9 +67,14 @@ useSeo({
           <p class="lead">{{ home.intro }}</p>
           <p class="availability">{{ home.availability }}</p>
           <div class="actions">
-            <a class="btn btn-accent" :href="whatsapp">{{ home.whatsapp }} <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" :href="`mailto:${person.email}`">{{ home.emailCta }}</a>
+            <a class="btn btn-accent" :href="person.cal">{{ home.callCta }} <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" :href="whatsapp">{{ home.whatsapp }}</a>
           </div>
+          <p class="hero-links">
+            <a :href="`mailto:${person.email}`">{{ home.emailCta }}</a> ·
+            <a :href="person.linkedin">LinkedIn</a> ·
+            <a :href="profile.cv[lang]" download>{{ t.cvPdf }}</a>
+          </p>
         </div>
         <div class="hero-photo">
           <img :src="heroPhoto.src" :alt="heroAlt" :width="heroPhoto.w" :height="heroPhoto.h" fetchpriority="high">
@@ -258,7 +263,9 @@ useSeo({
         <a class="contact-email" :href="`mailto:${person.email}`">{{ person.email }}</a>
         <p><a class="contact-phone" :href="`tel:${person.phoneHref}`">{{ person.phone }}</a></p>
         <ul class="contact-links">
+          <li><a :href="person.cal">{{ home.callCta }}</a></li>
           <li><a :href="person.linkedin">LinkedIn</a></li>
+          <li><a :href="person.malt">Malt</a></li>
           <li><a :href="person.github">GitHub</a></li>
           <li><a :href="profile.cv.en" hreflang="en" download>{{ t.cvEn }}</a></li>
           <li><a :href="profile.cv.fr" hreflang="fr" download>{{ t.cvFr }}</a></li>

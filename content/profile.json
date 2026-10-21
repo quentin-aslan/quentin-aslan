@@ -48,7 +48,9 @@
       "siret": "833 035 348 00048",
       "naf": "62.01Z, programmation informatique",
       "address": "13 rue Calvet, 31500 Toulouse, France"
-    }
+    },
+    "cal": "https://cal.com/quentinaslan/30min",
+    "malt": "https://www.malt.fr/profile/quentinaslan"
   },
   "cv": {
     "en": "/cv/Quentin-Aslan-CV-EN.pdf",
@@ -59,13 +61,13 @@
     "en": {
       "metaTitle": "Quentin Aslan · Freelance Senior Full-Stack Engineer",
       "metaDescription": "Quentin Aslan, senior full-stack engineer and builder: Vue, React, Node.js, Java and Go on AWS, ESP32 and IoT projects, iOS apps. Freelance, remote.",
-      "title": "Freelance full-stack engineer",
+      "title": "Senior Full‑Stack Engineer, freelance",
       "lead": "I own features end to end, from Vue and React front ends to Java, Go and Node.js services on AWS, for B2B SaaS, consumer web apps and iOS. Building for the web since 2015, with 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
-      "availability": "Available for new freelance missions, remote or on site.",
+      "availability": "Available now, remote or on site.",
       "claim": "I ship whole products, end to end.",
       "intro": "Frontend, backend, cloud and iOS. Delivered for GLS France and Bell Canada; founder of Railora, the train tracker used by several thousand travellers.",
       "whatsapp": "Chat on WhatsApp",
-      "emailCta": "Send an email",
+      "emailCta": "Email",
       "whatsappText": "Hi Quentin, I saw your site. I have a project and I'd like to discuss it with you.",
       "capabilities": {
         "title": "What I do",
@@ -148,18 +150,19 @@
             ]
           }
         ]
-      }
+      },
+      "callCta": "Book a 30-min call"
     },
     "fr": {
       "metaTitle": "Quentin Aslan · Développeur Full-Stack Senior freelance",
       "metaDescription": "Quentin Aslan, développeur full-stack senior et builder : Vue, React, Node.js, Java et Go sur AWS, projets ESP32 et IoT, apps iOS. Freelance, à distance.",
-      "title": "Développeur full-stack freelance",
+      "title": "Développeur full-stack senior, freelance",
       "lead": "Je porte les fonctionnalités de bout en bout, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
-      "availability": "Disponible pour de nouvelles missions, en remote ou sur site.",
+      "availability": "Disponible immédiatement, en remote ou sur site.",
       "claim": "Je livre des produits complets, de bout en bout.",
       "intro": "Front, back, cloud et iOS. Missions pour GLS France et Bell Canada ; fondateur de Railora, le suivi de trains utilisé par plusieurs milliers de voyageurs.",
       "whatsapp": "Écrire sur WhatsApp",
-      "emailCta": "M'écrire un mail",
+      "emailCta": "Email",
       "whatsappText": "Bonjour Quentin, j'ai vu votre site. J'ai un projet et j'aimerais en discuter avec vous.",
       "capabilities": {
         "title": "Ce que je fais",
@@ -242,18 +245,19 @@
             ]
           }
         ]
-      }
+      },
+      "callCta": "Réserver un appel de 30 min"
     },
     "es": {
       "metaTitle": "Quentin Aslan · Desarrollador Full-Stack Sénior freelance",
       "metaDescription": "Quentin Aslan, desarrollador full-stack sénior y builder: Vue, React, Node.js, Java y Go en AWS, proyectos ESP32 e IoT, apps iOS. Freelance, en remoto.",
-      "title": "Desarrollador full-stack freelance",
+      "title": "Desarrollador full-stack sénior, freelance",
       "lead": "Me encargo de las funcionalidades de principio a fin, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
-      "availability": "Disponible para nuevos proyectos, en remoto o presencial.",
+      "availability": "Disponible de inmediato, en remoto o presencial.",
       "claim": "Entrego productos completos, de principio a fin.",
       "intro": "Front, back, cloud e iOS. Proyectos para GLS France y Bell Canada; fundador de Railora, el seguimiento de trenes que usan miles de viajeros.",
       "whatsapp": "Escribir por WhatsApp",
-      "emailCta": "Enviar email",
+      "emailCta": "Email",
       "whatsappText": "Hola Quentin, he visto tu web. Tengo un proyecto y me gustaría hablarlo contigo.",
       "capabilities": {
         "title": "Qué hago",
@@ -336,7 +340,8 @@
             ]
           }
         ]
-      }
+      },
+      "callCta": "Reservar una llamada de 30 min"
     }
   },
   "ui": {
@@ -615,9 +620,9 @@
       "start": "2026-05",
       "end": null,
       "role": {
-        "en": "Creator and developer",
-        "fr": "Créateur et développeur",
-        "es": "Creador y desarrollador"
+        "en": "Founder",
+        "fr": "Fondateur",
+        "es": "Fundador"
       },
       "place": {
         "en": "Remote",
