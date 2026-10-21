@@ -110,13 +110,15 @@
             ]
           },
           {
-            "domain": "iOS",
-            "title": "Native apps on the App Store",
-            "text": "SwiftUI apps designed and shipped solo, with Live Activities and home-screen widgets.",
+            "domain": "Mobile",
+            "title": "Native and cross-platform apps",
+            "text": "SwiftUI apps designed and shipped solo, with Live Activities and widgets, and Flutter for cross-platform.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities"
+              "Live Activities",
+              "Flutter",
+              "Dart"
             ]
           },
           {
@@ -201,13 +203,15 @@
             ]
           },
           {
-            "domain": "iOS",
-            "title": "Des apps natives sur l'App Store",
-            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets d'écran d'accueil.",
+            "domain": "Mobile",
+            "title": "Apps natives et cross-platform",
+            "text": "Apps SwiftUI conçues et livrées seul, avec Live Activities et widgets, et Flutter pour le cross-platform.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities"
+              "Live Activities",
+              "Flutter",
+              "Dart"
             ]
           },
           {
@@ -292,13 +296,15 @@
             ]
           },
           {
-            "domain": "iOS",
-            "title": "Apps nativas en la App Store",
-            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets de pantalla de inicio.",
+            "domain": "Mobile",
+            "title": "Apps nativas y multiplataforma",
+            "text": "Apps SwiftUI diseñadas y publicadas en solitario, con Live Activities y widgets, y Flutter para multiplataforma.",
             "stack": [
               "Swift",
               "SwiftUI",
-              "Live Activities"
+              "Live Activities",
+              "Flutter",
+              "Dart"
             ]
           },
           {
