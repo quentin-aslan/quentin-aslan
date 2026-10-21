@@ -10,6 +10,7 @@ type Quote = typeof profile.testimonials[number]
 const sideSlugs = profile.sideProjects.map(p => p.caseStudy)
 const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' && !sideSlugs.includes(c.slug) ? [{ ...c, panel: c.panel }] : [])
 const sideProjects = [...profile.sideProjects].sort((a, b) => b.year - a.year)
+const whatsapp = `https://wa.me/${person.phoneHref.slice(1)}?text=${encodeURIComponent(home.whatsappText)}`
 const heroPhoto = profile.about.en.photos[0]!
 const heroAlt = profile.about[lang].photos[0]!.alt
 const aboutPhotos = profile.about[lang].photos.slice(1)
@@ -61,13 +62,13 @@ useSeo({
         <div class="hero-copy">
           <h1 id="hero-title">
             <span class="who">{{ person.name }} · {{ home.title }}</span>
-            {{ home.claim }} <em>{{ home.claimEm }}</em>
+            {{ home.claim }}
           </h1>
           <p class="lead">{{ home.intro }}</p>
           <p class="availability">{{ home.availability }}</p>
           <div class="actions">
-            <a class="btn btn-accent" :href="`mailto:${person.email}`">{{ t.emailMe }} <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" :href="profile.cv[lang]" download>{{ t.downloadCv }}</a>
+            <a class="btn btn-accent" :href="whatsapp">{{ home.whatsapp }} <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" :href="`mailto:${person.email}`">{{ home.emailCta }}</a>
           </div>
         </div>
         <div class="hero-photo">
@@ -89,6 +90,20 @@ useSeo({
     </section>
 
     <RailoraLive />
+
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 id="services-title" class="section-title">{{ home.capabilities.title }}</h2>
+        <p class="section-lead">{{ home.capabilities.lead }}</p>
+        <ul class="capabilities">
+          <li v-for="c in home.capabilities.items" :key="c.title">
+            <h3>{{ c.title }}</h3>
+            <p>{{ c.text }}</p>
+            <p class="stack-line"><span v-for="s in c.stack" :key="s">{{ s }}</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section id="work" class="section" aria-labelledby="featured-title">
       <div class="wrap">

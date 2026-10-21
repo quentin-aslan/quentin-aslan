@@ -59,32 +59,200 @@
     "en": {
       "metaTitle": "Quentin Aslan · Freelance Senior Full-Stack Engineer",
       "metaDescription": "Quentin Aslan, senior full-stack engineer and builder: Vue, React, Node.js, Java and Go on AWS, ESP32 and IoT projects, iOS apps. Freelance, remote.",
-      "title": "Senior Full-Stack Engineer",
+      "title": "Freelance full-stack engineer",
       "lead": "I own features end to end, from Vue and React front ends to Java, Go and Node.js services on AWS, for B2B SaaS, consumer web apps and iOS. Building for the web since 2015, with 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
-      "availability": "Freelance, available for new contracts · Based in Barcelona, working remotely across Europe and North America.",
-      "claim": "I ship whole products,",
-      "claimEm": "from the interface to the real-time backend.",
-      "intro": "Vue and React front ends, Java, Go and Node.js services on AWS, iOS apps. Building for the web since 2015, with 7 years in product teams in France and Canada."
+      "availability": "Available for new freelance missions, remote or on site.",
+      "claim": "I ship whole products, end to end.",
+      "intro": "Frontend, backend, cloud and iOS. Delivered for GLS France and Bell Canada; founder of Railora, the train tracker used by several thousand travellers.",
+      "whatsapp": "Chat on WhatsApp",
+      "emailCta": "Send an email",
+      "whatsappText": "Hi Quentin, I saw your site. I have a project and I'd like to discuss it with you.",
+      "capabilities": {
+        "title": "What I do",
+        "lead": "One engineer across the whole stack, so your product ships without handoffs between specialists.",
+        "items": [
+          {
+            "title": "Fast, accessible interfaces",
+            "text": "Vue and React apps built to WCAG AA, from real-time data grids to design systems.",
+            "stack": [
+              "Vue 3",
+              "Nuxt",
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Web Components"
+            ]
+          },
+          {
+            "title": "Reliable services and APIs",
+            "text": "Java, Go and Node.js services, event-driven on SQS/SNS, running in production at GLS France.",
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "Go",
+              "Node.js",
+              "NestJS",
+              "GraphQL"
+            ]
+          },
+          {
+            "title": "Infrastructure that ships",
+            "text": "Terraform, CI/CD and serverless setups that make releases quick and repeatable.",
+            "stack": [
+              "AWS",
+              "Terraform",
+              "Docker",
+              "Kubernetes",
+              "GitHub Actions",
+              "Cloudflare Workers"
+            ]
+          },
+          {
+            "title": "Native apps, applied AI",
+            "text": "SwiftUI apps with Live Activities, plus LLM and agent features built for real use.",
+            "stack": [
+              "Swift",
+              "SwiftUI",
+              "Live Activities",
+              "LLM",
+              "RAG",
+              "LangGraph"
+            ]
+          }
+        ]
+      }
     },
     "fr": {
       "metaTitle": "Quentin Aslan · Développeur Full-Stack Senior freelance",
       "metaDescription": "Quentin Aslan, développeur full-stack senior et builder : Vue, React, Node.js, Java et Go sur AWS, projets ESP32 et IoT, apps iOS. Freelance, à distance.",
-      "title": "Développeur full-stack senior",
+      "title": "Développeur full-stack freelance",
       "lead": "Je porte les fonctionnalités de bout en bout, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
-      "availability": "Freelance, disponible pour de nouvelles missions · Basé à Barcelone, en télétravail en Europe et en Amérique du Nord.",
-      "claim": "Je livre des produits entiers,",
-      "claimEm": "de l'interface au backend temps réel.",
-      "intro": "Fronts Vue et React, services Java, Go et Node.js sur AWS, apps iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada."
+      "availability": "Disponible pour de nouvelles missions, en remote ou sur site.",
+      "claim": "Je livre des produits complets, de bout en bout.",
+      "intro": "Front, back, cloud et iOS. Missions pour GLS France et Bell Canada ; fondateur de Railora, le suivi de trains utilisé par plusieurs milliers de voyageurs.",
+      "whatsapp": "Écrire sur WhatsApp",
+      "emailCta": "M'écrire un mail",
+      "whatsappText": "Bonjour Quentin, j'ai vu votre site. J'ai un projet et j'aimerais en discuter avec vous.",
+      "capabilities": {
+        "title": "Ce que je fais",
+        "lead": "Un seul ingénieur sur toute la stack : votre produit avance sans relais entre spécialistes.",
+        "items": [
+          {
+            "title": "Interfaces rapides et accessibles",
+            "text": "Applications Vue et React conformes WCAG AA, des grilles temps réel aux design systems.",
+            "stack": [
+              "Vue 3",
+              "Nuxt",
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Web Components"
+            ]
+          },
+          {
+            "title": "Services et APIs fiables",
+            "text": "Services Java, Go et Node.js, orientés événements sur SQS/SNS, en production chez GLS France.",
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "Go",
+              "Node.js",
+              "NestJS",
+              "GraphQL"
+            ]
+          },
+          {
+            "title": "Une infra qui livre",
+            "text": "Terraform, CI/CD et serverless pour des mises en production rapides et reproductibles.",
+            "stack": [
+              "AWS",
+              "Terraform",
+              "Docker",
+              "Kubernetes",
+              "GitHub Actions",
+              "Cloudflare Workers"
+            ]
+          },
+          {
+            "title": "Apps natives, IA appliquée",
+            "text": "Apps SwiftUI avec Live Activities, et fonctionnalités LLM et agents pensées pour l'usage réel.",
+            "stack": [
+              "Swift",
+              "SwiftUI",
+              "Live Activities",
+              "LLM",
+              "RAG",
+              "LangGraph"
+            ]
+          }
+        ]
+      }
     },
     "es": {
       "metaTitle": "Quentin Aslan · Desarrollador Full-Stack Sénior freelance",
       "metaDescription": "Quentin Aslan, desarrollador full-stack sénior y builder: Vue, React, Node.js, Java y Go en AWS, proyectos ESP32 e IoT, apps iOS. Freelance, en remoto.",
-      "title": "Desarrollador full-stack sénior",
+      "title": "Desarrollador full-stack freelance",
       "lead": "Me encargo de las funcionalidades de principio a fin, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
-      "availability": "Freelance, disponible para nuevos proyectos · Con base en Barcelona, en remoto en Europa y Norteamérica.",
-      "claim": "Construyo productos completos,",
-      "claimEm": "de la interfaz al backend en tiempo real.",
-      "intro": "Fronts en Vue y React, servicios Java, Go y Node.js en AWS, apps iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá."
+      "availability": "Disponible para nuevos proyectos, en remoto o presencial.",
+      "claim": "Entrego productos completos, de principio a fin.",
+      "intro": "Front, back, cloud e iOS. Proyectos para GLS France y Bell Canada; fundador de Railora, el seguimiento de trenes que usan miles de viajeros.",
+      "whatsapp": "Escribir por WhatsApp",
+      "emailCta": "Enviar email",
+      "whatsappText": "Hola Quentin, he visto tu web. Tengo un proyecto y me gustaría hablarlo contigo.",
+      "capabilities": {
+        "title": "Qué hago",
+        "lead": "Un solo ingeniero para todo el stack: tu producto avanza sin traspasos entre especialistas.",
+        "items": [
+          {
+            "title": "Interfaces rápidas y accesibles",
+            "text": "Apps Vue y React conformes a WCAG AA, de tablas en tiempo real a sistemas de diseño.",
+            "stack": [
+              "Vue 3",
+              "Nuxt",
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Web Components"
+            ]
+          },
+          {
+            "title": "Servicios y APIs fiables",
+            "text": "Servicios Java, Go y Node.js, orientados a eventos con SQS/SNS, en producción en GLS France.",
+            "stack": [
+              "Java",
+              "Spring Boot",
+              "Go",
+              "Node.js",
+              "NestJS",
+              "GraphQL"
+            ]
+          },
+          {
+            "title": "Infraestructura que entrega",
+            "text": "Terraform, CI/CD y serverless para despliegues rápidos y repetibles.",
+            "stack": [
+              "AWS",
+              "Terraform",
+              "Docker",
+              "Kubernetes",
+              "GitHub Actions",
+              "Cloudflare Workers"
+            ]
+          },
+          {
+            "title": "Apps nativas, IA aplicada",
+            "text": "Apps SwiftUI con Live Activities y funciones con LLM y agentes pensadas para uso real.",
+            "stack": [
+              "Swift",
+              "SwiftUI",
+              "Live Activities",
+              "LLM",
+              "RAG",
+              "LangGraph"
+            ]
+          }
+        ]
+      }
     }
   },
   "ui": {
@@ -736,7 +904,8 @@
         "Web Components",
         "Cypress",
         "Jest",
-        "OpenShift"
+        "OpenShift",
+        "Azure"
       ],
       "caseStudy": "bell",
       "country": "ca"
