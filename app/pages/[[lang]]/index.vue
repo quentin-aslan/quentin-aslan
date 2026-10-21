@@ -265,10 +265,10 @@ useSeo({
       <div class="wrap">
         <h2 id="contact-title" class="reveal">{{ t.contactTitle }}</h2>
         <p>{{ t.contactLead }}</p>
+        <p class="contact-cta"><a class="btn btn-light" :href="person.cal">{{ home.callCta }} <span aria-hidden="true">→</span></a></p>
         <a class="contact-email" :href="`mailto:${person.email}`">{{ person.email }}</a>
         <p><a class="contact-phone" :href="`tel:${person.phoneHref}`">{{ person.phone }}</a></p>
         <ul class="contact-links">
-          <li><a :href="person.cal">{{ home.callCta }}</a></li>
           <li><a :href="person.linkedin">LinkedIn</a></li>
           <li><a :href="person.malt">Malt</a></li>
           <li><a :href="person.github">GitHub</a></li>

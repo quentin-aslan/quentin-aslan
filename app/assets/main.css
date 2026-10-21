@@ -320,6 +320,7 @@ main:focus { outline: none; }
 .contact h2 { font: 400 clamp(40px, 6vw, 80px)/1.04 var(--serif); letter-spacing: -0.02em; max-width: 16ch; margin: 0 auto 20px; }
 .contact p { color: var(--dark-muted); font-size: 18px; }
 .contact :focus-visible { outline-color: var(--dark-accent); }
+.contact-cta { margin: 28px 0 8px; }
 .contact-email { display: inline-block; font: 400 clamp(24px, 3.6vw, 44px)/1.2 var(--serif); color: var(--dark-ink); overflow-wrap: anywhere; margin: 20px 0 8px; }
 .contact-phone { font-size: 20px; font-weight: 600; color: var(--dark-ink); white-space: nowrap; text-underline-offset: 0.2em; }
 .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px; list-style: none; margin: 32px 0 0; padding: 0; }
