@@ -127,7 +127,9 @@ useSeo({
             <p class="eyebrow">{{ c.panel.eyebrow[lang] }}</p>
             <h3><a :href="to(`/work/${c.slug}`)">{{ c.panel.title[lang] }}</a></h3>
             <p>{{ c.panel.text[lang] }}</p>
-            <p class="stack-line"><span v-for="s in c.panel.stack.split(' · ')" :key="s">{{ s }}</span></p>
+            <ul class="chips">
+              <li v-for="s in c.panel.stack.split(' · ')" :key="s">{{ s }}</li>
+            </ul>
             <a class="link-arrow" :href="to(`/work/${c.slug}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ c.panel.title[lang] }}</span> <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -146,23 +148,26 @@ useSeo({
                 <summary>
                   <time class="when" :datetime="job.start">{{ formatPeriod(job.start, job.end, lang) }}</time>
                   <span class="org">
-                    <img v-if="job.logo" :src="job.logo" alt="" width="24" height="24" loading="lazy">
-                    <span v-else class="logo-slot" aria-hidden="true" />
+                    <img :src="job.logo" alt="" width="24" height="24" loading="lazy">
                     {{ job.org }}
                   </span>
-                  <span class="role">{{ job.role[lang] }}</span>
+                  <span class="role">{{ job.title[lang] }}</span>
                   <span class="where">
-                    {{ job.kind[lang] }} ·
                     <img v-if="job.country" class="flag" :src="`/flags/${job.country}.svg`" :alt="profile.countries[job.country as 'fr' | 'ca' | 'nl'][lang]" width="20" height="15">
                     {{ job.place[lang] }}
                   </span>
                 </summary>
                 <div class="exp-body">
+                  <p class="exp-meta">
+                    <template v-if="job.role[lang] !== job.title[lang]">{{ job.role[lang] }} · </template>{{ job.kind[lang] }}<span class="exp-place"> · {{ job.place[lang] }}</span>
+                  </p>
                   <p>{{ job.summary[lang] }}</p>
                   <ul>
                     <li v-for="b in job.bullets[lang]" :key="b">{{ b }}</li>
                   </ul>
-                  <p class="stack-line"><span v-for="s in job.stack" :key="s">{{ s }}</span></p>
+                  <ul class="chips">
+                    <li v-for="s in job.stack" :key="s">{{ s }}</li>
+                  </ul>
                   <a v-if="job.caseStudy" class="link-arrow" :href="to(`/work/${job.caseStudy}`)">{{ t.caseStudy }}<span class="visually-hidden">: {{ job.org }}</span> <span aria-hidden="true">→</span></a>
                 </div>
               </details>

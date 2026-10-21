@@ -606,8 +606,8 @@
     },
     {
       "name": "InnoSelect",
-      "logo": null,
-      "h": null
+      "logo": "/logos/innoselect.svg",
+      "h": 34
     },
     {
       "name": "Occitaline",
@@ -669,7 +669,12 @@
         "GTFS-RT",
         "LangGraph"
       ],
-      "caseStudy": "railora"
+      "caseStudy": "railora",
+      "title": {
+        "en": "Founder",
+        "fr": "Fondateur",
+        "es": "Fundador"
+      }
     },
     {
       "id": "gls-2026",
@@ -725,7 +730,12 @@
         "RAG"
       ],
       "caseStudy": "gls",
-      "country": "fr"
+      "country": "fr",
+      "title": {
+        "en": "Backend Engineer + AI",
+        "fr": "Développeur backend + IA",
+        "es": "Ingeniero backend + IA"
+      }
     },
     {
       "id": "vasco",
@@ -779,12 +789,17 @@
         "Symfony",
         "Vitest"
       ],
-      "country": "fr"
+      "country": "fr",
+      "title": {
+        "en": "Frontend Developer",
+        "fr": "Développeur front-end",
+        "es": "Desarrollador front-end"
+      }
     },
     {
       "id": "innoselect",
       "org": "InnoSelect",
-      "logo": null,
+      "logo": "/logos/innoselect.png",
       "start": "2024-09",
       "end": "2025-11",
       "role": {
@@ -832,7 +847,12 @@
         "Docker",
         "GitHub Actions"
       ],
-      "country": "nl"
+      "country": "nl",
+      "title": {
+        "en": "Full-Stack Developer",
+        "fr": "Développeur full-stack",
+        "es": "Desarrollador full-stack"
+      }
     },
     {
       "id": "gls-2024",
@@ -889,7 +909,12 @@
         "Grafana"
       ],
       "caseStudy": "gls",
-      "country": "fr"
+      "country": "fr",
+      "title": {
+        "en": "Lead Full-Stack Developer",
+        "fr": "Lead full-stack",
+        "es": "Lead full-stack"
+      }
     },
     {
       "id": "pomerleau",
@@ -939,7 +964,12 @@
         "TypeScript",
         "ArcGIS"
       ],
-      "country": "ca"
+      "country": "ca",
+      "title": {
+        "en": "Frontend Developer",
+        "fr": "Développeur front-end",
+        "es": "Desarrollador front-end"
+      }
     },
     {
       "id": "bell",
@@ -1000,12 +1030,17 @@
         "Azure"
       ],
       "caseStudy": "bell",
-      "country": "ca"
+      "country": "ca",
+      "title": {
+        "en": "Full-Stack Developer",
+        "fr": "Développeur full-stack",
+        "es": "Desarrollador full-stack"
+      }
     },
     {
       "id": "occitaline",
       "org": "Occitaline",
-      "logo": null,
+      "logo": "/logos/occitaline-icon.png",
       "start": "2019-10",
       "end": "2022-08",
       "role": {
@@ -1056,7 +1091,12 @@
         "C"
       ],
       "country": "fr",
-      "caseStudy": "occitaline"
+      "caseStudy": "occitaline",
+      "title": {
+        "en": "Full-Stack Developer",
+        "fr": "Développeur full-stack",
+        "es": "Desarrollador full-stack"
+      }
     }
   ],
   "sideProjects": [
