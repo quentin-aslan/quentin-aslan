@@ -6,8 +6,10 @@ const { lang, profile, t, to } = useSite()
 const home = profile.home[lang]
 const { person } = profile
 type Quote = typeof profile.testimonials[number]
-// Railora, GLS and Bell get a large panel; Occitaline keeps its case study link in Experience.
-const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' ? [{ ...c, panel: c.panel }] : [])
+// Railora, GLS and Bell get a large panel; Occitaline keeps its link in Experience, side projects theirs in Side projects.
+const sideSlugs = profile.sideProjects.map(p => p.caseStudy)
+const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' && !sideSlugs.includes(c.slug) ? [{ ...c, panel: c.panel }] : [])
+const sideProjects = [...profile.sideProjects].sort((a, b) => b.year - a.year)
 const heroPhoto = profile.about.en.photos[0]!
 const heroAlt = profile.about[lang].photos[0]!.alt
 const aboutPhotos = profile.about[lang].photos.slice(1)
@@ -190,7 +192,7 @@ useSeo({
         <h2 id="builder-title" class="section-title reveal">{{ t.sideProjects }}</h2>
         <p class="section-lead">{{ t.builderLead }}</p>
         <ul class="builds">
-          <li v-for="p in profile.sideProjects" :key="p.year + p.text.en">
+          <li v-for="p in sideProjects" :key="p.year + p.text.en">
             <p class="eyebrow">{{ p.year }}</p>
             <h3>{{ typeof p.name === 'string' ? p.name : p.name[lang] }}</h3>
             <p>{{ p.text[lang] }}</p>
