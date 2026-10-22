@@ -15,6 +15,7 @@ Je suis le créateur et le seul développeur de Railora. Je l'ai construite seul
 - Une application iOS en SwiftUI, avec des Live Activities pour suivre un train depuis l'écran verrouillé.
 - Des notifications push via APNs, y compris des Live Activities lancées par un push.
 - Un backend serverless sur Cloudflare Workers, écrit en TypeScript.
+- Un serveur MCP officiel, [mcp.railora.app](https://mcp.railora.app), pour que les voyageurs interrogent Claude, ChatGPT ou tout assistant IA sur les trains en direct et les places TGV MAX.
 - Un stockage sur Turso (libSQL), avec un Durable Object, KV et R2 pour l'état en direct et les caches.
 - Des collecteurs qui ingèrent les horaires et les flux temps réel aux formats GTFS, GTFS-RT et SIRI, avec un module par pays, car chaque réseau publie ses données à sa manière.
 - Neuf détecteurs d'alertes qui surveillent un train suivi et préviennent le voyageur.
@@ -24,8 +25,17 @@ Je suis le créateur et le seul développeur de Railora. Je l'ai construite seul
 
 - Sur l'App Store, plusieurs milliers d'utilisateurs.
 - Les horaires de 11 pays.
+- Un serveur MCP public avec 5 outils en lecture seule, en production.
 - Des données temps réel sur 8 réseaux ferroviaires.
 - 9 types d'alertes.
+
+## Utiliser Railora depuis votre assistant IA
+
+Railora a un serveur MCP officiel. Ajoutez `https://mcp.railora.app` comme connecteur dans Claude, ChatGPT ou tout client MCP, sans connexion, puis posez une question comme « Quels trains TGV MAX vont de Toulouse à Paris ce mois-ci ? ».
+
+- Cinq outils en lecture seule : recherche de gares, tableaux des départs en direct, état du réseau, calendrier TGV MAX et recherche de trajets TGV MAX.
+- Il tourne sur un Worker Cloudflare sans état qui lit les mêmes données en cache que l'application.
+- Il est limité par IP et par un quota journalier, pour que le coût reste borné.
 
 ## Ce que j'en retiens
 

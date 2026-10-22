@@ -127,8 +127,9 @@
           {
             "domain": "AI",
             "title": "AI tools developers adopt",
-            "text": "A Claude Code and Copilot plugin used by ~30 developers at GLS: release prep cut from 90 to 30-45 min.",
+            "text": "A Claude Code and Copilot plugin used by ~30 developers at GLS, with an AWS MCP server. Railora's official MCP server, mcp.railora.app, lets anyone query live trains from Claude or ChatGPT.",
             "stack": [
+              "MCP",
               "LLM",
               "RAG",
               "LangGraph",
@@ -222,8 +223,9 @@
           {
             "domain": "IA",
             "title": "Une IA adoptée par les développeurs",
-            "text": "Un plugin Claude Code et Copilot utilisé par ~30 développeurs chez GLS : releases préparées en 30-45 min au lieu de 90.",
+            "text": "Un plugin Claude Code et Copilot utilisé par ~30 développeurs chez GLS, avec un serveur MCP AWS. Le serveur MCP officiel de Railora, mcp.railora.app, permet d'interroger les trains en direct depuis Claude ou ChatGPT.",
             "stack": [
+              "MCP",
               "LLM",
               "RAG",
               "LangGraph",
@@ -317,8 +319,9 @@
           {
             "domain": "IA",
             "title": "IA que los desarrolladores adoptan",
-            "text": "Un plugin de Claude Code y Copilot que usan unos 30 desarrolladores en GLS: releases preparadas en 30-45 min en vez de 90.",
+            "text": "Un plugin de Claude Code y Copilot usado por ~30 desarrolladores en GLS, con un servidor MCP de AWS. El servidor MCP oficial de Railora, mcp.railora.app, permite consultar trenes en directo desde Claude o ChatGPT.",
             "stack": [
+              "MCP",
               "LLM",
               "RAG",
               "LangGraph",
@@ -1348,6 +1351,11 @@
         "es": "IA aplicada"
       },
       "items": [
+        {
+          "en": "MCP servers",
+          "fr": "Serveurs MCP",
+          "es": "Servidores MCP"
+        },
         "LLM",
         "RAG",
         {
@@ -1672,9 +1680,9 @@
         "es": "Railora: seguimiento de trenes en tiempo real en iOS"
       },
       "description": {
-        "en": "An iOS train tracker I built alone, on the App Store with several thousand users: SwiftUI, Live Activities, Cloudflare, 11 countries.",
-        "fr": "Une app iOS de suivi de trains construite seul, sur l'App Store avec plusieurs milliers d'utilisateurs : SwiftUI, Live Activities, 11 pays.",
-        "es": "Una app iOS de seguimiento de trenes que construí solo, en el App Store con varios miles de usuarios: SwiftUI, Live Activities, 11 países."
+        "en": "An iOS train tracker I built alone, on the App Store with several thousand users: SwiftUI, Live Activities, Cloudflare, 11 countries, and an official MCP server for AI assistants.",
+        "fr": "Une app iOS de suivi de trains construite seul, sur l'App Store avec plusieurs milliers d'utilisateurs : SwiftUI, Live Activities, 11 pays, et un serveur MCP officiel pour les assistants IA.",
+        "es": "Una app iOS de seguimiento de trenes que construí solo, en el App Store con varios miles de usuarios: SwiftUI, Live Activities, 11 países y un servidor MCP oficial para asistentes de IA."
       },
       "image": "/img/railora-detail.webp",
       "imageAlt": {
