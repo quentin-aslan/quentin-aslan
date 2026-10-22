@@ -65,7 +65,7 @@
       "lead": "I own features end to end, from Vue and React front ends to Java, Go and Node.js services on AWS, for B2B SaaS, consumer web apps and iOS. Building for the web since 2015, with 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
       "availability": "Available, remote or on site.",
       "claim": "I ship whole products, end to end.",
-      "intro": "Frontend, backend, cloud and iOS. Delivered for GLS France and Bell Canada; founder of Railora, the train tracker used by several thousand travellers.",
+      "intro": "Frontend, backend, cloud and iOS. Delivered for GLS France and Bell Canada; founder of Railora, the train tracker used by several thousand travellers, also available inside Claude and ChatGPT.",
       "whatsapp": "Chat on WhatsApp",
       "emailCta": "Email",
       "whatsappText": "Hi Quentin, I saw your site. I have a project and I'd like to discuss it with you.",
@@ -127,7 +127,7 @@
           {
             "domain": "AI",
             "title": "AI tools developers adopt",
-            "text": "A Claude Code and Copilot plugin used by ~30 developers at GLS, with an AWS MCP server. Railora's official MCP server, mcp.railora.app, lets anyone query live trains from Claude or ChatGPT.",
+            "text": "Railora's public MCP server (mcp.railora.app) lets anyone query live trains and TGV MAX seats from Claude or ChatGPT. At GLS: a Claude Code and Copilot plugin used by ~30 developers, with an AWS MCP server.",
             "stack": [
               "MCP",
               "LLM",
@@ -161,7 +161,7 @@
       "lead": "Je porte les fonctionnalités de bout en bout, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
       "availability": "Disponible, en remote ou sur site.",
       "claim": "Je livre des produits complets, de bout en bout.",
-      "intro": "Front, back, cloud et iOS. Missions pour GLS France et Bell Canada ; fondateur de Railora, le suivi de trains utilisé par plusieurs milliers de voyageurs.",
+      "intro": "Front, back, cloud et iOS. Missions pour GLS France et Bell Canada ; fondateur de Railora, le suivi de trains utilisé par plusieurs milliers de voyageurs, aussi disponible dans Claude et ChatGPT.",
       "whatsapp": "Écrire sur WhatsApp",
       "emailCta": "Email",
       "whatsappText": "Bonjour Quentin, j'ai vu votre site. J'ai un projet et j'aimerais en discuter avec vous.",
@@ -223,7 +223,7 @@
           {
             "domain": "IA",
             "title": "Une IA adoptée par les développeurs",
-            "text": "Un plugin Claude Code et Copilot utilisé par ~30 développeurs chez GLS, avec un serveur MCP AWS. Le serveur MCP officiel de Railora, mcp.railora.app, permet d'interroger les trains en direct depuis Claude ou ChatGPT.",
+            "text": "Le serveur MCP public de Railora (mcp.railora.app) permet d'interroger les trains en direct et les places TGV MAX depuis Claude ou ChatGPT. Chez GLS : un plugin Claude Code et Copilot utilisé par ~30 développeurs, avec un serveur MCP AWS.",
             "stack": [
               "MCP",
               "LLM",
@@ -257,7 +257,7 @@
       "lead": "Me encargo de las funcionalidades de principio a fin, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
       "availability": "Disponible, en remoto o presencial.",
       "claim": "Entrego productos completos, de principio a fin.",
-      "intro": "Front, back, cloud e iOS. Proyectos para GLS France y Bell Canada; fundador de Railora, el seguimiento de trenes que usan miles de viajeros.",
+      "intro": "Front, back, cloud e iOS. Proyectos para GLS France y Bell Canada; fundador de Railora, el seguimiento de trenes que usan miles de viajeros, también disponible en Claude y ChatGPT.",
       "whatsapp": "Escribir por WhatsApp",
       "emailCta": "Email",
       "whatsappText": "Hola Quentin, he visto tu web. Tengo un proyecto y me gustaría hablarlo contigo.",
@@ -319,7 +319,7 @@
           {
             "domain": "IA",
             "title": "IA que los desarrolladores adoptan",
-            "text": "Un plugin de Claude Code y Copilot usado por ~30 desarrolladores en GLS, con un servidor MCP de AWS. El servidor MCP oficial de Railora, mcp.railora.app, permite consultar trenes en directo desde Claude o ChatGPT.",
+            "text": "El servidor MCP público de Railora (mcp.railora.app) permite consultar trenes en directo y plazas TGV MAX desde Claude o ChatGPT. En GLS: un plugin de Claude Code y Copilot usado por ~30 desarrolladores, con un servidor MCP de AWS.",
             "stack": [
               "MCP",
               "LLM",
@@ -413,14 +413,15 @@
         "running": "trains tracked now",
         "countries": "countries",
         "delayed": "running late",
-        "built": "SwiftUI app and Cloudflare Workers backend that ingests live railway feeds.",
+        "built": "Railora also works inside Claude and ChatGPT: ask about live trains and TGV MAX seats through its public MCP server.",
         "tryBeta": "Discover Railora",
         "caption": "A train running now, as Railora shows it.",
         "scheduled": "Scheduled",
         "arrivesIn": "Arrives in {d}",
         "open": "Open live in Railora",
         "operators": "{n} operators, including",
-        "operatorsStatic": "Operators include"
+        "operatorsStatic": "Operators include",
+        "mcpLink": "Add as a connector, no sign-in"
       },
       "freelanceGroup": "Freelance missions, 2024 – present",
       "fullHistory": "Full history:",
@@ -492,14 +493,15 @@
         "running": "trains suivis en ce moment",
         "countries": "pays",
         "delayed": "en retard",
-        "built": "App SwiftUI et backend Cloudflare Workers qui ingère les flux ferroviaires en direct.",
+        "built": "Railora fonctionne aussi dans Claude et ChatGPT : on y interroge les trains en direct et les places TGV MAX via son serveur MCP public.",
         "tryBeta": "Découvrir Railora",
         "caption": "Un train en circulation, tel que Railora l'affiche.",
         "scheduled": "Selon l'horaire",
         "arrivesIn": "Arrivée dans {d}",
         "open": "Ouvrir en direct dans Railora",
         "operators": "{n} opérateurs, dont",
-        "operatorsStatic": "Parmi les opérateurs"
+        "operatorsStatic": "Parmi les opérateurs",
+        "mcpLink": "À ajouter comme connecteur, sans connexion"
       },
       "freelanceGroup": "Missions freelance, 2024 – aujourd'hui",
       "fullHistory": "Historique complet :",
@@ -571,14 +573,15 @@
         "running": "trenes seguidos ahora",
         "countries": "países",
         "delayed": "con retraso",
-        "built": "App en SwiftUI y backend en Cloudflare Workers que procesa los datos ferroviarios en directo.",
+        "built": "Railora también funciona dentro de Claude y ChatGPT: se consultan trenes en directo y plazas TGV MAX con su servidor MCP público.",
         "tryBeta": "Descubrir Railora",
         "caption": "Un tren en circulación, tal como lo muestra Railora.",
         "scheduled": "Según horario",
         "arrivesIn": "Llega en {d}",
         "open": "Abrir en directo en Railora",
         "operators": "{n} operadores, entre ellos",
-        "operatorsStatic": "Entre los operadores"
+        "operatorsStatic": "Entre los operadores",
+        "mcpLink": "Añádelo como conector, sin inicio de sesión"
       },
       "freelanceGroup": "Proyectos freelance, 2024 – hoy",
       "fullHistory": "Historial completo:",

@@ -31,10 +31,10 @@ I am the creator and the only developer of Railora. I built it alone, from the m
 
 ## Use Railora from your AI assistant
 
-Railora has an official MCP server. Add `https://mcp.railora.app` as a connector in Claude, ChatGPT or any MCP client, with no sign-in, then ask a question such as "Which TGV MAX trains go from Toulouse to Paris this month?".
+Railora works inside Claude and ChatGPT through its official MCP server. Add [https://mcp.railora.app](https://mcp.railora.app) as a connector in Claude, ChatGPT or any MCP client, with no sign-in, then ask a question such as "Which TGV MAX trains go from Toulouse to Paris this month?".
 
 - Five read-only tools: station search, live departure boards, network status, the TGV MAX calendar and the TGV MAX journey search.
-- It runs on a stateless Cloudflare Worker that reads the same cached data as the app.
+- It runs on a stateless Cloudflare Worker (MCP SDK v2) that calls the API through service bindings and shares its edge cache.
 - It is limited per IP and by a daily quota, so the cost stays bounded.
 
 ## What I learned
