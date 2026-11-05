@@ -33,7 +33,7 @@ Formé a los equipos en estas herramientas y participé en la arquitectura del R
 ## Resultados
 
 - La preparación de cada release pasó de unos 90 minutos a entre 30 y 45.
-- El plugin de IA lo usan unos 30 desarrolladores.
+- El plugin de IA lo usan más de 30 desarrolladores.
 - La aplicación de seguimiento cuyo front end dirigí recibe 2,2 millones de visitas al mes, según GLS.
 
 ## Lo que aprendí

@@ -33,7 +33,7 @@ J'ai formé les équipes à ces outils et participé à l'architecture du RAG in
 ## Résultats
 
 - La préparation des releases est passée d'environ 1 h 30 à 30 à 45 minutes.
-- Le plugin IA est utilisé par environ 30 développeurs.
+- Le plugin IA est utilisé par plus de 30 développeurs.
 - L'application de suivi dont j'ai dirigé le front reçoit 2,2 millions de visites par mois, selon GLS.
 
 ## Ce que j'en retiens

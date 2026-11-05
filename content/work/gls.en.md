@@ -33,7 +33,7 @@ I trained the teams on these tools and took part in the architecture of the inte
 ## Results
 
 - Release preparation went from about 90 minutes to 30 to 45 minutes.
-- The AI plugin is used by about 30 developers.
+- The AI plugin is used by more than 30 developers.
 - The tracking app whose front end I led handles 2.2 million visits a month, according to GLS.
 
 ## What I learned

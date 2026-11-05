@@ -63,9 +63,9 @@
       "metaDescription": "Quentin Aslan, senior freelance full-stack engineer: web, cloud and AI tooling for dev teams. Worked for GLS France and Bell Canada. Founder of Railora.",
       "title": "Senior Full‑Stack Engineer, freelance",
       "lead": "I work across the stack, from Vue and React front ends to Java, Go and Node.js services on AWS, on B2B SaaS, consumer web apps and iOS. I have built for the web since 2015, including 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
-      "availability": "Available for new contracts, remotely or on site.",
+      "availability": "Based in Europe. Available for new contracts, remotely or on site.",
       "claim": "I build products and help teams adopt AI.",
-      "intro": "At GLS France, I built a Claude Code and Copilot plugin used by about 30 developers. My app Railora has a public MCP server and several thousand users. I also worked for Bell Canada.",
+      "intro": "At GLS France, I built a Claude Code and Copilot plugin used by more than 30 developers. My app Railora has a public MCP server and several thousand users. I also worked for Bell Canada.",
       "whatsapp": "Chat on WhatsApp",
       "capabilities": {
         "title": "What I do",
@@ -74,7 +74,7 @@
           {
             "domain": "AI",
             "title": "MCP servers and AI tooling",
-            "text": "Railora's public MCP server (mcp.railora.app) answers questions about live trains and TGV MAX seats in Claude and ChatGPT. At GLS, a Claude Code and Copilot plugin used by about 30 developers, and an AWS MCP server.",
+            "text": "Railora's public MCP server (mcp.railora.app) answers questions about live trains and TGV MAX seats in Claude and ChatGPT. At GLS, a Claude Code and Copilot plugin used by more than 30 developers, and an AWS MCP server.",
             "stack": [
               "MCP",
               "LLM",
@@ -157,9 +157,9 @@
       "metaDescription": "Quentin Aslan, développeur full-stack senior freelance : web, cloud et outils IA pour les équipes de dev. A travaillé pour GLS France et Bell Canada. Fondateur de Railora.",
       "title": "Développeur full-stack senior, freelance",
       "lead": "Je travaille sur toute la stack, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
-      "availability": "Disponible pour de nouvelles missions, en télétravail ou sur site.",
+      "availability": "Basé en Europe. Disponible pour de nouvelles missions, en télétravail ou sur site.",
       "claim": "Je construis des produits et j'aide les équipes à adopter l'IA.",
-      "intro": "Chez GLS France, j'ai créé un plugin Claude Code et Copilot utilisé par une trentaine de développeurs. Mon app Railora a un serveur MCP public et plusieurs milliers d'utilisateurs. J'ai aussi travaillé pour Bell Canada.",
+      "intro": "Chez GLS France, j'ai créé un plugin Claude Code et Copilot utilisé par plus de 30 développeurs. Mon app Railora a un serveur MCP public et plusieurs milliers d'utilisateurs. J'ai aussi travaillé pour Bell Canada.",
       "whatsapp": "Écrire sur WhatsApp",
       "capabilities": {
         "title": "Ce que je fais",
@@ -168,7 +168,7 @@
           {
             "domain": "IA",
             "title": "Serveurs MCP et outils IA",
-            "text": "Le serveur MCP public de Railora (mcp.railora.app) répond aux questions sur les trains en direct et les places TGV MAX dans Claude et ChatGPT. Chez GLS, un plugin Claude Code et Copilot utilisé par une trentaine de développeurs, et un serveur MCP AWS.",
+            "text": "Le serveur MCP public de Railora (mcp.railora.app) répond aux questions sur les trains en direct et les places TGV MAX dans Claude et ChatGPT. Chez GLS, un plugin Claude Code et Copilot utilisé par plus de 30 développeurs, et un serveur MCP AWS.",
             "stack": [
               "MCP",
               "LLM",
@@ -251,9 +251,9 @@
       "metaDescription": "Quentin Aslan, desarrollador full-stack sénior freelance: web, cloud y herramientas de IA para equipos de desarrollo. Trabajó para GLS France y Bell Canada. Fundador de Railora.",
       "title": "Desarrollador full-stack sénior, freelance",
       "lead": "Trabajo en todo el stack, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
-      "availability": "Disponible para nuevos proyectos, en remoto o presencial.",
+      "availability": "Con base en Europa. Disponible para nuevos proyectos, en remoto o presencial.",
       "claim": "Construyo productos y ayudo a los equipos a adoptar la IA.",
-      "intro": "En GLS France creé un plugin de Claude Code y Copilot que usan unos 30 desarrolladores. Mi app Railora tiene un servidor MCP público y varios miles de usuarios. También trabajé para Bell Canada.",
+      "intro": "En GLS France creé un plugin de Claude Code y Copilot que usan más de 30 desarrolladores. Mi app Railora tiene un servidor MCP público y varios miles de usuarios. También trabajé para Bell Canada.",
       "whatsapp": "Escribir por WhatsApp",
       "capabilities": {
         "title": "Qué hago",
@@ -262,7 +262,7 @@
           {
             "domain": "IA",
             "title": "Servidores MCP y herramientas de IA",
-            "text": "El servidor MCP público de Railora (mcp.railora.app) responde preguntas sobre trenes en directo y plazas TGV MAX en Claude y ChatGPT. En GLS, un plugin de Claude Code y Copilot que usan unos 30 desarrolladores, y un servidor MCP de AWS.",
+            "text": "El servidor MCP público de Railora (mcp.railora.app) responde preguntas sobre trenes en directo y plazas TGV MAX en Claude y ChatGPT. En GLS, un plugin de Claude Code y Copilot que usan más de 30 desarrolladores, y un servidor MCP de AWS.",
             "stack": [
               "MCP",
               "LLM",
@@ -711,17 +711,17 @@
       "bullets": {
         "en": [
           "Built Java and Go microservices for an event-driven AI-camera pipeline that measures truck fill rate, and the operational dashboards on that data",
-          "Built a shared plugin for Claude Code and Copilot (skills, commands, guardrail hooks) used by ~30 developers; trained the teams and contributed to the architecture of the internal RAG system",
+          "Built a shared plugin for Claude Code and Copilot (skills, commands, guardrail hooks) used by more than 30 developers; trained the teams and contributed to the architecture of the internal RAG system",
           "Cut release preparation from ~90 to 30-45 minutes with dedicated commands (code review, merge requests, AWS deployments)"
         ],
         "fr": [
           "Microservices Java et Go d'un pipeline événementiel de caméras IA mesurant le taux de remplissage des camions, et dashboards opérationnels sur ces données",
-          "Plugin partagé Claude Code + Copilot (skills, commandes, hooks de garde-fous) utilisé par ~30 développeurs ; formation des équipes et participation à l'architecture du RAG interne",
+          "Plugin partagé Claude Code + Copilot (skills, commandes, hooks de garde-fous) utilisé par plus de 30 développeurs ; formation des équipes et participation à l'architecture du RAG interne",
           "Temps de préparation des releases réduit de ~1 h 30 à 30-45 min grâce à des commandes dédiées (code review, MR, déploiements AWS)"
         ],
         "es": [
           "Desarrollé microservicios Java y Go para un pipeline orientado a eventos que procesa las mediciones de llenado de los camiones tomadas por cámaras con IA, y los dashboards operativos sobre esos datos",
-          "Desarrollé un plugin compartido para Claude Code y Copilot (skills, comandos, hooks de control) que usan ~30 desarrolladores; formé a los equipos y participé en la arquitectura del sistema RAG interno",
+          "Desarrollé un plugin compartido para Claude Code y Copilot (skills, comandos, hooks de control) que usan más de 30 desarrolladores; formé a los equipos y participé en la arquitectura del sistema RAG interno",
           "Reduje la preparación de releases de ~90 a 30-45 minutos con comandos dedicados (code review, merge requests, despliegues en AWS)"
         ]
       },
@@ -1747,9 +1747,9 @@
         "es": "GLS France: seguimiento de paquetes, servicios Go y herramientas de IA"
       },
       "description": {
-        "en": "Two GLS contracts: lead full-stack on a parcel-tracking app, accessibility audit, Go PIN service, then Java and Go backend and an AI plugin for about 30 developers.",
-        "fr": "Deux missions GLS : lead full-stack sur le suivi de colis, audit d'accessibilité, service PIN en Go, puis backend Java et Go et plugin IA pour une trentaine de développeurs.",
-        "es": "Dos proyectos en GLS: lead full-stack en seguimiento de paquetes, auditoría de accesibilidad, servicio PIN en Go, backend Java y Go y plugin de IA para unos 30 desarrolladores."
+        "en": "Two GLS contracts: lead full-stack on a parcel-tracking app, accessibility audit, Go PIN service, then Java and Go backend and an AI plugin for more than 30 developers.",
+        "fr": "Deux missions GLS : lead full-stack sur le suivi de colis, audit d'accessibilité, service PIN en Go, puis backend Java et Go et plugin IA pour plus de 30 développeurs.",
+        "es": "Dos proyectos en GLS: lead full-stack en seguimiento de paquetes, auditoría de accesibilidad, servicio PIN en Go, backend Java y Go y plugin de IA para más de 30 desarrolladores."
       },
       "image": "/img/gls-site.webp",
       "imageAlt": {
@@ -1774,8 +1774,8 @@
         },
         "text": {
           "en": "On a first contract I led the Vue 3 front end of the parcel-tracking web app GLS recipients use, 2.2 million visits a month according to GLS, and built the Go and Java PIN-code services. On a second one I built event-driven Java and Go microservices on AWS and the AI plugin for Claude Code and Copilot now used by about 30 GLS developers.",
-          "fr": "Sur une première mission, j'ai mené le front Vue 3 de l'app web de suivi de colis des destinataires GLS, 2,2 millions de visites par mois selon GLS, et construit les services de code PIN en Go et Java. Sur une seconde, j'ai développé des microservices Java et Go événementiels sur AWS et le plugin IA pour Claude Code et Copilot qu'utilisent aujourd'hui une trentaine de développeurs GLS.",
-          "es": "En un primer proyecto lideré el front Vue 3 de la app web de seguimiento de paquetes de los destinatarios de GLS, 2,2 millones de visitas al mes según GLS, y desarrollé los servicios de códigos PIN en Go y Java. En un segundo desarrollé microservicios Java y Go orientados a eventos en AWS y el plugin de IA para Claude Code y Copilot que hoy usan unos 30 desarrolladores de GLS."
+          "fr": "Sur une première mission, j'ai mené le front Vue 3 de l'app web de suivi de colis des destinataires GLS, 2,2 millions de visites par mois selon GLS, et construit les services de code PIN en Go et Java. Sur une seconde, j'ai développé des microservices Java et Go événementiels sur AWS et le plugin IA pour Claude Code et Copilot qu'utilisent aujourd'hui plus de 30 développeurs GLS.",
+          "es": "En un primer proyecto lideré el front Vue 3 de la app web de seguimiento de paquetes de los destinatarios de GLS, 2,2 millones de visitas al mes según GLS, y desarrollé los servicios de códigos PIN en Go y Java. En un segundo desarrollé microservicios Java y Go orientados a eventos en AWS y el plugin de IA para Claude Code y Copilot que hoy usan más de 30 desarrolladores de GLS."
         },
         "stack": "Vue 3 · TypeScript · Go · Java · AWS SNS/SQS · Claude Code"
       }
