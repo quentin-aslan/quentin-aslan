@@ -60,17 +60,30 @@
   "home": {
     "en": {
       "metaTitle": "Quentin Aslan · Freelance Senior Full-Stack Engineer",
-      "metaDescription": "Quentin Aslan, senior freelance full-stack engineer for web, cloud and iOS. Worked for GLS France and Bell Canada. Founder of Railora.",
+      "metaDescription": "Quentin Aslan, senior freelance full-stack engineer: web, cloud and AI tooling for dev teams. Worked for GLS France and Bell Canada. Founder of Railora.",
       "title": "Senior Full‑Stack Engineer, freelance",
       "lead": "I work across the stack, from Vue and React front ends to Java, Go and Node.js services on AWS, on B2B SaaS, consumer web apps and iOS. I have built for the web since 2015, including 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
       "availability": "Available for new contracts, remotely or on site.",
-      "claim": "I build web and iOS products through to production.",
-      "intro": "I also build AI tooling for dev teams (MCP, Claude Code). I have worked for GLS France and Bell Canada, and I created Railora, used by several thousand travellers.",
+      "claim": "I build products and help teams adopt AI.",
+      "intro": "At GLS France, I built a Claude Code and Copilot plugin used by about 30 developers. My app Railora has a public MCP server and several thousand users. I also worked for Bell Canada.",
       "whatsapp": "Chat on WhatsApp",
       "capabilities": {
         "title": "What I do",
         "lead": "One engineer for the whole stack.",
         "items": [
+          {
+            "domain": "AI",
+            "title": "MCP servers and AI tooling",
+            "text": "Railora's public MCP server (mcp.railora.app) answers questions about live trains and TGV MAX seats in Claude and ChatGPT. At GLS, a Claude Code and Copilot plugin used by about 30 developers, and an AWS MCP server.",
+            "stack": [
+              "MCP",
+              "LLM",
+              "RAG",
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
           {
             "domain": "Frontend",
             "title": "Accessible, real-time interfaces",
@@ -123,19 +136,6 @@
             ]
           },
           {
-            "domain": "AI",
-            "title": "MCP servers and AI tooling",
-            "text": "Railora's public MCP server (mcp.railora.app) answers questions about live trains and TGV MAX seats in Claude and ChatGPT. At GLS, a Claude Code and Copilot plugin used by about 30 developers, and an AWS MCP server.",
-            "stack": [
-              "MCP",
-              "LLM",
-              "RAG",
-              "LangGraph",
-              "Claude Code",
-              "Copilot"
-            ]
-          },
-          {
             "domain": "Embedded, IoT & networks",
             "title": "Firmware, sensors, networks",
             "text": "Linux routers (firewall, VPN, routing) and MQTT sensors at Occitaline. ESP32 firmware in C on personal projects.",
@@ -154,17 +154,30 @@
     },
     "fr": {
       "metaTitle": "Quentin Aslan · Développeur Full-Stack Senior freelance",
-      "metaDescription": "Quentin Aslan, développeur full-stack senior freelance pour le web, le cloud et iOS. A travaillé pour GLS France et Bell Canada. Fondateur de Railora.",
+      "metaDescription": "Quentin Aslan, développeur full-stack senior freelance : web, cloud et outils IA pour les équipes de dev. A travaillé pour GLS France et Bell Canada. Fondateur de Railora.",
       "title": "Développeur full-stack senior, freelance",
       "lead": "Je travaille sur toute la stack, des fronts Vue et React aux services Java, Go et Node.js sur AWS, pour des SaaS B2B, des apps web grand public et iOS. Je construis pour le web depuis 2015, dont 7 ans en équipes produit en France et au Canada. En dehors des missions, je construis mon propre matériel et mes apps : firmware ESP32, IoT, domotique et iOS.",
       "availability": "Disponible pour de nouvelles missions, en télétravail ou sur site.",
-      "claim": "Je construis des produits web et iOS jusqu'en production.",
-      "intro": "J'outille aussi les équipes de dev avec l'IA (MCP, Claude Code). J'ai travaillé pour GLS France et Bell Canada. J'ai créé Railora, utilisée par plusieurs milliers de voyageurs.",
+      "claim": "Je construis des produits et j'aide les équipes à adopter l'IA.",
+      "intro": "Chez GLS France, j'ai créé un plugin Claude Code et Copilot utilisé par une trentaine de développeurs. Mon app Railora a un serveur MCP public et plusieurs milliers d'utilisateurs. J'ai aussi travaillé pour Bell Canada.",
       "whatsapp": "Écrire sur WhatsApp",
       "capabilities": {
         "title": "Ce que je fais",
         "lead": "Un seul interlocuteur pour toute la stack.",
         "items": [
+          {
+            "domain": "IA",
+            "title": "Serveurs MCP et outils IA",
+            "text": "Le serveur MCP public de Railora (mcp.railora.app) répond aux questions sur les trains en direct et les places TGV MAX dans Claude et ChatGPT. Chez GLS, un plugin Claude Code et Copilot utilisé par une trentaine de développeurs, et un serveur MCP AWS.",
+            "stack": [
+              "MCP",
+              "LLM",
+              "RAG",
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
           {
             "domain": "Frontend",
             "title": "Interfaces accessibles, temps réel",
@@ -217,19 +230,6 @@
             ]
           },
           {
-            "domain": "IA",
-            "title": "Serveurs MCP et outils IA",
-            "text": "Le serveur MCP public de Railora (mcp.railora.app) répond aux questions sur les trains en direct et les places TGV MAX dans Claude et ChatGPT. Chez GLS, un plugin Claude Code et Copilot utilisé par une trentaine de développeurs, et un serveur MCP AWS.",
-            "stack": [
-              "MCP",
-              "LLM",
-              "RAG",
-              "LangGraph",
-              "Claude Code",
-              "Copilot"
-            ]
-          },
-          {
             "domain": "Embarqué, IoT & réseau",
             "title": "Du firmware au réseau",
             "text": "Routeurs Linux (firewall, VPN, routage) et capteurs MQTT chez Occitaline. Firmware ESP32 en C sur des projets perso.",
@@ -248,17 +248,30 @@
     },
     "es": {
       "metaTitle": "Quentin Aslan · Desarrollador Full-Stack Sénior freelance",
-      "metaDescription": "Quentin Aslan, desarrollador full-stack sénior freelance para web, cloud e iOS. Trabajó para GLS France y Bell Canada. Fundador de Railora.",
+      "metaDescription": "Quentin Aslan, desarrollador full-stack sénior freelance: web, cloud y herramientas de IA para equipos de desarrollo. Trabajó para GLS France y Bell Canada. Fundador de Railora.",
       "title": "Desarrollador full-stack sénior, freelance",
       "lead": "Trabajo en todo el stack, de los fronts en Vue y React a los servicios Java, Go y Node.js en AWS, para SaaS B2B, apps web de consumo e iOS. Desarrollo para la web desde 2015, con 7 años en equipos de producto en Francia y Canadá. Fuera de los proyectos para clientes, construyo mi propio hardware y mis apps: firmware ESP32, IoT, domótica e iOS.",
       "availability": "Disponible para nuevos proyectos, en remoto o presencial.",
-      "claim": "Construyo productos web e iOS hasta llevarlos a producción.",
-      "intro": "También creo herramientas de IA para los equipos de desarrollo (MCP, Claude Code). Trabajé para GLS France y Bell Canada. Creé Railora, que usan varios miles de viajeros.",
+      "claim": "Construyo productos y ayudo a los equipos a adoptar la IA.",
+      "intro": "En GLS France creé un plugin de Claude Code y Copilot que usan unos 30 desarrolladores. Mi app Railora tiene un servidor MCP público y varios miles de usuarios. También trabajé para Bell Canada.",
       "whatsapp": "Escribir por WhatsApp",
       "capabilities": {
         "title": "Qué hago",
         "lead": "Un solo interlocutor para todo el stack.",
         "items": [
+          {
+            "domain": "IA",
+            "title": "Servidores MCP y herramientas de IA",
+            "text": "El servidor MCP público de Railora (mcp.railora.app) responde preguntas sobre trenes en directo y plazas TGV MAX en Claude y ChatGPT. En GLS, un plugin de Claude Code y Copilot que usan unos 30 desarrolladores, y un servidor MCP de AWS.",
+            "stack": [
+              "MCP",
+              "LLM",
+              "RAG",
+              "LangGraph",
+              "Claude Code",
+              "Copilot"
+            ]
+          },
           {
             "domain": "Frontend",
             "title": "Interfaces accesibles en tiempo real",
@@ -308,19 +321,6 @@
               "React Native",
               "Flutter",
               "Dart"
-            ]
-          },
-          {
-            "domain": "IA",
-            "title": "Servidores MCP y herramientas de IA",
-            "text": "El servidor MCP público de Railora (mcp.railora.app) responde preguntas sobre trenes en directo y plazas TGV MAX en Claude y ChatGPT. En GLS, un plugin de Claude Code y Copilot que usan unos 30 desarrolladores, y un servidor MCP de AWS.",
-            "stack": [
-              "MCP",
-              "LLM",
-              "RAG",
-              "LangGraph",
-              "Claude Code",
-              "Copilot"
             ]
           },
           {
@@ -1535,8 +1535,7 @@
   "about": {
     "en": {
       "paragraphs": [
-        "I'm a French developer and I have been building for the web since 2015: first websites as a freelancer, then three years of work-study on industrial Linux routers for building management, then product teams in France and Canada.",
-        "<strong>English is my everyday work language.</strong> I spent two years in English-speaking teams in Montreal, at Bell Canada and Pomerleau, and I have also worked as a freelancer from Boston.",
+        "I'm a French developer and I have been building for the web since 2015: first websites as a freelancer, then a three-year apprenticeship on industrial Linux routers for building management, then product teams in France and Canada.",
         "<strong>In 2026 I spent four months in Southeast Asia</strong>, in Thailand, Laos and Vietnam, and then came home overland: from Hanoi to Paris by train, through China, Central Asia, Georgia and Turkey. Railora started on those trains. I wanted to know where my train was, and no app showed it well.",
         "Outside work, I am a volunteer first-aider with the French Protection Civile, I tinker with home automation and I take the train whenever I can."
       ],
@@ -1564,7 +1563,6 @@
     "fr": {
       "paragraphs": [
         "Développeur français, je construis pour le web depuis 2015 : d'abord des sites en freelance, puis trois ans d'alternance sur des routeurs Linux industriels pour la gestion technique de bâtiment, puis des équipes produit en France et au Canada.",
-        "<strong>L'anglais est ma langue de travail au quotidien.</strong> J'ai passé deux ans dans des équipes anglophones à Montréal, chez Bell Canada et Pomerleau, et j'ai aussi travaillé en freelance depuis Boston.",
         "<strong>En 2026, j'ai passé quatre mois en Asie du Sud-Est</strong>, en Thaïlande, au Laos et au Vietnam, puis je suis rentré par voie terrestre : de Hanoï à Paris en train, par la Chine, l'Asie centrale, la Géorgie et la Turquie. Railora a commencé dans ces trains. Je voulais savoir où était mon train, et aucune app ne le montrait bien.",
         "En dehors du code, je suis secouriste bénévole à la Protection Civile, je bricole en domotique et je prends le train dès que je peux."
       ],
@@ -1592,7 +1590,6 @@
     "es": {
       "paragraphs": [
         "Soy francés y desarrollo para la web desde 2015: primero sitios web como freelance, luego tres años de formación dual en routers Linux industriales para la gestión técnica de edificios y después equipos de producto en Francia y Canadá.",
-        "<strong>El inglés es mi idioma de trabajo diario.</strong> Pasé dos años en equipos anglófonos en Montreal, en Bell Canada y Pomerleau, y también he trabajado como freelance desde Boston.",
         "<strong>En 2026 pasé cuatro meses en el Sudeste Asiático</strong>, en Tailandia, Laos y Vietnam, y volví a casa por tierra: de Hanói a París en tren, pasando por China, Asia Central, Georgia y Turquía. Railora empezó en esos trenes. Quería saber dónde estaba mi tren y ninguna app lo mostraba bien.",
         "Fuera del código, soy socorrista voluntario en la Protección Civil francesa, hago domótica y viajo en tren siempre que puedo."
       ],

@@ -235,7 +235,7 @@ useSeo({
       <div class="wrap about">
         <div>
           <h2 id="about-title" class="section-title reveal">{{ t.aboutTitle }}</h2>
-          <p v-for="p in profile.about[lang].paragraphs.slice(1, 3)" :key="p" v-html="p" />
+          <p v-for="p in profile.about[lang].paragraphs.slice(0, 2)" :key="p" v-html="p" />
           <dl class="facts">
             <div>
               <dt>{{ t.languagesTitle }}</dt>
