@@ -60,7 +60,7 @@ useSeo({
     <h1>{{ page.title[lang] }}</h1>
     <p class="intro">{{ page.description[lang] }}</p>
     <GithubLink v-if="page.repo" class="btn btn-ghost" :href="page.repo" :label="t.viewCode" />
-    <a v-if="page.product" class="btn btn-ghost" :href="page.product.url">{{ page.product.label[lang] }} <span aria-hidden="true">↗</span></a>
+    <a v-if="page.product" class="btn btn-ghost" :href="page.product.url" target="_blank" rel="noopener">{{ page.product.label[lang] }} <span aria-hidden="true">↗</span></a>
     <dl v-for="job in jobs" :key="job.id" class="facts-table">
       <dt>{{ t.role }}</dt><dd>{{ job.role[lang] }} · {{ job.org }}</dd>
       <dt>{{ t.period }}</dt><dd>{{ formatPeriod(job.start, job.end, lang) }}</dd>

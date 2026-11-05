@@ -49,7 +49,7 @@ useHead({ script: [{ src: '/railora-live.js', defer: true }] })
           <span>{{ live.mcpLink }}</span>
         </p>
         <p class="live-links">
-          <a class="btn btn-light" href="https://railora.app">{{ live.tryBeta }} <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-light" href="https://railora.app" target="_blank" rel="noopener">{{ live.tryBeta }} <span aria-hidden="true">↗</span></a>
         </p>
       </div>
       <div class="live-visual">

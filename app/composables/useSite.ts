@@ -13,6 +13,7 @@ export function renderMarkdown(path: string) {
   const source = markdown[`../../content/${path}.md`]
   if (source === undefined) throw new Error(`Missing content/${path}.md`)
   return marked.parse(source, { async: false }).replaceAll('<pre>', '<pre tabindex="0" role="region" aria-label="Code">')
+    .replace(/<a href="(https?:[^"]+)"([^>]*)>(.*?)<\/a>/g, '<a href="$1"$2 target="_blank" rel="noopener">$3 <span aria-hidden="true">↗</span></a>')
 }
 
 export function useSite() {
