@@ -43,6 +43,6 @@ Rail data has no single standard: some networks publish real-time feeds, others 
 
 A serverless backend kept the infrastructure small enough for one person to run. Cloudflare Workers, a Durable Object and a hosted database cover what a larger setup would need servers for.
 
-Building alone forced me to make every trade-off myself and decide what to ship, what to cut and what to leave for later.
+Building alone meant making every trade-off myself, including what to cut.
 
-The trip itself was the best user research I could do. I was the user, on real trains, crossing real borders, with real delays.
+The trip was my user research: I used the app myself, on trains across borders, with their delays.

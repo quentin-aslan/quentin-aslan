@@ -43,6 +43,6 @@ Les données ferroviaires n'ont pas de standard unique : certains réseaux publi
 
 Un backend serverless a gardé l'infrastructure assez légère pour qu'une seule personne la fasse tourner. Cloudflare Workers, un Durable Object et une base hébergée couvrent ce qui demanderait ailleurs des serveurs.
 
-Travailler seul m'a obligé à trancher chaque compromis moi-même et à décider quoi livrer, quoi couper et quoi garder pour plus tard.
+Travailler seul m'a obligé à trancher chaque compromis moi-même, y compris ce qu'il fallait couper.
 
-Le voyage a été la meilleure recherche utilisateur possible. J'étais l'utilisateur, dans de vrais trains, à de vraies frontières, avec de vrais retards.
+Le voyage a servi de recherche utilisateur : j'utilisais l'app moi-même, dans les trains, aux frontières, avec les retards.

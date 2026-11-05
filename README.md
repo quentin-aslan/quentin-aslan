@@ -17,7 +17,7 @@ Source of [quentinaslan.com](https://quentinaslan.com), the portfolio of Quentin
 |---|---|
 | Framework | [Nuxt 4](https://nuxt.com) with `features.noScripts`, `nuxt generate` |
 | Content | `content/profile.json` + `content/**/*.md`, rendered with `marked` at build time |
-| Styles | `app/assets/main.css` (no framework): editorial serif display, CSS-only motion (`animation-timeline: view()`), disabled under `prefers-reduced-motion` |
+| Styles | `app/assets/main.css` (no framework): light and dark palettes that follow `prefers-color-scheme`, with a header button that forces one (an inline `<head>` script remembers the choice in `localStorage`; screen only, print stays light), editorial serif display, CSS-only motion (`animation-timeline: view()`), disabled under `prefers-reduced-motion` |
 | Hosting | Cloudflare Workers, static assets only ([`wrangler.jsonc`](wrangler.jsonc)) |
 | SEO | canonical, `hreflang` (en, fr, es, x-default), Open Graph, JSON-LD (`ProfilePage`, `Person`, `Article`, `BreadcrumbList`), [`sitemap.xml`](server/routes/sitemap.xml.ts), [`robots.txt`](public/robots.txt), [`llms.txt`](server/routes/llms.txt.ts) |
 

@@ -2,7 +2,7 @@
 
 J'ai travaillé pour GLS France, transporteur de colis, sur deux missions freelance.
 
-La première, de novembre 2024 à mars 2025 à Toulouse, portait sur l'application web de suivi de colis qui permet aux destinataires GLS de suivre et de modifier leurs livraisons. La seconde, d'août à octobre 2026 en full remote, sur des services backend événementiels pour la logistique colis longue distance et sur l'usage de l'IA par les équipes de développement.
+La première, de novembre 2024 à mars 2025 à Toulouse, portait sur l'application web de suivi de colis qui permet aux destinataires GLS de suivre et de modifier leurs livraisons. La seconde, d'août à octobre 2026 en télétravail, sur des services backend événementiels pour la logistique colis longue distance et sur l'usage de l'IA par les équipes de développement.
 
 ## Mon rôle
 
@@ -38,6 +38,6 @@ J'ai formé les équipes à ces outils et participé à l'architecture du RAG in
 
 ## Ce que j'en retiens
 
-Un audit d'accessibilité ne devient du travail qu'une fois chiffré : un plan chiffré se planifie mieux qu'une liste de problèmes.
+Une liste de problèmes d'accessibilité se planifie mal. L'estimation à 3 semaines en a fait un plan.
 
-Avec l'IA, les garde-fous comptent autant que les skills. Des hooks partagés entre Claude Code et Copilot appliquent les mêmes règles, quel que soit l'outil.
+Des hooks partagés entre Claude Code et Copilot appliquent les mêmes garde-fous, quel que soit l'outil du développeur.

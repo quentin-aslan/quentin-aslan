@@ -6,7 +6,7 @@ Un router de viaje resuelve ese problema: un pequeño dispositivo se conecta a l
 
 ## Mi rol
 
-Es un proyecto personal. Lo diseñé, escribí el frontend y el backend, y configuré la Raspberry Pi yo mismo.
+Es un proyecto personal. Lo diseñé, escribí el front end y el backend, y configuré la Raspberry Pi yo mismo.
 
 ## Lo que construí
 
@@ -28,6 +28,6 @@ Es un proyecto personal. Lo diseñé, escribí el frontend y el backend, y confi
 
 La mayor parte del trabajo estaba en la capa de Linux, no en la interfaz. El backend analiza la salida de herramientas de línea de comandos, y cada detalle, como un nombre de red con espacios, cuenta.
 
-Simular la API desde el principio valió la pena. Podía avanzar en la interfaz desde cualquier sitio y solo necesitaba la Pi para probar los comandos reales.
+Con la API simulada desde el principio, podía avanzar en la interfaz desde cualquier sitio y solo necesitaba la Pi para probar los comandos reales.
 
 Aproveché lo que aprendí sobre routers industriales durante mi formación dual: interfaces de red, enrutamiento y VPN, esta vez en un dispositivo que cabe en una mochila.

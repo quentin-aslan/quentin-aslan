@@ -1,6 +1,6 @@
 ## El contexto
 
-En 2025 vivía en un piso compartido, en un edificio con una verja y una puerta de entrada antiguas. El mando de la verja solo funcionaba a unos cinco metros, así que tenía que pararme delante antes de que se abriera. La cerradura de la puerta era incómoda.
+En 2025 vivía en un piso compartido, en un edificio con un portón y una puerta de entrada antiguas. El mando del portón solo funcionaba a unos cinco metros, así que tenía que pararme delante antes de que se abriera. La cerradura de la puerta era incómoda.
 
 Las dos ya se podían abrir desde el interfono del piso. De ahí surgió la idea: si el interfono puede abrirlas, un microcontrolador conectado al interfono también puede, y un móvil puede hablar con el microcontrolador.
 
@@ -18,14 +18,14 @@ Es un proyecto personal. Hice el cableado, escribí el firmware y el backend, y 
 
 ## Resultados
 
-- Mis compañeros de piso y yo abríamos la verja y la puerta desde el móvil, sin pararnos delante de la verja.
+- Mis compañeros de piso y yo abríamos el portón y la puerta desde el móvil, sin pararnos delante del portón.
 - Los contadores de Prometheus muestran cuántas veces se abre cada puerta.
 - El servicio en Go es público en GitHub.
 
 ## Lo que aprendí
 
-La seguridad era lo primero. Una puerta que se abre con una petición HTTP no puede abrirse para cualquiera que encuentre el enlace, por eso la comprobación de la frase de acceso se hace en un servicio aparte y la red de casa sigue cerrada detrás de la VPN.
+Una puerta que se abre con una petición HTTP no puede abrirse para cualquiera que encuentre el enlace, por eso la comprobación de la frase de acceso se hace en un servicio aparte y la red de casa sigue cerrada detrás de la VPN.
 
-La red fue más difícil que el hardware. Las direcciones IPv4 compartidas descartaban la solución sencilla, y el túnel VPN resultó más limpio.
+La red llevó más trabajo que el hardware. Las direcciones IPv4 compartidas descartaban la redirección de puertos, así que la puerta pasa por un túnel VPN.
 
-Los siguientes pasos están claros. Las credenciales Wi-Fi están escritas en el firmware, así que cambiarlas obliga a volver a flashear la placa; una página de configuración servida por el ESP32 lo resolvería. La comprobación de la frase de acceso también podría pasar al firmware, lo que eliminaría un componente.
+Siguientes pasos: las credenciales Wi-Fi están escritas en el firmware, así que cambiarlas obliga a volver a flashear la placa; una página de configuración servida por el ESP32 lo resolvería. La comprobación de la frase de acceso también podría pasar al firmware, lo que eliminaría un componente.

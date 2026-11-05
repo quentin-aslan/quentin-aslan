@@ -28,6 +28,6 @@ It is a personal project. I designed it, wrote the front end and the backend, an
 
 Most of the work was in the Linux layer, not the interface. The backend parses the output of command-line tools, so details such as network names with spaces had to be handled one by one.
 
-Mocking the API early paid off. I could work on the interface anywhere and only needed the Pi to test the real commands.
+With the API mocked from the start, I could work on the interface anywhere and only needed the Pi to test the real commands.
 
-The project also reused what I had learned on industrial routers during my work-study years: network interfaces, routing and VPN, this time on a device that fits in a backpack.
+The project also reused what I had learned on industrial routers during my apprenticeship: network interfaces, routing and VPN, this time on a device that fits in a backpack.

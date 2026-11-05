@@ -37,4 +37,4 @@ Accessibility is easier to build in from the first design than to fix after rele
 
 Screen readers show problems that a visual check misses, and testing with VoiceOver and NVDA changed how I structure HTML.
 
-A Web Component can carry its accessibility with it. Once the banner was compliant, every page that used it got the same behavior.
+Once the banner was compliant, every page that used it got the same behaviour.

@@ -6,13 +6,13 @@ Cuando llegué, el creador de la empresa quería un router pensado para las rede
 
 ## Mi rol
 
-Era desarrollador full-stack y participé en el producto de principio a fin: especificaciones, software que controla el router y presentación a los clientes.
+Era desarrollador full-stack y trabajé en todo el producto: especificaciones, software que controla el router y presentación a los clientes.
 
 Los routers los encargaban instituciones gubernamentales, así que teníamos que cumplir las recomendaciones de la ANSSI, la agencia nacional de ciberseguridad de Francia.
 
 ## Lo que construí
 
-- La aplicación web que configura el router de principio a fin. Los cambios hechos en la interfaz se aplican en el equipo mediante scripts de Linux.
+- La aplicación web que configura el router. Los cambios hechos en la interfaz se aplican en el equipo mediante scripts de Linux.
 - La API REST, en Node.js con MongoDB, y las interfaces en Vue 3, jQuery y Bootstrap.
 - La configuración de red que controla sobre Linux embebido: segmentación en VLAN, enrutamiento IP, NAT, reglas de firewall netfilter/iptables, VPN, DHCP y DNS, con servicios gestionados por systemd.
 - Detección de intrusiones de red con Suricata integrada en el router.

@@ -28,6 +28,6 @@ C'est un projet personnel. Je l'ai conçu, j'ai écrit le front et le backend, e
 
 L'essentiel du travail était dans la couche Linux, pas dans l'interface. Le backend analyse la sortie d'outils en ligne de commande, et chaque détail, comme un nom de réseau avec des espaces, compte.
 
-Simuler l'API dès le début a été payant. Je pouvais avancer sur l'interface n'importe où et je n'avais besoin du Pi que pour tester les vraies commandes.
+Avec l'API simulée dès le début, je pouvais avancer sur l'interface n'importe où et je n'avais besoin du Pi que pour tester les vraies commandes.
 
 J'y ai réutilisé ce que j'avais appris sur les routeurs industriels pendant mon alternance : interfaces réseau, routage et VPN, cette fois sur un boîtier qui tient dans un sac.

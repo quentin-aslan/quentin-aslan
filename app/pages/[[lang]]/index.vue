@@ -10,7 +10,7 @@ type Quote = typeof profile.testimonials[number]
 const sideSlugs = profile.sideProjects.map(p => p.caseStudy)
 const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' && !sideSlugs.includes(c.slug) ? [{ ...c, panel: c.panel }] : [])
 const sideProjects = [...profile.sideProjects].sort((a, b) => b.year - a.year)
-const whatsapp = `https://wa.me/${person.phoneHref.slice(1)}?text=${encodeURIComponent(home.whatsappText)}`
+const whatsapp = `https://wa.me/${person.phoneHref.slice(1)}`
 const heroPhoto = profile.about.en.photos[0]!
 const heroAlt = profile.about[lang].photos[0]!.alt
 const aboutPhotos = profile.about[lang].photos.slice(1)
@@ -71,8 +71,6 @@ useSeo({
             <a class="btn btn-ghost" :href="whatsapp">{{ home.whatsapp }}</a>
           </div>
           <p class="hero-links">
-            <a :href="`mailto:${person.email}`">{{ home.emailCta }}</a> ·
-            <a :href="person.linkedin">LinkedIn</a> ·
             <a :href="profile.cv[lang]" download>{{ t.cvPdf }}</a>
           </p>
         </div>

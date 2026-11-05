@@ -2,7 +2,7 @@
 
 Bell est le premier opérateur télécom du Canada. J'y ai travaillé de septembre 2022 à mai 2024 à Montréal, dans le cadre d'un V.I.E.
 
-J'ai rejoint l'équipe du Centre Libre-Service, qui construit une plateforme en microservices pour les clients entreprises (B2B) et particuliers (B2C) de Bell. L'équipe travaillait en anglais, en Scrum.
+J'ai rejoint l'équipe du Centre Libre Service, qui construit une plateforme en microservices pour les clients entreprises (B2B) et particuliers (B2C) de Bell. L'équipe travaillait en anglais, en Scrum.
 
 ## Mon rôle
 
@@ -37,4 +37,4 @@ L'accessibilité se construit plus facilement dès la première maquette qu'en c
 
 Les lecteurs d'écran révèlent des problèmes qu'une vérification visuelle ne voit pas, et tester avec VoiceOver et NVDA a changé ma façon de structurer le HTML.
 
-Un Web Component peut embarquer son accessibilité. Une fois la bannière conforme, chaque page qui l'utilisait a hérité du même comportement.
+Une fois la bannière conforme, chaque page qui l'utilisait a hérité du même comportement.

@@ -24,8 +24,8 @@ C'est un projet personnel. J'ai fait le câblage, écrit le firmware et le backe
 
 ## Ce que j'en retiens
 
-La sécurité passait avant tout. Une porte qui s'ouvre sur une requête HTTP ne doit pas s'ouvrir pour quiconque trouve le lien : la vérification de la phrase secrète se fait donc dans un service à part, et le réseau de la maison reste fermé derrière le VPN.
+Une porte qui s'ouvre sur une requête HTTP ne doit pas s'ouvrir pour quiconque trouve le lien : la vérification de la phrase secrète se fait donc dans un service à part, et le réseau de la maison reste fermé derrière le VPN.
 
-Le réseau a été plus difficile que le matériel. Les adresses IPv4 partagées excluaient la solution simple, et le tunnel VPN s'est révélé plus propre de toute façon.
+Le réseau a demandé plus de travail que le matériel. Les adresses IPv4 partagées excluaient la redirection de ports, donc la porte passe par un tunnel VPN.
 
-Les prochaines étapes sont claires. Les identifiants Wi-Fi sont écrits dans le firmware, donc les changer impose de reflasher la carte ; une page de configuration servie par l'ESP32 réglerait ce point. La vérification de la phrase secrète pourrait aussi passer dans le firmware, ce qui supprimerait un composant.
+Prochaines étapes : les identifiants Wi-Fi sont écrits dans le firmware, donc les changer impose de reflasher la carte ; une page de configuration servie par l'ESP32 réglerait ce point. La vérification de la phrase secrète pourrait aussi passer dans le firmware, ce qui supprimerait un composant.

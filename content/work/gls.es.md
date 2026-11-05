@@ -8,7 +8,7 @@ El primero (noviembre de 2024 a marzo de 2025, Toulouse) trató sobre la aplicac
 
 En el primero, fui lead full-stack: dirigí el front end en Vue 3 y TypeScript, desarrollé los servicios de códigos PIN en Go y Java que había detrás, fui mentor de un becario, participé en las reuniones de arquitectura y redacté las especificaciones junto al equipo.
 
-En el segundo, fui desarrollador backend en Java y Go y además desarrollé las herramientas de IA para los equipos de desarrollo y los formé en ellas.
+En el segundo, fui ingeniero backend en Java y Go y además desarrollé las herramientas de IA para los equipos de desarrollo y los formé en ellas.
 
 ## Lo que construí
 
@@ -23,7 +23,7 @@ En el segundo, fui desarrollador backend en Java y Go y además desarrollé las 
 
 ### Datos logísticos e IA, 2026
 
-- Microservicios Java y Go para un pipeline orientado a eventos que procesa las mediciones de carga de los camiones tomadas por cámaras con IA, con sus dashboards operativos.
+- Microservicios Java y Go para un pipeline orientado a eventos que procesa las mediciones de llenado de los camiones tomadas por cámaras con IA, con sus dashboards operativos.
 - Refuerzo de seguridad: TLS de PostgreSQL con verificación de certificados RDS y gestión de peticiones mal formadas.
 - Un plugin compartido para Claude Code y Copilot, con skills, comandos y hooks de control.
 - Comandos de release: code review, merge requests y despliegues en AWS.
@@ -38,6 +38,6 @@ Formé a los equipos en estas herramientas y participé en la arquitectura del R
 
 ## Lo que aprendí
 
-Una auditoría de accesibilidad solo se vuelve trabajo con un coste estimado: un plan así se planifica mejor que una lista de problemas.
+Una lista de problemas de accesibilidad es difícil de planificar. La estimación de 3 semanas la convirtió en un plan.
 
-Con la IA, los controles importan tanto como las skills: los hooks compartidos entre Claude Code y Copilot aplican las mismas reglas con cualquier herramienta.
+Los hooks compartidos entre Claude Code y Copilot aplican los mismos controles, use el desarrollador la herramienta que use.

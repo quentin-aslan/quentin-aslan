@@ -37,4 +37,4 @@ La accesibilidad es más fácil de incluir desde el primer diseño que de correg
 
 Los lectores de pantalla muestran problemas que una revisión visual no detecta, y probar con VoiceOver y NVDA cambió mi forma de estructurar el HTML.
 
-Un Web Component puede llevar consigo su accesibilidad. Una vez que el banner cumplió los criterios, cada página que lo usaba heredó el mismo comportamiento.
+Una vez que el banner cumplió los criterios, cada página que lo usaba heredó el mismo comportamiento.

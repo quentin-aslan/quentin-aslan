@@ -24,8 +24,8 @@ It is a personal project. I did the wiring, wrote the firmware and the backend, 
 
 ## What I learned
 
-Security came first. A door that opens on an HTTP request must not open for anyone who finds the link, so the passphrase check sits in its own service and the home network stays closed behind the VPN.
+A door that opens on an HTTP request must not open for anyone who finds the link, so the passphrase check sits in its own service and the home network stays closed behind the VPN.
 
-The network was harder than the hardware. Shared IPv4 addresses ruled out the simple setup, and the VPN tunnel turned out to be cleaner anyway.
+The network took more work than the hardware. Shared IPv4 addresses ruled out port forwarding, so the door is reached through a VPN tunnel.
 
-The next steps are clear. The Wi-Fi credentials are written into the firmware, so changing them means reflashing the board; a configuration page served by the ESP32 would fix that and bring it closer to a finished product. The passphrase check could also move into the firmware, which would remove a component.
+Next steps: the Wi-Fi credentials are written into the firmware, so changing them means reflashing the board; a configuration page served by the ESP32 would fix that. The passphrase check could also move into the firmware, which would remove a component.

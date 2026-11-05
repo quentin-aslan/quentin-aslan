@@ -23,7 +23,7 @@ const next = profile.caseStudies[(index + 1) % count]!
 
 useSeo({
   // The h1 keeps the full title; search results get the short part before the colon.
-  title: `${page.title[lang].split(':')[0]} · ${t.caseStudyNoun} · ${profile.person.name}`,
+  title: `${page.title[lang].split(':')[0]!.trim()} · ${t.caseStudyNoun} · ${profile.person.name}`,
   description: page.description[lang],
   path,
   type: 'article',
@@ -82,7 +82,8 @@ useSeo({
     </section>
     <p class="cta-note">{{ t.contactLead }}</p>
     <p class="actions">
-      <a class="btn btn-accent" :href="`mailto:${profile.person.email}`">{{ t.emailMe }}</a>
+      <a class="btn btn-accent" :href="profile.person.cal">{{ t.callShort }} <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" :href="`mailto:${profile.person.email}`">{{ t.emailMe }}</a>
       <a class="btn btn-ghost" :href="homeWork">{{ t.backToWork }}</a>
     </p>
     <nav class="pager" :aria-label="t.caseStudyNoun">

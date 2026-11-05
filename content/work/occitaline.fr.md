@@ -6,13 +6,13 @@
 
 ## Mon rôle
 
-J'étais développeur full-stack et j'ai participé au produit de A à Z : la rédaction du cahier des charges, le logiciel qui pilote le routeur et la présentation aux clients.
+J'étais développeur full-stack et j'ai travaillé sur tout le produit : la rédaction du cahier des charges, le logiciel qui pilote le routeur et la présentation aux clients.
 
 Les routeurs étaient commandés par des institutions gouvernementales, nous devions donc être conformes aux recommandations de l'ANSSI.
 
 ## Ce que j'ai construit
 
-- L'application web qui configure le routeur de A à Z. Les modifications faites dans l'interface sont appliquées sur l'appareil via des scripts Linux.
+- L'application web qui configure le routeur. Les modifications faites dans l'interface sont appliquées sur l'appareil via des scripts Linux.
 - L'API REST derrière, en Node.js avec MongoDB, et les interfaces en Vue 3, jQuery et Bootstrap.
 - La configuration réseau qu'elle pilote sur Linux embarqué : segmentation en VLAN, routage IP, NAT, règles de pare-feu netfilter/iptables, VPN, DHCP et DNS, avec des services gérés par systemd.
 - Détection d'intrusion réseau Suricata intégrée au routeur.

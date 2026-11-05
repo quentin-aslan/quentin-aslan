@@ -38,6 +38,6 @@ I trained the teams on these tools and took part in the architecture of the inte
 
 ## What I learned
 
-An accessibility audit needs an estimate to become work: a plan with a clear cost is easier to schedule than a list of issues.
+A list of accessibility issues is hard to schedule. The 3-week estimate turned it into a plan.
 
-With AI tools, guardrails matter as much as skills. Hooks shared between Claude Code and Copilot apply the same rules whatever tool a developer picks.
+Hooks shared between Claude Code and Copilot apply the same guardrails, whichever tool a developer uses.

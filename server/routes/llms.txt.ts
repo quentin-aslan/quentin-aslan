@@ -14,7 +14,7 @@ ${home.en.availability} Contact: ${person.email}. LinkedIn: ${person.linkedin}. 
 
 ## Pages
 
-- [Home (English)](${site}/): selected projects, experience, accessibility, skills, testimonials, about
+- [Home (English)](${site}/): selected projects, experience, reviews, side projects, about, contact
 - [Accueil (français)](${site}/fr)
 - [Inicio (español)](${site}/es)
 ${caseStudies.map(c => `- [${c.title.en}](${site}/work/${c.slug}): ${c.description.en}`).join('\n')}
@@ -23,7 +23,7 @@ ${blog.map(b => `- [${b.title}](${site}/blog/${b.slug}): ${b.description}`).join
 
 ## Experience
 
-${work.map(w => `- ${w.start} to ${w.end ?? 'present'}: ${w.role.en}, ${w.org} (${w.place.en})`).join('\n')}
+${work.map(w => `- ${w.start}${w.end === w.start ? '' : ` to ${w.end ?? 'present'}`}: ${w.role.en}, ${w.org} (${w.place.en})`).join('\n')}
 
 ## CV
 
