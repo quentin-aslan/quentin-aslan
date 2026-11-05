@@ -69,7 +69,6 @@
       "whatsapp": "Chat on WhatsApp",
       "capabilities": {
         "title": "What I do",
-        "lead": "One engineer for the whole stack.",
         "items": [
           {
             "domain": "AI",
@@ -124,7 +123,7 @@
           },
           {
             "domain": "Mobile",
-            "title": "iOS apps on the App Store",
+            "title": "iOS app on the App Store",
             "text": "Railora, a SwiftUI app with Live Activities, designed and published alone. Flutter and React Native on personal projects.",
             "stack": [
               "Swift",
@@ -163,7 +162,6 @@
       "whatsapp": "Écrire sur WhatsApp",
       "capabilities": {
         "title": "Ce que je fais",
-        "lead": "Un seul interlocuteur pour toute la stack.",
         "items": [
           {
             "domain": "IA",
@@ -218,7 +216,7 @@
           },
           {
             "domain": "Mobile",
-            "title": "Apps iOS sur l'App Store",
+            "title": "App iOS sur l'App Store",
             "text": "Railora, app SwiftUI avec Live Activities, conçue et publiée seul. Flutter et React Native sur des projets perso.",
             "stack": [
               "Swift",
@@ -257,7 +255,6 @@
       "whatsapp": "Escribir por WhatsApp",
       "capabilities": {
         "title": "Qué hago",
-        "lead": "Un solo interlocutor para todo el stack.",
         "items": [
           {
             "domain": "IA",
@@ -312,7 +309,7 @@
           },
           {
             "domain": "Mobile",
-            "title": "Apps iOS en la App Store",
+            "title": "App iOS en la App Store",
             "text": "Railora, app SwiftUI con Live Activities, diseñada y publicada en solitario. Flutter y React Native en proyectos personales.",
             "stack": [
               "Swift",
@@ -406,7 +403,7 @@
         "label": "Live",
         "updated": "updated {t}",
         "running": "trains tracked now",
-        "countries": "countries",
+        "countries": "countries live",
         "delayed": "running late",
         "built": "Railora also works in Claude and ChatGPT. Its public MCP server answers questions about live trains and TGV MAX seats.",
         "tryBeta": "Visit Railora",
@@ -418,10 +415,10 @@
         "operatorsStatic": "Operators include",
         "mcpLink": "Add as a connector, no sign-in"
       },
-      "freelanceGroup": "Freelance contracts, 2024 – present",
+      "freelanceGroup": "Freelance contracts",
       "fullHistory": "Full history:",
       "cvPdf": "CV (PDF)",
-      "employedGroup": "Employed, 2019 – 2024"
+      "employedGroup": "Employed"
     },
     "fr": {
       "skip": "Aller au contenu",
@@ -487,7 +484,7 @@
         "label": "En direct",
         "updated": "mis à jour {t}",
         "running": "trains suivis en ce moment",
-        "countries": "pays",
+        "countries": "pays en direct",
         "delayed": "en retard",
         "built": "Railora fonctionne aussi dans Claude et ChatGPT. Son serveur MCP public répond aux questions sur les trains en direct et les places TGV MAX.",
         "tryBeta": "Voir Railora",
@@ -499,10 +496,10 @@
         "operatorsStatic": "Parmi les opérateurs",
         "mcpLink": "À ajouter comme connecteur, sans se connecter"
       },
-      "freelanceGroup": "Missions freelance, 2024 – aujourd'hui",
+      "freelanceGroup": "Missions freelance",
       "fullHistory": "Historique complet :",
       "cvPdf": "CV (PDF)",
-      "employedGroup": "Salarié, 2019 – 2024"
+      "employedGroup": "Salarié"
     },
     "es": {
       "skip": "Ir al contenido",
@@ -568,7 +565,7 @@
         "label": "En directo",
         "updated": "actualizado {t}",
         "running": "trenes seguidos ahora",
-        "countries": "países",
+        "countries": "países en directo",
         "delayed": "con retraso",
         "built": "Railora también funciona en Claude y ChatGPT. Su servidor MCP público responde preguntas sobre trenes en directo y plazas TGV MAX.",
         "tryBeta": "Ver Railora",
@@ -580,10 +577,10 @@
         "operatorsStatic": "Entre los operadores",
         "mcpLink": "Añádelo como conector, sin inicio de sesión"
       },
-      "freelanceGroup": "Proyectos freelance, 2024 – hoy",
+      "freelanceGroup": "Proyectos freelance",
       "fullHistory": "Historial completo:",
       "cvPdf": "CV (PDF, en inglés)",
-      "employedGroup": "Asalariado, 2019 – 2024"
+      "employedGroup": "Asalariado"
     }
   },
   "companies": [
@@ -1770,7 +1767,7 @@
           "es": "GLS France: seguimiento de paquetes con 2,2 M de visitas al mes (cifra del cliente)"
         },
         "text": {
-          "en": "On a first contract I led the Vue 3 front end of the parcel-tracking web app GLS recipients use, 2.2 million visits a month according to GLS, and built the Go and Java PIN-code services. On a second one I built event-driven Java and Go microservices on AWS and the AI plugin for Claude Code and Copilot now used by about 30 GLS developers.",
+          "en": "On a first contract I led the Vue 3 front end of the parcel-tracking web app GLS recipients use, 2.2 million visits a month according to GLS, and built the Go and Java PIN-code services. On a second one I built event-driven Java and Go microservices on AWS and the AI plugin for Claude Code and Copilot now used by more than 30 GLS developers.",
           "fr": "Sur une première mission, j'ai mené le front Vue 3 de l'app web de suivi de colis des destinataires GLS, 2,2 millions de visites par mois selon GLS, et construit les services de code PIN en Go et Java. Sur une seconde, j'ai développé des microservices Java et Go événementiels sur AWS et le plugin IA pour Claude Code et Copilot qu'utilisent aujourd'hui plus de 30 développeurs GLS.",
           "es": "En un primer proyecto lideré el front Vue 3 de la app web de seguimiento de paquetes de los destinatarios de GLS, 2,2 millones de visitas al mes según GLS, y desarrollé los servicios de códigos PIN en Go y Java. En un segundo desarrollé microservicios Java y Go orientados a eventos en AWS y el plugin de IA para Claude Code y Copilot que hoy usan más de 30 desarrolladores de GLS."
         },

@@ -97,7 +97,6 @@ useSeo({
     <section id="services" class="section" aria-labelledby="services-title">
       <div class="wrap">
         <h2 id="services-title" class="section-title">{{ home.capabilities.title }}</h2>
-        <p class="section-lead">{{ home.capabilities.lead }}</p>
         <ul class="capabilities">
           <li v-for="c in home.capabilities.items" :key="c.domain">
             <p class="eyebrow">{{ c.domain }}</p>
