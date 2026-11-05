@@ -80,7 +80,6 @@ useSeo({
         <a v-for="f in letter.pdf" :key="f.href" class="btn btn-ghost" :href="f.href" :hreflang="f.lang">{{ f.label[lang] }}</a>
       </p>
     </section>
-    <p class="cta-note">{{ t.contactLead }}</p>
     <p class="actions">
       <a class="btn btn-accent" :href="profile.person.cal">{{ t.callShort }} <span aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" :href="`mailto:${profile.person.email}`">{{ t.emailMe }}</a>

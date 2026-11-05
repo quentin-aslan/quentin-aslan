@@ -262,7 +262,6 @@ useSeo({
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title" class="reveal">{{ t.contactTitle }}</h2>
-        <p>{{ t.contactLead }}</p>
         <p class="contact-cta"><a class="btn btn-light" :href="person.cal">{{ home.callCta }} <span aria-hidden="true">→</span></a></p>
         <a class="contact-email" :href="`mailto:${person.email}`">{{ person.email }}</a>
         <p><a class="contact-phone" :href="`tel:${person.phoneHref}`">{{ person.phone }}</a></p>
