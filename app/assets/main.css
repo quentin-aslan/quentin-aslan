@@ -205,6 +205,8 @@ main:focus { outline: none; }
 .la-chip { justify-self: center; display: inline-flex; align-items: center; gap: 5px; max-width: 100%; height: 24px; padding: 0 10px; border-radius: 7px; background: rgb(255 255 255 / 0.08); color: var(--la-2); font-weight: 500; font-size: 14px; line-height: 1; white-space: nowrap; overflow: hidden; }
 /* Wordmarks are drawn for light backgrounds; white reads like the app's dark variants. */
 .la-chip img { height: 15px; width: auto; max-width: 86px; filter: brightness(0) invert(1); }
+/* Logos on a solid shape would flatten to a white blob. */
+.la-chip img:is([src*='/db.'], [src*='/lyria.'], [src*='/ouigo.'], [src*='/rhb.'], [src*='/sncf.'], [src*='/sncf-regionaura.']) { filter: none; }
 .la-chip [data-live='opname'] { font-weight: 600; }
 .la-num { font-variant-numeric: tabular-nums; }
 .la-stations { display: flex; justify-content: space-between; gap: 16px; margin-top: 5px; font-weight: 600; font-size: 15.5px; line-height: 1.3; }
