@@ -17,6 +17,7 @@ ${home.en.availability} Contact: ${person.email}. LinkedIn: ${person.linkedin}. 
 - [Home (English)](${site}/): selected projects, experience, reviews, side projects, about, contact
 - [Accueil (français)](${site}/fr)
 - [Inicio (español)](${site}/es)
+- [Book a 30-minute call](${site}/book): booking calendar
 ${caseStudies.map(c => `- [${c.title.en}](${site}/work/${c.slug}): ${c.description.en}`).join('\n')}
 ${caseStudies.filter(c => c.letter).map(c => `- [Recommendation letter, ${c.title.en.split(':')[0]}](${site}/work/${c.slug}#letter)`).join('\n')}
 ${blog.map(b => `- [${b.title}](${site}/blog/${b.slug}): ${b.description}`).join('\n')}

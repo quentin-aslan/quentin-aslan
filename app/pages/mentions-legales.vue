@@ -21,6 +21,6 @@ useHead({ meta: [{ name: 'robots', content: 'noindex' }] })
     <h2>Hébergement</h2>
     <p>Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis.</p>
     <h2>Données personnelles et cookies</h2>
-    <p>Ce site ne dépose aucun cookie et n'utilise aucun traceur.</p>
+    <p>Ce site ne dépose aucun cookie et n'utilise aucun traceur. Seule exception : la page de réservation (/book) intègre le calendrier de Cal.com, service tiers qui peut déposer ses propres cookies lorsque la page est affichée.</p>
   </main>
 </template>

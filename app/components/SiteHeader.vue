@@ -34,7 +34,7 @@ const path = translated ? route.path.replace(/^\/(fr|es)(?=\/|$)/, '') || '/' : 
         </li>
       </ul>
       </nav>
-      <a class="btn btn-accent header-cta" :href="profile.person.cal">{{ t.callShort }}</a>
+      <a class="btn btn-accent header-cta" :href="to('/book')">{{ t.callShort }}</a>
     </div>
   </header>
 </template>

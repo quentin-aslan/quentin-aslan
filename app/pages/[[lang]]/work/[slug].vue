@@ -81,7 +81,7 @@ useSeo({
       </p>
     </section>
     <p class="actions">
-      <a class="btn btn-accent" :href="profile.person.cal">{{ t.callShort }} <span aria-hidden="true">→</span></a>
+      <a class="btn btn-accent" :href="to('/book')">{{ t.callShort }} <span aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" :href="`mailto:${profile.person.email}`">{{ t.emailMe }}</a>
       <a class="btn btn-ghost" :href="homeWork">{{ t.backToWork }}</a>
     </p>

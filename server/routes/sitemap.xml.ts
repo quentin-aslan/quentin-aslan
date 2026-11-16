@@ -17,6 +17,7 @@ export default defineEventHandler((event) => {
   setHeader(event, 'content-type', 'application/xml; charset=utf-8')
   const urls = [
     ...url('/', true),
+    ...url('/book', true),
     ...caseStudies.flatMap(w => url(`/work/${w.slug}`, true)),
     ...blog.flatMap(b => url(`/blog/${b.slug}`, false, b.date)),
   ]
