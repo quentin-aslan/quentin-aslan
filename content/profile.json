@@ -1101,6 +1101,25 @@
   ],
   "sideProjects": [
     {
+      "name": "Interrègne",
+      "year": 2026,
+      "text": {
+        "en": "Site and back office for a friend's online review: one Next.js and Payload app, articles migrated from Directus, Docker deploys from GitHub Actions and nightly backups to Cloudflare R2.",
+        "fr": "Site et back-office de la revue en ligne d'un ami : une seule app Next.js et Payload, articles repris de Directus, déploiements Docker par GitHub Actions et sauvegardes chaque nuit sur Cloudflare R2.",
+        "es": "Sitio y back office de la revista en línea de un amigo: una sola app Next.js y Payload, artículos migrados desde Directus, despliegues Docker con GitHub Actions y copias de seguridad cada noche en Cloudflare R2."
+      },
+      "tags": [
+        "Next.js",
+        "Payload 3",
+        "SQLite",
+        "Docker",
+        "Cloudflare R2"
+      ],
+      "caseStudy": "interregne",
+      "repo": null,
+      "image": null
+    },
+    {
       "name": {
         "en": "Remote door and gate opener",
         "fr": "Ouvre-porte et portail à distance",
@@ -1888,24 +1907,6 @@
           "fr": "Voir interregne.com",
           "es": "Ver interregne.com"
         }
-      },
-      "panel": {
-        "eyebrow": {
-          "en": "Interrègne · online review · 2026",
-          "fr": "Interrègne · revue en ligne · 2026",
-          "es": "Interrègne · revista en línea · 2026"
-        },
-        "title": {
-          "en": "Interrègne: an online review its editors publish on their own",
-          "fr": "Interrègne : une revue en ligne que ses rédacteurs publient seuls",
-          "es": "Interrègne: una revista en línea que sus editores publican por su cuenta"
-        },
-        "text": {
-          "en": "One Next.js and Payload app for the site and the back office, built from the founders' mockup. Articles migrated from Directus, roles, footnotes and scheduled publishing. The editors publish without a developer.",
-          "fr": "Une seule app Next.js et Payload pour le site et le back-office, construite sur la maquette des fondateurs. Articles repris de Directus, rôles, notes de bas de page et publication programmée. Les rédacteurs publient sans développeur.",
-          "es": "Una sola app Next.js y Payload para el sitio y el back office, construida sobre la maqueta de los fundadores. Artículos migrados desde Directus, roles, notas al pie y publicación programada. Los editores publican sin un desarrollador."
-        },
-        "stack": "Next.js · Payload 3 · SQLite · Docker · Cloudflare R2 · GitHub Actions"
       }
     },
     {

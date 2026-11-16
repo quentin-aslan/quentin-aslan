@@ -6,7 +6,7 @@ const { lang, profile, t, to } = useSite()
 const home = profile.home[lang]
 const { person } = profile
 type Quote = typeof profile.testimonials[number]
-// Railora, GLS, Bell and Interrègne get a large panel; Occitaline keeps its link in Experience, side projects theirs in Side projects.
+// Railora, GLS and Bell get a large panel; Occitaline keeps its link in Experience, side projects theirs in Side projects.
 const sideSlugs = profile.sideProjects.map(p => p.caseStudy)
 const panels = profile.caseStudies.flatMap(c => c.panel && c.slug !== 'occitaline' && !sideSlugs.includes(c.slug) ? [{ ...c, panel: c.panel }] : [])
 const sideProjects = [...profile.sideProjects].sort((a, b) => b.year - a.year)
