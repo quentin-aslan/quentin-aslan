@@ -31,7 +31,7 @@ useSeo({
 </script>
 
 <template>
-  <main id="main" tabindex="-1" class="article">
+  <main id="main" tabindex="-1" class="article booking">
     <nav class="breadcrumb" :aria-label="t.breadcrumb">
       <ol>
         <li><a :href="to('/')">{{ person.name }}</a></li>
@@ -39,10 +39,6 @@ useSeo({
     </nav>
     <h1>{{ b.title }}</h1>
     <p class="intro">{{ b.intro }}</p>
-    <h2>{{ b.topicsTitle }}</h2>
-    <ul class="topics">
-      <li v-for="topic in b.topics" :key="topic">{{ topic }}</li>
-    </ul>
     <iframe class="booking-frame" :src="person.cal" :title="b.iframeTitle" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" />
     <p class="note">
       {{ b.fallback }}

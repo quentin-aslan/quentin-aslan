@@ -344,12 +344,6 @@
       "metaDescription": "Book a 30-minute call with Quentin Aslan, freelance senior full-stack engineer. Pick a time directly in the calendar.",
       "title": "Book a 30-minute call",
       "intro": "Pick a time that suits you in the calendar below. We can talk about a project, a contract or a team that wants to adopt AI tooling.",
-      "topicsTitle": "What we can cover",
-      "topics": [
-        "A web, cloud or AI project you want to build or take over",
-        "A freelance contract, remote or on site",
-        "How your team can adopt tools like Claude Code"
-      ],
       "iframeTitle": "Booking calendar",
       "fallback": "The calendar does not load?",
       "openOnCal": "Open it on cal.com"
@@ -359,12 +353,6 @@
       "metaDescription": "Réservez un appel de 30 minutes avec Quentin Aslan, ingénieur full-stack senior freelance. Choisissez un créneau directement dans le calendrier.",
       "title": "Réserver un appel de 30 min",
       "intro": "Choisissez un créneau dans le calendrier ci-dessous. On peut parler d'un projet, d'une mission ou d'une équipe qui veut adopter des outils d'IA.",
-      "topicsTitle": "De quoi on peut parler",
-      "topics": [
-        "Un projet web, cloud ou IA à construire ou à reprendre",
-        "Une mission freelance, à distance ou sur site",
-        "Comment votre équipe peut adopter des outils comme Claude Code"
-      ],
       "iframeTitle": "Calendrier de réservation",
       "fallback": "Le calendrier ne s'affiche pas ?",
       "openOnCal": "Ouvrir sur cal.com"
@@ -374,12 +362,6 @@
       "metaDescription": "Reserva una llamada de 30 minutos con Quentin Aslan, ingeniero full-stack sénior freelance. Elige un horario directamente en el calendario.",
       "title": "Reservar una llamada de 30 min",
       "intro": "Elige un horario en el calendario de abajo. Podemos hablar de un proyecto, un contrato o un equipo que quiere adoptar herramientas de IA.",
-      "topicsTitle": "De qué podemos hablar",
-      "topics": [
-        "Un proyecto web, cloud o de IA que construir o retomar",
-        "Un contrato freelance, en remoto o presencial",
-        "Cómo tu equipo puede adoptar herramientas como Claude Code"
-      ],
       "iframeTitle": "Calendario de reservas",
       "fallback": "¿El calendario no se carga?",
       "openOnCal": "Abrir en cal.com"

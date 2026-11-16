@@ -373,9 +373,9 @@ main:focus { outline: none; }
 .facts-table dd { margin: 0; }
 .screens { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 14px; margin: 40px 0; padding: 7%; border-radius: var(--r); background: var(--stage); }
 .screens img { border-radius: 18px; box-shadow: 0 24px 40px -24px rgb(28 26 23 / 0.45); }
-.booking-frame { display: block; width: 100%; height: 760px; margin: 32px 0 16px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
-.topics { max-width: 64ch; padding-left: 1.2em; }
-.topics li { margin-bottom: 8px; }
+.article.booking { max-width: 1180px; }
+.booking .intro { max-width: 780px; }
+.booking-frame { display: block; width: 100%; height: 680px; margin: 32px 0 16px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
 .breadcrumb ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; font-size: 15px; }
 .breadcrumb a { display: inline-block; padding-block: 4px; }
 .breadcrumb li + li::before { content: '/'; margin-right: 8px; color: var(--muted); }
