@@ -1544,22 +1544,7 @@
         "en": "I was lucky to work with Quentin on a web project. Quentin is a real asset to a team and will adapt perfectly to different projects.",
         "es": "Tuve la suerte de trabajar con Quentin en un proyecto web. Quentin es un verdadero activo para un equipo y se adaptará perfectamente a distintos proyectos."
       }
-    },
-    {
-      "name": "Gabriel R.-M.",
-      "role": {
-        "en": "Co-founder",
-        "fr": "Cofondateur",
-        "es": "Cofundador"
-      },
-      "lang": "fr",
-      "photo": null,
-      "text": "Le site marche super bien, on commence à y mettre des articles. La prise en main est super sympa.",
-      "source": "Interrègne",
-      "translation": {
-        "en": "The site works really well, and we are starting to add articles. It is really easy to get the hang of.",
-        "es": "El sitio funciona muy bien y ya empezamos a subir artículos. Es muy fácil de manejar."
-      }
+
     }
   ],
   "about": {
