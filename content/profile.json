@@ -1104,16 +1104,17 @@
       "name": "Interrègne",
       "year": 2026,
       "text": {
-        "en": "Site and back office for a friend's online review: one Next.js and Payload app, articles migrated from Directus, Docker deploys from GitHub Actions and nightly backups to Cloudflare R2.",
-        "fr": "Site et back-office de la revue en ligne d'un ami : une seule app Next.js et Payload, articles repris de Directus, déploiements Docker par GitHub Actions et sauvegardes chaque nuit sur Cloudflare R2.",
-        "es": "Sitio y back office de la revista en línea de un amigo: una sola app Next.js y Payload, artículos migrados desde Directus, despliegues Docker con GitHub Actions y copias de seguridad cada noche en Cloudflare R2."
+        "en": "Publishing platform for an online review: Next.js 16 and Payload 3 in one TypeScript app, a Lexical editor with custom blocks, role-based back office, Docker CI/CD and nightly backups to Cloudflare R2.",
+        "fr": "Plateforme de publication d'une revue en ligne : Next.js 16 et Payload 3 dans une seule app TypeScript, éditeur Lexical avec blocs sur mesure, back-office avec rôles, CI/CD Docker et sauvegardes chaque nuit sur Cloudflare R2.",
+        "es": "Plataforma de publicación de una revista en línea: Next.js 16 y Payload 3 en una sola app TypeScript, editor Lexical con bloques propios, back office con roles, CI/CD con Docker y copias de seguridad cada noche en Cloudflare R2."
       },
       "tags": [
-        "Next.js",
+        "Next.js 16",
         "Payload 3",
-        "SQLite",
+        "TypeScript",
         "Docker",
-        "Cloudflare R2"
+        "GitHub Actions",
+        "Cloudflare"
       ],
       "caseStudy": "interregne",
       "repo": null,
@@ -1886,9 +1887,9 @@
         "es": "Interrègne: una plataforma de publicación para una revista en línea"
       },
       "description": {
-        "en": "Site and back office for an online review: one Next.js and Payload app, content migrated from Directus, automated deploys and nightly backups. Live since November 2026.",
-        "fr": "Site et back-office d'une revue en ligne : une seule app Next.js et Payload, contenu repris de Directus, déploiements automatisés et sauvegardes chaque nuit. En ligne depuis novembre 2026.",
-        "es": "Sitio y back office de una revista en línea: una sola app Next.js y Payload, contenido migrado desde Directus, despliegues automatizados y copias de seguridad cada noche. En línea desde noviembre de 2026."
+        "en": "Next.js 16 and Payload 3 in one TypeScript app, a Lexical editor with custom blocks, role-based back office, SEO, Docker CI/CD with GitHub Actions and nightly backups to Cloudflare R2. Live since November 2026.",
+        "fr": "Next.js 16 et Payload 3 dans une seule app TypeScript, éditeur Lexical avec blocs sur mesure, back-office avec rôles, SEO, CI/CD Docker avec GitHub Actions et sauvegardes chaque nuit sur Cloudflare R2. En ligne depuis novembre 2026.",
+        "es": "Next.js 16 y Payload 3 en una sola app TypeScript, editor Lexical con bloques propios, back office con roles, SEO, CI/CD con Docker y GitHub Actions y copias de seguridad cada noche en Cloudflare R2. En línea desde noviembre de 2026."
       },
       "image": "/img/interregne-site.webp",
       "imageAlt": {
