@@ -1524,6 +1524,22 @@
         "en": "I was lucky to work with Quentin on a web project. Quentin is a real asset to a team and will adapt perfectly to different projects.",
         "es": "Tuve la suerte de trabajar con Quentin en un proyecto web. Quentin es un verdadero activo para un equipo y se adaptará perfectamente a distintos proyectos."
       }
+    },
+    {
+      "name": "Gabriel R.-M.",
+      "role": {
+        "en": "Co-founder",
+        "fr": "Cofondateur",
+        "es": "Cofundador"
+      },
+      "lang": "fr",
+      "photo": null,
+      "text": "Le site marche super bien, on commence à y mettre des articles. La prise en main est super sympa.",
+      "source": "Interrègne",
+      "translation": {
+        "en": "The site works really well, and we are starting to add articles. It is really easy to get the hang of.",
+        "es": "El sitio funciona muy bien y ya empezamos a subir artículos. Es muy fácil de manejar."
+      }
     }
   ],
   "about": {
@@ -1841,6 +1857,55 @@
           "es": "Dos años como desarrollador full-stack en el equipo Self-Service Center de Bell, en Montreal y en inglés. Desarrollé el front Vue 3 y TypeScript del SaaS B2B con el que las empresas clientes gestionan los planes, los teléfonos y los gastos de sus empleados, y contribuí a los microservicios Java Spring Boot que lo sostienen. La accesibilidad formaba parte de cada funcionalidad."
         },
         "stack": "Vue 3 · TypeScript · Java · Spring Boot · Web Components"
+      }
+    },
+    {
+      "slug": "interregne",
+      "title": {
+        "en": "Interrègne: a publishing platform for an online review",
+        "fr": "Interrègne : une plateforme de publication pour une revue en ligne",
+        "es": "Interrègne: una plataforma de publicación para una revista en línea"
+      },
+      "description": {
+        "en": "Pro bono, for a friend's online review: one Next.js and Payload app built from the founders' mockup, a French back office with four roles, the previous CMS content migrated, nightly backups and automated deploys. Live since November 2026.",
+        "fr": "À titre gracieux, pour la revue en ligne d'un ami : une seule app Next.js et Payload construite sur la maquette des fondateurs, un back-office en français avec quatre rôles, le contenu de l'ancien CMS repris, sauvegardes chaque nuit et déploiements automatisés. En ligne depuis novembre 2026.",
+        "es": "Pro bono, para la revista en línea de un amigo: una sola app Next.js y Payload construida sobre la maqueta de los fundadores, un back office en francés con cuatro roles, el contenido del CMS anterior migrado, copias de seguridad cada noche y despliegues automatizados. En línea desde noviembre de 2026."
+      },
+      "image": "/img/interregne-site.webp",
+      "imageAlt": {
+        "en": "Interrègne home page: the logo over a painting of Toulouse, under the section menu",
+        "fr": "Page d'accueil d'Interrègne : le logo sur un tableau de Toulouse, sous le menu des rubriques",
+        "es": "Página de inicio de Interrègne: el logotipo sobre un cuadro de Toulouse, bajo el menú de secciones"
+      },
+      "date": "2026-11",
+      "imageW": 1200,
+      "imageH": 723,
+      "ogImage": "/og/work-interregne.jpg",
+      "product": {
+        "url": "https://interregne.com/",
+        "label": {
+          "en": "Visit interregne.com",
+          "fr": "Voir interregne.com",
+          "es": "Ver interregne.com"
+        }
+      },
+      "panel": {
+        "eyebrow": {
+          "en": "Interrègne · pro bono · 2026",
+          "fr": "Interrègne · à titre gracieux · 2026",
+          "es": "Interrègne · pro bono · 2026"
+        },
+        "title": {
+          "en": "Interrègne: an online review its editors publish on their own",
+          "fr": "Interrègne : une revue en ligne que ses rédacteurs publient seuls",
+          "es": "Interrègne: una revista en línea que sus editores publican por su cuenta"
+        },
+        "text": {
+          "en": "The two founders of an online review from the south of France needed a site they could publish on without a developer. I built it as one Next.js and Payload app from their mockup, moved their articles from the previous CMS, and set up a French back office with roles, footnotes and scheduled publishing. Since the launch, they publish on their own.",
+          "fr": "Les deux fondateurs d'une revue en ligne du Sud de la France voulaient un site sur lequel publier sans développeur. Je l'ai construit en une seule app Next.js et Payload à partir de leur maquette, j'ai repris leurs articles de l'ancien CMS et mis en place un back-office en français avec rôles, notes de bas de page et publication programmée. Depuis le lancement, ils publient seuls.",
+          "es": "Los dos fundadores de una revista en línea del sur de Francia necesitaban un sitio en el que publicar sin un desarrollador. Lo construí como una sola app Next.js y Payload a partir de su maqueta, migré sus artículos del CMS anterior y preparé un back office en francés con roles, notas al pie y publicación programada. Desde el lanzamiento, publican por su cuenta."
+        },
+        "stack": "Next.js · Payload 3 · SQLite · Docker · Cloudflare R2 · GitHub Actions"
       }
     },
     {
