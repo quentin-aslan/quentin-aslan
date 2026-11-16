@@ -32,11 +32,6 @@ useSeo({
 
 <template>
   <main id="main" tabindex="-1" class="article booking">
-    <nav class="breadcrumb" :aria-label="t.breadcrumb">
-      <ol>
-        <li><a :href="to('/')">{{ person.name }}</a></li>
-      </ol>
-    </nav>
     <h1>{{ b.title }}</h1>
     <p class="intro">{{ b.intro }}</p>
     <iframe class="booking-frame" :src="person.cal" :title="b.iframeTitle" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" />

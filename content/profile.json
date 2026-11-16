@@ -343,7 +343,7 @@
       "metaTitle": "Book a 30-minute call · Quentin Aslan",
       "metaDescription": "Book a 30-minute call with Quentin Aslan, freelance senior full-stack engineer. Pick a time directly in the calendar.",
       "title": "Book a 30-minute call",
-      "intro": "Pick a time that suits you in the calendar below. We can talk about a project, a contract or a team that wants to adopt AI tooling.",
+      "intro": "Pick a time that suits you in the calendar below.",
       "iframeTitle": "Booking calendar",
       "fallback": "The calendar does not load?",
       "openOnCal": "Open it on cal.com"
@@ -352,7 +352,7 @@
       "metaTitle": "Réserver un appel de 30 min · Quentin Aslan",
       "metaDescription": "Réservez un appel de 30 minutes avec Quentin Aslan, ingénieur full-stack senior freelance. Choisissez un créneau directement dans le calendrier.",
       "title": "Réserver un appel de 30 min",
-      "intro": "Choisissez un créneau dans le calendrier ci-dessous. On peut parler d'un projet, d'une mission ou d'une équipe qui veut adopter des outils d'IA.",
+      "intro": "Choisissez un créneau dans le calendrier ci-dessous.",
       "iframeTitle": "Calendrier de réservation",
       "fallback": "Le calendrier ne s'affiche pas ?",
       "openOnCal": "Ouvrir sur cal.com"
@@ -361,7 +361,7 @@
       "metaTitle": "Reservar una llamada de 30 min · Quentin Aslan",
       "metaDescription": "Reserva una llamada de 30 minutos con Quentin Aslan, ingeniero full-stack sénior freelance. Elige un horario directamente en el calendario.",
       "title": "Reservar una llamada de 30 min",
-      "intro": "Elige un horario en el calendario de abajo. Podemos hablar de un proyecto, un contrato o un equipo que quiere adoptar herramientas de IA.",
+      "intro": "Elige un horario en el calendario de abajo.",
       "iframeTitle": "Calendario de reservas",
       "fallback": "¿El calendario no se carga?",
       "openOnCal": "Abrir en cal.com"
