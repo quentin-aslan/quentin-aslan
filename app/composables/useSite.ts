@@ -34,7 +34,7 @@ export function personLd(lang: Lang) {
     'email': `mailto:${person.email}`,
     'homeLocation': { '@type': 'Place', 'name': `${person.city}, Spain` },
     'image': person.url + person.photo,
-    'sameAs': [person.linkedin, person.github],
+    'sameAs': [person.linkedin, person.malt, person.github],
     'alumniOf': { '@type': 'CollegeOrUniversity', 'name': person.alumniOf },
     'knowsLanguage': languages.map(l => l.code),
     'knowsAbout': person.knowsAbout,

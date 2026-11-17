@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
 
 > ${home.en.title}. ${home.en.lead}
 
-${home.en.availability} Contact: ${person.email}. LinkedIn: ${person.linkedin}. GitHub: ${person.github}.
+${home.en.availability} Contact: ${person.email}. LinkedIn: ${person.linkedin}. Malt: ${person.malt}. GitHub: ${person.github}.
 
 ## Pages
 
