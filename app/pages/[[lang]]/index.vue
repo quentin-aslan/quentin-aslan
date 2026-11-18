@@ -265,9 +265,9 @@ useSeo({
         <a class="contact-email" :href="`mailto:${person.email}`">{{ person.email }}</a>
         <p><a class="contact-phone" :href="`tel:${person.phoneHref}`">{{ person.phone }}</a></p>
         <ul class="contact-links">
-          <li><a :href="person.linkedin" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
-          <li><a :href="person.malt" target="_blank" rel="noopener">Malt <span aria-hidden="true">↗</span></a></li>
-          <li><a :href="person.github" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a :href="person.linkedin" target="_blank" rel="me noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          <li><a :href="person.malt" target="_blank" rel="me noopener">Malt <span aria-hidden="true">↗</span></a></li>
+          <li><a :href="person.github" target="_blank" rel="me noopener">GitHub <span aria-hidden="true">↗</span></a></li>
           <li><a :href="profile.cv.en" hreflang="en" download>{{ t.cvEn }}</a></li>
           <li><a :href="profile.cv.fr" hreflang="fr" download>{{ t.cvFr }}</a></li>
         </ul>

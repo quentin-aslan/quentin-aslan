@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-11-18",
   "person": {
     "name": "Quentin Aslan",
     "email": "contact@quentinaslan.com",
@@ -61,7 +61,7 @@
     "en": {
       "metaTitle": "Quentin Aslan · Freelance Senior Full-Stack Engineer",
       "metaDescription": "Quentin Aslan, senior freelance full-stack engineer: web, cloud and AI tooling for dev teams. Worked for GLS France and Bell Canada. Founder of Railora.",
-      "title": "Senior Full‑Stack Engineer, freelance",
+      "title": "Senior Full-Stack Engineer, freelance",
       "lead": "I work across the stack, from Vue and React front ends to Java, Go and Node.js services on AWS, on B2B SaaS, consumer web apps and iOS. I have built for the web since 2015, including 7 years in product teams in France and Canada. Outside client work I build my own hardware and apps: ESP32 firmware, IoT, home automation and iOS.",
       "availability": "Available for new contracts, remotely or on site.",
       "claim": "I build products and help teams adopt AI.",
